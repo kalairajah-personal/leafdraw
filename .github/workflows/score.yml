@@ -2,6 +2,7 @@
 # Needs repo secret PLANTNET_API_KEY (Settings → Secrets and variables → Actions). Run from the Actions tab.
 name: plantnet-score
 on:
+  schedule: [{ cron: '17 6 * * 1' }]   # weekly regression check (124 of the 500 free daily calls)
   workflow_dispatch:
     inputs:
       species: { description: 'Species ids, space-separated (blank = whole catalog)', default: '' }
@@ -26,7 +27,7 @@ jobs:
         working-directory: pipeline
         run: |
           test -n "$PLANTNET_API_KEY" || { echo "::error::Add repo secret PLANTNET_API_KEY"; exit 1; }
-          python -m leafdraw_pipeline.cli score ${{ inputs.species }} --seeds ${{ inputs.seeds }} --style ${{ inputs.style }} --frame ${{ inputs.frame }} --out ../score.json | tee ../score.log
+          python -m leafdraw_pipeline.cli score ${{ inputs.species }} --seeds ${{ inputs.seeds || '2' }} --style ${{ inputs.style || 'scan' }} --frame ${{ inputs.frame || 'blade' }} --out ../score.json | tee ../score.log
       - name: Summary
         if: always()
         run: |
@@ -44,7 +45,7 @@ jobs:
         if: always()
         run: |
           test -f score.json || exit 0
-          name="score-$(date -u +%Y%m%d-%H%M%S)-${{ inputs.style }}-${{ inputs.frame }}.json"
+          name="score-$(date -u +%Y%m%d-%H%M%S)-${{ inputs.style || 'scan' }}-${{ inputs.frame || 'blade' }}.json"
           cp score.json "/tmp/$name"; cp score.log /tmp/score.log 2>/dev/null || true
           git config user.name "github-actions"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           if git fetch -q origin scores; then git checkout -q -B scores origin/scores; else git checkout -q --orphan scores; git rm -rfq --cached .; fi

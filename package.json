@@ -1,6 +1,6 @@
 {
   "name": "leafdraw",
-  "version": "0.2.2",
+  "version": "0.2.6",
   "description": "Botanically accurate procedural leaf drawings (fishdraw-style)",
   "main": "core/index.js",
   "directories": {
