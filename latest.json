@@ -1,7 +1,7 @@
 [
  {
   "species": "ulmus-americana",
-  "style": "color",
+  "style": "botanical",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
@@ -10,7 +10,7 @@
  },
  {
   "species": "fagus-grandifolia",
-  "style": "color",
+  "style": "botanical",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
@@ -19,7 +19,7 @@
  },
  {
   "species": "tilia-americana",
-  "style": "color",
+  "style": "botanical",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
@@ -28,7 +28,7 @@
  },
  {
   "species": "prunus-serotina",
-  "style": "color",
+  "style": "botanical",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
@@ -37,7 +37,7 @@
  },
  {
   "species": "cornus-florida",
-  "style": "color",
+  "style": "botanical",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
@@ -46,7 +46,7 @@
  },
  {
   "species": "ilex-aquifolium",
-  "style": "color",
+  "style": "botanical",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
@@ -55,7 +55,7 @@
  },
  {
   "species": "acer-rubrum",
-  "style": "color",
+  "style": "botanical",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 1.0,
@@ -64,16 +64,16 @@
  },
  {
   "species": "acer-palmatum",
-  "style": "color",
-  "top1": 1.0,
+  "style": "botanical",
+  "top1": 0.0,
   "top5": 1.0,
-  "genus1": 1.0,
+  "genus1": 0.0,
   "recognised": 1.0,
-  "guess": "Acer palmatum"
+  "guess": "Cannabis sativa"
  },
  {
   "species": "platanus-occidentalis",
-  "style": "color",
+  "style": "botanical",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
@@ -82,7 +82,7 @@
  },
  {
   "species": "hedera-helix",
-  "style": "color",
+  "style": "botanical",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
@@ -91,20 +91,20 @@
  },
  {
   "species": "ginkgo-biloba",
-  "style": "color",
+  "style": "botanical",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
-  "recognised": 0.0,
+  "recognised": 0.5,
   "guess": null
  },
  {
   "species": "fraxinus-americana",
-  "style": "color",
+  "style": "botanical",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
   "recognised": 1.0,
-  "guess": "Wisteria frutescens"
+  "guess": "Secondatia duckei"
  }
 ]
