@@ -13,7 +13,7 @@
   "traits": {
     "shape": "elliptic",
     "apex": "acuminate",
-    "base": "cuneate",
+    "base": "obtuse",
     "margin": "entire",
     "secondary": "eucamptodromous",
     "tertiary": "opposite-percurrent",
@@ -32,6 +32,10 @@
     "widest": [
       0.5,
       0.03
+    ],
+    "baseAngle": [
+      105,
+      8
     ],
     "secCount": [
       5,

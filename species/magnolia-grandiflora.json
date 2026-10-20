@@ -12,7 +12,7 @@
   ],
   "traits": {
     "shape": "elliptic",
-    "apex": "acute",
+    "apex": "obtuse",
     "base": "acute",
     "margin": "entire",
     "secondary": "brochidodromous",
@@ -30,8 +30,16 @@
       0.15
     ],
     "widest": [
-      0.5,
+      0.52,
       0.03
+    ],
+    "apexAngle": [
+      100,
+      8
+    ],
+    "baseAngle": [
+      85,
+      6
     ],
     "secCount": [
       11,

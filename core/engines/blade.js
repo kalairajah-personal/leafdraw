@@ -47,8 +47,11 @@ export function buildBlade(cfg, rng) {
       const dA = (1 - pointLen - t) * Lx;
       const dB = t * Lx;
       const apexAngle = ap.kind === 'angle' || ap.kind === 'awn' || ap.kind === 'cirrus' || (ap.kind === 'point' && !ap.round);
+      // MLA apex/base angle is a chord (tip → margin at 25% L). A straight cone along that chord made
+      // elliptic leaves rhombic; use a convex hyperbolic curve through the chord point instead.
+      const convex = (d, ang) => { const tn = Math.tan(ang / 2), dq = 0.25 * Lx, x = Math.max(0, d) / dq, k = 0.45; return x >= 1 ? x * dq * tn : (dq * tn * (1 + k) * x) / (1 + k * x); };
       if (apexAngle) {
-        const c = Math.max(0, dA) * Math.tan(ap.angle / 2);
+        const c = convex(dA, ap.angle);
         hw = softmin(hw, c, W * 0.06);
         if (dA < W * 0.02) hw = Math.min(hw, c);
       }
@@ -64,7 +67,7 @@ export function buildBlade(cfg, rng) {
         }
       }
       if (bsx.kind === 'angle') {
-        const c = dB * Math.tan(bsx.angle / 2);
+        const c = bsx.type === 'cuneate' || bsx.type === 'attenuate' ? dB * Math.tan(bsx.angle / 2) : convex(dB, bsx.angle);
         hw = softmin(hw, c, bsx.type === 'cuneate' ? W * 0.03 : W * 0.11);
         if (dB < W * 0.02) hw = Math.min(hw, c);
       }
