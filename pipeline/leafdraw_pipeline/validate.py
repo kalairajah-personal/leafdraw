@@ -74,14 +74,17 @@ def plantnet_identify(images: list[str], api_key: str | None = None, organs: str
 
 def botanist_score(species_id: str, scientific_name: str, seeds=range(1, 6)) -> dict:
     """Fraction of rendered colour leaves Pl@ntNet identifies as the right species (top-1 / top-5)."""
-    top1 = top5 = 0
+    norm = lambda n: " ".join(n.lower().replace("×", "x").replace(" x ", " ").split()[:2])
+    want = norm(scientific_name)
+    top1 = top5 = genus1 = 0
     with tempfile.TemporaryDirectory() as d:
         for s in seeds:
             png = os.path.join(d, f"{s}.png")
             render(species_id, s, png, style="color", width=1200, detail="medium")
             res = plantnet_identify([png])
-            names = [r["name"].lower() for r in res]
-            top1 += bool(names) and names[0] == scientific_name.lower()
-            top5 += scientific_name.lower() in names
+            names = [norm(r["name"]) for r in res]
+            top1 += bool(names) and names[0] == want
+            top5 += want in names
+            genus1 += bool(names) and names[0].split()[0] == want.split()[0]
     n = len(list(seeds))
-    return {"species": species_id, "top1": top1 / n, "top5": top5 / n}
+    return {"species": species_id, "top1": top1 / n, "top5": top5 / n, "genus1": genus1 / n, "guess": res[0]["name"] if res else None}

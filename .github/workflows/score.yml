@@ -1,0 +1,43 @@
+# Pl@ntNet "botanist score": render each catalog species, ask Pl@ntNet to identify it.
+# Needs repo secret PLANTNET_API_KEY (Settings → Secrets and variables → Actions). Run from the Actions tab.
+name: plantnet-score
+on:
+  workflow_dispatch:
+    inputs:
+      species: { description: 'Species ids, space-separated (blank = whole catalog)', default: '' }
+      seeds: { description: 'Seeds per species (each = 1 API call)', default: '3' }
+permissions: { contents: read }
+jobs:
+  score:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20, cache: npm }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: npm ci
+      - run: pip install numpy
+      - name: Score
+        env: { PLANTNET_API_KEY: '${{ secrets.PLANTNET_API_KEY }}' }
+        working-directory: pipeline
+        run: |
+          test -n "$PLANTNET_API_KEY" || { echo "::error::Add repo secret PLANTNET_API_KEY"; exit 1; }
+          python -m leafdraw_pipeline.cli score ${{ inputs.species }} --seeds ${{ inputs.seeds }} --out ../score.json | tee ../score.log
+      - name: Summary
+        if: always()
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json, os
+          if not os.path.exists('score.json'): print('No results.'); raise SystemExit
+          rows = json.load(open('score.json')); ok = [r for r in rows if 'top1' in r]
+          print(f"### Pl@ntNet botanist score — {len(ok)} species")
+          if ok: print(f"top-1 **{sum(r['top1'] for r in ok)/len(ok):.0%}** · top-5 **{sum(r['top5'] for r in ok)/len(ok):.0%}** · genus top-1 **{sum(r['genus1'] for r in ok)/len(ok):.0%}**\n")
+          print('| species | top-1 | top-5 | genus | last guess |\n|---|---|---|---|---|')
+          for r in sorted(rows, key=lambda r: (r.get('top5', -1), r.get('top1', -1))):
+              print(f"| {r['species']} | {r.get('top1', r.get('error', ''))} | {r.get('top5', '')} | {r.get('genus1', '')} | {r.get('guess', '')} |")
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: plantnet-score, path: 'score.*', if-no-files-found: ignore }

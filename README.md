@@ -233,6 +233,7 @@ python -m leafdraw_pipeline.cli text "Ulmus rubra" description.txt [--llm]     #
 python -m leafdraw_pipeline.cli roundtrip quercus-alba magnolia-grandiflora    # render → measure → compare
 python -m leafdraw_pipeline.cli identify leaf.png                              # Pl@ntNet (PLANTNET_API_KEY)
 python -m leafdraw_pipeline.cli score --seeds 3 --out score.json               # botanist score, whole catalog
+# or on GitHub: Actions → plantnet-score → Run (repo secret PLANTNET_API_KEY)
 python -m unittest discover -s tests
 ```
 
@@ -302,10 +303,22 @@ Source text for both was fetched live (GBIF, Wikipedia, POWO) and is stored in `
 - **0.1.0 (2026-10-18)** — core engines, venation, constraint matrix, 61 species, CLI, single-file bundle, studio, Python pipeline, tests.
 - **0.1.1 (2026-10-18)** — added *Cocos nucifera* (coconut palm: paripinnate frond, ~95 leaflet pairs). New compound params `taperMin`, `taperCenter`; pair cap raised to 130.
 
+- **0.2.3 (2026-10-19)** — `plantnet-score` GitHub Action (secret `PLANTNET_API_KEY`; table in the run summary); score adds genus top-1 and Pl@ntNet's guess; sources one per line.
 - **0.2.2 (2026-10-19)** — README gallery (`tools/gallery.mjs`: hero, styles, seasons, architectures, venation, any-species, animated drawing); pipeline `score`/`identify` no longer need scipy or scikit-image.
 - **0.2.1 (2026-10-19)** — GitHub repo, Pages deploy (test → build → publish on push), MIT licence, pipeline `score` command (Pl@ntNet botanist score for the catalog).
 - **0.2.0 (2026-10-19)** — any-species resolution (GBIF + POWO + Wikipedia → `core/text.js` → `core/families.js` templates → constraints), CLI `--resolve`/`--offline`, studio lookup with GBIF autocomplete and a Claude fallback, literature validation of the curated set (4 fixes), holdout validation tool, 4 new tests.
 
 ## Sources
 
-Ellis et al. 2009, *Manual of Leaf Architecture* · Wikipedia, *Glossary of leaf morphology* · Runions et al. 2005, *Modeling and visualization of leaf venation patterns* · Kumar et al. 2012, *Leafsnap* (ECCV) · Weaver & Smith 2023, *LeafMachine2* (Applications in Plant Sciences) · Kuhl & Giardina 1982, elliptic Fourier features · GBIF species + occurrence APIs · POWO (Kew) API · Wikipedia API · Judd et al., *Plant Systematics* (family templates) · Pl@ntNet identification API · fishdraw (LingDong-).
+- Ellis et al. 2009, *Manual of Leaf Architecture*
+- Wikipedia, *Glossary of leaf morphology*
+- Runions et al. 2005, *Modeling and visualization of leaf venation patterns*
+- Kumar et al. 2012, *Leafsnap* (ECCV)
+- Weaver & Smith 2023, *LeafMachine2* (Applications in Plant Sciences)
+- Kuhl & Giardina 1982, elliptic Fourier features
+- GBIF species + occurrence APIs
+- POWO (Kew) API
+- Wikipedia API
+- Judd et al., *Plant Systematics* (family templates)
+- Pl@ntNet identification API
+- fishdraw (LingDong-)
