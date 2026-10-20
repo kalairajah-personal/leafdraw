@@ -12,7 +12,7 @@ Botanically accurate procedural leaf drawings. Inspired by [fishdraw](https://gi
 </tr>
 </table>
 
-![One basswood leaf in eight styles: line, hatch, stipple, color, botanical, cleared, silhouette, venation](docs/images/styles.png)
+![One basswood leaf in nine styles: line, hatch, stipple, color, botanical, cleared, silhouette, venation, photo](docs/images/styles.png)
 
 ![Leaf architectures: imparipinnate ash, bipinnate honey locust, ternate clover, unifoliate orange, iris, arrowhead, white pine, arborvitae, Christmas fern](docs/images/architectures.png)
 
@@ -175,7 +175,7 @@ Options: labels with binomial, family, seed and scale bar; true-size mm output; 
 
 ## 6. Studio (web)
 
-`dist/leafdraw-studio.html`, also published as the *Leafdraw Studio* artifact. Species search, **any-species lookup** (type any plant name or common name; GBIF autocomplete), or trait builder with live validation; seed; leaf / on stem / plate of 6; 8 styles; 4 seasons; detail level; slow drawing; export SVG, PNG, G-code, HPGL, scene JSON, spec JSON.
+`dist/leafdraw-studio.html`, also published as the *Leafdraw Studio* artifact. Species search, **any-species lookup** (type any plant name or common name; GBIF autocomplete), or trait builder with live validation; seed; leaf / on stem / plate of 6; 9 styles (incl. photo); 4 seasons; detail level; slow drawing; export SVG, PNG, G-code, HPGL, scene JSON, spec JSON.
 
 ---
 
@@ -303,6 +303,7 @@ Source text for both was fetched live (GBIF, Wikipedia, POWO) and is stored in `
 - **0.1.0 (2026-10-18)** — core engines, venation, constraint matrix, 61 species, CLI, single-file bundle, studio, Python pipeline, tests.
 - **0.1.1 (2026-10-18)** — added *Cocos nucifera* (coconut palm: paripinnate frond, ~95 leaflet pairs). New compound params `taperMin`, `taperCenter`; pair cap raised to 130.
 
+- **0.2.4 (2026-10-19)** — `photo` render style (lamina texture, relief lighting, faint minor veins, drop shadow); scoring uses it by default (`--style`); score workflow commits results to branch `scores`; Pl@ntNet 404 = not recognised.
 - **0.2.3 (2026-10-19)** — `plantnet-score` GitHub Action (secret `PLANTNET_API_KEY`; table in the run summary); score adds genus top-1 and Pl@ntNet's guess; sources one per line.
 - **0.2.2 (2026-10-19)** — README gallery (`tools/gallery.mjs`: hero, styles, seasons, architectures, venation, any-species, animated drawing); pipeline `score`/`identify` no longer need scipy or scikit-image.
 - **0.2.1 (2026-10-19)** — GitHub repo, Pages deploy (test → build → publish on push), MIT licence, pipeline `score` command (Pl@ntNet botanist score for the catalog).

@@ -79,7 +79,7 @@ def plantnet_identify(images: list[str], api_key: str | None = None, organs: str
     return [{"name": x["species"]["scientificNameWithoutAuthor"], "score": x["score"]} for x in out.get("results", [])[:5]]
 
 
-def botanist_score(species_id: str, scientific_name: str, seeds=range(1, 6)) -> dict:
+def botanist_score(species_id: str, scientific_name: str, seeds=range(1, 6), style: str = "photo") -> dict:
     """Fraction of rendered colour leaves Pl@ntNet identifies as the right species (top-1 / top-5)."""
     norm = lambda n: " ".join(n.lower().replace("×", "x").replace(" x ", " ").split()[:2])
     want = norm(scientific_name)
@@ -87,7 +87,7 @@ def botanist_score(species_id: str, scientific_name: str, seeds=range(1, 6)) -> 
     with tempfile.TemporaryDirectory() as d:
         for s in seeds:
             png = os.path.join(d, f"{s}.png")
-            render(species_id, s, png, style="color", width=1200, detail="medium")
+            render(species_id, s, png, style=style, width=1200, detail="medium")
             res = plantnet_identify([png])
             names = [norm(r["name"]) for r in res]
             recog += bool(names)
@@ -95,4 +95,4 @@ def botanist_score(species_id: str, scientific_name: str, seeds=range(1, 6)) -> 
             top5 += want in names
             genus1 += bool(names) and names[0].split()[0] == want.split()[0]
     n = len(list(seeds))
-    return {"species": species_id, "top1": top1 / n, "top5": top5 / n, "genus1": genus1 / n, "recognised": recog / n, "guess": res[0]["name"] if res else None}
+    return {"species": species_id, "style": style, "top1": top1 / n, "top5": top5 / n, "genus1": genus1 / n, "recognised": recog / n, "guess": res[0]["name"] if res else None}

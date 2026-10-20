@@ -45,8 +45,8 @@ png('hero.png', grid([
 ], { cols: 6, cw: 300, ch: 380 }), 1800);
 
 // 2. One leaf, eight styles.
-const STY = ['line', 'hatch', 'stipple', 'color', 'botanical', 'cleared', 'silhouette', 'venation'];
-png('styles.png', grid(STY.map((s) => cell('tilia-americana', 5, { style: s, title: s, italic: false, detail: 'full' }, '')), { cols: 8, cw: 240, ch: 300, title: 'Tilia americana — eight render styles' }), 1800);
+const STY = ['line', 'hatch', 'stipple', 'color', 'botanical', 'cleared', 'silhouette', 'venation', 'photo'];
+png('styles.png', grid(STY.map((s) => cell('tilia-americana', 5, { style: s, title: s, italic: false, detail: 'full' }, '')), { cols: 9, cw: 220, ch: 300, title: 'Tilia americana — nine render styles' }), 1800);
 
 // 3. Seasons.
 png('seasons.png', grid(['spring', 'summer', 'fall', 'dried'].map((s) => cell('acer-rubrum', 7, { season: s, title: s, italic: false }, '')), { cols: 4, cw: 300, ch: 320, title: 'Acer rubrum — seasons' }), 1200);

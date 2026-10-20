@@ -6,7 +6,8 @@ on:
     inputs:
       species: { description: 'Species ids, space-separated (blank = whole catalog)', default: '' }
       seeds: { description: 'Seeds per species (each = 1 API call)', default: '3' }
-permissions: { contents: read }
+      style: { description: 'Render style sent to Pl@ntNet', default: 'photo' }
+permissions: { contents: write }
 jobs:
   score:
     runs-on: ubuntu-latest
@@ -24,7 +25,7 @@ jobs:
         working-directory: pipeline
         run: |
           test -n "$PLANTNET_API_KEY" || { echo "::error::Add repo secret PLANTNET_API_KEY"; exit 1; }
-          python -m leafdraw_pipeline.cli score ${{ inputs.species }} --seeds ${{ inputs.seeds }} --out ../score.json | tee ../score.log
+          python -m leafdraw_pipeline.cli score ${{ inputs.species }} --seeds ${{ inputs.seeds }} --style ${{ inputs.style }} --out ../score.json | tee ../score.log
       - name: Summary
         if: always()
         run: |
@@ -38,6 +39,16 @@ jobs:
           for r in sorted(rows, key=lambda r: (r.get('top5', -1), r.get('top1', -1))):
               print(f"| {r['species']} | {r.get('top1', r.get('error', ''))} | {r.get('top5', '')} | {r.get('genus1', '')} | {r.get('guess', '')} |")
           PY
+      - name: Save results to branch `scores`
+        if: always()
+        run: |
+          test -f score.json || exit 0
+          name="score-$(date -u +%Y%m%d-%H%M%S)-${{ inputs.style }}.json"
+          cp score.json "/tmp/$name"; cp score.log /tmp/score.log 2>/dev/null || true
+          git config user.name "github-actions"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git fetch -q origin scores; then git checkout -q -B scores origin/scores; else git checkout -q --orphan scores; git rm -rfq --cached .; fi
+          mkdir -p runs && cp "/tmp/$name" runs/ && cp "/tmp/$name" latest.json
+          git add runs latest.json && git commit -qm "score: $name" && git push -q origin HEAD:scores
       - uses: actions/upload-artifact@v4
         if: always()
         with: { name: plantnet-score, path: 'score.*', if-no-files-found: ignore }
