@@ -39,6 +39,7 @@ OUTPUT
       --style line|hatch|stipple|color|botanical|cleared|silhouette|venation|photo|scan
       --season summer|fall|spring|dried
       --labels                     name, family, seed and scale bar
+      --frame leaf|blade           blade = crop to the lamina (close-up photo framing)
       --order illustrator|growth|plotter      pen order (anim, plotter)
       --duration <s>               animation length (default 12)
       --width <px>                 PNG width (default 1600)
@@ -71,6 +72,7 @@ function parseArgs(argv) {
       case '--cols': a.cols = +v(); break;
       case '-f': case '--format': a.format = v(); break;
       case '--style': a.style = v(); break;
+      case '--frame': a.frame = v(); break;
       case '--season': a.season = v(); break;
       case '--labels': a.labels = true; break;
       case '--order': a.order = v(); break;
@@ -165,7 +167,7 @@ async function main() {
   }
 
   const fmt = a.format || (a.output ? path.extname(a.output).slice(1) : 'svg') || 'svg';
-  const ropts = { style: a.style || 'line', season: a.season || 'summer', labels: !!a.labels, order: a.order, duration: a.duration };
+  const ropts = { style: a.style || 'line', season: a.season || 'summer', labels: !!a.labels, order: a.order, duration: a.duration, frame: a.frame };
   let out;
   if (fmt === 'svg') out = renderSVG(scene, ropts);
   else if (fmt === 'anim') out = renderAnimatedSVG(scene, ropts);

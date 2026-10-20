@@ -47,7 +47,13 @@ export function renderSVG(scene, opts = {}) {
   const style = STYLES[opts.style || 'line'] ? opts.style || 'line' : 'line';
   const S = STYLES[style];
   const pal = resolvePalette(opts.palette || scene.meta.palette, scene.meta.group, opts.season || 'summer');
-  const bb = scene.bbox;
+  // frame: 'blade' crops to the lamina(s) + a short stub of petiole, like a close-up photo.
+  let bb = scene.bbox;
+  if (opts.frame === 'blade' && scene.fills.length) {
+    const b = bbox(scene.fills.map((f) => f.rings[0])), m = Math.max(b.w, b.h) * 0.08;
+    const y0 = Math.max(scene.bbox.y0, b.y0 - Math.max(b.w, b.h) * 0.12);
+    bb = { x0: b.x0 - m, y0, x1: b.x1 + m, y1: b.y1 + m, w: b.w + 2 * m, h: b.y1 + m - y0 };
+  }
   const size = Math.max(bb.w, bb.h);
   const pad = opts.pad ?? size * 0.06;
   const labelH = opts.labels ? size * 0.17 : 0;
@@ -70,6 +76,7 @@ export function renderSVG(scene, opts = {}) {
   if (anim) out.push(animStyle(anim));
   if (bg && bg !== 'none') out.push(`<rect width="100%" height="100%" fill="${bg}"/>`);
   if (S.photo) out.push(photoFilter(size, scene.meta.seed || 1, W, H, S));
+  if (opts.frame === 'blade') out.push(`<defs><clipPath id="ld-frame"><rect width="${W.toFixed(2)}" height="${H.toFixed(2)}"/></clipPath></defs><g clip-path="url(#ld-frame)">`);
 
   const fillColor = S.color ? pal.blade : S.fill;
   const colorFor = (role) => {
@@ -149,6 +156,7 @@ export function renderSVG(scene, opts = {}) {
     if (S.photo) out.push('</g>');
   }
 
+  if (opts.frame === 'blade') out.push('</g>');
   // ---- labels ----
   if (opts.labels) {
     const fs = size * 0.032;

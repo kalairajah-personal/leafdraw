@@ -31,7 +31,7 @@ def main(argv=None):
     t = sub.add_parser("text"); t.add_argument("name"); t.add_argument("file"); t.add_argument("--llm", action="store_true")
     r = sub.add_parser("roundtrip"); r.add_argument("species", nargs="+")
     i = sub.add_parser("identify"); i.add_argument("images", nargs="+")
-    sc = sub.add_parser("score"); sc.add_argument("species", nargs="*"); sc.add_argument("--seeds", type=int, default=3); sc.add_argument("--style", default="photo"); sc.add_argument("--out", default="score.json")
+    sc = sub.add_parser("score"); sc.add_argument("species", nargs="*"); sc.add_argument("--seeds", type=int, default=3); sc.add_argument("--style", default="photo"); sc.add_argument("--frame", default="blade"); sc.add_argument("--out", default="score.json")
     a = ap.parse_args(argv)
 
     if a.cmd == "fetch":
@@ -80,7 +80,7 @@ def main(argv=None):
         rows = []
         for s in todo:
             try:
-                r = validate.botanist_score(s["id"], s["name"], seeds=range(1, a.seeds + 1), style=a.style)
+                r = validate.botanist_score(s["id"], s["name"], seeds=range(1, a.seeds + 1), style=a.style, frame=a.frame)
             except Exception as e:  # keep going; quota and network errors are per species
                 r = {"species": s["id"], "error": str(e)}
             rows.append(r); print(json.dumps(r), flush=True)

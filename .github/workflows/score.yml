@@ -6,7 +6,8 @@ on:
     inputs:
       species: { description: 'Species ids, space-separated (blank = whole catalog)', default: '' }
       seeds: { description: 'Seeds per species (each = 1 API call)', default: '3' }
-      style: { description: 'Render style sent to Pl@ntNet', default: 'photo' }
+      style: { description: 'Render style sent to Pl@ntNet', default: 'scan' }
+      frame: { description: 'leaf (whole) or blade (close-up crop)', default: 'blade' }
 permissions: { contents: write }
 jobs:
   score:
@@ -25,7 +26,7 @@ jobs:
         working-directory: pipeline
         run: |
           test -n "$PLANTNET_API_KEY" || { echo "::error::Add repo secret PLANTNET_API_KEY"; exit 1; }
-          python -m leafdraw_pipeline.cli score ${{ inputs.species }} --seeds ${{ inputs.seeds }} --style ${{ inputs.style }} --out ../score.json | tee ../score.log
+          python -m leafdraw_pipeline.cli score ${{ inputs.species }} --seeds ${{ inputs.seeds }} --style ${{ inputs.style }} --frame ${{ inputs.frame }} --out ../score.json | tee ../score.log
       - name: Summary
         if: always()
         run: |
@@ -43,7 +44,7 @@ jobs:
         if: always()
         run: |
           test -f score.json || exit 0
-          name="score-$(date -u +%Y%m%d-%H%M%S)-${{ inputs.style }}.json"
+          name="score-$(date -u +%Y%m%d-%H%M%S)-${{ inputs.style }}-${{ inputs.frame }}.json"
           cp score.json "/tmp/$name"; cp score.log /tmp/score.log 2>/dev/null || true
           git config user.name "github-actions"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           if git fetch -q origin scores; then git checkout -q -B scores origin/scores; else git checkout -q --orphan scores; git rm -rfq --cached .; fi
