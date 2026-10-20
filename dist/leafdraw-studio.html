@@ -146,12 +146,11 @@ button.btn:hover { border-color: var(--accent); }
       <div class="lbl">View</div>
       <div class="seg" role="group" aria-label="View">
         <button data-view="leaf" aria-pressed="true">Leaf</button>
-        <button data-view="shoot" aria-pressed="false">On stem</button>
         <button data-view="plate" aria-pressed="false">Plate of 6</button>
       </div>
       <div class="grid2">
         <label>Style <select id="style">
-          <option value="botanical">Botanical colour</option><option value="color">Colour</option><option value="line">Line art</option>
+          <option value="botanical">Botanical colour</option><option value="photo">Photo (specimen scan)</option><option value="color">Colour</option><option value="line">Line art</option>
           <option value="hatch">Hatched</option><option value="stipple">Stippled</option><option value="cleared">Cleared leaf</option>
           <option value="venation">Venation only</option><option value="silhouette">Silhouette</option></select></label>
         <label>Detail <select id="detail"><option value="auto">Auto</option><option value="full">All vein orders</option><option value="medium">To tertiaries</option><option value="low">Primary + secondary</option></select></label>
@@ -215,6 +214,7 @@ leafdraw=leafdraw.default;
   const species = L.listSpecies().slice().sort((a, b) => a.name.localeCompare(b.name));
   const state = { source: 'species', species: 'acer-rubrum', view: 'leaf', season: 'fall', traits: {} , scene: null, spec: null };
   try { const s = JSON.parse(localStorage.getItem('leafdraw-studio') || 'null'); if (s) Object.assign(state, s, { scene: null, spec: null }); } catch (e) {}
+  if (!['leaf', 'plate'].includes(state.view)) state.view = 'leaf';
   const save = () => { try { localStorage.setItem('leafdraw-studio', JSON.stringify({ source: state.source, species: state.species, view: state.view, season: state.season, traits: state.traits })); } catch (e) {} };
 
   // ---------- species list ----------
@@ -356,7 +356,7 @@ leafdraw=leafdraw.default;
       const seed = Math.max(1, parseInt($('seed').value, 10) || 1);
       const t0 = performance.now();
       try {
-        const opts = { view: state.view === 'shoot' ? 'shoot' : 'leaf', detail: $('detail').value };
+        const opts = { view: 'leaf', detail: $('detail').value };
         state.scene = state.view === 'plate'
           ? L.composeScenes(Array.from({ length: 6 }, (_, i) => L.draw(spec, seed + i, { ...opts, detail: opts.detail === 'auto' ? 'medium' : opts.detail })), { cols: 3 })
           : L.draw(spec, seed, opts);

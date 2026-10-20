@@ -175,7 +175,7 @@ Options: labels with binomial, family, seed and scale bar; true-size mm output; 
 
 ## 6. Studio (web)
 
-`dist/leafdraw-studio.html`, also published as the *Leafdraw Studio* artifact. Species search, **any-species lookup** (type any plant name or common name; GBIF autocomplete), or trait builder with live validation; seed; leaf / on stem / plate of 6; 9 styles (incl. photo); 4 seasons; detail level; slow drawing; export SVG, PNG, G-code, HPGL, scene JSON, spec JSON.
+`dist/leafdraw-studio.html`, also published as the *Leafdraw Studio* artifact. Species search, **any-species lookup** (type any plant name or common name; GBIF autocomplete), or trait builder with live validation; seed; leaf / plate of 6; 9 styles (incl. photo); 4 seasons; detail level; slow drawing; export SVG, PNG, G-code, HPGL, scene JSON, spec JSON.
 
 ---
 
@@ -303,6 +303,7 @@ Source text for both was fetched live (GBIF, Wikipedia, POWO) and is stored in `
 - **0.1.0 (2026-10-18)** — core engines, venation, constraint matrix, 61 species, CLI, single-file bundle, studio, Python pipeline, tests.
 - **0.1.1 (2026-10-18)** — added *Cocos nucifera* (coconut palm: paripinnate frond, ~95 leaflet pairs). New compound params `taperMin`, `taperCenter`; pair cap raised to 130.
 
+- **0.2.5 (2026-10-19)** — studio: photo style added, "On stem" view removed (CLI keeps `--view shoot`).
 - **0.2.4 (2026-10-19)** — `photo` render style (lamina texture, relief lighting, faint minor veins, drop shadow); scoring uses it by default (`--style`); score workflow commits results to branch `scores`; Pl@ntNet 404 = not recognised.
 - **0.2.3 (2026-10-19)** — `plantnet-score` GitHub Action (secret `PLANTNET_API_KEY`; table in the run summary); score adds genus top-1 and Pl@ntNet's guess; sources one per line.
 - **0.2.2 (2026-10-19)** — README gallery (`tools/gallery.mjs`: hero, styles, seasons, architectures, venation, any-species, animated drawing); pipeline `score`/`identify` no longer need scipy or scikit-image.
