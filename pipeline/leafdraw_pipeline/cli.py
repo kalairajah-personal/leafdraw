@@ -7,6 +7,7 @@
   text     "Quercus alba" description.txt                        -> tier B-text spec
   roundtrip quercus-alba                                         render→measure→compare
   identify image.png                                             Pl@ntNet (needs PLANTNET_API_KEY)
+  specimens [species-id ...] --n 20 --out specimens          measure real herbarium leaves (GBIF) vs drawn
   score    [species-id ...] --seeds 3 --style photo --out score.json          Pl@ntNet botanist score for the catalog
 """
 from __future__ import annotations
@@ -31,6 +32,7 @@ def main(argv=None):
     t = sub.add_parser("text"); t.add_argument("name"); t.add_argument("file"); t.add_argument("--llm", action="store_true")
     r = sub.add_parser("roundtrip"); r.add_argument("species", nargs="+")
     i = sub.add_parser("identify"); i.add_argument("images", nargs="+")
+    sp = sub.add_parser("specimens"); sp.add_argument("species", nargs="*"); sp.add_argument("--n", type=int, default=20); sp.add_argument("--out", default="specimens")
     sc = sub.add_parser("score"); sc.add_argument("species", nargs="*"); sc.add_argument("--seeds", type=int, default=3); sc.add_argument("--style", default="photo"); sc.add_argument("--frame", default="blade"); sc.add_argument("--out", default="score.json")
     a = ap.parse_args(argv)
 
@@ -74,7 +76,21 @@ def main(argv=None):
             print(json.dumps(validate.roundtrip(s)))
     elif a.cmd == "identify":
         print(json.dumps(validate.plantnet_identify(a.images), indent=2))
-    elif a.cmd == "score":
+    elif a.cmd == "specimens":
+        from .specimens import measure_drawn, measure_species
+        cat = json.load(open(os.path.join(ROOT, "data", "species.json")))
+        simple = lambda s: not s.get("compound") and (s.get("traits", {}).get("plantGroup") or "dicot") in ("dicot", "monocot", "ginkgo")
+        todo = [s for s in cat if (s["id"] in a.species) if a.species] if a.species else [s for s in cat if simple(s)]
+        report = []
+        for s in todo:
+            try:
+                r = measure_species(s, n_sheets=a.n, out_dir=a.out)
+                drawn = measure_drawn(s["id"])
+                row = {"id": s["id"], "sheets": r["sheets"], "leaves": r["leaves"], "specimen": r["stats"], "drawn": drawn}
+            except Exception as e:
+                row = {"id": s["id"], "error": str(e)[:300]}
+            report.append(row); print(json.dumps({k: row.get(k) for k in ("id", "sheets", "leaves", "error")}), flush=True)
+            json.dump(report, open(os.path.join(a.out, "report.json"), "w"), indent=1)
         cat = json.load(open(os.path.join(ROOT, "data", "species.json")))
         todo = [s for s in cat if not a.species or s["id"] in a.species]
         rows = []

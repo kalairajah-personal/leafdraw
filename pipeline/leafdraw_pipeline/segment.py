@@ -56,8 +56,8 @@ def remove_petiole(mask: np.ndarray, frac: float = 0.025) -> tuple[np.ndarray, n
     # petiole = the longest leftover piece (teeth and tips are short)
     best, bl = np.zeros_like(mask), 0
     for reg in measure.regionprops(rest):
-        if reg.major_axis_length > bl:
-            bl, best = reg.major_axis_length, rest == reg.label
+        if reg.axis_major_length > bl:
+            bl, best = reg.axis_major_length, rest == reg.label
     return blade, best
 
 

@@ -1,0 +1,35 @@
+# Measure real leaves on GBIF herbarium sheets and compare with the drawn species.
+# Results (report.json, per-species JSON, segmentation contact sheets) are committed to branch `specimens`.
+name: specimens
+on:
+  workflow_dispatch:
+    inputs:
+      species: { description: 'Species ids, space-separated (blank = all simple-leaved)', default: '' }
+      n: { description: 'Herbarium sheets per species', default: '15' }
+permissions: { contents: write }
+jobs:
+  measure:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20, cache: npm }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11', cache: pip }
+      - run: npm ci
+      - run: pip install numpy scipy scikit-image pillow
+      - name: Measure
+        working-directory: pipeline
+        run: python -m leafdraw_pipeline.cli specimens ${{ inputs.species }} --n ${{ inputs.n || '15' }} --out ../specimens-out
+      - name: Save to branch `specimens`
+        if: always()
+        run: |
+          test -d specimens-out || exit 0
+          cp -r specimens-out /tmp/sp
+          git config user.name "github-actions"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git fetch -q origin specimens; then git checkout -q -B specimens origin/specimens; else git checkout -q --orphan specimens; git rm -rfq --cached .; fi
+          mkdir -p data && cp /tmp/sp/* data/
+          stamp=$(date -u +%Y%m%d-%H%M%S); cp /tmp/sp/report.json "data/report-$stamp.json" 2>/dev/null || true
+          git add data && git commit -qm "specimens $stamp" || exit 0
+          for i in 1 2 3 4 5; do git push -q origin HEAD:specimens && break; git pull -q --rebase -X theirs origin specimens || true; sleep 5; done
