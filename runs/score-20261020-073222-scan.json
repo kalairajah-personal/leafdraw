@@ -1,0 +1,560 @@
+[
+ {
+  "species": "ulmus-americana",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 1.0,
+  "recognised": 1.0,
+  "guess": "Ulmus macrocarpa"
+ },
+ {
+  "species": "fagus-grandifolia",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Ailanthus excelsa"
+ },
+ {
+  "species": "betula-papyrifera",
+  "style": "scan",
+  "top1": 0.5,
+  "top5": 0.5,
+  "genus1": 0.5,
+  "recognised": 1.0,
+  "guess": "Betula papyrifera"
+ },
+ {
+  "species": "castanea-dentata",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.5,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Zelkova serrata"
+ },
+ {
+  "species": "populus-deltoides",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.5,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Diplazium esculentum"
+ },
+ {
+  "species": "tilia-americana",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Broussonetia papyrifera"
+ },
+ {
+  "species": "liriodendron-tulipifera",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 1.0,
+  "genus1": 1.0,
+  "recognised": 1.0,
+  "guess": "Liriodendron chinense"
+ },
+ {
+  "species": "quercus-alba",
+  "style": "scan",
+  "top1": 1.0,
+  "top5": 1.0,
+  "genus1": 1.0,
+  "recognised": 1.0,
+  "guess": "Quercus alba"
+ },
+ {
+  "species": "quercus-rubra",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 1.0,
+  "genus1": 1.0,
+  "recognised": 1.0,
+  "guess": "Quercus palustris"
+ },
+ {
+  "species": "raphanus-raphanistrum",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Quercus petraea"
+ },
+ {
+  "species": "taraxacum-officinale",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Quercus petraea"
+ },
+ {
+  "species": "achillea-millefolium",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 0.5,
+  "guess": "Quercus frainetto"
+ },
+ {
+  "species": "monstera-deliciosa",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.5,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Adenia cissampeloides"
+ },
+ {
+  "species": "magnolia-grandiflora",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Pongamia pinnata"
+ },
+ {
+  "species": "prunus-serotina",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Broussonetia papyrifera"
+ },
+ {
+  "species": "salix-babylonica",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 0.0,
+  "guess": null
+ },
+ {
+  "species": "cornus-florida",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 0.5,
+  "guess": null
+ },
+ {
+  "species": "eucalyptus-globulus",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Apocynum cannabinum"
+ },
+ {
+  "species": "cinnamomum-camphora",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Prestonia quinquangularis"
+ },
+ {
+  "species": "ilex-aquifolium",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 0.5,
+  "guess": null
+ },
+ {
+  "species": "chenopodium-album",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Populus deltoides"
+ },
+ {
+  "species": "bellis-perennis",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Zelkova serrata"
+ },
+ {
+  "species": "ipomoea-pandurata",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Cynanchum laeve"
+ },
+ {
+  "species": "rumex-acetosella",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 0.0,
+  "guess": null
+ },
+ {
+  "species": "rosmarinus-officinalis",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Leontodon hispidus"
+ },
+ {
+  "species": "cercis-canadensis",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Cynanchum laeve"
+ },
+ {
+  "species": "asarum-canadense",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Passiflora lutea"
+ },
+ {
+  "species": "acer-rubrum",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 1.0,
+  "recognised": 1.0,
+  "guess": "Acer pseudoplatanus"
+ },
+ {
+  "species": "acer-saccharum",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 1.0,
+  "recognised": 1.0,
+  "guess": "Acer monspessulanum"
+ },
+ {
+  "species": "acer-palmatum",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 1.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Ricinus communis"
+ },
+ {
+  "species": "liquidambar-styraciflua",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Laburnum anagyroides"
+ },
+ {
+  "species": "platanus-occidentalis",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Acer pseudoplatanus"
+ },
+ {
+  "species": "hedera-helix",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Passiflora lutea"
+ },
+ {
+  "species": "nelumbo-nucifera",
+  "style": "scan",
+  "top1": 1.0,
+  "top5": 1.0,
+  "genus1": 1.0,
+  "recognised": 1.0,
+  "guess": "Nelumbo nucifera"
+ },
+ {
+  "species": "tropaeolum-majus",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.5,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Stephania japonica"
+ },
+ {
+  "species": "helleborus-foetidus",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Acer palmatum"
+ },
+ {
+  "species": "ginkgo-biloba",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Bupleurum rigidum"
+ },
+ {
+  "species": "zea-mays",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Hordeum vulgare"
+ },
+ {
+  "species": "iris-germanica",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 0.5,
+  "guess": "Equisetum fluviatile"
+ },
+ {
+  "species": "clivia-miniata",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 0.5,
+  "guess": "Perebea guianensis"
+ },
+ {
+  "species": "musa-acuminata",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Nerium oleander"
+ },
+ {
+  "species": "sagittaria-latifolia",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 0.5,
+  "guess": "Manihot carthagenensis"
+ },
+ {
+  "species": "veratrum-viride",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Bupleurum rigidum"
+ },
+ {
+  "species": "uvularia-perfoliata",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Cinnamomum verum"
+ },
+ {
+  "species": "allium-schoenoprasum",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Nerium oleander"
+ },
+ {
+  "species": "pinus-strobus",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Euphorbia stapfii"
+ },
+ {
+  "species": "thuja-occidentalis",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Asplenium poolii"
+ },
+ {
+  "species": "fraxinus-americana",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Burmeistera utleyi"
+ },
+ {
+  "species": "juglans-nigra",
+  "style": "scan",
+  "top1": 1.0,
+  "top5": 1.0,
+  "genus1": 1.0,
+  "recognised": 1.0,
+  "guess": "Juglans nigra"
+ },
+ {
+  "species": "gleditsia-triacanthos",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Eysenhardtia texana"
+ },
+ {
+  "species": "albizia-julibrissin",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Athyrium filix-femina"
+ },
+ {
+  "species": "aesculus-hippocastanum",
+  "style": "scan",
+  "top1": 1.0,
+  "top5": 1.0,
+  "genus1": 1.0,
+  "recognised": 1.0,
+  "guess": "Aesculus hippocastanum"
+ },
+ {
+  "species": "trifolium-repens",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Dracaena bacularis"
+ },
+ {
+  "species": "oxalis-stricta",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Millettia laurentii"
+ },
+ {
+  "species": "toxicodendron-radicans",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Laburnum anagyroides"
+ },
+ {
+  "species": "citrus-sinensis",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Artocarpus heterophyllus"
+ },
+ {
+  "species": "hymenaea-courbaril",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Leptadenia madagascariensis"
+ },
+ {
+  "species": "cocos-nucifera",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.5,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Megaphrynium macrostachyum"
+ },
+ {
+  "species": "bauhinia-variegata",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.5,
+  "recognised": 1.0,
+  "guess": "Cercis siliquastrum"
+ },
+ {
+  "species": "polystichum-acrostichoides",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Acacia dealbata"
+ },
+ {
+  "species": "athyrium-filix-femina",
+  "style": "scan",
+  "top1": 1.0,
+  "top5": 1.0,
+  "genus1": 1.0,
+  "recognised": 1.0,
+  "guess": "Athyrium filix-femina"
+ },
+ {
+  "species": "pteridium-aquilinum",
+  "style": "scan",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Athyrium filix-femina"
+ }
+]
