@@ -91,6 +91,7 @@ def main(argv=None):
                 row = {"id": s["id"], "error": str(e)[:300]}
             report.append(row); print(json.dumps({k: row.get(k) for k in ("id", "sheets", "leaves", "error")}), flush=True)
             json.dump(report, open(os.path.join(a.out, "report.json"), "w"), indent=1)
+    elif a.cmd == "score":
         cat = json.load(open(os.path.join(ROOT, "data", "species.json")))
         todo = [s for s in cat if not a.species or s["id"] in a.species]
         rows = []
