@@ -22,7 +22,7 @@ jobs:
           cp dist/leafdraw-studio.html _site/index.html
           cp dist/leafdraw.js dist/leafdraw.mjs _site/
           cp data/species.json data/traits.json _site/
-          cp data/showcase.png _site/ 2>/dev/null || true
+          cp -r docs/images _site/images
       - uses: actions/upload-pages-artifact@v3
         if: github.event_name != 'pull_request'
         with: { path: _site }

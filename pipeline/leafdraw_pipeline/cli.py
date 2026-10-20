@@ -16,12 +16,7 @@ import glob
 import json
 import os
 
-from . import gbif, validate
-from .fit import fit_species
-from .measure import measure_leaf
-from .palette import leaf_palette
-from .segment import load_rgb, segment_leaf
-from .text_traits import spec_from_text
+from . import validate  # light: stdlib + numpy; image modules load per command below
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 
@@ -40,12 +35,15 @@ def main(argv=None):
     a = ap.parse_args(argv)
 
     if a.cmd == "fetch":
+        from . import gbif
         mt = gbif.match_name(a.name)
         print(json.dumps({k: mt.get(k) for k in ("usageKey", "scientificName", "family", "status")}))
         items = gbif.specimen_images(mt["usageKey"], a.n)
         got = gbif.download(items, a.out)
         print(f"{len(got)} images -> {a.out}")
     elif a.cmd == "measure":
+        from .measure import measure_leaf
+        from .segment import load_rgb, segment_leaf
         out = []
         for path in sorted(glob.glob(os.path.join(a.dir, "*.jpg")) + glob.glob(os.path.join(a.dir, "*.png"))):
             try:
@@ -56,6 +54,7 @@ def main(argv=None):
             json.dump(out, fh, indent=1)
         print(f"{len(out)} measured")
     elif a.cmd == "fit":
+        from .fit import fit_species
         ms = json.load(open(os.path.join(a.dir, "measurements.json")))
         src = json.load(open(os.path.join(a.dir, "sources.json"))) if os.path.exists(os.path.join(a.dir, "sources.json")) else []
         spec = fit_species(a.name, ms, src, a.family)
@@ -63,9 +62,12 @@ def main(argv=None):
         json.dump(spec, open(path, "w"), indent=2)
         print(f"wrote {path}")
     elif a.cmd == "palette":
+        from .palette import leaf_palette
+        from .segment import load_rgb
         rgb = load_rgb(a.image)
         print(json.dumps(leaf_palette(rgb, segment_leaf(rgb))))
     elif a.cmd == "text":
+        from .text_traits import spec_from_text
         print(json.dumps(spec_from_text(a.name, open(a.file).read(), use_llm=a.llm), indent=2))
     elif a.cmd == "roundtrip":
         for s in a.species:

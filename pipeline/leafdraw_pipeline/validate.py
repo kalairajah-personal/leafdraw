@@ -17,22 +17,22 @@ import urllib.request
 
 import numpy as np
 
-from .measure import measure_leaf
-from .segment import load_rgb, segment_leaf
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 CLI = os.path.join(ROOT, "cli", "leafdraw.js")
 
 
-def render(species: str, seed: int, out_png: str, style: str = "silhouette", width: int = 900) -> float:
+def render(species: str, seed: int, out_png: str, style: str = "silhouette", width: int = 900, detail: str = "low") -> float:
     """Render via the node CLI; returns mm per pixel of the PNG."""
-    svg = subprocess.run(["node", CLI, "-s", species, "--seed", str(seed), "--style", style, "--detail", "low"], capture_output=True, text=True, check=True).stdout
+    svg = subprocess.run(["node", CLI, "-s", species, "--seed", str(seed), "--style", style, "--detail", detail], capture_output=True, text=True, check=True).stdout
     vb = re.search(r'viewBox="0 0 ([\d.]+) ([\d.]+)"', svg)
-    subprocess.run(["node", CLI, "-s", species, "--seed", str(seed), "--style", style, "--detail", "low", "-f", "png", "--width", str(width), "-o", out_png], capture_output=True, check=True)
+    subprocess.run(["node", CLI, "-s", species, "--seed", str(seed), "--style", style, "--detail", detail, "-f", "png", "--width", str(width), "-o", out_png], capture_output=True, check=True)
     return float(vb[1]) / width
 
 
 def roundtrip(species: str, seeds=(1, 2, 3, 4, 5)) -> dict:
+    from .measure import measure_leaf  # needs scikit-image + scipy
+    from .segment import load_rgb, segment_leaf
     spec = json.loads(subprocess.run(["node", CLI, "-s", species, "--info"], capture_output=True, text=True, check=True).stdout)
     ms = []
     with tempfile.TemporaryDirectory() as d:
@@ -78,7 +78,7 @@ def botanist_score(species_id: str, scientific_name: str, seeds=range(1, 6)) -> 
     with tempfile.TemporaryDirectory() as d:
         for s in seeds:
             png = os.path.join(d, f"{s}.png")
-            render(species_id, s, png, style="color", width=1200)
+            render(species_id, s, png, style="color", width=1200, detail="medium")
             res = plantnet_identify([png])
             names = [r["name"].lower() for r in res]
             top1 += bool(names) and names[0] == scientific_name.lower()

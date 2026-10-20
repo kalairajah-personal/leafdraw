@@ -2,6 +2,26 @@
 
 Botanically accurate procedural leaf drawings. Inspired by [fishdraw](https://github.com/LingDong-/fishdraw): seeded, deterministic, polyline output, plotter-ready. Leaves are built from botanical terms, and every term has a numeric definition, so a drawing can be checked against what the term means.
 
+![Twelve leaves drawn by leafdraw: white oak, sugar maple, tulip tree, ginkgo, basswood, monstera, horse chestnut, coconut palm, bracken, lotus, chestnut, banana](docs/images/hero.png)
+
+<table>
+<tr>
+<td width="34%"><img src="docs/images/drawing.svg" alt="White oak leaf being drawn stroke by stroke"><br><sub>Slow drawing: outline → primaries → secondaries → minor veins (animated SVG)</sub></td>
+<td width="33%"><img src="docs/images/venation.png" alt="American elm, cleared-leaf style showing all vein orders"><br><sub>Venation: craspedodromous elm, cleared-leaf style, all vein orders</sub></td>
+<td width="33%"><img src="docs/images/seasons.png" alt="Red maple in spring, summer, fall and dried colours"><br><sub>Seasons (CIELAB palettes)</sub></td>
+</tr>
+</table>
+
+![One basswood leaf in eight styles: line, hatch, stipple, color, botanical, cleared, silhouette, venation](docs/images/styles.png)
+
+![Leaf architectures: imparipinnate ash, bipinnate honey locust, ternate clover, unifoliate orange, iris, arrowhead, white pine, arborvitae, Christmas fern](docs/images/architectures.png)
+
+**Any species, from its published description only** — no curated data; GBIF + POWO + Wikipedia text → traits → family template → constraints:
+
+![Six species auto-built from text: sycamore maple, flame tree, castor, neem, tamarind, mango](docs/images/any-species.png)
+
+<sub>Every image is a live render of this repo (`node tools/gallery.mjs`), fixed seeds.</sub>
+
 **Use online:** https://kalairajah-personal.github.io/leafdraw/ — the studio; type any plant name. No install.
 
 **Install:** `git clone https://github.com/kalairajah-personal/leafdraw && cd leafdraw && npm install` → `node cli/leafdraw.js -s "Quercus alba" -o oak.svg`. Or one file: `dist/leafdraw.js` (browser global `leafdraw`) / `dist/leafdraw.mjs` (ES module).
@@ -282,6 +302,7 @@ Source text for both was fetched live (GBIF, Wikipedia, POWO) and is stored in `
 - **0.1.0 (2026-10-18)** — core engines, venation, constraint matrix, 61 species, CLI, single-file bundle, studio, Python pipeline, tests.
 - **0.1.1 (2026-10-18)** — added *Cocos nucifera* (coconut palm: paripinnate frond, ~95 leaflet pairs). New compound params `taperMin`, `taperCenter`; pair cap raised to 130.
 
+- **0.2.2 (2026-10-19)** — README gallery (`tools/gallery.mjs`: hero, styles, seasons, architectures, venation, any-species, animated drawing); pipeline `score`/`identify` no longer need scipy or scikit-image.
 - **0.2.1 (2026-10-19)** — GitHub repo, Pages deploy (test → build → publish on push), MIT licence, pipeline `score` command (Pl@ntNet botanist score for the catalog).
 - **0.2.0 (2026-10-19)** — any-species resolution (GBIF + POWO + Wikipedia → `core/text.js` → `core/families.js` templates → constraints), CLI `--resolve`/`--offline`, studio lookup with GBIF autocomplete and a Claude fallback, literature validation of the curated set (4 fixes), holdout validation tool, 4 new tests.
 
