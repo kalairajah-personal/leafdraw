@@ -1,0 +1,223 @@
+{
+ "id": "tilia-americana",
+ "name": "Tilia americana",
+ "gbifKey": 3152042,
+ "sheets": 8,
+ "leaves": 14,
+ "stats": {
+  "aspect": {
+   "median": 1.179,
+   "q1": 1.127,
+   "q3": 1.338,
+   "n": 14
+  },
+  "widest": {
+   "median": 0.525,
+   "q1": 0.425,
+   "q3": 0.592,
+   "n": 14
+  },
+  "lobeDepth": {
+   "median": 0.253,
+   "q1": 0.173,
+   "q3": 0.395,
+   "n": 14
+  },
+  "circularity": {
+   "median": 0.671,
+   "q1": 0.592,
+   "q3": 0.694,
+   "n": 14
+  },
+  "apexAngle": {
+   "median": 132.128,
+   "q1": 120.945,
+   "q3": 137.926,
+   "n": 14
+  },
+  "baseAngle": {
+   "median": 132.269,
+   "q1": 106.644,
+   "q3": 136.384,
+   "n": 14
+  }
+ },
+ "sources": [
+  {
+   "occurrence": 5871953912,
+   "institution": "AK",
+   "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+   "leaves": 0
+  },
+  {
+   "occurrence": 5871953912,
+   "institution": "AK",
+   "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+   "leaves": 2
+  },
+  {
+   "occurrence": 6496887336,
+   "institution": "NEON",
+   "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+   "leaves": 6
+  },
+  {
+   "occurrence": 6490874322,
+   "institution": "BRY",
+   "license": "http://creativecommons.org/licenses/by-nc/4.0/",
+   "leaves": 2
+  },
+  {
+   "occurrence": 6490884273,
+   "institution": "BRY",
+   "license": "http://creativecommons.org/licenses/by-nc/4.0/",
+   "leaves": 1
+  },
+  {
+   "occurrence": 4976702437,
+   "institution": "LSU",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+   "leaves": 2
+  },
+  {
+   "occurrence": 5074151306,
+   "institution": "IND",
+   "license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+   "leaves": 0
+  },
+  {
+   "occurrence": 4924450667,
+   "institution": "CM",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+   "leaves": 1
+  }
+ ],
+ "raw": [
+  {
+   "aspect": 1.3214,
+   "widest": 0.5417,
+   "lobeDepth": 0.3289,
+   "circularity": 0.6299,
+   "apexAngle": 123.2843,
+   "baseAngle": 127.6822,
+   "occurrence": 5871953912
+  },
+  {
+   "aspect": 1.2719,
+   "widest": 0.5417,
+   "lobeDepth": 0.1735,
+   "circularity": 0.6941,
+   "apexAngle": 102.802,
+   "baseAngle": 106.6437,
+   "occurrence": 5871953912
+  },
+  {
+   "aspect": 1.1175,
+   "widest": 0.5083,
+   "lobeDepth": 0.1438,
+   "circularity": 0.6617,
+   "apexAngle": 130.9761,
+   "baseAngle": 133.9033,
+   "occurrence": 6496887336
+  },
+  {
+   "aspect": 1.1799,
+   "widest": 0.425,
+   "lobeDepth": 0.045,
+   "circularity": 0.7599,
+   "apexAngle": 130.3826,
+   "baseAngle": 133.0442,
+   "occurrence": 6496887336
+  },
+  {
+   "aspect": 1.1265,
+   "widest": 0.6083,
+   "lobeDepth": 0.2371,
+   "circularity": 0.6866,
+   "apexAngle": 145.6415,
+   "baseAngle": 130.744,
+   "occurrence": 6496887336
+  },
+  {
+   "aspect": 1.127,
+   "widest": 0.6583,
+   "lobeDepth": 0.2322,
+   "circularity": 0.6938,
+   "apexAngle": 144.2185,
+   "baseAngle": 136.3842,
+   "occurrence": 6496887336
+  },
+  {
+   "aspect": 1.0802,
+   "widest": 0.3583,
+   "lobeDepth": 0.1069,
+   "circularity": 0.744,
+   "apexAngle": 136.7655,
+   "baseAngle": 144.6848,
+   "occurrence": 6496887336
+  },
+  {
+   "aspect": 1.1073,
+   "widest": 0.7583,
+   "lobeDepth": 0.1769,
+   "circularity": 0.706,
+   "apexAngle": 143.3466,
+   "baseAngle": 136.4354,
+   "occurrence": 6496887336
+  },
+  {
+   "aspect": 1.141,
+   "widest": 0.5417,
+   "lobeDepth": 0.3946,
+   "circularity": 0.5923,
+   "apexAngle": 137.9257,
+   "baseAngle": 137.4499,
+   "occurrence": 6490874322
+  },
+  {
+   "aspect": 1.179,
+   "widest": 0.5917,
+   "lobeDepth": 0.3361,
+   "circularity": 0.6797,
+   "apexAngle": 135.0943,
+   "baseAngle": 132.2238,
+   "occurrence": 6490874322
+  },
+  {
+   "aspect": 2.102,
+   "widest": 0.4583,
+   "lobeDepth": 0.2683,
+   "circularity": 0.4911,
+   "apexAngle": 133.2797,
+   "baseAngle": 132.3133,
+   "occurrence": 6490884273
+  },
+  {
+   "aspect": 3.6207,
+   "widest": 0.4417,
+   "lobeDepth": 0.4956,
+   "circularity": 0.4315,
+   "apexAngle": 104.6624,
+   "baseAngle": 79.3,
+   "occurrence": 4976702437
+  },
+  {
+   "aspect": 1.7967,
+   "widest": 0.3083,
+   "lobeDepth": 0.8282,
+   "circularity": 0.5999,
+   "apexAngle": 120.945,
+   "baseAngle": 91.9134,
+   "occurrence": 4976702437
+  },
+  {
+   "aspect": 1.338,
+   "widest": 0.375,
+   "lobeDepth": 0.9974,
+   "circularity": 0.4448,
+   "apexAngle": 116.3295,
+   "baseAngle": 90.2629,
+   "occurrence": 4924450667
+  }
+ ]
+}
