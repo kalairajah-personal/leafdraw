@@ -1,142 +1,34 @@
 [
  {
   "species": "ulmus-americana",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 1.0,
-  "recognised": 1.0,
-  "guess": "Ulmus minor"
- },
- {
-  "species": "fagus-grandifolia",
-  "style": "photo",
+  "style": "color",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Cordia myxa"
- },
- {
-  "species": "betula-papyrifera",
-  "style": "photo",
-  "top1": 0.3333333333333333,
-  "top5": 0.3333333333333333,
-  "genus1": 0.3333333333333333,
-  "recognised": 1.0,
-  "guess": "Broussonetia papyrifera"
- },
- {
-  "species": "castanea-dentata",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.6666666666666666,
-  "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Ailanthus excelsa"
- },
- {
-  "species": "populus-deltoides",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Sida fallax"
- },
- {
-  "species": "tilia-americana",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Broussonetia papyrifera"
- },
- {
-  "species": "liriodendron-tulipifera",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 1.0,
-  "genus1": 1.0,
-  "recognised": 1.0,
-  "guess": "Liriodendron chinense"
- },
- {
-  "species": "quercus-alba",
-  "style": "photo",
-  "top1": 1.0,
-  "top5": 1.0,
-  "genus1": 1.0,
-  "recognised": 1.0,
-  "guess": "Quercus alba"
- },
- {
-  "species": "quercus-rubra",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 1.0,
-  "genus1": 1.0,
-  "recognised": 1.0,
-  "guess": "Quercus palustris"
- },
- {
-  "species": "raphanus-raphanistrum",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Quercus lobata"
- },
- {
-  "species": "taraxacum-officinale",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.0,
-  "recognised": 0.3333333333333333,
-  "guess": "Adenia cissampeloides"
- },
- {
-  "species": "achillea-millefolium",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Quercus frainetto"
- },
- {
-  "species": "monstera-deliciosa",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.3333333333333333,
-  "genus1": 0.0,
-  "recognised": 0.3333333333333333,
+  "recognised": 0.0,
   "guess": null
  },
  {
-  "species": "magnolia-grandiflora",
-  "style": "photo",
+  "species": "fagus-grandifolia",
+  "style": "color",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Pongamia pinnata"
+  "recognised": 0.0,
+  "guess": null
+ },
+ {
+  "species": "tilia-americana",
+  "style": "color",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 0.0,
+  "guess": null
  },
  {
   "species": "prunus-serotina",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Broussonetia papyrifera"
- },
- {
-  "species": "salix-babylonica",
-  "style": "photo",
+  "style": "color",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
@@ -145,70 +37,7 @@
  },
  {
   "species": "cornus-florida",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Millettia laurentii"
- },
- {
-  "species": "eucalyptus-globulus",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Apocynum cannabinum"
- },
- {
-  "species": "cinnamomum-camphora",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Hoya latifolia"
- },
- {
-  "species": "ilex-aquifolium",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.0,
-  "recognised": 0.6666666666666666,
-  "guess": null
- },
- {
-  "species": "chenopodium-album",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Populus tremula"
- },
- {
-  "species": "bellis-perennis",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Verbascum blattaria"
- },
- {
-  "species": "ipomoea-pandurata",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Anamirta cocculus"
- },
- {
-  "species": "rumex-acetosella",
-  "style": "photo",
+  "style": "color",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
@@ -216,35 +45,17 @@
   "guess": null
  },
  {
-  "species": "rosmarinus-officinalis",
-  "style": "photo",
+  "species": "ilex-aquifolium",
+  "style": "color",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Plantago argentea"
- },
- {
-  "species": "cercis-canadensis",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.3333333333333333,
-  "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Jatropha curcas"
- },
- {
-  "species": "asarum-canadense",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Cynanchum laeve"
+  "recognised": 0.0,
+  "guess": null
  },
  {
   "species": "acer-rubrum",
-  "style": "photo",
+  "style": "color",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 1.0,
@@ -252,299 +63,48 @@
   "guess": "Acer pseudoplatanus"
  },
  {
-  "species": "acer-saccharum",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.6666666666666666,
-  "recognised": 1.0,
-  "guess": "Carica papaya"
- },
- {
   "species": "acer-palmatum",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.0,
+  "style": "color",
+  "top1": 1.0,
+  "top5": 1.0,
+  "genus1": 1.0,
   "recognised": 1.0,
-  "guess": "Dombeya acutangula"
- },
- {
-  "species": "liquidambar-styraciflua",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Laburnum anagyroides"
+  "guess": "Acer palmatum"
  },
  {
   "species": "platanus-occidentalis",
-  "style": "photo",
+  "style": "color",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Kosteletzkya adoensis"
+  "recognised": 0.0,
+  "guess": null
  },
  {
   "species": "hedera-helix",
-  "style": "photo",
+  "style": "color",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
   "recognised": 1.0,
-  "guess": "Passiflora lutea"
- },
- {
-  "species": "nelumbo-nucifera",
-  "style": "photo",
-  "top1": 1.0,
-  "top5": 1.0,
-  "genus1": 1.0,
-  "recognised": 1.0,
-  "guess": "Nelumbo nucifera"
- },
- {
-  "species": "tropaeolum-majus",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Stephania japonica"
- },
- {
-  "species": "helleborus-foetidus",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Ceiba pentandra"
+  "guess": "Liriodendron chinense"
  },
  {
   "species": "ginkgo-biloba",
-  "style": "photo",
+  "style": "color",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Bupleurum rigidum"
- },
- {
-  "species": "zea-mays",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Equisetum fluviatile"
- },
- {
-  "species": "iris-germanica",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.0,
-  "recognised": 0.6666666666666666,
-  "guess": "Calyptrocarya poeppigiana"
- },
- {
-  "species": "clivia-miniata",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Equisetum fluviatile"
- },
- {
-  "species": "musa-acuminata",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Nerium oleander"
- },
- {
-  "species": "sagittaria-latifolia",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Schnella splendens"
- },
- {
-  "species": "veratrum-viride",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Bupleurum rigidum"
- },
- {
-  "species": "uvularia-perfoliata",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Cinnamomum verum"
- },
- {
-  "species": "allium-schoenoprasum",
-  "error": "Command '['node', '/home/runner/work/leafdraw/leafdraw/cli/leafdraw.js', '-s', 'allium-schoenoprasum', '--seed', '2', '--style', 'photo', '--detail', 'medium', '-f', 'png', '--width', '1200', '-o', '/tmp/tmpuitl8zx0/2.png']' died with <Signals.SIGABRT: 6>."
- },
- {
-  "species": "pinus-strobus",
-  "error": "Command '['node', '/home/runner/work/leafdraw/leafdraw/cli/leafdraw.js', '-s', 'pinus-strobus', '--seed', '1', '--style', 'photo', '--detail', 'medium', '-f', 'png', '--width', '1200', '-o', '/tmp/tmps5qer2yd/1.png']' died with <Signals.SIGABRT: 6>."
- },
- {
-  "species": "thuja-occidentalis",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Stryphnodendron roseiflorum"
+  "recognised": 0.0,
+  "guess": null
  },
  {
   "species": "fraxinus-americana",
-  "style": "photo",
+  "style": "color",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
   "recognised": 1.0,
-  "guess": "Millettia laurentii"
- },
- {
-  "species": "juglans-nigra",
-  "style": "photo",
-  "top1": 1.0,
-  "top5": 1.0,
-  "genus1": 1.0,
-  "recognised": 1.0,
-  "guess": "Juglans nigra"
- },
- {
-  "species": "gleditsia-triacanthos",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Pteridium caudatum"
- },
- {
-  "species": "albizia-julibrissin",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.0,
-  "recognised": 0.3333333333333333,
-  "guess": "Gymnosphaera poolii"
- },
- {
-  "species": "aesculus-hippocastanum",
-  "style": "photo",
-  "top1": 1.0,
-  "top5": 1.0,
-  "genus1": 1.0,
-  "recognised": 1.0,
-  "guess": "Aesculus hippocastanum"
- },
- {
-  "species": "trifolium-repens",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Dracaena bacularis"
- },
- {
-  "species": "oxalis-stricta",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.6666666666666666,
-  "recognised": 1.0,
-  "guess": "Oxalis latifolia"
- },
- {
-  "species": "toxicodendron-radicans",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Laburnum alpinum"
- },
- {
-  "species": "citrus-sinensis",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Artocarpus heterophyllus"
- },
- {
-  "species": "hymenaea-courbaril",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Erythrina crista-galli"
- },
- {
-  "species": "cocos-nucifera",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Megaphrynium macrostachyum"
- },
- {
-  "species": "bauhinia-variegata",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.3333333333333333,
-  "recognised": 1.0,
-  "guess": "Tropaeolum majus"
- },
- {
-  "species": "polystichum-acrostichoides",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Acacia dealbata"
- },
- {
-  "species": "athyrium-filix-femina",
-  "style": "photo",
-  "top1": 1.0,
-  "top5": 1.0,
-  "genus1": 1.0,
-  "recognised": 1.0,
-  "guess": "Athyrium filix-femina"
- },
- {
-  "species": "pteridium-aquilinum",
-  "style": "photo",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Athyrium filix-femina"
+  "guess": "Wisteria frutescens"
  }
 ]

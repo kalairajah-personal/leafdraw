@@ -1,0 +1,110 @@
+[
+ {
+  "species": "ulmus-americana",
+  "style": "color",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 0.0,
+  "guess": null
+ },
+ {
+  "species": "fagus-grandifolia",
+  "style": "color",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 0.0,
+  "guess": null
+ },
+ {
+  "species": "tilia-americana",
+  "style": "color",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 0.0,
+  "guess": null
+ },
+ {
+  "species": "prunus-serotina",
+  "style": "color",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 0.0,
+  "guess": null
+ },
+ {
+  "species": "cornus-florida",
+  "style": "color",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 0.0,
+  "guess": null
+ },
+ {
+  "species": "ilex-aquifolium",
+  "style": "color",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 0.0,
+  "guess": null
+ },
+ {
+  "species": "acer-rubrum",
+  "style": "color",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 1.0,
+  "recognised": 1.0,
+  "guess": "Acer pseudoplatanus"
+ },
+ {
+  "species": "acer-palmatum",
+  "style": "color",
+  "top1": 1.0,
+  "top5": 1.0,
+  "genus1": 1.0,
+  "recognised": 1.0,
+  "guess": "Acer palmatum"
+ },
+ {
+  "species": "platanus-occidentalis",
+  "style": "color",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 0.0,
+  "guess": null
+ },
+ {
+  "species": "hedera-helix",
+  "style": "color",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Liriodendron chinense"
+ },
+ {
+  "species": "ginkgo-biloba",
+  "style": "color",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 0.0,
+  "guess": null
+ },
+ {
+  "species": "fraxinus-americana",
+  "style": "color",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Wisteria frutescens"
+ }
+]
