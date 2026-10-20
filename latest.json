@@ -2,51 +2,57 @@
  {
   "species": "ulmus-americana",
   "style": "scan",
-  "top1": 0.0,
-  "top5": 0.0,
-  "genus1": 1.0,
-  "recognised": 1.0,
-  "guess": "Ulmus macrocarpa"
- },
- {
-  "species": "fagus-grandifolia",
-  "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Ailanthus excelsa"
- },
- {
-  "species": "betula-papyrifera",
-  "style": "scan",
-  "top1": 0.5,
-  "top5": 0.5,
-  "genus1": 0.5,
   "recognised": 1.0,
   "guess": "Betula papyrifera"
  },
  {
-  "species": "castanea-dentata",
+  "species": "fagus-grandifolia",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
-  "top5": 0.5,
+  "top5": 0.0,
   "genus1": 0.0,
   "recognised": 1.0,
-  "guess": "Zelkova serrata"
+  "guess": "Cordia myxa"
+ },
+ {
+  "species": "betula-papyrifera",
+  "style": "scan",
+  "frame": "blade",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Broussonetia papyrifera"
+ },
+ {
+  "species": "castanea-dentata",
+  "style": "scan",
+  "frame": "blade",
+  "top1": 0.0,
+  "top5": 1.0,
+  "genus1": 1.0,
+  "recognised": 1.0,
+  "guess": "Castanea sativa"
  },
  {
   "species": "populus-deltoides",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
-  "top5": 0.5,
+  "top5": 1.0,
   "genus1": 0.0,
   "recognised": 1.0,
-  "guess": "Diplazium esculentum"
+  "guess": "Fatoua villosa"
  },
  {
   "species": "tilia-americana",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
@@ -56,15 +62,17 @@
  {
   "species": "liriodendron-tulipifera",
   "style": "scan",
-  "top1": 0.0,
+  "frame": "blade",
+  "top1": 1.0,
   "top5": 1.0,
   "genus1": 1.0,
   "recognised": 1.0,
-  "guess": "Liriodendron chinense"
+  "guess": "Liriodendron tulipifera"
  },
  {
   "species": "quercus-alba",
   "style": "scan",
+  "frame": "blade",
   "top1": 1.0,
   "top5": 1.0,
   "genus1": 1.0,
@@ -74,6 +82,7 @@
  {
   "species": "quercus-rubra",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 1.0,
   "genus1": 1.0,
@@ -83,15 +92,17 @@
  {
   "species": "raphanus-raphanistrum",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
   "recognised": 1.0,
-  "guess": "Quercus petraea"
+  "guess": "Erucastrum gallicum"
  },
  {
   "species": "taraxacum-officinale",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
@@ -101,24 +112,27 @@
  {
   "species": "achillea-millefolium",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
-  "recognised": 0.5,
+  "recognised": 1.0,
   "guess": "Quercus frainetto"
  },
  {
   "species": "monstera-deliciosa",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
-  "top5": 0.5,
+  "top5": 0.0,
   "genus1": 0.0,
-  "recognised": 1.0,
-  "guess": "Adenia cissampeloides"
+  "recognised": 0.0,
+  "guess": null
  },
  {
   "species": "magnolia-grandiflora",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
@@ -128,6 +142,7 @@
  {
   "species": "prunus-serotina",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
@@ -137,6 +152,7 @@
  {
   "species": "salix-babylonica",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
@@ -146,15 +162,17 @@
  {
   "species": "cornus-florida",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
-  "recognised": 0.5,
+  "recognised": 0.0,
   "guess": null
  },
  {
   "species": "eucalyptus-globulus",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
@@ -164,51 +182,57 @@
  {
   "species": "cinnamomum-camphora",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
-  "genus1": 0.0,
+  "genus1": 1.0,
   "recognised": 1.0,
-  "guess": "Prestonia quinquangularis"
+  "guess": "Cinnamomum verum"
  },
  {
   "species": "ilex-aquifolium",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
-  "recognised": 0.5,
+  "recognised": 0.0,
   "guess": null
  },
  {
   "species": "chenopodium-album",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
-  "top5": 0.0,
+  "top5": 1.0,
   "genus1": 0.0,
   "recognised": 1.0,
-  "guess": "Populus deltoides"
+  "guess": "Populus tremula"
  },
  {
   "species": "bellis-perennis",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
   "recognised": 1.0,
-  "guess": "Zelkova serrata"
+  "guess": "Scutellaria columnae"
  },
  {
   "species": "ipomoea-pandurata",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
   "recognised": 1.0,
-  "guess": "Cynanchum laeve"
+  "guess": "Ficus religiosa"
  },
  {
   "species": "rumex-acetosella",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
@@ -218,24 +242,27 @@
  {
   "species": "rosmarinus-officinalis",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
   "recognised": 1.0,
-  "guess": "Leontodon hispidus"
+  "guess": "Genista sagittalis"
  },
  {
   "species": "cercis-canadensis",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
-  "top5": 0.0,
+  "top5": 1.0,
   "genus1": 0.0,
   "recognised": 1.0,
-  "guess": "Cynanchum laeve"
+  "guess": "Jatropha curcas"
  },
  {
   "species": "asarum-canadense",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
@@ -245,6 +272,7 @@
  {
   "species": "acer-rubrum",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 1.0,
@@ -254,24 +282,27 @@
  {
   "species": "acer-saccharum",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
-  "genus1": 1.0,
+  "genus1": 0.0,
   "recognised": 1.0,
-  "guess": "Acer monspessulanum"
+  "guess": "Passiflora lutea"
  },
  {
   "species": "acer-palmatum",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
-  "top5": 1.0,
+  "top5": 0.0,
   "genus1": 0.0,
   "recognised": 1.0,
-  "guess": "Ricinus communis"
+  "guess": "Dombeya acutangula"
  },
  {
   "species": "liquidambar-styraciflua",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
@@ -281,15 +312,17 @@
  {
   "species": "platanus-occidentalis",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
   "recognised": 1.0,
-  "guess": "Acer pseudoplatanus"
+  "guess": "Ficus carica"
  },
  {
   "species": "hedera-helix",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
@@ -299,6 +332,7 @@
  {
   "species": "nelumbo-nucifera",
   "style": "scan",
+  "frame": "blade",
   "top1": 1.0,
   "top5": 1.0,
   "genus1": 1.0,
@@ -308,8 +342,9 @@
  {
   "species": "tropaeolum-majus",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
-  "top5": 0.5,
+  "top5": 0.0,
   "genus1": 0.0,
   "recognised": 1.0,
   "guess": "Stephania japonica"
@@ -317,6 +352,7 @@
  {
   "species": "helleborus-foetidus",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
@@ -326,6 +362,7 @@
  {
   "species": "ginkgo-biloba",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
@@ -335,33 +372,37 @@
  {
   "species": "zea-mays",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
   "recognised": 1.0,
-  "guess": "Hordeum vulgare"
+  "guess": "Acorus calamus"
  },
  {
   "species": "iris-germanica",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
-  "recognised": 0.5,
-  "guess": "Equisetum fluviatile"
+  "recognised": 1.0,
+  "guess": "Dracaena zebra"
  },
  {
   "species": "clivia-miniata",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
-  "recognised": 0.5,
-  "guess": "Perebea guianensis"
+  "recognised": 1.0,
+  "guess": "Equisetum fluviatile"
  },
  {
   "species": "musa-acuminata",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
@@ -371,15 +412,17 @@
  {
   "species": "sagittaria-latifolia",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
-  "recognised": 0.5,
-  "guess": "Manihot carthagenensis"
+  "recognised": 1.0,
+  "guess": "Phanera championii"
  },
  {
   "species": "veratrum-viride",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
@@ -389,6 +432,7 @@
  {
   "species": "uvularia-perfoliata",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
@@ -398,42 +442,47 @@
  {
   "species": "allium-schoenoprasum",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
   "recognised": 1.0,
-  "guess": "Nerium oleander"
+  "guess": "Eleocharis dulcis"
  },
  {
   "species": "pinus-strobus",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
   "recognised": 1.0,
-  "guess": "Euphorbia stapfii"
+  "guess": "Juniperus oxycedrus"
  },
  {
   "species": "thuja-occidentalis",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
   "recognised": 1.0,
-  "guess": "Asplenium poolii"
+  "guess": "Stryphnodendron roseiflorum"
  },
  {
   "species": "fraxinus-americana",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
   "recognised": 1.0,
-  "guess": "Burmeistera utleyi"
+  "guess": "Cedrela odorata"
  },
  {
   "species": "juglans-nigra",
   "style": "scan",
+  "frame": "blade",
   "top1": 1.0,
   "top5": 1.0,
   "genus1": 1.0,
@@ -443,24 +492,27 @@
  {
   "species": "gleditsia-triacanthos",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
   "recognised": 1.0,
-  "guess": "Eysenhardtia texana"
+  "guess": "Gymnosphaera poolii"
  },
  {
   "species": "albizia-julibrissin",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
   "recognised": 1.0,
-  "guess": "Athyrium filix-femina"
+  "guess": "Gymnosphaera poolii"
  },
  {
   "species": "aesculus-hippocastanum",
   "style": "scan",
+  "frame": "blade",
   "top1": 1.0,
   "top5": 1.0,
   "genus1": 1.0,
@@ -470,53 +522,59 @@
  {
   "species": "trifolium-repens",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
   "recognised": 1.0,
-  "guess": "Dracaena bacularis"
+  "guess": "Caryocar coriaceum"
  },
  {
   "species": "oxalis-stricta",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
   "recognised": 1.0,
-  "guess": "Millettia laurentii"
+  "guess": "Broussonetia papyrifera"
  },
  {
   "species": "toxicodendron-radicans",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
   "recognised": 1.0,
-  "guess": "Laburnum anagyroides"
+  "guess": "Pongamia pinnata"
  },
  {
   "species": "citrus-sinensis",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
   "recognised": 1.0,
-  "guess": "Artocarpus heterophyllus"
+  "guess": "Prunus padus"
  },
  {
   "species": "hymenaea-courbaril",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
   "recognised": 1.0,
-  "guess": "Leptadenia madagascariensis"
+  "guess": "Erythrina crista-galli"
  },
  {
   "species": "cocos-nucifera",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
-  "top5": 0.5,
+  "top5": 0.0,
   "genus1": 0.0,
   "recognised": 1.0,
   "guess": "Megaphrynium macrostachyum"
@@ -524,24 +582,27 @@
  {
   "species": "bauhinia-variegata",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
-  "genus1": 0.5,
+  "genus1": 1.0,
   "recognised": 1.0,
-  "guess": "Cercis siliquastrum"
+  "guess": "Bauhinia monandra"
  },
  {
   "species": "polystichum-acrostichoides",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
   "recognised": 1.0,
-  "guess": "Acacia dealbata"
+  "guess": "Ptilostemon casabonae"
  },
  {
   "species": "athyrium-filix-femina",
   "style": "scan",
+  "frame": "blade",
   "top1": 1.0,
   "top5": 1.0,
   "genus1": 1.0,
@@ -551,10 +612,11 @@
  {
   "species": "pteridium-aquilinum",
   "style": "scan",
+  "frame": "blade",
   "top1": 0.0,
   "top5": 0.0,
   "genus1": 0.0,
   "recognised": 1.0,
-  "guess": "Athyrium filix-femina"
+  "guess": "Rugoloa pilosa"
  }
 ]
