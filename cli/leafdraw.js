@@ -36,7 +36,7 @@ DRAWING
 
 OUTPUT
   -f, --format svg|anim|json|gcode|hpgl|png   (default svg)
-      --style line|hatch|stipple|color|botanical|cleared|silhouette|venation|photo
+      --style line|hatch|stipple|color|botanical|cleared|silhouette|venation|photo|scan
       --season summer|fall|spring|dried
       --labels                     name, family, seed and scale bar
       --order illustrator|growth|plotter      pen order (anim, plotter)

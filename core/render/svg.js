@@ -18,14 +18,16 @@ const STYLES = {
   silhouette: { bg: '#ffffff', ink: '#1d1d1b', fill: '#1d1d1b', silhouette: true },
   venation: { bg: '#ffffff', ink: '#1d1d1b', fill: 'none', outline: '#b8b8b0' },
   // Photo-like specimen scan: lamina texture, relief lighting, soft veins, drop shadow (for image-ID scoring and realism).
-  photo: { color: true, photo: true },
+  photo: { color: true, photo: true, relief: 1, veins: 1, bg: '#f1f0ea' },
+  // Variant tuned for image identification: white scan bed, flatter relief, stronger venation.
+  scan: { color: true, photo: true, relief: 0.35, veins: 1.6, bg: '#ffffff' },
 };
 // Vein visibility in photo style (real leaves show minor veins faintly).
 const PHOTO_ALPHA = { v1: 0.9, v2: 0.7, v3: 0.38, v4: 0.2, v5: 0.14, hair: 0.5, shade: 0.4, 'shade-light': 0.3, outline: 0.55, hole: 0.55 };
 
-function photoFilter(size, seed) {
+function photoFilter(size, seed, W, H, S) {
   const f = (110 / size).toFixed(4), f2 = (9 / size).toFixed(4), blur = (size * 0.012).toFixed(3), sh = (size * 0.012).toFixed(3);
-  return `<defs><filter id="ld-photo" x="-8%" y="-8%" width="116%" height="116%" color-interpolation-filters="sRGB">`
+  return `<defs><filter id="ld-photo" filterUnits="userSpaceOnUse" x="0" y="0" width="${W.toFixed(2)}" height="${H.toFixed(2)}" color-interpolation-filters="sRGB">`
     + `<feTurbulence type="fractalNoise" baseFrequency="${f}" numOctaves="4" seed="${seed % 997}" result="n"/>`
     + `<feTurbulence type="fractalNoise" baseFrequency="${f2}" numOctaves="2" seed="${(seed * 7) % 991}" result="n2"/>`
     + `<feComposite in="n" in2="n2" operator="arithmetic" k1="0" k2="0.7" k3="0.3" k4="0" result="nn"/>`
@@ -34,7 +36,7 @@ function photoFilter(size, seed) {
     + `<feComposite in="g" in2="SourceGraphic" operator="in" result="gm"/>`
     + `<feBlend in="SourceGraphic" in2="gm" mode="overlay" result="tex"/>`
     + `<feGaussianBlur in="SourceAlpha" stdDeviation="${blur}" result="b"/>`
-    + `<feDiffuseLighting in="b" surfaceScale="${(size * 0.04).toFixed(2)}" diffuseConstant="1" lighting-color="#ffffff" result="l"><feDistantLight azimuth="235" elevation="58"/></feDiffuseLighting>`
+    + `<feDiffuseLighting in="b" surfaceScale="${(size * 0.04 * (S.relief ?? 1)).toFixed(2)}" diffuseConstant="1" lighting-color="#ffffff" result="l"><feDistantLight azimuth="235" elevation="58"/></feDiffuseLighting>`
     + `<feComposite in="tex" in2="l" operator="arithmetic" k1="1.18" k2="0" k3="0" k4="0" result="lit"/>`
     + `<feComposite in="lit" in2="SourceAlpha" operator="in" result="leaf"/>`
     + `<feDropShadow in="leaf" dx="${sh}" dy="${sh}" stdDeviation="${(size * 0.01).toFixed(3)}" flood-color="#000" flood-opacity="0.22"/>`
@@ -58,7 +60,7 @@ export function renderSVG(scene, opts = {}) {
   const d = (pts, closed) => 'M' + pts.map((p) => X(p[0]) + ' ' + Y(p[1])).join('L') + (closed ? 'Z' : '');
   const strokeScale = opts.strokeScale || 1;
   const baseW = (ref) => Math.max((ref || size) * 0.0068, size * 0.0011, 0.04) * strokeScale;
-  const bg = opts.background ?? (S.photo ? '#f1f0ea' : S.color ? '#ffffff' : S.bg);
+  const bg = opts.background ?? (S.photo ? S.bg : S.color ? '#ffffff' : S.bg);
   const anim = opts.animate || null;
   const rng = makeRng(scene.meta.seed || 1, 'render');
 
@@ -67,7 +69,7 @@ export function renderSVG(scene, opts = {}) {
   out.push(`<title>${esc(scene.meta.name)}${scene.meta.common?.[0] ? ' — ' + esc(scene.meta.common[0]) : ''} (seed ${scene.meta.seed})</title>`);
   if (anim) out.push(animStyle(anim));
   if (bg && bg !== 'none') out.push(`<rect width="100%" height="100%" fill="${bg}"/>`);
-  if (S.photo) out.push(photoFilter(size, scene.meta.seed || 1));
+  if (S.photo) out.push(photoFilter(size, scene.meta.seed || 1, W, H, S));
 
   const fillColor = S.color ? pal.blade : S.fill;
   const colorFor = (role) => {
@@ -115,7 +117,7 @@ export function renderSVG(scene, opts = {}) {
     if (!col) return [];
     const w = baseW(p.ref) * (ROLE_W[p.role] ?? 0.3) * (p.wscale || 1);
     if (p.role === 'sorus') return [`<path d="${d(p.pts, true)}" fill="${col}" stroke="none"${a ? fadeAttr(a) : ''}/>`];
-    const op = S.photo && PHOTO_ALPHA[p.role] != null ? ` stroke-opacity="${PHOTO_ALPHA[p.role]}"` : '';
+    const op = S.photo && PHOTO_ALPHA[p.role] != null ? ` stroke-opacity="${Math.min(1, PHOTO_ALPHA[p.role] * (/^v/.test(p.role) ? S.veins : 1)).toFixed(2)}"` : '';
     if (TAPER.has(p.role) && !a && p.pts.length > 6 && opts.taper !== false) {
       const k = 4, n = p.pts.length, o = [];
       for (let j = 0; j < k; j++) {

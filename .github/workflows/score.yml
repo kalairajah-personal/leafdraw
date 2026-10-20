@@ -48,7 +48,8 @@ jobs:
           git config user.name "github-actions"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           if git fetch -q origin scores; then git checkout -q -B scores origin/scores; else git checkout -q --orphan scores; git rm -rfq --cached .; fi
           mkdir -p runs && cp "/tmp/$name" runs/ && cp "/tmp/$name" latest.json
-          git add runs latest.json && git commit -qm "score: $name" && git push -q origin HEAD:scores
+          git add runs latest.json && git commit -qm "score: $name"
+          for i in 1 2 3 4 5; do git push -q origin HEAD:scores && break; git pull -q --rebase -X theirs origin scores || true; sleep 5; done
       - uses: actions/upload-artifact@v4
         if: always()
         with: { name: plantnet-score, path: 'score.*', if-no-files-found: ignore }
