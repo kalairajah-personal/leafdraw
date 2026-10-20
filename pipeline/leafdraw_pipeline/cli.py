@@ -87,7 +87,8 @@ def main(argv=None):
             json.dump(rows, open(a.out, "w"), indent=1)
         ok = [r for r in rows if "top1" in r]
         if ok:
-            print(f"top-1 {sum(r['top1'] for r in ok) / len(ok):.0%} · top-5 {sum(r['top5'] for r in ok) / len(ok):.0%} over {len(ok)} species")
+            avg = lambda k: sum(r[k] for r in ok) / len(ok)
+            print(f"recognised as a plant {avg('recognised'):.0%} · top-1 {avg('top1'):.0%} · top-5 {avg('top5'):.0%} · genus top-1 {avg('genus1'):.0%} over {len(ok)} species")
 
 
 if __name__ == "__main__":
