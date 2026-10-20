@@ -1,0 +1,61 @@
+{
+  "id": "acer-saccharum",
+  "name": "Acer saccharum",
+  "common": [
+    "Sugar maple"
+  ],
+  "family": "Sapindaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "shape": "palmate",
+    "lobation": "palmatipartite",
+    "apex": "acuminate",
+    "base": "cordate",
+    "margin": "entire",
+    "secondary": "craspedodromous",
+    "tertiary": "reticulate",
+    "areoles": "moderate",
+    "phyllotaxis": "opposite"
+  },
+  "params": {
+    "length": [
+      110,
+      15
+    ],
+    "lobeCount": 5,
+    "lobeDepth": [
+      0.56,
+      0.06
+    ],
+    "lobeSpread": [
+      105,
+      8
+    ],
+    "lobeDecay": [
+      0.55,
+      0.05
+    ],
+    "lobeTips": "acuminate",
+    "sinus": "U",
+    "baseDepth": [
+      0.1,
+      0.02
+    ],
+    "petiole": [
+      0.7,
+      0.08
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#4f8a34"
+    },
+    "fall": {
+      "blade": "#e0702a"
+    }
+  }
+}

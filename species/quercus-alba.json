@@ -1,0 +1,60 @@
+{
+  "id": "quercus-alba",
+  "name": "Quercus alba",
+  "common": [
+    "White oak"
+  ],
+  "family": "Fagaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "shape": "obovate",
+    "lobation": "pinnatipartite",
+    "apex": "rounded",
+    "base": "cuneate",
+    "margin": "entire",
+    "secondary": "craspedodromous",
+    "tertiary": "reticulate",
+    "areoles": "moderate",
+    "phyllotaxis": "alternate"
+  },
+  "params": {
+    "length": [
+      150,
+      20
+    ],
+    "aspect": [
+      1.9,
+      0.15
+    ],
+    "widest": [
+      0.62,
+      0.03
+    ],
+    "lobeCount": [
+      4,
+      0.4
+    ],
+    "lobeDepth": [
+      0.62,
+      0.08
+    ],
+    "lobeShape": "rounded",
+    "sinus": "U",
+    "petiole": [
+      0.08,
+      0.02
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#4a7a32"
+    },
+    "fall": {
+      "blade": "#8e3d1f"
+    }
+  }
+}

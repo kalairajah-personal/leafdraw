@@ -1,0 +1,48 @@
+{
+  "id": "ginkgo-biloba",
+  "name": "Ginkgo biloba",
+  "common": [
+    "Ginkgo",
+    "Maidenhair tree"
+  ],
+  "family": "Ginkgoaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "plantGroup": "ginkgo",
+    "shape": "flabellate",
+    "apex": "emarginate",
+    "margin": "entire",
+    "primary": "dichotomous",
+    "phyllotaxis": "fascicled"
+  },
+  "params": {
+    "length": [
+      60,
+      8
+    ],
+    "spread": [
+      72,
+      6
+    ],
+    "apexNotch": [
+      0.16,
+      0.04
+    ],
+    "petiole": [
+      0.8,
+      0.1
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#6a9a3a"
+    },
+    "fall": {
+      "blade": "#e0b52a"
+    }
+  }
+}

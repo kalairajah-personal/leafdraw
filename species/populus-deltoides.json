@@ -1,0 +1,63 @@
+{
+  "id": "populus-deltoides",
+  "name": "Populus deltoides",
+  "common": [
+    "Eastern cottonwood"
+  ],
+  "family": "Salicaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "shape": "deltoid",
+    "apex": "acuminate",
+    "base": "truncate",
+    "margin": "crenate",
+    "secondary": "craspedodromous",
+    "tertiary": "mixed-percurrent",
+    "areoles": "moderate",
+    "phyllotaxis": "alternate"
+  },
+  "params": {
+    "length": [
+      90,
+      12
+    ],
+    "aspect": [
+      1.05,
+      0.06
+    ],
+    "widest": [
+      0.12,
+      0.02
+    ],
+    "toothSpacing": [
+      5,
+      0.5
+    ],
+    "toothHeight": [
+      1.4,
+      0.2
+    ],
+    "secCount": [
+      9,
+      1
+    ],
+    "secAngleBase": 58,
+    "secAngleApex": 42,
+    "petiole": [
+      0.6,
+      0.08
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#5a8a34"
+    },
+    "fall": {
+      "blade": "#e2c13f"
+    }
+  }
+}

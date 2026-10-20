@@ -1,0 +1,44 @@
+{
+  "id": "nelumbo-nucifera",
+  "name": "Nelumbo nucifera",
+  "common": [
+    "Sacred lotus"
+  ],
+  "family": "Nelumbonaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "shape": "orbicular",
+    "attachment": "peltate",
+    "apex": "rounded",
+    "margin": "entire",
+    "form3d": "undulate",
+    "primary": "actinodromous",
+    "secondary": "cladodromous",
+    "tertiary": "reticulate",
+    "areoles": "moderate",
+    "phyllotaxis": "alternate"
+  },
+  "params": {
+    "length": [
+      400,
+      60
+    ],
+    "primaryCount": [
+      19,
+      2
+    ],
+    "peltOffset": 0.02
+  },
+  "palette": {
+    "summer": {
+      "blade": "#5f8a55"
+    },
+    "fall": {
+      "blade": "#8a7a45"
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "acer-rubrum",
+  "name": "Acer rubrum",
+  "common": [
+    "Red maple"
+  ],
+  "family": "Sapindaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "shape": "palmate",
+    "lobation": "palmatifid",
+    "apex": "acuminate",
+    "base": "truncate",
+    "margin": "serrate",
+    "secondary": "craspedodromous",
+    "tertiary": "reticulate",
+    "areoles": "moderate",
+    "phyllotaxis": "opposite"
+  },
+  "params": {
+    "length": [
+      90,
+      12
+    ],
+    "lobeCount": 5,
+    "lobeDepth": [
+      0.45,
+      0.06
+    ],
+    "lobeSpread": [
+      100,
+      8
+    ],
+    "lobeDecay": [
+      0.62,
+      0.05
+    ],
+    "toothSpacing": [
+      4,
+      0.5
+    ],
+    "toothHeight": [
+      1.3,
+      0.2
+    ],
+    "petiole": [
+      0.6,
+      0.08
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#4f8a34"
+    },
+    "fall": {
+      "blade": "#c4371f"
+    }
+  }
+}

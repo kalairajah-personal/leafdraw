@@ -1,0 +1,47 @@
+{
+  "name": "leafdraw",
+  "version": "0.2.1",
+  "description": "Botanically accurate procedural leaf drawings (fishdraw-style)",
+  "main": "core/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "build": "node build.js"
+  },
+  "keywords": [
+    "botany",
+    "leaf",
+    "procedural",
+    "generative",
+    "svg",
+    "plotter",
+    "fishdraw"
+  ],
+  "author": "Kalai",
+  "license": "MIT",
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "esbuild": "^0.28.2"
+  },
+  "type": "module",
+  "bin": {
+    "leafdraw": "cli/leafdraw.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kalairajah-personal/leafdraw"
+  },
+  "homepage": "https://kalairajah-personal.github.io/leafdraw/",
+  "files": [
+    "core",
+    "cli",
+    "data/species.json",
+    "data/traits.json",
+    "species",
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+}

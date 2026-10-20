@@ -1,0 +1,43 @@
+{
+  "id": "rosmarinus-officinalis",
+  "name": "Salvia rosmarinus",
+  "common": [
+    "Rosemary"
+  ],
+  "family": "Lamiaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "shape": "linear",
+    "apex": "obtuse",
+    "base": "cuneate",
+    "margin": "entire",
+    "folding": "revolute",
+    "secondary": "none",
+    "tertiary": "none",
+    "areoles": "none",
+    "phyllotaxis": "decussate"
+  },
+  "params": {
+    "length": [
+      28,
+      4
+    ],
+    "aspect": [
+      10,
+      1
+    ],
+    "petiole": 0
+  },
+  "palette": {
+    "summer": {
+      "blade": "#3e5f3a"
+    },
+    "fall": {
+      "blade": "#3e5f3a"
+    }
+  }
+}

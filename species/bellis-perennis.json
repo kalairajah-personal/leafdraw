@@ -1,0 +1,57 @@
+{
+  "id": "bellis-perennis",
+  "name": "Bellis perennis",
+  "common": [
+    "Common daisy"
+  ],
+  "family": "Asteraceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "shape": "spatulate",
+    "apex": "rounded",
+    "base": "attenuate",
+    "margin": "crenate",
+    "secondary": "brochidodromous",
+    "tertiary": "reticulate",
+    "areoles": "poor",
+    "phyllotaxis": "rosulate"
+  },
+  "params": {
+    "length": [
+      45,
+      8
+    ],
+    "aspect": [
+      3,
+      0.25
+    ],
+    "widest": [
+      0.82,
+      0.02
+    ],
+    "toothSpacing": [
+      3,
+      0.4
+    ],
+    "toothHeight": [
+      0.7,
+      0.15
+    ],
+    "petiole": [
+      0.05,
+      0.01
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#5b8b3a"
+    },
+    "fall": {
+      "blade": "#8f8a44"
+    }
+  }
+}

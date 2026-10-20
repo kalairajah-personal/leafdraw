@@ -1,0 +1,58 @@
+{
+  "id": "asarum-canadense",
+  "name": "Asarum canadense",
+  "common": [
+    "Canadian wild ginger"
+  ],
+  "family": "Aristolochiaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "shape": "reniform",
+    "apex": "rounded",
+    "base": "cordate",
+    "margin": "entire",
+    "marginMods": [
+      "ciliate"
+    ],
+    "primary": "actinodromous",
+    "secondary": "brochidodromous",
+    "tertiary": "reticulate",
+    "areoles": "moderate",
+    "phyllotaxis": "opposite"
+  },
+  "params": {
+    "length": [
+      80,
+      10
+    ],
+    "aspect": [
+      0.8,
+      0.05
+    ],
+    "primaryCount": 5,
+    "baseDepth": [
+      0.18,
+      0.03
+    ],
+    "hairLength": [
+      0.8,
+      0.1
+    ],
+    "petiole": [
+      1.2,
+      0.15
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#3f6e33"
+    },
+    "fall": {
+      "blade": "#7f7a3a"
+    }
+  }
+}

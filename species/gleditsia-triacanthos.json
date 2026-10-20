@@ -1,0 +1,64 @@
+{
+  "id": "gleditsia-triacanthos",
+  "name": "Gleditsia triacanthos",
+  "common": [
+    "Honey locust"
+  ],
+  "family": "Fabaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "structure": "bipinnate",
+    "phyllotaxis": "alternate"
+  },
+  "params": {
+    "length": [
+      220,
+      25
+    ],
+    "petiole": [
+      0.15,
+      0.02
+    ]
+  },
+  "compound": {
+    "pairs": [
+      9,
+      1
+    ],
+    "pinnaPairs": [
+      5,
+      0.6
+    ],
+    "petiolule": 0.02,
+    "angle": 62,
+    "leaflet": {
+      "traits": {
+        "shape": "oblong",
+        "apex": "rounded",
+        "base": "oblique",
+        "margin": "crenulate",
+        "secondary": "brochidodromous",
+        "tertiary": "none",
+        "areoles": "none"
+      },
+      "params": {
+        "aspect": [
+          2.4,
+          0.2
+        ]
+      }
+    }
+  },
+  "palette": {
+    "summer": {
+      "blade": "#5d8f3a"
+    },
+    "fall": {
+      "blade": "#e2c13c"
+    }
+  }
+}

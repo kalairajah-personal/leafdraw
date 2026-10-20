@@ -1,0 +1,73 @@
+{
+  "id": "tilia-americana",
+  "name": "Tilia americana",
+  "common": [
+    "American basswood",
+    "American linden"
+  ],
+  "family": "Malvaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "shape": "cordate",
+    "apex": "acuminate",
+    "base": "cordate",
+    "symmetry": "asymmetrical",
+    "margin": "serrate",
+    "primary": "actinodromous",
+    "secondary": "craspedodromous",
+    "tertiary": "opposite-percurrent",
+    "areoles": "moderate",
+    "phyllotaxis": "distichous"
+  },
+  "params": {
+    "length": [
+      130,
+      18
+    ],
+    "aspect": [
+      1.15,
+      0.08
+    ],
+    "widest": [
+      0.33,
+      0.03
+    ],
+    "asym": [
+      0.08,
+      0.02
+    ],
+    "toothSpacing": [
+      5.5,
+      0.5
+    ],
+    "toothHeight": [
+      1.6,
+      0.25
+    ],
+    "primaryCount": 3,
+    "secCount": [
+      8,
+      1
+    ],
+    "baseDepth": [
+      0.07,
+      0.015
+    ],
+    "petiole": [
+      0.3,
+      0.05
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#4f8034"
+    },
+    "fall": {
+      "blade": "#d9bc4a"
+    }
+  }
+}

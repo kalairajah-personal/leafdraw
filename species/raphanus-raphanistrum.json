@@ -1,0 +1,66 @@
+{
+  "id": "raphanus-raphanistrum",
+  "name": "Raphanus raphanistrum",
+  "common": [
+    "Wild radish"
+  ],
+  "family": "Brassicaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "shape": "oblanceolate",
+    "lobation": "lyrate",
+    "apex": "obtuse",
+    "base": "attenuate",
+    "margin": "dentate",
+    "secondary": "craspedodromous",
+    "tertiary": "reticulate",
+    "areoles": "poor",
+    "phyllotaxis": "rosulate"
+  },
+  "params": {
+    "length": [
+      150,
+      25
+    ],
+    "aspect": [
+      3.5,
+      0.3
+    ],
+    "widest": [
+      0.75,
+      0.03
+    ],
+    "lobeCount": [
+      4,
+      0.5
+    ],
+    "lobeDepth": [
+      0.78,
+      0.06
+    ],
+    "toothSpacing": [
+      6,
+      1
+    ],
+    "toothHeight": [
+      1.5,
+      0.3
+    ],
+    "petiole": [
+      0.1,
+      0.02
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#5d8a3e"
+    },
+    "fall": {
+      "blade": "#a69243"
+    }
+  }
+}

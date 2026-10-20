@@ -1,0 +1,58 @@
+{
+  "id": "cercis-canadensis",
+  "name": "Cercis canadensis",
+  "common": [
+    "Eastern redbud"
+  ],
+  "family": "Fabaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "shape": "cordate",
+    "apex": "acute",
+    "base": "cordate",
+    "margin": "entire",
+    "primary": "actinodromous",
+    "secondary": "brochidodromous",
+    "tertiary": "reticulate",
+    "areoles": "moderate",
+    "phyllotaxis": "alternate"
+  },
+  "params": {
+    "length": [
+      90,
+      12
+    ],
+    "aspect": [
+      1,
+      0.06
+    ],
+    "widest": [
+      0.38,
+      0.03
+    ],
+    "primaryCount": [
+      5,
+      0.6
+    ],
+    "baseDepth": [
+      0.1,
+      0.02
+    ],
+    "petiole": [
+      0.35,
+      0.05
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#4e8239"
+    },
+    "fall": {
+      "blade": "#d9b84a"
+    }
+  }
+}

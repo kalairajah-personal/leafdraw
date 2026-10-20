@@ -1,0 +1,69 @@
+{
+  "id": "liriodendron-tulipifera",
+  "name": "Liriodendron tulipifera",
+  "common": [
+    "Tulip tree",
+    "Yellow poplar"
+  ],
+  "family": "Magnoliaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "shape": "orbicular",
+    "lobation": "lobed",
+    "apex": "truncate",
+    "base": "truncate",
+    "margin": "entire",
+    "secondary": "craspedodromous",
+    "tertiary": "reticulate",
+    "areoles": "moderate",
+    "phyllotaxis": "alternate"
+  },
+  "params": {
+    "length": [
+      120,
+      15
+    ],
+    "aspect": [
+      0.95,
+      0.05
+    ],
+    "widest": [
+      0.5,
+      0.03
+    ],
+    "flat": 1.6,
+    "lobeCount": 1,
+    "lobeRange": [
+      0,
+      0.62
+    ],
+    "lobeDepth": [
+      0.4,
+      0.05
+    ],
+    "lobeShape": "acute",
+    "sinus": "U",
+    "apexCut": 0.82,
+    "apexNotch": [
+      0.09,
+      0.02
+    ],
+    "baseCut": 0.2,
+    "petiole": [
+      0.6,
+      0.08
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#5a8f35"
+    },
+    "fall": {
+      "blade": "#e2b52f"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "allium-schoenoprasum",
+  "name": "Allium schoenoprasum",
+  "common": [
+    "Chives"
+  ],
+  "family": "Amaryllidaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "plantGroup": "monocot",
+    "shape": "linear",
+    "apex": "acute",
+    "base": "truncate",
+    "margin": "entire",
+    "form3d": "terete",
+    "secondary": "none",
+    "tertiary": "none",
+    "phyllotaxis": "rosulate"
+  },
+  "params": {
+    "length": [
+      250,
+      40
+    ],
+    "aspect": [
+      60,
+      6
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#4f8a3a"
+    },
+    "fall": {
+      "blade": "#a49a4a"
+    }
+  }
+}

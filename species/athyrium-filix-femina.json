@@ -1,0 +1,53 @@
+{
+  "id": "athyrium-filix-femina",
+  "name": "Athyrium filix-femina",
+  "common": [
+    "Lady fern"
+  ],
+  "family": "Athyriaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "plantGroup": "fern",
+    "structure": "bipinnate",
+    "shape": "lanceolate",
+    "lobation": "pinnatifid",
+    "margin": "serrate",
+    "phyllotaxis": "rosulate"
+  },
+  "params": {
+    "length": [
+      650,
+      80
+    ],
+    "aspect": [
+      3.6,
+      0.3
+    ],
+    "widest": [
+      0.45,
+      0.03
+    ],
+    "petiole": [
+      0.35,
+      0.04
+    ]
+  },
+  "compound": {
+    "pinnaPairs": [
+      24,
+      2
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#5a9a40"
+    },
+    "fall": {
+      "blade": "#b0a050"
+    }
+  }
+}

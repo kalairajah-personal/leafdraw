@@ -1,0 +1,58 @@
+{
+  "id": "bauhinia-variegata",
+  "name": "Bauhinia variegata",
+  "common": [
+    "Orchid tree"
+  ],
+  "family": "Fabaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "shape": "orbicular",
+    "apex": "emarginate",
+    "base": "cordate",
+    "margin": "entire",
+    "primary": "actinodromous",
+    "secondary": "brochidodromous",
+    "tertiary": "reticulate",
+    "areoles": "moderate",
+    "phyllotaxis": "alternate"
+  },
+  "params": {
+    "length": [
+      150,
+      25
+    ],
+    "aspect": [
+      0.95,
+      0.05
+    ],
+    "apexNotch": [
+      0.28,
+      0.04
+    ],
+    "primaryCount": [
+      11,
+      1
+    ],
+    "baseDepth": [
+      0.08,
+      0.02
+    ],
+    "petiole": [
+      0.35,
+      0.05
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#4f8040"
+    },
+    "fall": {
+      "blade": "#b8a24a"
+    }
+  }
+}

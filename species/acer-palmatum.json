@@ -1,0 +1,65 @@
+{
+  "id": "acer-palmatum",
+  "name": "Acer palmatum",
+  "common": [
+    "Japanese maple"
+  ],
+  "family": "Sapindaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "shape": "palmate",
+    "lobation": "palmatisect",
+    "apex": "acuminate",
+    "base": "truncate",
+    "margin": "doubly-serrate",
+    "secondary": "craspedodromous",
+    "tertiary": "reticulate",
+    "areoles": "poor",
+    "phyllotaxis": "opposite"
+  },
+  "params": {
+    "length": [
+      70,
+      10
+    ],
+    "lobeCount": 7,
+    "lobeDepth": [
+      0.85,
+      0.04
+    ],
+    "lobeSpread": [
+      135,
+      8
+    ],
+    "lobeDecay": [
+      0.5,
+      0.05
+    ],
+    "lobeTips": "acuminate",
+    "toothSpacing": [
+      2.6,
+      0.3
+    ],
+    "toothHeight": [
+      0.8,
+      0.15
+    ],
+    "minorTeeth": 1,
+    "petiole": [
+      0.6,
+      0.08
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#5e8a2c"
+    },
+    "fall": {
+      "blade": "#b5221c"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": "rumex-acetosella",
+  "name": "Rumex acetosella",
+  "common": [
+    "Sheep sorrel"
+  ],
+  "family": "Polygonaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "shape": "hastate",
+    "apex": "acute",
+    "base": "hastate",
+    "margin": "entire",
+    "secondary": "brochidodromous",
+    "tertiary": "reticulate",
+    "areoles": "poor",
+    "phyllotaxis": "alternate"
+  },
+  "params": {
+    "length": [
+      50,
+      8
+    ],
+    "aspect": [
+      2.6,
+      0.2
+    ],
+    "widest": [
+      0.15,
+      0.02
+    ],
+    "baseDepth": [
+      0.18,
+      0.03
+    ],
+    "petiole": [
+      0.5,
+      0.06
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#5c8c3c"
+    },
+    "fall": {
+      "blade": "#a8452c"
+    }
+  }
+}

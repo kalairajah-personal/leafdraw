@@ -1,0 +1,62 @@
+{
+  "id": "eucalyptus-globulus",
+  "name": "Eucalyptus globulus",
+  "common": [
+    "Tasmanian blue gum"
+  ],
+  "family": "Myrtaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "shape": "falcate",
+    "apex": "acuminate",
+    "base": "cuneate",
+    "margin": "entire",
+    "secondary": "brochidodromous",
+    "tertiary": "reticulate",
+    "areoles": "moderate",
+    "marginalVein": "intramarginal",
+    "phyllotaxis": "alternate"
+  },
+  "params": {
+    "length": [
+      220,
+      30
+    ],
+    "aspect": [
+      6,
+      0.5
+    ],
+    "widest": [
+      0.35,
+      0.03
+    ],
+    "curve": [
+      0.18,
+      0.03
+    ],
+    "secCount": [
+      22,
+      2
+    ],
+    "secAngleBase": 50,
+    "secAngleApex": 45,
+    "secCurve": 0.05,
+    "marginalOffset": 0.008,
+    "petiole": [
+      0.12,
+      0.02
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#5d7d5a"
+    },
+    "fall": {
+      "blade": "#9a8a5a"
+    }
+  }
+}

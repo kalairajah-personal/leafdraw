@@ -1,0 +1,55 @@
+{
+  "id": "magnolia-grandiflora",
+  "name": "Magnolia grandiflora",
+  "common": [
+    "Southern magnolia"
+  ],
+  "family": "Magnoliaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "shape": "elliptic",
+    "apex": "acute",
+    "base": "acute",
+    "margin": "entire",
+    "secondary": "brochidodromous",
+    "tertiary": "reticulate",
+    "areoles": "well-developed",
+    "phyllotaxis": "alternate"
+  },
+  "params": {
+    "length": [
+      200,
+      25
+    ],
+    "aspect": [
+      2.2,
+      0.15
+    ],
+    "widest": [
+      0.5,
+      0.03
+    ],
+    "secCount": [
+      11,
+      1.5
+    ],
+    "secAngleBase": 55,
+    "secAngleApex": 50,
+    "petiole": [
+      0.1,
+      0.02
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#2f5521"
+    },
+    "fall": {
+      "blade": "#8a6a3a"
+    }
+  }
+}

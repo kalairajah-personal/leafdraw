@@ -1,0 +1,69 @@
+{
+  "id": "fraxinus-americana",
+  "name": "Fraxinus americana",
+  "common": [
+    "White ash"
+  ],
+  "family": "Oleaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "structure": "imparipinnate",
+    "phyllotaxis": "opposite"
+  },
+  "params": {
+    "length": [
+      280,
+      30
+    ],
+    "petiole": [
+      0.25,
+      0.03
+    ]
+  },
+  "compound": {
+    "pairs": [
+      3,
+      0.4
+    ],
+    "petiolule": 0.08,
+    "taper": 0.2,
+    "angle": 58,
+    "leaflet": {
+      "traits": {
+        "shape": "ovate",
+        "apex": "acuminate",
+        "base": "rounded",
+        "margin": "serrulate",
+        "secondary": "brochidodromous",
+        "tertiary": "reticulate",
+        "areoles": "moderate"
+      },
+      "params": {
+        "length": [
+          100,
+          12
+        ],
+        "aspect": [
+          2.2,
+          0.15
+        ],
+        "widest": [
+          0.42,
+          0.03
+        ]
+      }
+    }
+  },
+  "palette": {
+    "summer": {
+      "blade": "#456f2f"
+    },
+    "fall": {
+      "blade": "#7d3a5a"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "tropaeolum-majus",
+  "name": "Tropaeolum majus",
+  "common": [
+    "Garden nasturtium"
+  ],
+  "family": "Tropaeolaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "shape": "orbicular",
+    "attachment": "peltate",
+    "apex": "rounded",
+    "margin": "entire",
+    "primary": "actinodromous",
+    "secondary": "cladodromous",
+    "tertiary": "reticulate",
+    "areoles": "moderate",
+    "phyllotaxis": "alternate"
+  },
+  "params": {
+    "length": [
+      70,
+      10
+    ],
+    "primaryCount": [
+      9,
+      1
+    ],
+    "peltOffset": 0.12
+  },
+  "palette": {
+    "summer": {
+      "blade": "#5d8e45"
+    },
+    "fall": {
+      "blade": "#a59a45"
+    }
+  }
+}

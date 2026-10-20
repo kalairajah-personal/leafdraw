@@ -1,0 +1,56 @@
+{
+  "id": "salix-babylonica",
+  "name": "Salix babylonica",
+  "common": [
+    "Weeping willow"
+  ],
+  "family": "Salicaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "shape": "lanceolate",
+    "apex": "acuminate",
+    "base": "cuneate",
+    "margin": "serrulate",
+    "secondary": "brochidodromous",
+    "tertiary": "reticulate",
+    "areoles": "moderate",
+    "phyllotaxis": "alternate"
+  },
+  "params": {
+    "length": [
+      110,
+      15
+    ],
+    "aspect": [
+      7,
+      0.6
+    ],
+    "widest": [
+      0.38,
+      0.03
+    ],
+    "sharp": 1.7,
+    "secCount": [
+      16,
+      2
+    ],
+    "secAngleBase": 50,
+    "secAngleApex": 42,
+    "petiole": [
+      0.06,
+      0.01
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#6a9441"
+    },
+    "fall": {
+      "blade": "#d8c25a"
+    }
+  }
+}

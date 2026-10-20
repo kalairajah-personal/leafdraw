@@ -1,0 +1,64 @@
+{
+  "id": "fagus-grandifolia",
+  "name": "Fagus grandifolia",
+  "common": [
+    "American beech"
+  ],
+  "family": "Fagaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "shape": "elliptic",
+    "apex": "acuminate",
+    "base": "rounded",
+    "margin": "serrate",
+    "secondary": "craspedodromous",
+    "tertiary": "opposite-percurrent",
+    "areoles": "moderate",
+    "phyllotaxis": "distichous"
+  },
+  "params": {
+    "length": [
+      110,
+      15
+    ],
+    "aspect": [
+      2.1,
+      0.15
+    ],
+    "widest": [
+      0.45,
+      0.03
+    ],
+    "toothSpacing": [
+      7.5,
+      0.6
+    ],
+    "toothHeight": [
+      1.2,
+      0.2
+    ],
+    "secCount": [
+      12,
+      1.2
+    ],
+    "secAngleBase": 45,
+    "secAngleApex": 38,
+    "secCurve": 0.15,
+    "petiole": [
+      0.07,
+      0.01
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#5b8a3a"
+    },
+    "fall": {
+      "blade": "#c89a3a"
+    }
+  }
+}

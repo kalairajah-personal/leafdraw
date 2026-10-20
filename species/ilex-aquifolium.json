@@ -1,0 +1,62 @@
+{
+  "id": "ilex-aquifolium",
+  "name": "Ilex aquifolium",
+  "common": [
+    "English holly"
+  ],
+  "family": "Aquifoliaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "shape": "elliptic",
+    "apex": "acute",
+    "base": "rounded",
+    "margin": "spiny",
+    "secondary": "brochidodromous",
+    "tertiary": "reticulate",
+    "areoles": "moderate",
+    "form3d": "undulate",
+    "phyllotaxis": "alternate"
+  },
+  "params": {
+    "length": [
+      70,
+      10
+    ],
+    "aspect": [
+      1.8,
+      0.12
+    ],
+    "widest": [
+      0.48,
+      0.03
+    ],
+    "toothSpacing": [
+      12,
+      1.5
+    ],
+    "toothHeight": [
+      3,
+      0.5
+    ],
+    "spineLength": [
+      2.5,
+      0.5
+    ],
+    "petiole": [
+      0.12,
+      0.02
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#264d22"
+    },
+    "fall": {
+      "blade": "#264d22"
+    }
+  }
+}

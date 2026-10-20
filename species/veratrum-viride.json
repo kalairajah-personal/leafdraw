@@ -1,0 +1,48 @@
+{
+  "id": "veratrum-viride",
+  "name": "Veratrum viride",
+  "common": [
+    "Green false hellebore"
+  ],
+  "family": "Melanthiaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "plantGroup": "monocot",
+    "shape": "elliptic",
+    "apex": "acute",
+    "base": "rounded",
+    "margin": "entire",
+    "folding": "plicate",
+    "primary": "campylodromous",
+    "secondary": "none",
+    "tertiary": "transverse",
+    "phyllotaxis": "alternate"
+  },
+  "params": {
+    "length": [
+      250,
+      30
+    ],
+    "aspect": [
+      1.9,
+      0.15
+    ],
+    "primaryCount": [
+      11,
+      1
+    ],
+    "petiole": 0
+  },
+  "palette": {
+    "summer": {
+      "blade": "#5f9040"
+    },
+    "fall": {
+      "blade": "#a49a4a"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "id": "hedera-helix",
+  "name": "Hedera helix",
+  "common": [
+    "English ivy"
+  ],
+  "family": "Araliaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "shape": "palmate",
+    "lobation": "palmatifid",
+    "apex": "acute",
+    "base": "cordate",
+    "margin": "entire",
+    "secondary": "brochidodromous",
+    "tertiary": "reticulate",
+    "areoles": "moderate",
+    "phyllotaxis": "alternate"
+  },
+  "params": {
+    "length": [
+      60,
+      10
+    ],
+    "lobeCount": 5,
+    "lobeDepth": [
+      0.42,
+      0.06
+    ],
+    "lobeSpread": [
+      78,
+      6
+    ],
+    "lobeDecay": [
+      0.42,
+      0.05
+    ],
+    "lobeTips": "acute",
+    "lobeWidth": 1,
+    "sinus": "U",
+    "baseDepth": [
+      0.06,
+      0.02
+    ],
+    "petiole": [
+      0.9,
+      0.1
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#2f4e1d"
+    },
+    "fall": {
+      "blade": "#4a3a24"
+    }
+  }
+}

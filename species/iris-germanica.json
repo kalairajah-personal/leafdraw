@@ -1,0 +1,44 @@
+{
+  "id": "iris-germanica",
+  "name": "Iris germanica",
+  "common": [
+    "Bearded iris"
+  ],
+  "family": "Iridaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "plantGroup": "monocot",
+    "shape": "ensiform",
+    "apex": "acute",
+    "base": "truncate",
+    "margin": "entire",
+    "folding": "conduplicate",
+    "phyllotaxis": "distichous"
+  },
+  "params": {
+    "length": [
+      450,
+      60
+    ],
+    "aspect": [
+      12,
+      1
+    ],
+    "parallelCount": [
+      17,
+      2
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#5d8a72"
+    },
+    "fall": {
+      "blade": "#b29a5a"
+    }
+  }
+}

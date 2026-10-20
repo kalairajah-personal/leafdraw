@@ -1,0 +1,66 @@
+{
+  "id": "albizia-julibrissin",
+  "name": "Albizia julibrissin",
+  "common": [
+    "Silk tree",
+    "Mimosa"
+  ],
+  "family": "Fabaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "structure": "bipinnate",
+    "phyllotaxis": "alternate"
+  },
+  "params": {
+    "length": [
+      320,
+      30
+    ],
+    "petiole": [
+      0.12,
+      0.02
+    ]
+  },
+  "compound": {
+    "pairs": [
+      20,
+      2
+    ],
+    "pinnaPairs": [
+      8,
+      1
+    ],
+    "petiolule": 0,
+    "angle": 70,
+    "leaflet": {
+      "traits": {
+        "shape": "falcate",
+        "apex": "acute",
+        "base": "oblique",
+        "margin": "entire",
+        "secondary": "none",
+        "tertiary": "none",
+        "areoles": "none"
+      },
+      "params": {
+        "aspect": [
+          3,
+          0.2
+        ],
+        "curve": 0.12
+      }
+    }
+  },
+  "palette": {
+    "summer": {
+      "blade": "#5c8f3e"
+    },
+    "fall": {
+      "blade": "#b8a84a"
+    }
+  }
+}

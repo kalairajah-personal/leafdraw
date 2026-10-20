@@ -1,0 +1,52 @@
+{
+  "id": "pteridium-aquilinum",
+  "name": "Pteridium aquilinum",
+  "common": [
+    "Bracken"
+  ],
+  "family": "Dennstaedtiaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "plantGroup": "fern",
+    "structure": "tripinnate",
+    "shape": "deltoid",
+    "margin": "entire",
+    "phyllotaxis": "alternate"
+  },
+  "params": {
+    "length": [
+      800,
+      100
+    ],
+    "aspect": [
+      1.1,
+      0.08
+    ],
+    "widest": [
+      0.12,
+      0.02
+    ],
+    "petiole": [
+      0.6,
+      0.06
+    ]
+  },
+  "compound": {
+    "pinnaPairs": [
+      10,
+      1
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#4f8a35"
+    },
+    "fall": {
+      "blade": "#a8743a"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "helleborus-foetidus",
+  "name": "Helleborus foetidus",
+  "common": [
+    "Stinking hellebore"
+  ],
+  "family": "Ranunculaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "shape": "palmate",
+    "lobation": "pedate",
+    "apex": "acute",
+    "base": "cuneate",
+    "margin": "serrate",
+    "secondary": "brochidodromous",
+    "tertiary": "reticulate",
+    "areoles": "poor",
+    "phyllotaxis": "alternate"
+  },
+  "params": {
+    "length": [
+      150,
+      20
+    ],
+    "lobeDepth": [
+      0.93,
+      0.02
+    ],
+    "lobeDecay": [
+      0.4,
+      0.05
+    ],
+    "toothSpacing": [
+      5,
+      0.6
+    ],
+    "toothHeight": [
+      1.2,
+      0.2
+    ],
+    "petiole": [
+      0.8,
+      0.1
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#2f4f25"
+    },
+    "fall": {
+      "blade": "#2f4f25"
+    }
+  }
+}

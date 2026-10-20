@@ -1,0 +1,71 @@
+{
+  "id": "aesculus-hippocastanum",
+  "name": "Aesculus hippocastanum",
+  "common": [
+    "Horse chestnut"
+  ],
+  "family": "Sapindaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "structure": "palmately-compound",
+    "phyllotaxis": "opposite"
+  },
+  "params": {
+    "length": [
+      300,
+      35
+    ],
+    "petiole": [
+      0.45,
+      0.05
+    ]
+  },
+  "compound": {
+    "leaflets": 7,
+    "petiolule": 0,
+    "spread": [
+      225,
+      10
+    ],
+    "leaflet": {
+      "traits": {
+        "shape": "obovate",
+        "apex": "acuminate",
+        "base": "cuneate",
+        "margin": "doubly-serrate",
+        "secondary": "craspedodromous",
+        "tertiary": "opposite-percurrent",
+        "areoles": "moderate"
+      },
+      "params": {
+        "length": [
+          170,
+          20
+        ],
+        "aspect": [
+          2.6,
+          0.2
+        ],
+        "widest": [
+          0.68,
+          0.03
+        ],
+        "toothSpacing": 5,
+        "toothHeight": 1.2,
+        "minorTeeth": 1
+      }
+    }
+  },
+  "palette": {
+    "summer": {
+      "blade": "#4a7d2e"
+    },
+    "fall": {
+      "blade": "#b8862a"
+    }
+  }
+}

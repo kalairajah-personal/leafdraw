@@ -1,0 +1,76 @@
+{
+  "id": "polystichum-acrostichoides",
+  "name": "Polystichum acrostichoides",
+  "common": [
+    "Christmas fern"
+  ],
+  "family": "Dryopteridaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "plantGroup": "fern",
+    "structure": "imparipinnate",
+    "shape": "lanceolate",
+    "margin": "serrulate",
+    "phyllotaxis": "rosulate"
+  },
+  "params": {
+    "length": [
+      500,
+      60
+    ],
+    "aspect": [
+      5,
+      0.4
+    ],
+    "widest": [
+      0.4,
+      0.03
+    ],
+    "petiole": [
+      0.35,
+      0.04
+    ]
+  },
+  "compound": {
+    "pinnaPairs": [
+      22,
+      2
+    ],
+    "leaflet": {
+      "traits": {
+        "plantGroup": "fern",
+        "shape": "lanceolate",
+        "apex": "acute",
+        "base": "auriculate",
+        "margin": "serrulate",
+        "marginMods": [
+          "spiny"
+        ],
+        "primary": "pinnate",
+        "secondary": "cladodromous",
+        "tertiary": "none",
+        "areoles": "none"
+      },
+      "params": {
+        "aspect": [
+          4.5,
+          0.3
+        ],
+        "baseDepth": 0.06,
+        "sori": true
+      }
+    }
+  },
+  "palette": {
+    "summer": {
+      "blade": "#2f5e2a"
+    },
+    "fall": {
+      "blade": "#2f5e2a"
+    }
+  }
+}

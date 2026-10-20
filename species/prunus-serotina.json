@@ -1,0 +1,53 @@
+{
+  "id": "prunus-serotina",
+  "name": "Prunus serotina",
+  "common": [
+    "Black cherry"
+  ],
+  "family": "Rosaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "shape": "elliptic",
+    "apex": "acuminate",
+    "base": "cuneate",
+    "margin": "serrulate",
+    "secondary": "brochidodromous",
+    "tertiary": "mixed-percurrent",
+    "areoles": "well-developed",
+    "phyllotaxis": "alternate"
+  },
+  "params": {
+    "length": [
+      90,
+      12
+    ],
+    "aspect": [
+      2.6,
+      0.2
+    ],
+    "widest": [
+      0.45,
+      0.03
+    ],
+    "secCount": [
+      12,
+      1.5
+    ],
+    "petiole": [
+      0.15,
+      0.02
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#3f6d2a"
+    },
+    "fall": {
+      "blade": "#d1a53a"
+    }
+  }
+}

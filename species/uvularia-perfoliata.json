@@ -1,0 +1,47 @@
+{
+  "id": "uvularia-perfoliata",
+  "name": "Uvularia perfoliata",
+  "common": [
+    "Perfoliate bellwort"
+  ],
+  "family": "Colchicaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "plantGroup": "monocot",
+    "shape": "ovate",
+    "apex": "acute",
+    "base": "rounded",
+    "attachment": "perfoliate",
+    "margin": "entire",
+    "primary": "campylodromous",
+    "secondary": "none",
+    "tertiary": "transverse",
+    "phyllotaxis": "alternate"
+  },
+  "params": {
+    "length": [
+      80,
+      10
+    ],
+    "aspect": [
+      2.2,
+      0.15
+    ],
+    "primaryCount": [
+      7,
+      1
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#6a9a55"
+    },
+    "fall": {
+      "blade": "#a59a55"
+    }
+  }
+}

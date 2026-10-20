@@ -1,0 +1,69 @@
+{
+  "id": "ulmus-americana",
+  "name": "Ulmus americana",
+  "common": [
+    "American elm"
+  ],
+  "family": "Ulmaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "shape": "elliptic",
+    "apex": "acuminate",
+    "base": "oblique",
+    "margin": "doubly-serrate",
+    "secondary": "craspedodromous",
+    "tertiary": "opposite-percurrent",
+    "areoles": "moderate",
+    "phyllotaxis": "distichous"
+  },
+  "params": {
+    "length": [
+      105,
+      15
+    ],
+    "aspect": [
+      1.95,
+      0.15
+    ],
+    "widest": [
+      0.46,
+      0.03
+    ],
+    "sharp": 1.35,
+    "oblique": [
+      0.08,
+      0.02
+    ],
+    "toothSpacing": [
+      5.2,
+      0.5
+    ],
+    "toothHeight": [
+      1.6,
+      0.25
+    ],
+    "minorTeeth": 2,
+    "secCount": [
+      15,
+      1.5
+    ],
+    "secAngleBase": 48,
+    "secAngleApex": 40,
+    "petiole": [
+      0.06,
+      0.01
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#4c7a2e"
+    },
+    "fall": {
+      "blade": "#d6b23e"
+    }
+  }
+}

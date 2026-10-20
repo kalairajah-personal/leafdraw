@@ -1,0 +1,39 @@
+{
+  "id": "thuja-occidentalis",
+  "name": "Thuja occidentalis",
+  "common": [
+    "Northern white cedar",
+    "Arborvitae"
+  ],
+  "family": "Cupressaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "plantGroup": "conifer-scale",
+    "shape": "rhomboid",
+    "apex": "acute",
+    "margin": "entire",
+    "phyllotaxis": "decussate"
+  },
+  "params": {
+    "length": [
+      3,
+      0.3
+    ],
+    "aspect": [
+      1.3,
+      0.1
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#3e6b3a"
+    },
+    "fall": {
+      "blade": "#7a6a3a"
+    }
+  }
+}

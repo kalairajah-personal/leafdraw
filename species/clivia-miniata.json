@@ -1,0 +1,43 @@
+{
+  "id": "clivia-miniata",
+  "name": "Clivia miniata",
+  "common": [
+    "Natal lily"
+  ],
+  "family": "Amaryllidaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "plantGroup": "monocot",
+    "shape": "lorate",
+    "apex": "rounded",
+    "base": "truncate",
+    "margin": "entire",
+    "phyllotaxis": "distichous"
+  },
+  "params": {
+    "length": [
+      500,
+      60
+    ],
+    "aspect": [
+      10,
+      1
+    ],
+    "parallelCount": [
+      21,
+      2
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#2f5a24"
+    },
+    "fall": {
+      "blade": "#2f5a24"
+    }
+  }
+}

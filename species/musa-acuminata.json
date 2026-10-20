@@ -1,0 +1,49 @@
+{
+  "id": "musa-acuminata",
+  "name": "Musa acuminata",
+  "common": [
+    "Banana"
+  ],
+  "family": "Musaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "plantGroup": "monocot",
+    "shape": "oblong",
+    "apex": "truncate",
+    "base": "rounded",
+    "margin": "entire",
+    "primary": "pinnate",
+    "secondary": "parallelodromous",
+    "tertiary": "transverse",
+    "marginalVein": "fimbrial",
+    "phyllotaxis": "alternate"
+  },
+  "params": {
+    "length": [
+      2200,
+      250
+    ],
+    "aspect": [
+      3.6,
+      0.3
+    ],
+    "secAngleBase": 82,
+    "secAngleApex": 78,
+    "petiole": [
+      0.25,
+      0.03
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#5d9440"
+    },
+    "fall": {
+      "blade": "#a89a4a"
+    }
+  }
+}

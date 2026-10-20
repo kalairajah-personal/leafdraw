@@ -1,0 +1,74 @@
+{
+  "id": "cocos-nucifera",
+  "name": "Cocos nucifera",
+  "common": [
+    "Coconut palm"
+  ],
+  "family": "Arecaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "plantGroup": "monocot",
+    "structure": "paripinnate",
+    "phyllotaxis": "alternate"
+  },
+  "params": {
+    "length": [
+      5000,
+      600
+    ],
+    "petiole": [
+      0.22,
+      0.03
+    ]
+  },
+  "compound": {
+    "pairs": [
+      95,
+      8
+    ],
+    "petiolule": 0,
+    "taper": 1.1,
+    "taperMin": 0.2,
+    "taperCenter": 0.4,
+    "angle": [
+      55,
+      4
+    ],
+    "rachis": 0.78,
+    "leaflet": {
+      "traits": {
+        "plantGroup": "monocot",
+        "shape": "linear",
+        "apex": "acuminate",
+        "base": "cuneate",
+        "margin": "entire",
+        "folding": "conduplicate",
+        "primary": "pinnate",
+        "secondary": "parallelodromous",
+        "tertiary": "transverse"
+      },
+      "params": {
+        "length": [
+          750,
+          80
+        ],
+        "aspect": [
+          34,
+          3
+        ]
+      }
+    }
+  },
+  "palette": {
+    "summer": {
+      "blade": "#4e7a2c"
+    },
+    "fall": {
+      "blade": "#b59a3e"
+    }
+  }
+}

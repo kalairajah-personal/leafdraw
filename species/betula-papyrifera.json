@@ -1,0 +1,64 @@
+{
+  "id": "betula-papyrifera",
+  "name": "Betula papyrifera",
+  "common": [
+    "Paper birch"
+  ],
+  "family": "Betulaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "shape": "ovate",
+    "apex": "acuminate",
+    "base": "rounded",
+    "margin": "doubly-serrate",
+    "secondary": "craspedodromous",
+    "tertiary": "opposite-percurrent",
+    "areoles": "moderate",
+    "phyllotaxis": "alternate"
+  },
+  "params": {
+    "length": [
+      80,
+      10
+    ],
+    "aspect": [
+      1.45,
+      0.1
+    ],
+    "widest": [
+      0.36,
+      0.03
+    ],
+    "toothSpacing": [
+      5,
+      0.5
+    ],
+    "toothHeight": [
+      1.4,
+      0.2
+    ],
+    "minorTeeth": 2,
+    "secCount": [
+      8,
+      1
+    ],
+    "secAngleBase": 50,
+    "secAngleApex": 40,
+    "petiole": [
+      0.25,
+      0.04
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#5c8f35"
+    },
+    "fall": {
+      "blade": "#e3c13c"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "id": "juglans-nigra",
+  "name": "Juglans nigra",
+  "common": [
+    "Black walnut"
+  ],
+  "family": "Juglandaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "structure": "imparipinnate",
+    "phyllotaxis": "alternate"
+  },
+  "params": {
+    "length": [
+      450,
+      50
+    ],
+    "petiole": [
+      0.15,
+      0.02
+    ]
+  },
+  "compound": {
+    "pairs": [
+      8,
+      0.8
+    ],
+    "petiolule": 0.01,
+    "taper": 0.45,
+    "angle": 70,
+    "alternate": true,
+    "leaflet": {
+      "traits": {
+        "shape": "lanceolate",
+        "apex": "acuminate",
+        "base": "oblique",
+        "margin": "serrate",
+        "secondary": "brochidodromous",
+        "tertiary": "reticulate",
+        "areoles": "moderate"
+      },
+      "params": {
+        "length": [
+          85,
+          10
+        ],
+        "aspect": [
+          3.2,
+          0.2
+        ],
+        "toothSpacing": 3,
+        "toothHeight": 0.6
+      }
+    }
+  },
+  "palette": {
+    "summer": {
+      "blade": "#4f7f30"
+    },
+    "fall": {
+      "blade": "#d4b23a"
+    }
+  }
+}

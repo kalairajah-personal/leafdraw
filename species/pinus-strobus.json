@@ -1,0 +1,43 @@
+{
+  "id": "pinus-strobus",
+  "name": "Pinus strobus",
+  "common": [
+    "Eastern white pine"
+  ],
+  "family": "Pinaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "plantGroup": "conifer-needle",
+    "shape": "acicular",
+    "apex": "acute",
+    "margin": "serrulate",
+    "phyllotaxis": "fascicled"
+  },
+  "params": {
+    "length": [
+      100,
+      12
+    ],
+    "aspect": [
+      110,
+      10
+    ],
+    "toothSpacing": 0.6,
+    "toothHeight": 0.04
+  },
+  "palette": {
+    "summer": {
+      "blade": "#3d6b4a"
+    },
+    "fall": {
+      "blade": "#3d6b4a"
+    }
+  },
+  "shoot": {
+    "fascicle": 5
+  }
+}

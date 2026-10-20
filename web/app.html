@@ -1,0 +1,448 @@
+<title>Leafdraw Studio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: herbarium workbench — control rail on the left, specimen sheet on the right with its label. */
+:root {
+  --bg: #eef0ea;        /* bench */
+  --panel: #f8f9f5;     /* rail */
+  --sheet: #ffffff;     /* mounting paper */
+  --ink: #1c211b;
+  --muted: #5d665a;
+  --line: #d3d8cc;
+  --accent: #1f5c46;    /* herbarium green */
+  --accent-ink: #ffffff;
+  --warn: #8a5a12;
+  --warn-bg: #f6ecd6;
+  --err: #9b2c22;
+  --err-bg: #f7e1dc;
+  --ok-bg: #e2efe6;
+  --f-display: "Cormorant Garamond", "Iowan Old Style", Georgia, serif;
+  --f-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --r: 6px;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #141815; --panel: #1b201c; --sheet: #f4f4ef; --ink: #e4e8e0; --muted: #9aa496; --line: #323a33;
+  --accent: #6fbf98; --accent-ink: #0f1a14; --warn: #e2b766; --warn-bg: #3a2f19; --err: #f0a196; --err-bg: #3d221e; --ok-bg: #1e3326; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #141815; --panel: #1b201c; --sheet: #f4f4ef; --ink: #e4e8e0; --muted: #9aa496; --line: #323a33;
+  --accent: #6fbf98; --accent-ink: #0f1a14; --warn: #e2b766; --warn-bg: #3a2f19; --err: #f0a196; --err-bg: #3d221e; --ok-bg: #1e3326; color-scheme: dark; }
+
+[hidden] { display: none !important; }
+html, body { height: 100%; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 14px; line-height: 1.45; }
+.app { display: grid; grid-template-columns: minmax(0, 340px) minmax(0, 1fr); gap: 20px; padding-block: 18px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); min-height: 100%; box-sizing: border-box; }
+@media (max-width: 860px) { .app { grid-template-columns: minmax(0, 1fr); } }
+
+header.brand { grid-column: 1 / -1; display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+.brand h1 { font-family: var(--f-display); font-style: italic; font-weight: 600; font-size: 34px; margin: 0; letter-spacing: 0.01em; text-wrap: balance; }
+.brand p { margin: 0; color: var(--muted); max-width: 62ch; }
+
+.rail { background: var(--panel); border: 1px solid var(--line); border-radius: var(--r); padding: 14px; display: flex; flex-direction: column; gap: 16px; align-self: start; }
+fieldset { border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+legend, .lbl { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 600; padding: 0; margin-bottom: 2px; }
+label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: var(--muted); }
+select, input[type=text], input[type=number], input[type=search] { font: inherit; font-size: 13px; color: var(--ink); background: var(--sheet); border: 1px solid var(--line); border-radius: 4px; padding: 6px 8px; min-width: 0; }
+:root[data-theme="dark"] select, :root[data-theme="dark"] input { background: #232a24; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) select, :root:not([data-theme="light"]) input { background: #232a24; } }
+select:focus-visible, input:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.row { display: flex; gap: 8px; align-items: end; flex-wrap: wrap; }
+.row > * { flex: 1 1 0; min-width: 0; }
+.grid2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+
+.seg { display: flex; border: 1px solid var(--line); border-radius: 4px; overflow: hidden; }
+.seg button { flex: 1; font: inherit; font-size: 12px; padding: 6px 4px; border: 0; background: transparent; color: var(--ink); cursor: pointer; border-right: 1px solid var(--line); }
+.seg button:last-child { border-right: 0; }
+.seg button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); }
+button.btn { font: inherit; font-size: 13px; font-weight: 500; padding: 7px 10px; border-radius: 4px; border: 1px solid var(--line); background: var(--sheet); color: var(--ink); cursor: pointer; }
+:root[data-theme="dark"] button.btn { background: #232a24; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) button.btn { background: #232a24; } }
+button.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+button.btn:hover { border-color: var(--accent); }
+
+#speciesList { height: 168px; }
+.anyform { margin-top: 12px; display: grid; gap: 6px; }
+.anyform label { font-size: 12px; color: var(--muted, inherit); }
+.anyrow { display: flex; gap: 6px; }
+.anyrow input { flex: 1; min-width: 0; }
+.anymsg { font-size: 12px; line-height: 1.4; margin: 0; opacity: .85; }
+.anymsg b { font-weight: 600; }
+#traitGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 8px; }
+#traitGrid label { font-size: 11px; }
+#traitGrid select { font-size: 12px; padding: 4px 6px; }
+.msgs { display: flex; flex-direction: column; gap: 4px; font-size: 12px; }
+.msg { padding: 5px 8px; border-radius: 4px; }
+.msg.err { background: var(--err-bg); color: var(--err); }
+.msg.warn { background: var(--warn-bg); color: var(--warn); }
+.msg.ok { background: var(--ok-bg); color: var(--ink); }
+.msg.imp { color: var(--muted); padding: 0 2px; }
+
+.stage { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+.sheet { position: relative; background: var(--sheet); border: 1px solid var(--line); border-radius: 2px; min-height: 480px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+#canvas { width: 100%; height: min(78vh, 900px); display: flex; align-items: center; justify-content: center; padding: 18px 18px 120px; box-sizing: border-box; }
+#canvas svg { max-width: 100%; max-height: 100%; width: auto; height: auto; }
+.status { position: absolute; top: 10px; left: 12px; font-family: var(--f-mono); font-size: 11px; color: #5d665a; }
+
+/* herbarium label */
+.label { position: absolute; right: 14px; bottom: 14px; width: min(320px, calc(100% - 28px)); background: #fbfbf7; border: 1px solid #1c211b; color: #1c211b; padding: 10px 12px; font-size: 12px; box-shadow: 0 1px 0 #1c211b; }
+.label .hd { font-family: var(--f-mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; display: flex; justify-content: space-between; border-bottom: 1px solid #1c211b; padding-bottom: 4px; margin-bottom: 6px; }
+.label .bin { font-family: var(--f-display); font-style: italic; font-size: 22px; font-weight: 600; line-height: 1.1; }
+.label .sub { color: #4b5248; margin-top: 2px; }
+.label dl { display: grid; grid-template-columns: auto 1fr; gap: 2px 10px; margin: 8px 0 0; font-family: var(--f-mono); font-size: 11px; font-variant-numeric: tabular-nums; }
+.label dt { color: #5d665a; }
+.label dd { margin: 0; }
+.tier { display: inline-block; padding: 0 6px; border: 1px solid currentColor; border-radius: 2px; font-family: var(--f-mono); font-size: 10px; }
+
+.traits { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font-size: 12px; border: 1px solid var(--line); border-radius: 3px; padding: 3px 7px; background: var(--panel); }
+.chip b { font-weight: 500; color: var(--muted); font-size: 10px; text-transform: uppercase; letter-spacing: 0.06em; margin-right: 5px; }
+.foot { color: var(--muted); font-size: 12px; max-width: 80ch; }
+.foot code { font-family: var(--f-mono); font-size: 11.5px; }
+#exportMsg { font-size: 12px; color: var(--muted); min-height: 1em; }
+@media (prefers-reduced-motion: reduce) { * { animation-duration: 0.01s !important; animation-delay: 0s !important; } }
+</style>
+
+<div class="app">
+  <header class="brand">
+    <h1>Leafdraw</h1>
+    <p>Procedural leaves built from botanical terms. Every outline, tooth and vein follows a numeric definition from the glossary of leaf morphology and the Manual of Leaf Architecture.</p>
+  </header>
+
+  <aside class="rail" aria-label="Controls">
+    <fieldset>
+      <legend>Source</legend>
+      <div class="seg" role="group" aria-label="Source">
+        <button id="srcSpecies" aria-pressed="true">Species</button>
+        <button id="srcTraits" aria-pressed="false">Build from traits</button>
+      </div>
+    </fieldset>
+
+    <fieldset id="speciesBox">
+      <input id="speciesSearch" type="search" placeholder="Search the catalog, e.g. maple" aria-label="Search species">
+      <select id="speciesList" size="8" aria-label="Species"></select>
+      <form id="anyForm" class="anyform" autocomplete="off">
+        <label for="anyName">Any plant species</label>
+        <div class="anyrow"><input id="anyName" type="search" list="anySuggest" placeholder="e.g. Mangifera indica, neem, banyan" aria-describedby="anyMsg"><button id="anyGo" type="submit">Look up</button></div>
+        <datalist id="anySuggest"></datalist>
+        <p class="anymsg" id="anyMsg" aria-live="polite">Resolves the name in GBIF, reads leaf descriptions from POWO (Kew) and Wikipedia, fills gaps from family templates. Tier C.</p>
+      </form>
+    </fieldset>
+
+    <fieldset id="traitsBox" hidden>
+      <div class="row"><label>Start from <select id="traitBase"></select></label></div>
+      <div id="traitGrid"></div>
+      <div class="msgs" id="traitMsgs" aria-live="polite"></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Drawing</legend>
+      <div class="row">
+        <label>Seed <input id="seed" type="number" min="1" step="1" value="7"></label>
+        <button class="btn" id="newSeed" style="flex:0 0 auto">New seed</button>
+      </div>
+      <div class="lbl">View</div>
+      <div class="seg" role="group" aria-label="View">
+        <button data-view="leaf" aria-pressed="true">Leaf</button>
+        <button data-view="shoot" aria-pressed="false">On stem</button>
+        <button data-view="plate" aria-pressed="false">Plate of 6</button>
+      </div>
+      <div class="grid2">
+        <label>Style <select id="style">
+          <option value="botanical">Botanical colour</option><option value="color">Colour</option><option value="line">Line art</option>
+          <option value="hatch">Hatched</option><option value="stipple">Stippled</option><option value="cleared">Cleared leaf</option>
+          <option value="venation">Venation only</option><option value="silhouette">Silhouette</option></select></label>
+        <label>Detail <select id="detail"><option value="auto">Auto</option><option value="full">All vein orders</option><option value="medium">To tertiaries</option><option value="low">Primary + secondary</option></select></label>
+      </div>
+      <div class="lbl">Season</div>
+      <div class="seg" role="group" aria-label="Season">
+        <button data-season="spring" aria-pressed="false">Spring</button>
+        <button data-season="summer" aria-pressed="true">Summer</button>
+        <button data-season="fall" aria-pressed="false">Fall</button>
+        <button data-season="dried" aria-pressed="false">Pressed</button>
+      </div>
+      <label style="flex-direction:row;align-items:center;gap:8px;color:var(--ink)"><input id="labels" type="checkbox"> Name and scale bar on the drawing</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Slow drawing</legend>
+      <div class="grid2">
+        <label>Pen order <select id="order"><option value="illustrator">Illustrator</option><option value="growth">Growth</option><option value="plotter">Pen plotter</option></select></label>
+        <label>Length <select id="duration"><option value="6">6 s</option><option value="12" selected>12 s</option><option value="25">25 s</option><option value="45">45 s</option></select></label>
+      </div>
+      <button class="btn primary" id="play">Draw slowly</button>
+    </fieldset>
+
+    <fieldset>
+      <legend>Export</legend>
+      <div class="grid2">
+        <button class="btn" data-export="svg">SVG</button>
+        <button class="btn" data-export="png">PNG</button>
+        <button class="btn" data-export="gcode">G-code</button>
+        <button class="btn" data-export="hpgl">HPGL</button>
+        <button class="btn" data-export="json">Scene JSON</button>
+        <button class="btn" data-export="spec">Spec JSON</button>
+      </div>
+      <div id="exportMsg" aria-live="polite"></div>
+    </fieldset>
+  </aside>
+
+  <main class="stage">
+    <div class="sheet">
+      <div class="status" id="status"></div>
+      <div id="canvas" role="img" aria-label="Leaf drawing"></div>
+      <div class="label" id="label"></div>
+    </div>
+    <div class="traits" id="traitChips"></div>
+    <p class="foot">Tier A species are fitted from measured herbarium specimens, tier B from curated literature values checked against Wikipedia and POWO, and tier C (any species) from that species' published leaf description plus family templates. Same species and seed always draw the same leaf. The command line tool writes the same drawings to files: <code>leafdraw -s "Quercus alba" --seed 7 --style botanical -o oak.svg</code></p>
+  </main>
+</div>
+
+<script>/*__LEAFDRAW__*/</script>
+<script>
+(function () {
+  const L = window.leafdraw;
+  const $ = (id) => document.getElementById(id);
+  const species = L.listSpecies().slice().sort((a, b) => a.name.localeCompare(b.name));
+  const state = { source: 'species', species: 'acer-rubrum', view: 'leaf', season: 'fall', traits: {} , scene: null, spec: null };
+  try { const s = JSON.parse(localStorage.getItem('leafdraw-studio') || 'null'); if (s) Object.assign(state, s, { scene: null, spec: null }); } catch (e) {}
+  const save = () => { try { localStorage.setItem('leafdraw-studio', JSON.stringify({ source: state.source, species: state.species, view: state.view, season: state.season, traits: state.traits })); } catch (e) {} };
+
+  // ---------- species list ----------
+  function fillSpecies(q) {
+    q = (q || '').toLowerCase();
+    const sel = $('speciesList');
+    sel.innerHTML = '';
+    for (const s of species) {
+      const txt = `${s.name} — ${(s.common || [])[0] || ''}`;
+      if (q && !(txt.toLowerCase().includes(q) || s.family.toLowerCase().includes(q) || s.id.includes(q))) continue;
+      const o = document.createElement('option'); o.value = s.id; o.textContent = txt; if (s.id === state.species) o.selected = true; sel.appendChild(o);
+    }
+  }
+  $('speciesSearch').addEventListener('input', (e) => fillSpecies(e.target.value));
+
+  // ---------- any species (tier C) ----------
+  const autoCache = (() => { try { return JSON.parse(localStorage.getItem('leafdraw-auto') || '{}'); } catch (e) { return {}; } })();
+  const keepAuto = (spec) => { autoCache[spec.id] = spec; try { localStorage.setItem('leafdraw-auto', JSON.stringify(autoCache)); } catch (e) {} };
+  function addAuto(spec) {
+    L.registerSpecies([spec]);
+    if (!species.find((x) => x.id === spec.id)) { species.push(spec); species.sort((a, b) => a.name.localeCompare(b.name)); }
+    keepAuto(spec);
+    state.species = spec.id; save(); fillSpecies(''); redraw();
+  }
+  Object.values(autoCache).forEach((sp) => { try { L.registerSpecies([sp]); if (!species.find((x) => x.id === sp.id)) species.push(sp); } catch (e) {} });
+  species.sort((a, b) => a.name.localeCompare(b.name));
+  const esc = (t) => String(t).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  function describe(spec) {
+    const a = spec.auto || {};
+    const fromText = Object.entries(a.from || {}).filter(([, v]) => v === 'text').map(([k]) => k);
+    const fromPrior = Object.entries(a.from || {}).filter(([, v]) => v !== 'text').map(([k]) => k);
+    return `<b>${esc(spec.name)}</b> · ${esc(spec.family || 'family unknown')} · tier C<br>From description: ${esc(fromText.join(', ') || 'nothing usable')}${spec.params?.length ? ' + size' : ''}. From ${esc(a.prior || 'group')} template: ${esc(fromPrior.join(', ') || '—')}.${a.dropped?.length ? ' Dropped (contradictory): ' + esc(a.dropped.join(', ')) + '.' : ''}<br>Sources: ${esc((spec.sources || []).join('; ') || '—')}`;
+  }
+  let suggestTimer = null;
+  $('anyName').addEventListener('input', (e) => {
+    clearTimeout(suggestTimer);
+    const q = e.target.value.trim();
+    if (q.length < 3) return;
+    suggestTimer = setTimeout(async () => {
+      try {
+        const r = await fetch('https://api.gbif.org/v1/species/suggest?datasetKey=d7dddbf4-2cf0-4f39-9b2a-bb099caae36c&rank=SPECIES&q=' + encodeURIComponent(q)).then((x) => x.json());
+        $('anySuggest').innerHTML = r.filter((x) => x.kingdom === 'Plantae').slice(0, 10).map((x) => `<option value="${esc(x.canonicalName)}">${esc(x.family || '')}</option>`).join('');
+      } catch (err) { /* offline or blocked: no suggestions */ }
+    }, 250);
+  });
+  async function viaClaude(name) {
+    const sample = await window.claude?.use?.('sample');
+    if (!sample) return null;
+    const prompt = `You are a botanist. For the plant "${name}", reply with JSON only: {"canonicalName": accepted binomial, "family": APG IV family, "genus": genus, "class": one of Magnoliopsida|Liliopsida|Pinopsida|Polypodiopsida|Ginkgoopsida|Cycadopsida, "common": [English common names], "leafDescription": a flora-style description of the mature leaf in 3-5 sentences using standard terms (arrangement; simple or compound and leaflet number; shape; apex; base; margin; venation; blade length × width with units; petiole length)}. If the name is not a real plant, reply {"error": "unknown"}.`;
+    const d = await sample.json(prompt, { modelTier: 'default' });
+    if (!d || d.error) return { error: `Not recognised as a plant: ${name}` };
+    const spec = L.autoSpec({ name: d.canonicalName || name, family: d.family, genus: d.genus, className: d.class, common: d.common }, d.leafDescription || '', { sources: ['Claude-written description (unverified; no live sources reachable)'] });
+    spec.auto.aiText = d.leafDescription;
+    return spec;
+  }
+  $('anyForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const name = $('anyName').value.trim();
+    if (!name) return;
+    const hit = L.getSpecies(name);
+    if (hit) { state.species = hit.id; save(); fillSpecies(''); redraw(); $('anyMsg').innerHTML = `<b>${esc(hit.name)}</b> is in the catalog (tier ${esc(hit.tier)}).`; return; }
+    $('anyGo').disabled = true; $('anyMsg').textContent = 'Looking up ' + name + '…';
+    let spec = null, netErr = false;
+    try { spec = await L.resolveName(name); } catch (err) { netErr = true; }
+    if (spec?.error && /No GBIF match/.test(spec.error) && !netErr) { $('anyMsg').textContent = spec.error + '. Check spelling, or use the scientific name.'; $('anyGo').disabled = false; return; }
+    if (!spec || spec.error) {
+      $('anyMsg').textContent = 'Live sources unreachable here. Asking Claude for a leaf description…';
+      try { spec = await viaClaude(name); } catch (err) { spec = { error: err?.code === 'not_granted' ? 'Claude lookup not allowed.' : 'Lookup failed.' }; }
+    }
+    $('anyGo').disabled = false;
+    if (!spec || spec.error) { $('anyMsg').textContent = (spec && spec.error) || 'Lookup failed.'; return; }
+    addAuto(spec);
+    $('anyMsg').innerHTML = describe(spec);
+  });
+  $('speciesList').addEventListener('change', (e) => { state.species = e.target.value; save(); redraw(); });
+
+  // ---------- trait builder ----------
+  const CATS = ['plantGroup', 'structure', 'shape', 'lobation', 'apex', 'base', 'margin', 'symmetry', 'attachment', 'primary', 'secondary', 'tertiary', 'areoles', 'marginalVein', 'surface', 'form3d', 'folding', 'phyllotaxis'];
+  const tb = $('traitBase');
+  tb.innerHTML = '<option value="">Blank (group defaults)</option>' + species.map((s) => `<option value="${s.id}">${s.name}</option>`).join('');
+  tb.addEventListener('change', () => { const s = L.getSpecies(tb.value); state.traits = s ? { ...s.traits } : {}; buildTraitGrid(); save(); redraw(); });
+  function buildTraitGrid() {
+    const g = $('traitGrid'); g.innerHTML = '';
+    for (const c of CATS) {
+      const def = L.TRAITS[c];
+      const lab = document.createElement('label'); lab.textContent = def.label;
+      const sel = document.createElement('select'); sel.id = 'trait-' + c;
+      sel.innerHTML = '<option value="">default</option>' + Object.entries(def.terms).map(([id, t]) => `<option value="${id}" title="${t.def.replace(/"/g, '&quot;')}">${id.replace(/-/g, ' ')}</option>`).join('');
+      sel.value = state.traits[c] || '';
+      sel.addEventListener('change', () => { if (sel.value) state.traits[c] = sel.value; else delete state.traits[c]; save(); redraw(); });
+      lab.appendChild(sel); g.appendChild(lab);
+    }
+  }
+  function showValidation(v) {
+    const m = $('traitMsgs'); m.innerHTML = '';
+    const add = (cls, t) => { const d = document.createElement('div'); d.className = 'msg ' + cls; d.textContent = t; m.appendChild(d); };
+    if (v.ok && !v.warnings.length) add('ok', 'Valid combination.');
+    v.errors.forEach((e) => add('err', e.msg));
+    v.warnings.forEach((e) => add('warn', e.msg));
+    v.implied.forEach((t) => add('imp', 'Implied: ' + t));
+  }
+
+  function setSource(src) {
+    state.source = src;
+    $('srcSpecies').setAttribute('aria-pressed', src === 'species');
+    $('srcTraits').setAttribute('aria-pressed', src === 'traits');
+    $('speciesBox').hidden = src !== 'species';
+    $('traitsBox').hidden = src !== 'traits';
+    save(); redraw();
+  }
+  $('srcSpecies').addEventListener('click', () => setSource('species'));
+  $('srcTraits').addEventListener('click', () => setSource('traits'));
+
+  // ---------- segmented controls ----------
+  document.querySelectorAll('[data-view]').forEach((b) => b.addEventListener('click', () => { state.view = b.dataset.view; syncSeg(); save(); redraw(); }));
+  document.querySelectorAll('[data-season]').forEach((b) => b.addEventListener('click', () => { state.season = b.dataset.season; syncSeg(); save(); paint(); }));
+  function syncSeg() {
+    document.querySelectorAll('[data-view]').forEach((b) => b.setAttribute('aria-pressed', b.dataset.view === state.view));
+    document.querySelectorAll('[data-season]').forEach((b) => b.setAttribute('aria-pressed', b.dataset.season === state.season));
+  }
+  ['style', 'labels'].forEach((id) => $(id).addEventListener('change', paint));
+  ['detail', 'seed'].forEach((id) => $(id).addEventListener('change', redraw));
+  $('newSeed').addEventListener('click', () => { $('seed').value = 1 + Math.floor(Math.random() * 99999); redraw(); });
+
+  // ---------- drawing ----------
+  function currentSpec() {
+    if (state.source === 'species') return L.getSpecies(state.species) || species[0];
+    const base = L.getSpecies($('traitBase').value);
+    return { id: 'custom', name: 'Custom leaf', common: ['built from traits'], family: '', tier: '—', traits: { ...state.traits }, params: base ? { ...base.params } : {}, compound: base?.compound, palette: base?.palette };
+  }
+  let timer = null;
+  function redraw() {
+    clearTimeout(timer);
+    $('status').textContent = 'Drawing…';
+    timer = setTimeout(() => {
+      const spec = currentSpec();
+      state.spec = spec;
+      if (state.source === 'traits') showValidation(L.validate(spec.traits));
+      const seed = Math.max(1, parseInt($('seed').value, 10) || 1);
+      const t0 = performance.now();
+      try {
+        const opts = { view: state.view === 'shoot' ? 'shoot' : 'leaf', detail: $('detail').value };
+        state.scene = state.view === 'plate'
+          ? L.composeScenes(Array.from({ length: 6 }, (_, i) => L.draw(spec, seed + i, { ...opts, detail: opts.detail === 'auto' ? 'medium' : opts.detail })), { cols: 3 })
+          : L.draw(spec, seed, opts);
+        $('status').textContent = `${state.scene.parts.length.toLocaleString()} paths · ${Math.round(performance.now() - t0)} ms`;
+        paint();
+      } catch (e) {
+        state.scene = null;
+        $('canvas').innerHTML = `<div class="msgs" style="max-width:420px"><div class="msg err">${(e.message || 'Could not draw this combination.').replace(/</g, '&lt;')}</div></div>`;
+        $('status').textContent = '';
+        renderLabel(spec, null);
+      }
+    }, 20);
+  }
+  function renderOpts(extra) {
+    return { style: $('style').value, season: state.season, labels: $('labels').checked, ...extra };
+  }
+  function paint() {
+    if (!state.scene) return;
+    $('canvas').innerHTML = L.renderSVG(state.scene, renderOpts());
+    renderLabel(state.spec, state.scene);
+  }
+  $('play').addEventListener('click', () => {
+    if (!state.scene) return;
+    $('canvas').innerHTML = L.renderAnimatedSVG(state.scene, renderOpts({ order: $('order').value, duration: +$('duration').value }));
+  });
+
+  function renderLabel(spec, scene) {
+    const m = scene?.meta;
+    const t = m?.traits || L.validate(spec.traits || {}).traits;
+    const tierName = { A: 'measured', B: 'curated', C: 'template' }[spec.tier] || 'custom';
+    $('label').innerHTML = `
+      <div class="hd"><span>Leafdraw herbarium</span><span>No. ${String(m?.seed ?? '—').split(',')[0].padStart(5, '0')}</span></div>
+      <div class="bin"></div><div class="sub"></div>
+      <dl>
+        <dt>Blade</dt><dd>${m ? Math.round(m.L) + ' mm' : '—'}</dd>
+        <dt>Engine</dt><dd>${m ? m.engine : '—'}</dd>
+        <dt>Source</dt><dd><span class="tier">tier ${spec.tier || '—'}</span> ${tierName}</dd>
+      </dl>`;
+    $('label').querySelector('.bin').textContent = spec.name;
+    $('label').querySelector('.sub').textContent = [(spec.common || [])[0], spec.family].filter(Boolean).join(' · ');
+    const chips = $('traitChips'); chips.innerHTML = '';
+    const show = ['structure', 'shape', 'lobation', 'apex', 'base', 'margin', 'primary', 'secondary', 'tertiary', 'phyllotaxis'];
+    for (const c of show) {
+      const v = t[c]; if (!v || v === 'none' || (c === 'structure' && v === 'simple')) continue;
+      const d = document.createElement('span'); d.className = 'chip';
+      const b = document.createElement('b'); b.textContent = L.TRAITS[c].label; d.appendChild(b);
+      d.appendChild(document.createTextNode(v.replace(/-/g, ' '))); chips.appendChild(d);
+    }
+  }
+
+  // ---------- export ----------
+  let downloads = null;
+  if (window.claude?.use) window.claude.use('downloads').then((d) => { downloads = d; }).catch(() => {});
+  const fname = () => `${(state.spec?.id || 'leaf')}-seed${$('seed').value}`;
+  async function offer(filename, data, textFallback) {
+    const msg = $('exportMsg');
+    if (downloads) {
+      try { await downloads.save({ filename, data }); msg.textContent = `Saved ${filename}.`; return; }
+      catch (e) { if (e?.code === 'declined') { msg.textContent = 'Save cancelled.'; return; } }
+    }
+    if (textFallback != null) {
+      try { await navigator.clipboard.writeText(textFallback); msg.textContent = `Copied ${filename} to the clipboard.`; }
+      catch (e) { msg.textContent = 'This view cannot save or copy files. Use the leafdraw command line tool instead.'; }
+    } else msg.textContent = 'This view cannot save files. Use the leafdraw command line tool instead.';
+  }
+  function pngBlob(svg, width) {
+    return new Promise((res, rej) => {
+      const url = URL.createObjectURL(new Blob([svg], { type: 'image/svg+xml' }));
+      const img = new Image();
+      img.onload = () => {
+        const s = width / img.width, c = document.createElement('canvas');
+        c.width = width; c.height = Math.round(img.height * s);
+        const g = c.getContext('2d'); g.fillStyle = '#fff'; g.fillRect(0, 0, c.width, c.height); g.drawImage(img, 0, 0, c.width, c.height);
+        URL.revokeObjectURL(url); c.toBlob((b) => (b ? res(b) : rej(new Error('png'))), 'image/png');
+      };
+      img.onerror = rej; img.src = url;
+    });
+  }
+  document.querySelectorAll('[data-export]').forEach((b) => b.addEventListener('click', async () => {
+    if (!state.scene) return;
+    const k = b.dataset.export, sc = state.scene;
+    if (k === 'svg') { const s = L.renderSVG(sc, renderOpts()); return offer(fname() + '.svg', s, s); }
+    if (k === 'png') { const blob = await pngBlob(L.renderSVG(sc, renderOpts()), 2400); return offer(fname() + '.png', blob, null); }
+    if (k === 'gcode') { const s = L.renderGcode(sc, { hatch: $('style').value === 'hatch' }); return offer(fname() + '.gcode.txt', s, s); }
+    if (k === 'hpgl') { const s = L.renderHPGL(sc, { hatch: $('style').value === 'hatch' }); return offer(fname() + '.hpgl.txt', s, s); }
+    if (k === 'json') { const s = L.sceneToJSON(sc); return offer(fname() + '.scene.json', s, s); }
+    if (k === 'spec') { const s = JSON.stringify(state.spec, null, 2); return offer((state.spec?.id || 'leaf') + '.spec.json', s, s); }
+  }));
+
+  // ---------- boot ----------
+  fillSpecies('');
+  buildTraitGrid();
+  syncSeg();
+  setSource(state.source);
+})();
+</script>

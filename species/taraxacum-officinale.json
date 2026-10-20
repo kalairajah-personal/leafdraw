@@ -1,0 +1,72 @@
+{
+  "id": "taraxacum-officinale",
+  "name": "Taraxacum officinale",
+  "common": [
+    "Dandelion"
+  ],
+  "family": "Asteraceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "shape": "oblanceolate",
+    "lobation": "pinnatipartite",
+    "apex": "acute",
+    "base": "attenuate",
+    "margin": "dentate",
+    "secondary": "brochidodromous",
+    "tertiary": "reticulate",
+    "areoles": "poor",
+    "phyllotaxis": "rosulate"
+  },
+  "params": {
+    "length": [
+      180,
+      30
+    ],
+    "aspect": [
+      4.2,
+      0.4
+    ],
+    "widest": [
+      0.68,
+      0.04
+    ],
+    "lobeCount": [
+      5,
+      0.6
+    ],
+    "lobeDepth": [
+      0.72,
+      0.08
+    ],
+    "lobeShape": "acute",
+    "sinus": "V",
+    "lobeLean": [
+      -0.1,
+      0.03
+    ],
+    "toothSpacing": [
+      7,
+      1
+    ],
+    "toothHeight": [
+      1.2,
+      0.3
+    ],
+    "petiole": [
+      0.05,
+      0.01
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#5e8f3c"
+    },
+    "fall": {
+      "blade": "#9e9446"
+    }
+  }
+}

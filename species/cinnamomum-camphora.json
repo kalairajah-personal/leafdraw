@@ -1,0 +1,55 @@
+{
+  "id": "cinnamomum-camphora",
+  "name": "Cinnamomum camphora",
+  "common": [
+    "Camphor tree"
+  ],
+  "family": "Lauraceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "shape": "elliptic",
+    "apex": "acuminate",
+    "base": "cuneate",
+    "margin": "entire",
+    "primary": "acrodromous",
+    "secondary": "brochidodromous",
+    "tertiary": "reticulate",
+    "areoles": "well-developed",
+    "phyllotaxis": "alternate"
+  },
+  "params": {
+    "length": [
+      80,
+      10
+    ],
+    "aspect": [
+      2.1,
+      0.15
+    ],
+    "widest": [
+      0.48,
+      0.03
+    ],
+    "primaryCount": 3,
+    "suprabasal": [
+      0.08,
+      0.02
+    ],
+    "petiole": [
+      0.3,
+      0.04
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#3f6e2e"
+    },
+    "fall": {
+      "blade": "#b54a2a"
+    }
+  }
+}

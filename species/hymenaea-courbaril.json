@@ -1,0 +1,61 @@
+{
+  "id": "hymenaea-courbaril",
+  "name": "Hymenaea courbaril",
+  "common": [
+    "West Indian locust"
+  ],
+  "family": "Fabaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "structure": "bifoliolate",
+    "phyllotaxis": "alternate"
+  },
+  "params": {
+    "length": [
+      120,
+      15
+    ],
+    "petiole": [
+      0.15,
+      0.02
+    ]
+  },
+  "compound": {
+    "leaflet": {
+      "traits": {
+        "shape": "falcate",
+        "apex": "acuminate",
+        "base": "oblique",
+        "symmetry": "asymmetrical",
+        "margin": "entire",
+        "secondary": "brochidodromous",
+        "tertiary": "reticulate",
+        "areoles": "well-developed"
+      },
+      "params": {
+        "length": [
+          80,
+          10
+        ],
+        "aspect": [
+          2.4,
+          0.15
+        ],
+        "curve": 0.1,
+        "asym": 0.3
+      }
+    }
+  },
+  "palette": {
+    "summer": {
+      "blade": "#3a6a2a"
+    },
+    "fall": {
+      "blade": "#3a6a2a"
+    }
+  }
+}

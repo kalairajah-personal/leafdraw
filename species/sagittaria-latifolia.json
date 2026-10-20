@@ -1,0 +1,54 @@
+{
+  "id": "sagittaria-latifolia",
+  "name": "Sagittaria latifolia",
+  "common": [
+    "Broadleaf arrowhead"
+  ],
+  "family": "Alismataceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "plantGroup": "monocot",
+    "shape": "sagittate",
+    "apex": "acute",
+    "base": "sagittate",
+    "margin": "entire",
+    "primary": "campylodromous",
+    "secondary": "none",
+    "tertiary": "transverse",
+    "phyllotaxis": "rosulate"
+  },
+  "params": {
+    "length": [
+      200,
+      30
+    ],
+    "aspect": [
+      1.4,
+      0.1
+    ],
+    "primaryCount": [
+      7,
+      1
+    ],
+    "baseDepth": [
+      0.3,
+      0.04
+    ],
+    "petiole": [
+      1.2,
+      0.2
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#4f8a45"
+    },
+    "fall": {
+      "blade": "#9e8a4a"
+    }
+  }
+}

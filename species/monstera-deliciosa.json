@@ -1,0 +1,73 @@
+{
+  "id": "monstera-deliciosa",
+  "name": "Monstera deliciosa",
+  "common": [
+    "Swiss cheese plant"
+  ],
+  "family": "Araceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "plantGroup": "monocot",
+    "shape": "cordate",
+    "lobation": "pinnatipartite",
+    "apex": "acute",
+    "base": "cordate",
+    "margin": "entire",
+    "surface": "fenestrate",
+    "primary": "pinnate",
+    "secondary": "brochidodromous",
+    "tertiary": "reticulate",
+    "areoles": "moderate",
+    "marginalVein": "intramarginal",
+    "phyllotaxis": "alternate"
+  },
+  "params": {
+    "length": [
+      450,
+      60
+    ],
+    "aspect": [
+      1.15,
+      0.06
+    ],
+    "widest": [
+      0.38,
+      0.03
+    ],
+    "lobeCount": [
+      7,
+      0.6
+    ],
+    "lobeDepth": [
+      0.72,
+      0.08
+    ],
+    "lobeShape": "rounded",
+    "sinus": "slit",
+    "holeCount": [
+      6,
+      1
+    ],
+    "holeSize": [
+      0.14,
+      0.02
+    ],
+    "marginalOffset": 0.012,
+    "petiole": [
+      0.9,
+      0.1
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#2f5d26"
+    },
+    "fall": {
+      "blade": "#8d8a38"
+    }
+  }
+}

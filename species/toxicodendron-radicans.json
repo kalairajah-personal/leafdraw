@@ -1,0 +1,60 @@
+{
+  "id": "toxicodendron-radicans",
+  "name": "Toxicodendron radicans",
+  "common": [
+    "Poison ivy"
+  ],
+  "family": "Anacardiaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "structure": "ternate",
+    "phyllotaxis": "alternate"
+  },
+  "params": {
+    "length": [
+      180,
+      25
+    ],
+    "petiole": [
+      0.8,
+      0.1
+    ]
+  },
+  "compound": {
+    "palmate": false,
+    "terminalPetiolule": 0.25,
+    "leaflet": {
+      "traits": {
+        "shape": "ovate",
+        "apex": "acuminate",
+        "base": "rounded",
+        "margin": "entire",
+        "secondary": "brochidodromous",
+        "tertiary": "reticulate",
+        "areoles": "moderate"
+      },
+      "params": {
+        "length": [
+          90,
+          12
+        ],
+        "aspect": [
+          1.6,
+          0.12
+        ]
+      }
+    }
+  },
+  "palette": {
+    "summer": {
+      "blade": "#3f6e2a"
+    },
+    "fall": {
+      "blade": "#b6301e"
+    }
+  }
+}

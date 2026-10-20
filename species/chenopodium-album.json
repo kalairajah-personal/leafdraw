@@ -1,0 +1,57 @@
+{
+  "id": "chenopodium-album",
+  "name": "Chenopodium album",
+  "common": [
+    "Lamb's quarters"
+  ],
+  "family": "Amaranthaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "shape": "rhomboid",
+    "apex": "acute",
+    "base": "cuneate",
+    "margin": "dentate",
+    "secondary": "brochidodromous",
+    "tertiary": "reticulate",
+    "areoles": "poor",
+    "phyllotaxis": "alternate"
+  },
+  "params": {
+    "length": [
+      60,
+      10
+    ],
+    "aspect": [
+      1.5,
+      0.1
+    ],
+    "widest": [
+      0.42,
+      0.03
+    ],
+    "toothSpacing": [
+      4,
+      0.6
+    ],
+    "toothHeight": [
+      1.2,
+      0.3
+    ],
+    "petiole": [
+      0.4,
+      0.06
+    ]
+  },
+  "palette": {
+    "summer": {
+      "blade": "#6a8f55"
+    },
+    "fall": {
+      "blade": "#a08a50"
+    }
+  }
+}

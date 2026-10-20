@@ -1,0 +1,59 @@
+{
+  "id": "citrus-sinensis",
+  "name": "Citrus × sinensis",
+  "common": [
+    "Sweet orange"
+  ],
+  "family": "Rutaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "structure": "unifoliate",
+    "phyllotaxis": "alternate"
+  },
+  "params": {
+    "length": [
+      130,
+      15
+    ],
+    "petiole": [
+      0.18,
+      0.02
+    ]
+  },
+  "compound": {
+    "winged": 0.1,
+    "leaflet": {
+      "traits": {
+        "shape": "elliptic",
+        "apex": "acute",
+        "base": "rounded",
+        "margin": "crenulate",
+        "secondary": "brochidodromous",
+        "tertiary": "reticulate",
+        "areoles": "well-developed"
+      },
+      "params": {
+        "length": [
+          100,
+          12
+        ],
+        "aspect": [
+          2.1,
+          0.15
+        ]
+      }
+    }
+  },
+  "palette": {
+    "summer": {
+      "blade": "#2f5a24"
+    },
+    "fall": {
+      "blade": "#2f5a24"
+    }
+  }
+}

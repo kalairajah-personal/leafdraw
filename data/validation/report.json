@@ -1,0 +1,2323 @@
+{
+ "summary": {
+  "date": "2026-10-19",
+  "species": 62,
+  "taxonomy": {
+   "gbifAccepted": 61,
+   "familyMatch": 62,
+   "withHerbariumImages": 62
+  },
+  "traits": {
+   "compared": 105,
+   "agree": 72,
+   "near": 29,
+   "disagree": 4
+  },
+  "size": {
+   "compared": 37,
+   "lengthAgree": 37,
+   "aspectCompared": 16,
+   "aspectAgree": 16
+  }
+ },
+ "rows": [
+  {
+   "id": "ulmus-americana",
+   "name": "Ulmus americana",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Ulmaceae",
+    "familyOk": true,
+    "herbariumImages": 8699,
+    "wikipedia": "Ulmus americana",
+    "powoAccepted": true
+   },
+   "textChars": 757,
+   "sources": [
+    "Wikipedia: Ulmus americana"
+   ],
+   "traits": {
+    "margin": {
+     "curated": "doubly-serrate",
+     "text": "serrate",
+     "verdict": "near",
+     "evidence": "the leaves are alternate, 7–20 centimeters (3–8 inches) long, with double-serrate margins and an oblique base."
+    },
+    "base": {
+     "curated": "oblique",
+     "text": "oblique",
+     "verdict": "agree",
+     "evidence": "the leaves are alternate, 7–20 centimeters (3–8 inches) long, with double-serrate margins and an oblique base."
+    },
+    "phyllotaxis": {
+     "curated": "distichous",
+     "text": "alternate",
+     "verdict": "near",
+     "evidence": "the leaves are alternate, 7–20 centimeters (3–8 inches) long, with double-serrate margins and an oblique base."
+    }
+   },
+   "size": {
+    "curated": 105,
+    "text": [
+     70,
+     200
+    ],
+    "verdict": "agree",
+    "evidence": "the leaves are alternate, 7–20 centimeters (3–8 inches) long, with double-serrate margins and an oblique base."
+   }
+  },
+  {
+   "id": "fagus-grandifolia",
+   "name": "Fagus grandifolia",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Fagaceae",
+    "familyOk": true,
+    "herbariumImages": 8820,
+    "wikipedia": "Fagus grandifolia",
+    "powoAccepted": true
+   },
+   "textChars": 1238,
+   "sources": [
+    "Wikipedia: Fagus grandifolia"
+   ],
+   "traits": {
+    "margin": {
+     "curated": "serrate",
+     "text": "dentate",
+     "verdict": "near",
+     "evidence": "the leaves are dark green, yellow below, simple and sparsely toothed with small teeth that terminate each vein, and 6–12 centimeters (2+1⁄4–4+3⁄4 inches) long (rarely 15 cm or 6 in), with a short peti"
+    }
+   },
+   "size": null
+  },
+  {
+   "id": "betula-papyrifera",
+   "name": "Betula papyrifera",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Betulaceae",
+    "familyOk": true,
+    "herbariumImages": 7307,
+    "wikipedia": "Betula papyrifera",
+    "powoAccepted": true
+   },
+   "textChars": 889,
+   "sources": [
+    "Wikipedia: Betula papyrifera"
+   ],
+   "traits": {
+    "margin": {
+     "curated": "doubly-serrate",
+     "text": "dentate",
+     "verdict": "near",
+     "evidence": "the leaves have a doubly serrated margin with relatively sharp teeth."
+    },
+    "base": {
+     "curated": "rounded",
+     "text": "rounded",
+     "verdict": "agree",
+     "evidence": "the leaf is rounded at the base and tapering to an acutely pointed tip."
+    }
+   },
+   "size": null
+  },
+  {
+   "id": "castanea-dentata",
+   "name": "Castanea dentata",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Fagaceae",
+    "familyOk": true,
+    "herbariumImages": 4596,
+    "wikipedia": "American chestnut",
+    "powoAccepted": true
+   },
+   "textChars": 881,
+   "sources": [
+    "Wikipedia: American chestnut"
+   ],
+   "traits": {},
+   "size": null
+  },
+  {
+   "id": "populus-deltoides",
+   "name": "Populus deltoides",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Salicaceae",
+    "familyOk": true,
+    "herbariumImages": 8312,
+    "wikipedia": "Populus deltoides",
+    "powoAccepted": true
+   },
+   "textChars": 807,
+   "sources": [
+    "Wikipedia: Populus deltoides"
+   ],
+   "traits": {
+    "shape": {
+     "curated": "deltoid",
+     "text": "deltoid",
+     "verdict": "agree",
+     "evidence": "the leaves are large, deltoid (triangular), 4–10 cm (1+1⁄2–4 in) long and 4–11 cm (1+1⁄2–4+1⁄4 in) broad with a truncated (flattened) base and a petiole 3–12 cm (1+1⁄4–4+3⁄4 in) long."
+    },
+    "margin": {
+     "curated": "crenate",
+     "text": "dentate",
+     "verdict": "near",
+     "evidence": "the leaf is very coarsely toothed, the teeth are curved and gland tipped, and the petiole is flat"
+    }
+   },
+   "size": {
+    "curated": 90,
+    "text": [
+     40,
+     100
+    ],
+    "verdict": "agree",
+    "evidence": "the leaves are large, deltoid (triangular), 4–10 cm (1+1⁄2–4 in) long and 4–11 cm (1+1⁄2–4+1⁄4 in) broad with a truncated (flattened) base and a petiole 3–12 cm (1+1⁄4–4+3⁄4 in) long.",
+    "aspect": {
+     "curated": 1.05,
+     "text": [
+      0.36,
+      2.5
+     ],
+     "verdict": "agree"
+    }
+   }
+  },
+  {
+   "id": "tilia-americana",
+   "name": "Tilia americana",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Malvaceae",
+    "familyOk": true,
+    "herbariumImages": 12198,
+    "wikipedia": "Tilia americana",
+    "powoAccepted": true
+   },
+   "textChars": 1600,
+   "sources": [
+    "Wikipedia: Tilia americana"
+   ],
+   "traits": {
+    "shape": {
+     "curated": "cordate",
+     "text": "ovate/cordate",
+     "verdict": "agree",
+     "evidence": "the leaves are simple, alternately arranged, ovate to cordate, asymmetrical, unequal at the base (the side nearer the branch the larger), 10–15 cm (4–6 in) (can grow up to 25 cm or 10 in) long and bro"
+    },
+    "apex": {
+     "curated": "acuminate",
+     "text": "acuminate",
+     "verdict": "agree",
+     "evidence": "the leaves are simple, alternately arranged, ovate to cordate, asymmetrical, unequal at the base (the side nearer the branch the larger), 10–15 cm (4–6 in) (can grow up to 25 cm or 10 in) long and bro"
+    },
+    "base": {
+     "curated": "cordate",
+     "text": "cordate",
+     "verdict": "agree",
+     "evidence": "the leaves are simple, alternately arranged, ovate to cordate, asymmetrical, unequal at the base (the side nearer the branch the larger), 10–15 cm (4–6 in) (can grow up to 25 cm or 10 in) long and bro"
+    }
+   },
+   "size": null
+  },
+  {
+   "id": "liriodendron-tulipifera",
+   "name": "Liriodendron tulipifera",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Magnoliaceae",
+    "familyOk": true,
+    "herbariumImages": 6726,
+    "wikipedia": "Liriodendron tulipifera",
+    "powoAccepted": true
+   },
+   "textChars": 1600,
+   "sources": [
+    "Wikipedia: Liriodendron tulipifera"
+   ],
+   "traits": {
+    "shape": {
+     "curated": "orbicular",
+     "text": "cordate",
+     "verdict": "near",
+     "evidence": "they have four lobes, and are heart-shaped or truncate or slightly wedge-shaped at base, entire, and the apex cut across at a shallow angle, making the upper part of the leaf look square"
+    },
+    "lobation": {
+     "curated": "lobed",
+     "text": "lobed",
+     "verdict": "agree",
+     "evidence": "this ecotype is recognized by its blunt-lobed leaves, which may have a red tint."
+    },
+    "margin": {
+     "curated": "entire",
+     "text": "entire",
+     "verdict": "agree",
+     "evidence": "they have four lobes, and are heart-shaped or truncate or slightly wedge-shaped at base, entire, and the apex cut across at a shallow angle, making the upper part of the leaf look square"
+    },
+    "apex": {
+     "curated": "truncate",
+     "text": "truncate",
+     "verdict": "agree",
+     "evidence": "they have four lobes, and are heart-shaped or truncate or slightly wedge-shaped at base, entire, and the apex cut across at a shallow angle, making the upper part of the leaf look square"
+    },
+    "phyllotaxis": {
+     "curated": "alternate",
+     "text": "alternate",
+     "verdict": "agree",
+     "evidence": "the alternate leaves are simple, pinnately veined, measuring 125–150 mm (5–6 in) long and wide."
+    }
+   },
+   "size": {
+    "curated": 120,
+    "text": [
+     125,
+     150
+    ],
+    "verdict": "agree",
+    "evidence": "the alternate leaves are simple, pinnately veined, measuring 125–150 mm (5–6 in) long and wide."
+   }
+  },
+  {
+   "id": "quercus-alba",
+   "name": "Quercus alba",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Fagaceae",
+    "familyOk": true,
+    "herbariumImages": 9793,
+    "wikipedia": "Quercus alba",
+    "powoAccepted": true
+   },
+   "textChars": 1586,
+   "sources": [
+    "Wikipedia: Quercus alba"
+   ],
+   "traits": {
+    "phyllotaxis": {
+     "curated": "alternate",
+     "text": "alternate",
+     "verdict": "agree",
+     "evidence": "leaves: alternate, 13–23 cm (5–9 in) long, 7.5–10 cm (3–4 in) wide."
+    }
+   },
+   "size": {
+    "curated": 150,
+    "text": [
+     125,
+     215
+    ],
+    "verdict": "agree",
+    "evidence": "the leaves grow to be 12.5 to 21.5 centimetres (5–8+1⁄2 inches) long and 7 to 11.5 centimetres (2+3⁄4–4+1⁄2 in) wide and have a deep glossy green upper surface.",
+    "aspect": {
+     "curated": 1.9,
+     "text": [
+      1.09,
+      3.07
+     ],
+     "verdict": "agree"
+    }
+   }
+  },
+  {
+   "id": "quercus-rubra",
+   "name": "Quercus rubra",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Fagaceae",
+    "familyOk": true,
+    "herbariumImages": 9377,
+    "wikipedia": "Quercus rubra",
+    "powoAccepted": true
+   },
+   "textChars": 1600,
+   "sources": [
+    "Wikipedia: Quercus rubra"
+   ],
+   "traits": {},
+   "size": null
+  },
+  {
+   "id": "raphanus-raphanistrum",
+   "name": "Raphanus raphanistrum",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Brassicaceae",
+    "familyOk": true,
+    "herbariumImages": 11876,
+    "wikipedia": "Raphanus raphanistrum",
+    "powoAccepted": true
+   },
+   "textChars": 1045,
+   "sources": [
+    "Wikipedia: Raphanus raphanistrum"
+   ],
+   "traits": {
+    "lobation": {
+     "curated": "lyrate",
+     "text": "pinnatifid",
+     "verdict": "near",
+     "evidence": "it has a basal rosette of pinnate leaves to 38 cm (15 in) long, with a 3-cm stalk (petiole) and a large rounded terminal lobe that has a undulate margin"
+    },
+    "margin": {
+     "curated": "dentate",
+     "text": "undulate",
+     "verdict": "disagree",
+     "evidence": "it has a basal rosette of pinnate leaves to 38 cm (15 in) long, with a 3-cm stalk (petiole) and a large rounded terminal lobe that has a undulate margin"
+    },
+    "apex": {
+     "curated": "obtuse",
+     "text": "rounded",
+     "verdict": "near",
+     "evidence": "it has a basal rosette of pinnate leaves to 38 cm (15 in) long, with a 3-cm stalk (petiole) and a large rounded terminal lobe that has a undulate margin"
+    },
+    "phyllotaxis": {
+     "curated": "rosulate",
+     "text": "rosulate",
+     "verdict": "agree",
+     "evidence": "it has a basal rosette of pinnate leaves to 38 cm (15 in) long, with a 3-cm stalk (petiole) and a large rounded terminal lobe that has a undulate margin"
+    }
+   },
+   "size": {
+    "curated": 150,
+    "text": [
+     152,
+     380
+    ],
+    "verdict": "agree",
+    "evidence": "it has a basal rosette of pinnate leaves to 38 cm (15 in) long, with a 3-cm stalk (petiole) and a large rounded terminal lobe that has a undulate margin"
+   }
+  },
+  {
+   "id": "taraxacum-officinale",
+   "name": "Taraxacum officinale",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Asteraceae",
+    "familyOk": true,
+    "herbariumImages": 12897,
+    "wikipedia": "Taraxacum officinale",
+    "powoAccepted": false
+   },
+   "textChars": 1327,
+   "sources": [
+    "Wikipedia: Taraxacum officinale"
+   ],
+   "traits": {
+    "shape": {
+     "curated": "oblanceolate",
+     "text": "oblanceolate/oblong/obovate",
+     "verdict": "agree",
+     "evidence": "the leaves are 5–45 cm (2–17+3⁄4 in) long and 1–10 cm (1⁄2–4 in) wide, and they are oblanceolate, oblong, or obovate in shape, with the bases gradually narrowing to the petiole."
+    },
+    "lobation": {
+     "curated": "pinnatipartite",
+     "text": "lobed",
+     "verdict": "near",
+     "evidence": "the leaf margins are typically shallowly lobed to deeply lobed and often lacerate or toothed with sharp or dull teeth."
+    },
+    "margin": {
+     "curated": "dentate",
+     "text": "dentate",
+     "verdict": "agree",
+     "evidence": "the leaf margins are typically shallowly lobed to deeply lobed and often lacerate or toothed with sharp or dull teeth."
+    }
+   },
+   "size": {
+    "curated": 180,
+    "text": [
+     50,
+     450
+    ],
+    "verdict": "agree",
+    "evidence": "the leaves are 5–45 cm (2–17+3⁄4 in) long and 1–10 cm (1⁄2–4 in) wide, and they are oblanceolate, oblong, or obovate in shape, with the bases gradually narrowing to the petiole.",
+    "aspect": {
+     "curated": 4.2,
+     "text": [
+      0.5,
+      45
+     ],
+     "verdict": "agree"
+    }
+   }
+  },
+  {
+   "id": "achillea-millefolium",
+   "name": "Achillea millefolium",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Asteraceae",
+    "familyOk": true,
+    "herbariumImages": 33856,
+    "wikipedia": "Achillea millefolium",
+    "powoAccepted": true
+   },
+   "textChars": 1945,
+   "sources": [
+    "Wikipedia: Achillea millefolium",
+    "POWO/Flora of Iraq"
+   ],
+   "traits": {
+    "shape": {
+     "curated": "lanceolate",
+     "text": "linear/lanceolate",
+     "verdict": "agree",
+     "evidence": "cauline leaves similar to basal, sparingly pubescent to glabrescent, basal leaves linear to lanceolate, including petiole (up to 5 cm), (6–)10–20 × (0.5–)1–4 cm, (2–)3–pinnatisect into linear to linea"
+    },
+    "lobation": {
+     "curated": "multifid",
+     "text": "pinnatisect",
+     "verdict": "near",
+     "evidence": "cauline leaves similar to basal, sparingly pubescent to glabrescent, basal leaves linear to lanceolate, including petiole (up to 5 cm), (6–)10–20 × (0.5–)1–4 cm, (2–)3–pinnatisect into linear to linea"
+    },
+    "attachment": {
+     "curated": "petiolate",
+     "text": "sessile/petiolate",
+     "verdict": "agree",
+     "evidence": "cauline and more or less clasping, the leaves appear spirally and evenly along the stem, with the largest and most petiolate towards the base"
+    }
+   },
+   "size": null
+  },
+  {
+   "id": "monstera-deliciosa",
+   "name": "Monstera deliciosa",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Araceae",
+    "familyOk": true,
+    "herbariumImages": 390,
+    "wikipedia": "Monstera deliciosa",
+    "powoAccepted": true
+   },
+   "textChars": 1859,
+   "sources": [
+    "Wikipedia: Monstera deliciosa",
+    "POWO/Flora Zambesiaca"
+   ],
+   "traits": {
+    "shape": {
+     "curated": "cordate",
+     "text": "ovate/cordate",
+     "verdict": "agree",
+     "evidence": "leaf-blade broadly ovate, up to 90 × 75 cm, regularly pinnatifid, adult leaf perforated in several parallel series, cordate to subcordate"
+    },
+    "lobation": {
+     "curated": "pinnatipartite",
+     "text": "pinnatifid",
+     "verdict": "near",
+     "evidence": "leaf-blade broadly ovate, up to 90 × 75 cm, regularly pinnatifid, adult leaf perforated in several parallel series, cordate to subcordate"
+    },
+    "surface": {
+     "curated": "fenestrate",
+     "text": "fenestrate",
+     "verdict": "agree",
+     "evidence": "leaf-blade broadly ovate, up to 90 × 75 cm, regularly pinnatifid, adult leaf perforated in several parallel series, cordate to subcordate"
+    }
+   },
+   "size": {
+    "curated": 450,
+    "text": [
+     360,
+     900
+    ],
+    "verdict": "agree",
+    "evidence": "leaf-blade broadly ovate, up to 90 × 75 cm, regularly pinnatifid, adult leaf perforated in several parallel series, cordate to subcordate",
+    "aspect": {
+     "curated": 1.15,
+     "text": [
+      0.48,
+      3
+     ],
+     "verdict": "agree"
+    }
+   }
+  },
+  {
+   "id": "magnolia-grandiflora",
+   "name": "Magnolia grandiflora",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Magnoliaceae",
+    "familyOk": true,
+    "herbariumImages": 2470,
+    "wikipedia": "Magnolia grandiflora",
+    "powoAccepted": true
+   },
+   "textChars": 1600,
+   "sources": [
+    "Wikipedia: Magnolia grandiflora"
+   ],
+   "traits": {
+    "shape": {
+     "curated": "elliptic",
+     "text": "ovate",
+     "verdict": "near",
+     "evidence": "the leaves are simple and broadly ovate, 12–20 cm (4+3⁄4–7+3⁄4 in) long and 6–12 cm (2+1⁄4–4+3⁄4 in) broad, with smooth margins."
+    },
+    "margin": {
+     "curated": "entire",
+     "text": "entire",
+     "verdict": "agree",
+     "evidence": "the leaves are simple and broadly ovate, 12–20 cm (4+3⁄4–7+3⁄4 in) long and 6–12 cm (2+1⁄4–4+3⁄4 in) broad, with smooth margins."
+    }
+   },
+   "size": {
+    "curated": 200,
+    "text": [
+     80,
+     200
+    ],
+    "verdict": "agree",
+    "evidence": "reaching 27.5 m (90 ft) in height, it is a large, striking evergreen tree, with large, dark-green leaves up to 20 cm (7+3⁄4 in) long and 12 cm (4+3⁄4 in) wide, and large, white, fragrant flowers up to",
+    "aspect": {
+     "curated": 2.2,
+     "text": [
+      0.67,
+      4.17
+     ],
+     "verdict": "agree"
+    }
+   }
+  },
+  {
+   "id": "prunus-serotina",
+   "name": "Prunus serotina",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Rosaceae",
+    "familyOk": true,
+    "herbariumImages": 14582,
+    "wikipedia": "Prunus serotina",
+    "powoAccepted": true
+   },
+   "textChars": 774,
+   "sources": [
+    "Wikipedia: Prunus serotina"
+   ],
+   "traits": {
+    "shape": {
+     "curated": "elliptic",
+     "text": "ovate/lanceolate",
+     "verdict": "near",
+     "evidence": "the leaves are 5–13 centimetres (2–5 inches) long, ovate-lanceolate in shape, with finely toothed margins."
+    },
+    "margin": {
+     "curated": "serrulate",
+     "text": "serrulate/dentate",
+     "verdict": "agree",
+     "evidence": "the leaves are 5–13 centimetres (2–5 inches) long, ovate-lanceolate in shape, with finely toothed margins."
+    }
+   },
+   "size": {
+    "curated": 90,
+    "text": [
+     50,
+     130
+    ],
+    "verdict": "agree",
+    "evidence": "the leaves are 5–13 centimetres (2–5 inches) long, ovate-lanceolate in shape, with finely toothed margins."
+   }
+  },
+  {
+   "id": "salix-babylonica",
+   "name": "Salix babylonica",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Salicaceae",
+    "familyOk": true,
+    "herbariumImages": 2806,
+    "wikipedia": "Salix babylonica",
+    "powoAccepted": true
+   },
+   "textChars": 666,
+   "sources": [
+    "Wikipedia: Salix babylonica"
+   ],
+   "traits": {
+    "margin": {
+     "curated": "serrulate",
+     "text": "serrulate",
+     "verdict": "agree",
+     "evidence": "the leaves are alternate and spirally arranged, narrow, light green, 4–16 cm (1.6–6.3 in) long and 0.5–2 cm (0.2–0.8 in) broad, with finely serrate margins and long acuminate tips"
+    },
+    "apex": {
+     "curated": "acuminate",
+     "text": "acuminate",
+     "verdict": "agree",
+     "evidence": "the leaves are alternate and spirally arranged, narrow, light green, 4–16 cm (1.6–6.3 in) long and 0.5–2 cm (0.2–0.8 in) broad, with finely serrate margins and long acuminate tips"
+    },
+    "phyllotaxis": {
+     "curated": "alternate",
+     "text": "alternate",
+     "verdict": "agree",
+     "evidence": "the leaves are alternate and spirally arranged, narrow, light green, 4–16 cm (1.6–6.3 in) long and 0.5–2 cm (0.2–0.8 in) broad, with finely serrate margins and long acuminate tips"
+    }
+   },
+   "size": {
+    "curated": 110,
+    "text": [
+     40,
+     160
+    ],
+    "verdict": "agree",
+    "evidence": "the leaves are alternate and spirally arranged, narrow, light green, 4–16 cm (1.6–6.3 in) long and 0.5–2 cm (0.2–0.8 in) broad, with finely serrate margins and long acuminate tips",
+    "aspect": {
+     "curated": 7,
+     "text": [
+      2,
+      32
+     ],
+     "verdict": "agree"
+    }
+   }
+  },
+  {
+   "id": "cornus-florida",
+   "name": "Cornus florida",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Cornaceae",
+    "familyOk": true,
+    "herbariumImages": 12114,
+    "wikipedia": "Cornus florida",
+    "powoAccepted": true
+   },
+   "textChars": 1001,
+   "sources": [
+    "Wikipedia: Cornus florida"
+   ],
+   "traits": {
+    "shape": {
+     "curated": "elliptic",
+     "text": "ovate",
+     "verdict": "near",
+     "evidence": "the leaves are opposite, simple, ovate, 6–13 cm (2.4–5.1 in) long and 4–6 cm (1.6–2.4 in) broad, with an apparently entire margin (actually very finely toothed, under a lens)"
+    },
+    "margin": {
+     "curated": "entire",
+     "text": "entire/serrulate/dentate",
+     "verdict": "agree",
+     "evidence": "the leaves are opposite, simple, ovate, 6–13 cm (2.4–5.1 in) long and 4–6 cm (1.6–2.4 in) broad, with an apparently entire margin (actually very finely toothed, under a lens)"
+    },
+    "phyllotaxis": {
+     "curated": "opposite",
+     "text": "opposite",
+     "verdict": "agree",
+     "evidence": "the leaves are opposite, simple, ovate, 6–13 cm (2.4–5.1 in) long and 4–6 cm (1.6–2.4 in) broad, with an apparently entire margin (actually very finely toothed, under a lens)"
+    }
+   },
+   "size": {
+    "curated": 100,
+    "text": [
+     60,
+     130
+    ],
+    "verdict": "agree",
+    "evidence": "the leaves are opposite, simple, ovate, 6–13 cm (2.4–5.1 in) long and 4–6 cm (1.6–2.4 in) broad, with an apparently entire margin (actually very finely toothed, under a lens)",
+    "aspect": {
+     "curated": 1.8,
+     "text": [
+      1,
+      3.25
+     ],
+     "verdict": "agree"
+    }
+   }
+  },
+  {
+   "id": "eucalyptus-globulus",
+   "name": "Eucalyptus globulus",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Myrtaceae",
+    "familyOk": true,
+    "herbariumImages": 2199,
+    "wikipedia": "Eucalyptus globulus",
+    "powoAccepted": true
+   },
+   "textChars": 1325,
+   "sources": [
+    "Wikipedia: Eucalyptus globulus",
+    "POWO/Flora of Somalia",
+    "POWO/Flora of Tropical East Africa"
+   ],
+   "traits": {
+    "shape": {
+     "curated": "falcate",
+     "text": "lanceolate/falcate",
+     "verdict": "agree",
+     "evidence": "adult leaves lanceolate to narrowly lanceolate, sometimes falcate, 12–25 x 1.7–3 cm, acuminate at apex"
+    },
+    "apex": {
+     "curated": "acuminate",
+     "text": "acuminate",
+     "verdict": "agree",
+     "evidence": "adult leaves lanceolate to narrowly lanceolate, sometimes falcate, 12–25 x 1.7–3 cm, acuminate at apex"
+    }
+   },
+   "size": {
+    "curated": 220,
+    "text": [
+     120,
+     250
+    ],
+    "verdict": "agree",
+    "evidence": "adult leaves lanceolate to narrowly lanceolate, sometimes falcate, 12–25 x 1.7–3 cm, acuminate at apex",
+    "aspect": {
+     "curated": 6,
+     "text": [
+      4,
+      14.71
+     ],
+     "verdict": "agree"
+    }
+   }
+  },
+  {
+   "id": "cinnamomum-camphora",
+   "name": "Cinnamomum camphora",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Lauraceae",
+    "familyOk": true,
+    "herbariumImages": 2540,
+    "wikipedia": "Camphora officinarum",
+    "powoAccepted": false
+   },
+   "textChars": 755,
+   "sources": [
+    "Wikipedia: Camphora officinarum"
+   ],
+   "traits": {},
+   "size": null
+  },
+  {
+   "id": "ilex-aquifolium",
+   "name": "Ilex aquifolium",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Aquifoliaceae",
+    "familyOk": true,
+    "herbariumImages": 3668,
+    "wikipedia": "Ilex aquifolium",
+    "powoAccepted": true
+   },
+   "textChars": 1600,
+   "sources": [
+    "Wikipedia: Ilex aquifolium"
+   ],
+   "traits": {
+    "margin": {
+     "curated": "spiny",
+     "text": "spiny",
+     "verdict": "agree",
+     "evidence": "its glossy green prickly leaves and bright red berries (produced only by the female plant) are represented in wreaths, garlands and cards wherever christmas is celebrated."
+    }
+   },
+   "size": {
+    "curated": 70,
+    "text": [
+     50,
+     120
+    ],
+    "verdict": "agree",
+    "evidence": "the leaves are 5–12 cm long and can be as narrow as one-third the overall length"
+   }
+  },
+  {
+   "id": "chenopodium-album",
+   "name": "Chenopodium album",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Amaranthaceae",
+    "familyOk": true,
+    "herbariumImages": 22431,
+    "wikipedia": "Chenopodium album",
+    "powoAccepted": true
+   },
+   "textChars": 2479,
+   "sources": [
+    "Wikipedia: Chenopodium album",
+    "POWO/Flora Zambesiaca",
+    "POWO/Flora of Tropical East Africa",
+    "POWO/Flora of Iraq"
+   ],
+   "traits": {
+    "shape": {
+     "curated": "rhomboid",
+     "text": "rhomboid/ovate/lanceolate",
+     "verdict": "agree",
+     "evidence": "leaves very variable even on a single plant, rhombic-ovate to lanceolate, usually distinctly longer than broad by at least 14 times (but the juvenile leaves following the cotyledons may be almost as b"
+    },
+    "lobation": {
+     "curated": "none",
+     "text": "palmately-lobed",
+     "verdict": "disagree",
+     "evidence": "leaves 2–8 × 1–5 cm, rhombic, deltoid or ovate-lanceolate, entire or denticulate, lower leaves often 3-lobed (middle lobe tapering to apex), mealy beneath"
+    },
+    "margin": {
+     "curated": "dentate",
+     "text": "entire/dentate",
+     "verdict": "agree",
+     "evidence": "leaf-margins entire or more commonly with up to about 10 shallow irregular teeth on each side, the lowermost tooth or lobe on each margin sometimes more prominent than the rest"
+    },
+    "apex": {
+     "curated": "acute",
+     "text": "acute/rounded",
+     "verdict": "agree",
+     "evidence": "apex of leaf acute, or particularly in the lower cauline leaves subacute to rounded"
+    },
+    "base": {
+     "curated": "cuneate",
+     "text": "rounded/acute",
+     "verdict": "near",
+     "evidence": "to 5.4 x 3.1, 6.5 x 3.8, 7 x 1.5, 7 x 3.7 and 8.2 x 5.5 cm., margins entire or more commonly with up to about 10 shallow teeth each side, prominent basal lobes not commonly present, apex of leaf acute"
+    },
+    "phyllotaxis": {
+     "curated": "alternate",
+     "text": "alternate",
+     "verdict": "agree",
+     "evidence": "the leaves are alternate and varied in appearance."
+    }
+   },
+   "size": {
+    "curated": 60,
+    "text": [
+     12,
+     82
+    ],
+    "verdict": "agree",
+    "evidence": "leaves very variable even on a single plant, rhombic-ovate to lanceolate, usually distinctly longer than broad by at least 14 times (but the juvenile leaves following the cotyledons may be almost as b",
+    "aspect": {
+     "curated": 1.5,
+     "text": [
+      0.22,
+      27.33
+     ],
+     "verdict": "agree"
+    }
+   }
+  },
+  {
+   "id": "bellis-perennis",
+   "name": "Bellis perennis",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Asteraceae",
+    "familyOk": true,
+    "herbariumImages": 5853,
+    "wikipedia": "Bellis perennis",
+    "powoAccepted": true
+   },
+   "textChars": 519,
+   "sources": [
+    "Wikipedia: Bellis perennis",
+    "POWO/Flora of Iraq"
+   ],
+   "traits": {
+    "shape": {
+     "curated": "spatulate",
+     "text": "spatulate",
+     "verdict": "agree",
+     "evidence": "leaves spatulate, 20–60(–90) × (6–)10–20 mm, tapering below to a winged petiole shorter to longer than lamina, thinly hairy to glabrous on both surfaces, margin entire to shallowly serrate or dentate,"
+    },
+    "margin": {
+     "curated": "crenate",
+     "text": "entire/serrate/dentate",
+     "verdict": "near",
+     "evidence": "leaves spatulate, 20–60(–90) × (6–)10–20 mm, tapering below to a winged petiole shorter to longer than lamina, thinly hairy to glabrous on both surfaces, margin entire to shallowly serrate or dentate,"
+    },
+    "apex": {
+     "curated": "rounded",
+     "text": "rounded",
+     "verdict": "agree",
+     "evidence": "it has short creeping rhizomes and rosettes of small rounded or spoon-shaped leaves that are from 2 to 5 cm (3⁄4–2 in) long and grow flat to the ground."
+    }
+   },
+   "size": {
+    "curated": 45,
+    "text": [
+     20,
+     50
+    ],
+    "verdict": "agree",
+    "evidence": "it has short creeping rhizomes and rosettes of small rounded or spoon-shaped leaves that are from 2 to 5 cm (3⁄4–2 in) long and grow flat to the ground."
+   }
+  },
+  {
+   "id": "ipomoea-pandurata",
+   "name": "Ipomoea pandurata",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Convolvulaceae",
+    "familyOk": true,
+    "herbariumImages": 3885,
+    "wikipedia": "Ipomoea pandurata",
+    "powoAccepted": true
+   },
+   "textChars": 830,
+   "sources": [
+    "Wikipedia: Ipomoea pandurata"
+   ],
+   "traits": {
+    "shape": {
+     "curated": "cordate",
+     "text": "cordate",
+     "verdict": "agree",
+     "evidence": "it is a twining plant of woodland verges and rough places with heart-shaped leaves and funnel-shaped white flowers with a pinkish throat."
+    },
+    "base": {
+     "curated": "cordate",
+     "text": "cordate",
+     "verdict": "agree",
+     "evidence": "the stems are usually hairless and bear alternate, olive-green, cordate leaves, about 6 in (15 cm) long, with long, purple-tinged petioles."
+    },
+    "phyllotaxis": {
+     "curated": "alternate",
+     "text": "alternate",
+     "verdict": "agree",
+     "evidence": "the stems are usually hairless and bear alternate, olive-green, cordate leaves, about 6 in (15 cm) long, with long, purple-tinged petioles."
+    }
+   },
+   "size": {
+    "curated": 100,
+    "text": [
+     114.3,
+     190.5
+    ],
+    "verdict": "agree",
+    "evidence": "the stems are usually hairless and bear alternate, olive-green, cordate leaves, about 6 in (15 cm) long, with long, purple-tinged petioles."
+   }
+  },
+  {
+   "id": "rumex-acetosella",
+   "name": "Rumex acetosella",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Polygonaceae",
+    "familyOk": true,
+    "herbariumImages": 23889,
+    "wikipedia": "Rumex acetosella",
+    "powoAccepted": true
+   },
+   "textChars": 961,
+   "sources": [
+    "Wikipedia: Rumex acetosella",
+    "POWO/Flora Zambesiaca",
+    "POWO/Flora Zambesiaca"
+   ],
+   "traits": {
+    "shape": {
+     "curated": "hastate",
+     "text": "linear/ovate/hastate/sagittate",
+     "verdict": "agree",
+     "evidence": "lamina (0.7)1.5–6 × 0.5–2.5 cm, linear-ovate to ovate, acute at the apex, often hastate or sagittate with spreading or forward-pointing lobes, more rarely cuneate or rounded at the base, petiolate"
+    },
+    "apex": {
+     "curated": "acute",
+     "text": "acute/rounded",
+     "verdict": "agree",
+     "evidence": "lamina (0.7)1.5–6 × 0.5–2.5 cm, linear-ovate to ovate, acute at the apex, often hastate or sagittate with spreading or forward-pointing lobes, more rarely cuneate or rounded at the base, petiolate"
+    },
+    "base": {
+     "curated": "hastate",
+     "text": "rounded/acute/hastate/sagittate",
+     "verdict": "agree",
+     "evidence": "lamina (0.7)1.5–6 × 0.5–2.5 cm, linear-ovate to ovate, acute at the apex, often hastate or sagittate with spreading or forward-pointing lobes, more rarely cuneate or rounded at the base, petiolate"
+    },
+    "phyllotaxis": {
+     "curated": "alternate",
+     "text": "rosulate",
+     "verdict": "disagree",
+     "evidence": "leaves acid tasting, in a basal rosette as well as along the stems"
+    },
+    "attachment": {
+     "curated": "petiolate",
+     "text": "petiolate",
+     "verdict": "agree",
+     "evidence": "lamina (0.7)1.5–6 × 0.5–2.5 cm, linear-ovate to ovate, acute at the apex, often hastate or sagittate with spreading or forward-pointing lobes, more rarely cuneate or rounded at the base, petiolate"
+    }
+   },
+   "size": {
+    "curated": 50,
+    "text": [
+     15,
+     60
+    ],
+    "verdict": "agree",
+    "evidence": "lamina (0.7)1.5–6 × 0.5–2.5 cm, linear-ovate to ovate, acute at the apex, often hastate or sagittate with spreading or forward-pointing lobes, more rarely cuneate or rounded at the base, petiolate",
+    "aspect": {
+     "curated": 2.6,
+     "text": [
+      0.6,
+      12
+     ],
+     "verdict": "agree"
+    }
+   }
+  },
+  {
+   "id": "rosmarinus-officinalis",
+   "name": "Salvia rosmarinus",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Lamiaceae",
+    "familyOk": true,
+    "herbariumImages": 2694,
+    "wikipedia": "Rosemary",
+    "powoAccepted": true
+   },
+   "textChars": 877,
+   "sources": [
+    "Wikipedia: Rosemary"
+   ],
+   "traits": {
+    "shape": {
+     "curated": "linear",
+     "text": "acicular",
+     "verdict": "near",
+     "evidence": "salvia rosmarinus, synonym rosmarinus officinalis, commonly known as rosemary, is a shrub with fragrant, evergreen, needle-like leaves and purple or sometimes white, pink, or blue flowers."
+    }
+   },
+   "size": {
+    "curated": 28,
+    "text": [
+     20,
+     40
+    ],
+    "verdict": "agree",
+    "evidence": "the leaves are evergreen, 2–4 cm (3⁄4–1+1⁄2 in) long and 2–5 mm (1⁄16–3⁄16 in) broad, green above, and white below, with dense, short, woolly hair.",
+    "aspect": {
+     "curated": 10,
+     "text": [
+      4,
+      20
+     ],
+     "verdict": "agree"
+    }
+   }
+  },
+  {
+   "id": "cercis-canadensis",
+   "name": "Cercis canadensis",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Fabaceae",
+    "familyOk": true,
+    "herbariumImages": 8635,
+    "wikipedia": "Cercis canadensis",
+    "powoAccepted": true
+   },
+   "textChars": 1475,
+   "sources": [
+    "Wikipedia: Cercis canadensis"
+   ],
+   "traits": {
+    "shape": {
+     "curated": "cordate",
+     "text": "cordate",
+     "verdict": "agree",
+     "evidence": "the leaves are alternate, simple, and heart shaped with an entire margin, 7–12 cm (3–4.5 in) long and wide, thin and papery, and may be slightly hairy below."
+    },
+    "margin": {
+     "curated": "entire",
+     "text": "entire",
+     "verdict": "agree",
+     "evidence": "the leaves are alternate, simple, and heart shaped with an entire margin, 7–12 cm (3–4.5 in) long and wide, thin and papery, and may be slightly hairy below."
+    },
+    "base": {
+     "curated": "cordate",
+     "text": "cordate/truncate/acute",
+     "verdict": "agree",
+     "evidence": "cotyledons oval, flat leaves: alternate, simple, heart-shaped or broadly ovate, two to five inches long, five to seven-nerved, cordate or truncate at the base, entire, acute."
+    },
+    "phyllotaxis": {
+     "curated": "alternate",
+     "text": "alternate",
+     "verdict": "agree",
+     "evidence": "the leaves are alternate, simple, and heart shaped with an entire margin, 7–12 cm (3–4.5 in) long and wide, thin and papery, and may be slightly hairy below."
+    }
+   },
+   "size": {
+    "curated": 90,
+    "text": [
+     70,
+     120
+    ],
+    "verdict": "agree",
+    "evidence": "the leaves are alternate, simple, and heart shaped with an entire margin, 7–12 cm (3–4.5 in) long and wide, thin and papery, and may be slightly hairy below."
+   }
+  },
+  {
+   "id": "asarum-canadense",
+   "name": "Asarum canadense",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Aristolochiaceae",
+    "familyOk": true,
+    "herbariumImages": 9240,
+    "wikipedia": "Asarum canadense",
+    "powoAccepted": true
+   },
+   "textChars": 362,
+   "sources": [
+    "Wikipedia: Asarum canadense"
+   ],
+   "traits": {},
+   "size": null
+  },
+  {
+   "id": "acer-rubrum",
+   "name": "Acer rubrum",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Sapindaceae",
+    "familyOk": true,
+    "herbariumImages": 17257,
+    "wikipedia": "Acer rubrum",
+    "powoAccepted": true
+   },
+   "textChars": 1600,
+   "sources": [
+    "Wikipedia: Acer rubrum"
+   ],
+   "traits": {},
+   "size": {
+    "curated": 90,
+    "text": [
+     90,
+     110
+    ],
+    "verdict": "agree",
+    "evidence": "the leaves are usually 9 to 11 cm (3+1⁄2 to 4+1⁄4 in) long on a full-grown tree."
+   }
+  },
+  {
+   "id": "acer-saccharum",
+   "name": "Acer saccharum",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Sapindaceae",
+    "familyOk": true,
+    "herbariumImages": 9156,
+    "wikipedia": "Acer saccharum",
+    "powoAccepted": true
+   },
+   "textChars": 814,
+   "sources": [
+    "Wikipedia: Acer saccharum"
+   ],
+   "traits": {
+    "shape": {
+     "curated": "palmate",
+     "text": "palmate",
+     "verdict": "agree",
+     "evidence": "the leaves are up to 20 centimetres (8 in) long and wide, palmate, with five lobes and borne in opposite pairs."
+    },
+    "phyllotaxis": {
+     "curated": "opposite",
+     "text": "opposite",
+     "verdict": "agree",
+     "evidence": "the leaves are up to 20 centimetres (8 in) long and wide, palmate, with five lobes and borne in opposite pairs."
+    }
+   },
+   "size": {
+    "curated": 110,
+    "text": [
+     80,
+     200
+    ],
+    "verdict": "agree",
+    "evidence": "the leaves are up to 20 centimetres (8 in) long and wide, palmate, with five lobes and borne in opposite pairs."
+   }
+  },
+  {
+   "id": "acer-palmatum",
+   "name": "Acer palmatum",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Sapindaceae",
+    "familyOk": true,
+    "herbariumImages": 3428,
+    "wikipedia": "Acer palmatum",
+    "powoAccepted": false
+   },
+   "textChars": 1600,
+   "sources": [
+    "Wikipedia: Acer palmatum"
+   ],
+   "traits": {
+    "lobation": {
+     "curated": "palmatisect",
+     "text": "palmately-lobed",
+     "verdict": "near",
+     "evidence": "the leaves are 4–12 cm (1+1⁄2–4+3⁄4 in) long and wide, palmately lobed with five, seven, or nine acutely pointed lobes."
+    },
+    "margin": {
+     "curated": "doubly-serrate",
+     "text": "serrate",
+     "verdict": "near",
+     "evidence": "leaves small, 4–7 cm (1+1⁄2–2+3⁄4 in) wide, with five or seven lobes and double-serrate margins"
+    }
+   },
+   "size": {
+    "curated": 70,
+    "text": [
+     40,
+     120
+    ],
+    "verdict": "agree",
+    "evidence": "the leaves are 4–12 cm (1+1⁄2–4+3⁄4 in) long and wide, palmately lobed with five, seven, or nine acutely pointed lobes."
+   }
+  },
+  {
+   "id": "liquidambar-styraciflua",
+   "name": "Liquidambar styraciflua",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Altingiaceae",
+    "familyOk": true,
+    "herbariumImages": 6424,
+    "wikipedia": "Liquidambar styraciflua",
+    "powoAccepted": true
+   },
+   "textChars": 1600,
+   "sources": [
+    "Wikipedia: Liquidambar styraciflua"
+   ],
+   "traits": {},
+   "size": null
+  },
+  {
+   "id": "platanus-occidentalis",
+   "name": "Platanus occidentalis",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Platanaceae",
+    "familyOk": true,
+    "herbariumImages": 5325,
+    "wikipedia": "Platanus occidentalis",
+    "powoAccepted": true
+   },
+   "textChars": 1484,
+   "sources": [
+    "Wikipedia: Platanus occidentalis"
+   ],
+   "traits": {
+    "shape": {
+     "curated": "palmate",
+     "text": "ovate/orbicular/cordate",
+     "verdict": "near",
+     "evidence": "leaves: alternate, palmately nerved, broadly ovate or orbicular, 10 to 23 cm (4 to 9 in) long, truncate or cordate or wedge-shaped at base, decurrent on the petiole."
+    },
+    "base": {
+     "curated": "truncate",
+     "text": "truncate/cordate",
+     "verdict": "agree",
+     "evidence": "leaves: alternate, palmately nerved, broadly ovate or orbicular, 10 to 23 cm (4 to 9 in) long, truncate or cordate or wedge-shaped at base, decurrent on the petiole."
+    },
+    "phyllotaxis": {
+     "curated": "alternate",
+     "text": "alternate",
+     "verdict": "agree",
+     "evidence": "leaves: alternate, palmately nerved, broadly ovate or orbicular, 10 to 23 cm (4 to 9 in) long, truncate or cordate or wedge-shaped at base, decurrent on the petiole."
+    }
+   },
+   "size": {
+    "curated": 160,
+    "text": [
+     100,
+     230
+    ],
+    "verdict": "agree",
+    "evidence": "leaves: alternate, palmately nerved, broadly ovate or orbicular, 10 to 23 cm (4 to 9 in) long, truncate or cordate or wedge-shaped at base, decurrent on the petiole."
+   }
+  },
+  {
+   "id": "hedera-helix",
+   "name": "Hedera helix",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Araliaceae",
+    "familyOk": true,
+    "herbariumImages": 6806,
+    "wikipedia": "Hedera helix",
+    "powoAccepted": true
+   },
+   "textChars": 1574,
+   "sources": [
+    "Wikipedia: Hedera helix"
+   ],
+   "traits": {
+    "phyllotaxis": {
+     "curated": "alternate",
+     "text": "alternate",
+     "verdict": "agree",
+     "evidence": "the leaves are alternate, 50–100 mm (2–4 in) long, with a 15–20 mm (0.6–0.8 in) petiole"
+    }
+   },
+   "size": {
+    "curated": 60,
+    "text": [
+     50,
+     100
+    ],
+    "verdict": "agree",
+    "evidence": "the leaves are alternate, 50–100 mm (2–4 in) long, with a 15–20 mm (0.6–0.8 in) petiole"
+   }
+  },
+  {
+   "id": "nelumbo-nucifera",
+   "name": "Nelumbo nucifera",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Nelumbonaceae",
+    "familyOk": true,
+    "herbariumImages": 1026,
+    "wikipedia": "Nelumbo nucifera",
+    "powoAccepted": true
+   },
+   "textChars": 1600,
+   "sources": [
+    "Wikipedia: Nelumbo nucifera"
+   ],
+   "traits": {
+    "attachment": {
+     "curated": "peltate",
+     "text": "peltate",
+     "verdict": "agree",
+     "evidence": "the peltate leaf blade or lamina can have a diameter of 80–100 cm (2 ft 7 in – 3 ft 3 in)."
+    }
+   },
+   "size": null
+  },
+  {
+   "id": "tropaeolum-majus",
+   "name": "Tropaeolum majus",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Tropaeolaceae",
+    "familyOk": true,
+    "herbariumImages": 1248,
+    "wikipedia": "Tropaeolum majus",
+    "powoAccepted": true
+   },
+   "textChars": 697,
+   "sources": [
+    "Wikipedia: Tropaeolum majus"
+   ],
+   "traits": {},
+   "size": null
+  },
+  {
+   "id": "helleborus-foetidus",
+   "name": "Helleborus foetidus",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Ranunculaceae",
+    "familyOk": true,
+    "herbariumImages": 2170,
+    "wikipedia": "Helleborus foetidus",
+    "powoAccepted": true
+   },
+   "textChars": 227,
+   "sources": [
+    "Wikipedia: Helleborus foetidus"
+   ],
+   "traits": {},
+   "size": null
+  },
+  {
+   "id": "ginkgo-biloba",
+   "name": "Ginkgo biloba",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Ginkgoaceae",
+    "familyOk": true,
+    "herbariumImages": 1928,
+    "wikipedia": "Ginkgo biloba",
+    "powoAccepted": true
+   },
+   "textChars": 1600,
+   "sources": [
+    "Wikipedia: Ginkgo biloba"
+   ],
+   "traits": {
+    "shape": {
+     "curated": "flabellate",
+     "text": "flabellate",
+     "verdict": "agree",
+     "evidence": "biloba is a long-lived, disease-resistant, dioecious tree with unique fan-shaped leaves, capable of clonal reproduction, and known for its striking yellow autumn foliage and resilience in disturbed en"
+    },
+    "lobation": {
+     "curated": "none",
+     "text": "lobed",
+     "verdict": "near",
+     "evidence": "leaves of long shoots are also usually notched or lobed, but only from the outer surface, between the veins."
+    }
+   },
+   "size": {
+    "curated": 60,
+    "text": [
+     50,
+     100
+    ],
+    "verdict": "agree",
+    "evidence": "the leaves are usually 5–10 cm (2–4 in), but sometimes up to 15 cm (6 in) long."
+   }
+  },
+  {
+   "id": "zea-mays",
+   "name": "Zea mays",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Poaceae",
+    "familyOk": true,
+    "herbariumImages": 3457,
+    "wikipedia": "Maize",
+    "powoAccepted": true
+   },
+   "textChars": 1401,
+   "sources": [
+    "Wikipedia: Maize",
+    "POWO/Flora of Oman",
+    "POWO/Flora of the Cayman Islands"
+   ],
+   "traits": {
+    "phyllotaxis": {
+     "curated": "distichous",
+     "text": "distichous",
+     "verdict": "agree",
+     "evidence": "leaves conspicuously distichous, the blades up to 7 cm broad or more"
+    }
+   },
+   "size": {
+    "curated": 700,
+    "text": [
+     500,
+     900
+    ],
+    "verdict": "agree",
+    "evidence": "leaf blades 50‒90 × 3–12 cm",
+    "aspect": {
+     "curated": 11,
+     "text": [
+      4.17,
+      30
+     ],
+     "verdict": "agree"
+    }
+   }
+  },
+  {
+   "id": "iris-germanica",
+   "name": "Iris germanica",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Iridaceae",
+    "familyOk": true,
+    "herbariumImages": 1579,
+    "wikipedia": "Iris × germanica",
+    "powoAccepted": true
+   },
+   "textChars": 141,
+   "sources": [
+    "Wikipedia: Iris × germanica"
+   ],
+   "traits": {},
+   "size": null
+  },
+  {
+   "id": "clivia-miniata",
+   "name": "Clivia miniata",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Amaryllidaceae",
+    "familyOk": true,
+    "herbariumImages": 40,
+    "wikipedia": "Clivia miniata",
+    "powoAccepted": true
+   },
+   "textChars": 131,
+   "sources": [
+    "Wikipedia: Clivia miniata"
+   ],
+   "traits": {
+    "shape": {
+     "curated": "lorate",
+     "text": "lorate",
+     "verdict": "agree",
+     "evidence": "the stem produces long, arching, strap-like leaves growing to about 45 cm (18 in) long, arranged in two opposing rows (distichous)."
+    },
+    "phyllotaxis": {
+     "curated": "distichous",
+     "text": "distichous",
+     "verdict": "agree",
+     "evidence": "the stem produces long, arching, strap-like leaves growing to about 45 cm (18 in) long, arranged in two opposing rows (distichous)."
+    }
+   },
+   "size": {
+    "curated": 500,
+    "text": [
+     337.5,
+     562.5
+    ],
+    "verdict": "agree",
+    "evidence": "the stem produces long, arching, strap-like leaves growing to about 45 cm (18 in) long, arranged in two opposing rows (distichous)."
+   }
+  },
+  {
+   "id": "musa-acuminata",
+   "name": "Musa acuminata",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Musaceae",
+    "familyOk": true,
+    "herbariumImages": 453,
+    "wikipedia": "Musa acuminata",
+    "powoAccepted": true
+   },
+   "textChars": 863,
+   "sources": [
+    "Wikipedia: Musa acuminata",
+    "POWO/Seed Collection Guides",
+    "POWO/Flora of Tropical East Africa"
+   ],
+   "traits": {
+    "shape": {
+     "curated": "oblong",
+     "text": "oblong/cordate",
+     "verdict": "agree",
+     "evidence": "leaf blade adaxially green and pruinose, abaxially yellow-green and pruinose or not, oblong, 1.9--2.3 m x 50--70 cm, base cordate, asymmetric, midvein adaxially green, abaxially white-yellow."
+    },
+    "apex": {
+     "curated": "truncate",
+     "text": "truncate/rounded",
+     "verdict": "agree",
+     "evidence": "leaf-blades oblong-lanceolate, to 2-2.5 × 0.4-0.6 m., apex truncate, base rounded, petiole and midrib green, somewhat glaucous."
+    },
+    "base": {
+     "curated": "rounded",
+     "text": "cordate",
+     "verdict": "near",
+     "evidence": "leaf blade adaxially green and pruinose, abaxially yellow-green and pruinose or not, oblong, 1.9--2.3 m x 50--70 cm, base cordate, asymmetric, midvein adaxially green, abaxially white-yellow."
+    }
+   },
+   "size": {
+    "curated": 2200,
+    "text": [
+     2000,
+     2500
+    ],
+    "verdict": "agree",
+    "evidence": "leaf-blades oblong-lanceolate, to 2-2.5 × 0.4-0.6 m., apex truncate, base rounded, petiole and midrib green, somewhat glaucous.",
+    "aspect": {
+     "curated": 3.6,
+     "text": [
+      3.33,
+      6.25
+     ],
+     "verdict": "agree"
+    }
+   }
+  },
+  {
+   "id": "sagittaria-latifolia",
+   "name": "Sagittaria latifolia",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Alismataceae",
+    "familyOk": true,
+    "herbariumImages": 9080,
+    "wikipedia": "Sagittaria latifolia",
+    "powoAccepted": true
+   },
+   "textChars": 448,
+   "sources": [
+    "Wikipedia: Sagittaria latifolia"
+   ],
+   "traits": {},
+   "size": {
+    "curated": 200,
+    "text": [
+     100,
+     500
+    ],
+    "verdict": "agree",
+    "evidence": "the leaves are extremely variable, from 10–50 cm (4–19+1⁄2 in) in length and 1 to 2 cm (1⁄2 to 3⁄4 in) thin to wedge-shaped like those of s."
+   }
+  },
+  {
+   "id": "veratrum-viride",
+   "name": "Veratrum viride",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Melanthiaceae",
+    "familyOk": true,
+    "herbariumImages": 2566,
+    "wikipedia": "Veratrum viride",
+    "powoAccepted": false
+   },
+   "textChars": 194,
+   "sources": [
+    "Wikipedia: Veratrum viride"
+   ],
+   "traits": {
+    "shape": {
+     "curated": "elliptic",
+     "text": "elliptic/lanceolate",
+     "verdict": "agree",
+     "evidence": "the leaves are spirally arranged, 10 to 35 cm (4 to 14 in) long and 5 to 20 cm (2 to 8 in) broad, elliptic to broad lanceolate ending in a short point, heavily ribbed and hairy on the underside."
+    }
+   },
+   "size": {
+    "curated": 250,
+    "text": [
+     100,
+     350
+    ],
+    "verdict": "agree",
+    "evidence": "the leaves are spirally arranged, 10 to 35 cm (4 to 14 in) long and 5 to 20 cm (2 to 8 in) broad, elliptic to broad lanceolate ending in a short point, heavily ribbed and hairy on the underside.",
+    "aspect": {
+     "curated": 1.9,
+     "text": [
+      0.5,
+      7
+     ],
+     "verdict": "agree"
+    }
+   }
+  },
+  {
+   "id": "uvularia-perfoliata",
+   "name": "Uvularia perfoliata",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Colchicaceae",
+    "familyOk": true,
+    "herbariumImages": 4740,
+    "wikipedia": "Uvularia perfoliata",
+    "powoAccepted": true
+   },
+   "textChars": 254,
+   "sources": [
+    "Wikipedia: Uvularia perfoliata"
+   ],
+   "traits": {
+    "shape": {
+     "curated": "ovate",
+     "text": "obovate",
+     "verdict": "disagree",
+     "evidence": "the leaves are obovate, 4 to 12 centimeters long and 1.5 to 4 centimeters wide, glabrous or glaucous, and perfoliate."
+    },
+    "attachment": {
+     "curated": "perfoliate",
+     "text": "perfoliate",
+     "verdict": "agree",
+     "evidence": "the leaves are obovate, 4 to 12 centimeters long and 1.5 to 4 centimeters wide, glabrous or glaucous, and perfoliate."
+    }
+   },
+   "size": {
+    "curated": 80,
+    "text": [
+     40,
+     120
+    ],
+    "verdict": "agree",
+    "evidence": "the leaves are obovate, 4 to 12 centimeters long and 1.5 to 4 centimeters wide, glabrous or glaucous, and perfoliate.",
+    "aspect": {
+     "curated": 2.2,
+     "text": [
+      1,
+      8
+     ],
+     "verdict": "agree"
+    }
+   }
+  },
+  {
+   "id": "allium-schoenoprasum",
+   "name": "Allium schoenoprasum",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Amaryllidaceae",
+    "familyOk": true,
+    "herbariumImages": 8658,
+    "wikipedia": "Chives",
+    "powoAccepted": true
+   },
+   "textChars": 997,
+   "sources": [
+    "Wikipedia: Chives"
+   ],
+   "traits": {},
+   "size": null
+  },
+  {
+   "id": "pinus-strobus",
+   "name": "Pinus strobus",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Pinaceae",
+    "familyOk": true,
+    "herbariumImages": 6039,
+    "wikipedia": "Pinus strobus",
+    "powoAccepted": true
+   },
+   "textChars": 1014,
+   "sources": [
+    "Wikipedia: Pinus strobus"
+   ],
+   "traits": {
+    "shape": {
+     "curated": "acicular",
+     "text": "acicular",
+     "verdict": "agree",
+     "evidence": "eastern white pines are noted for holding their needles well, even long after being harvested."
+    }
+   },
+   "size": {
+    "curated": 100,
+    "text": [
+     50,
+     130
+    ],
+    "verdict": "agree",
+    "evidence": "the leaves are flexible, bluish-green, finely serrated, and 5–13 cm (2–5 in) long."
+   }
+  },
+  {
+   "id": "thuja-occidentalis",
+   "name": "Thuja occidentalis",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Cupressaceae",
+    "familyOk": true,
+    "herbariumImages": 5974,
+    "wikipedia": "Thuja occidentalis",
+    "powoAccepted": true
+   },
+   "textChars": 152,
+   "sources": [
+    "Wikipedia: Thuja occidentalis"
+   ],
+   "traits": {
+    "shape": {
+     "curated": "rhomboid",
+     "text": "rhomboid",
+     "verdict": "agree",
+     "evidence": "the foliage forms in flat sprays with scale-like leaves 3–5 millimetres (1⁄8–3⁄16 in) long."
+    }
+   },
+   "size": {
+    "curated": 3,
+    "text": [
+     3,
+     5
+    ],
+    "verdict": "agree",
+    "evidence": "the foliage forms in flat sprays with scale-like leaves 3–5 millimetres (1⁄8–3⁄16 in) long."
+   }
+  },
+  {
+   "id": "fraxinus-americana",
+   "name": "Fraxinus americana",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Oleaceae",
+    "familyOk": true,
+    "herbariumImages": 9476,
+    "wikipedia": "Fraxinus americana",
+    "powoAccepted": true
+   },
+   "textChars": 1600,
+   "sources": [
+    "Wikipedia: Fraxinus americana"
+   ],
+   "traits": {},
+   "size": null
+  },
+  {
+   "id": "juglans-nigra",
+   "name": "Juglans nigra",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Juglandaceae",
+    "familyOk": true,
+    "herbariumImages": 4945,
+    "wikipedia": "Juglans nigra",
+    "powoAccepted": true
+   },
+   "textChars": 1600,
+   "sources": [
+    "Wikipedia: Juglans nigra"
+   ],
+   "traits": {
+    "structure": {
+     "curated": "imparipinnate",
+     "text": "pinnate-any",
+     "verdict": "near",
+     "evidence": "the leaves are pinnately compound and alternately arranged on the stem."
+    },
+    "apex": {
+     "curated": "acuminate",
+     "text": "acuminate/rounded",
+     "verdict": "agree",
+     "evidence": "the leaflets have a rounded base and a long pointed (acuminate) tip as well as having a serrated edge."
+    },
+    "base": {
+     "curated": "oblique",
+     "text": "rounded",
+     "verdict": "near",
+     "evidence": "the leaflets have a rounded base and a long pointed (acuminate) tip as well as having a serrated edge."
+    }
+   },
+   "size": null
+  },
+  {
+   "id": "gleditsia-triacanthos",
+   "name": "Gleditsia triacanthos",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Fabaceae",
+    "familyOk": true,
+    "herbariumImages": 5769,
+    "wikipedia": "Honey locust",
+    "powoAccepted": true
+   },
+   "textChars": 940,
+   "sources": [
+    "Wikipedia: Honey locust"
+   ],
+   "traits": {
+    "structure": {
+     "curated": "bipinnate",
+     "text": "pinnate-any/bipinnate",
+     "verdict": "agree",
+     "evidence": "the leaves are pinnately compound on older trees but bipinnately compound on vigorous young trees."
+    }
+   },
+   "size": null
+  },
+  {
+   "id": "albizia-julibrissin",
+   "name": "Albizia julibrissin",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Fabaceae",
+    "familyOk": true,
+    "herbariumImages": 4008,
+    "wikipedia": "Albizia julibrissin",
+    "powoAccepted": true
+   },
+   "textChars": 775,
+   "sources": [
+    "Wikipedia: Albizia julibrissin"
+   ],
+   "traits": {
+    "structure": {
+     "curated": "bipinnate",
+     "text": "bipinnate",
+     "verdict": "agree",
+     "evidence": "its leaves are large and frond-like: they are bipinnate, divided into 6–12 pairs of pinnae, each with 20–30 pairs of leaflets."
+    },
+    "shape": {
+     "curated": "falcate",
+     "text": "oblong",
+     "verdict": "near",
+     "evidence": "individual leaflets are oblong, 1–1.5 cm (0.4–0.6 in) long and 2–4 cm (0.8–1.6 in) broad."
+    }
+   },
+   "size": {
+    "curated": 320,
+    "text": [
+     200,
+     450
+    ],
+    "verdict": "agree",
+    "evidence": "the true leaves are 20–45 cm (8–18 in) long and 12–25 cm (5–10 in) broad."
+   }
+  },
+  {
+   "id": "aesculus-hippocastanum",
+   "name": "Aesculus hippocastanum",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Sapindaceae",
+    "familyOk": true,
+    "herbariumImages": 2518,
+    "wikipedia": "Aesculus hippocastanum",
+    "powoAccepted": true
+   },
+   "textChars": 1204,
+   "sources": [
+    "Wikipedia: Aesculus hippocastanum"
+   ],
+   "traits": {
+    "structure": {
+     "curated": "palmately-compound",
+     "text": "palmately-compound",
+     "verdict": "agree",
+     "evidence": "the leaves are opposite and palmately compound, with 5–7 leaflets 13–30 cm (5–12 in) long, making the whole leaf up to 60 cm (24 in) across, with a 7–20 cm (3–8 in) petiole."
+    },
+    "phyllotaxis": {
+     "curated": "opposite",
+     "text": "opposite",
+     "verdict": "agree",
+     "evidence": "the leaves are opposite and palmately compound, with 5–7 leaflets 13–30 cm (5–12 in) long, making the whole leaf up to 60 cm (24 in) across, with a 7–20 cm (3–8 in) petiole."
+    }
+   },
+   "size": null
+  },
+  {
+   "id": "trifolium-repens",
+   "name": "Trifolium repens",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Fabaceae",
+    "familyOk": true,
+    "herbariumImages": 15139,
+    "wikipedia": "Trifolium repens",
+    "powoAccepted": true
+   },
+   "textChars": 987,
+   "sources": [
+    "Wikipedia: Trifolium repens",
+    "POWO/Flora Zambesiaca"
+   ],
+   "traits": {
+    "structure": {
+     "curated": "ternate",
+     "text": "ternate",
+     "verdict": "agree",
+     "evidence": "the leaves are trifoliolate, smooth, elliptic to egg-shaped, long-petioled, and usually with light or dark markings."
+    },
+    "shape": {
+     "curated": "obovate",
+     "text": "obovate",
+     "verdict": "agree",
+     "evidence": "leaflets cuneate-obovate, the lateral nerves straight, pale"
+    },
+    "base": {
+     "curated": "cuneate",
+     "text": "cuneate",
+     "verdict": "agree",
+     "evidence": "leaflets cuneate-obovate, the lateral nerves straight, pale"
+    }
+   },
+   "size": null
+  },
+  {
+   "id": "oxalis-stricta",
+   "name": "Oxalis stricta",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Oxalidaceae",
+    "familyOk": true,
+    "herbariumImages": 14527,
+    "wikipedia": "Oxalis stricta",
+    "powoAccepted": true
+   },
+   "textChars": 701,
+   "sources": [
+    "Wikipedia: Oxalis stricta"
+   ],
+   "traits": {
+    "structure": {
+     "curated": "ternate",
+     "text": "ternate",
+     "verdict": "agree",
+     "evidence": "the alternate leaves of this plant are divided into three distinctively heart-shaped leaflets (a typical trait of other species of oxalis) that can grow up to 2 cm (0.79 in) wide."
+    },
+    "shape": {
+     "curated": "obcordate",
+     "text": "cordate",
+     "verdict": "near",
+     "evidence": "the alternate leaves of this plant are divided into three distinctively heart-shaped leaflets (a typical trait of other species of oxalis) that can grow up to 2 cm (0.79 in) wide."
+    }
+   },
+   "size": null
+  },
+  {
+   "id": "toxicodendron-radicans",
+   "name": "Toxicodendron radicans",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Anacardiaceae",
+    "familyOk": true,
+    "herbariumImages": 6683,
+    "wikipedia": "Toxicodendron radicans",
+    "powoAccepted": true
+   },
+   "textChars": 1600,
+   "sources": [
+    "Wikipedia: Toxicodendron radicans"
+   ],
+   "traits": {
+    "structure": {
+     "curated": "ternate",
+     "text": "ternate",
+     "verdict": "agree",
+     "evidence": "radicans are trifoliate with three almond-shaped leaflets."
+    }
+   },
+   "size": null
+  },
+  {
+   "id": "citrus-sinensis",
+   "name": "Citrus × sinensis",
+   "taxonomy": {
+    "gbif": "SYNONYM",
+    "match": "EXACT",
+    "family": "Rutaceae",
+    "familyOk": true,
+    "herbariumImages": 2227,
+    "wikipedia": "Citrus × sinensis",
+    "powoAccepted": false
+   },
+   "textChars": 168,
+   "sources": [
+    "Wikipedia: Citrus × sinensis"
+   ],
+   "traits": {},
+   "size": null
+  },
+  {
+   "id": "hymenaea-courbaril",
+   "name": "Hymenaea courbaril",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Fabaceae",
+    "familyOk": true,
+    "herbariumImages": 2223,
+    "wikipedia": "Hymenaea courbaril",
+    "powoAccepted": true
+   },
+   "textChars": 234,
+   "sources": [
+    "Wikipedia: Hymenaea courbaril",
+    "POWO/Flora of the Cayman Islands"
+   ],
+   "traits": {},
+   "size": null
+  },
+  {
+   "id": "cocos-nucifera",
+   "name": "Cocos nucifera",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Arecaceae",
+    "familyOk": true,
+    "herbariumImages": 752,
+    "wikipedia": "Coconut",
+    "powoAccepted": true
+   },
+   "textChars": 1698,
+   "sources": [
+    "Wikipedia: Coconut",
+    "POWO/Flora of Oman",
+    "POWO/Flora of Somalia",
+    "POWO/Flora of Tropical East Africa"
+   ],
+   "traits": {
+    "structure": {
+     "curated": "paripinnate",
+     "text": "pinnate-any",
+     "verdict": "near",
+     "evidence": "the hard shells, fibrous husks and long pinnate leaves are used to make products for furnishing and decoration."
+    }
+   },
+   "size": {
+    "curated": 5000,
+    "text": [
+     4000,
+     5000
+    ],
+    "verdict": "agree",
+    "evidence": "leaves up to 4–5 m long"
+   }
+  },
+  {
+   "id": "bauhinia-variegata",
+   "name": "Bauhinia variegata",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Fabaceae",
+    "familyOk": true,
+    "herbariumImages": 1461,
+    "wikipedia": "Bauhinia variegata",
+    "powoAccepted": true
+   },
+   "textChars": 122,
+   "sources": [
+    "Wikipedia: Bauhinia variegata"
+   ],
+   "traits": {
+    "shape": {
+     "curated": "orbicular",
+     "text": "obcordate",
+     "verdict": "near",
+     "evidence": "the leaves are 15–20 centimetres (5.9–7.9 in) obcordate shaped, long and broad, rounded, and bilobed at the base and apex."
+    },
+    "base": {
+     "curated": "cordate",
+     "text": "rounded",
+     "verdict": "near",
+     "evidence": "the leaves are 15–20 centimetres (5.9–7.9 in) obcordate shaped, long and broad, rounded, and bilobed at the base and apex."
+    }
+   },
+   "size": {
+    "curated": 150,
+    "text": [
+     150,
+     200
+    ],
+    "verdict": "agree",
+    "evidence": "the leaves are 15–20 centimetres (5.9–7.9 in) obcordate shaped, long and broad, rounded, and bilobed at the base and apex."
+   }
+  },
+  {
+   "id": "polystichum-acrostichoides",
+   "name": "Polystichum acrostichoides",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Dryopteridaceae",
+    "familyOk": true,
+    "herbariumImages": 16078,
+    "wikipedia": "Polystichum acrostichoides",
+    "powoAccepted": true
+   },
+   "textChars": 1600,
+   "sources": [
+    "Wikipedia: Polystichum acrostichoides"
+   ],
+   "traits": {},
+   "size": null
+  },
+  {
+   "id": "athyrium-filix-femina",
+   "name": "Athyrium filix-femina",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Athyriaceae",
+    "familyOk": true,
+    "herbariumImages": 27975,
+    "wikipedia": "Athyrium filix-femina",
+    "powoAccepted": true
+   },
+   "textChars": 696,
+   "sources": [
+    "Wikipedia: Athyrium filix-femina"
+   ],
+   "traits": {},
+   "size": {
+    "curated": 650,
+    "text": [
+     200,
+     900
+    ],
+    "verdict": "agree",
+    "evidence": "the deciduous fronds are light yellow-green, 20–90 centimetres (7.9–35.4 in) long and 5–25 cm (2.0–9.8 in) broad.",
+    "aspect": {
+     "curated": 3.6,
+     "text": [
+      0.8,
+      18
+     ],
+     "verdict": "agree"
+    }
+   }
+  },
+  {
+   "id": "pteridium-aquilinum",
+   "name": "Pteridium aquilinum",
+   "taxonomy": {
+    "gbif": "ACCEPTED",
+    "match": "EXACT",
+    "family": "Dennstaedtiaceae",
+    "familyOk": true,
+    "herbariumImages": 31779,
+    "wikipedia": "Pteridium aquilinum",
+    "powoAccepted": true
+   },
+   "textChars": 1598,
+   "sources": [
+    "Wikipedia: Pteridium aquilinum",
+    "POWO/Flora of the Cayman Islands"
+   ],
+   "traits": {
+    "shape": {
+     "curated": "deltoid",
+     "text": "deltoid",
+     "verdict": "agree",
+     "evidence": "fronds often 1 m tall or more, the greenish to straw-colored stipes nearly as long as the deltate lamina, glabrous throughout except for the lamina tissue beneath."
+    }
+   },
+   "size": null
+  }
+ ]
+}

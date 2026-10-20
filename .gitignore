@@ -1,0 +1,8 @@
+node_modules/
+__pycache__/
+*.pyc
+pipeline/work/
+species/auto/
+_site/
+.DS_Store
+score.json

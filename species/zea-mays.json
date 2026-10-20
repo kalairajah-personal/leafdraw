@@ -1,0 +1,49 @@
+{
+  "id": "zea-mays",
+  "name": "Zea mays",
+  "common": [
+    "Maize",
+    "Corn"
+  ],
+  "family": "Poaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "plantGroup": "monocot",
+    "shape": "linear",
+    "apex": "acuminate",
+    "base": "truncate",
+    "margin": "entire",
+    "marginMods": [
+      "ciliate"
+    ],
+    "form3d": "undulate",
+    "phyllotaxis": "distichous"
+  },
+  "params": {
+    "length": [
+      700,
+      80
+    ],
+    "aspect": [
+      11,
+      1
+    ],
+    "parallelCount": [
+      27,
+      3
+    ],
+    "hairLength": 0.6
+  },
+  "palette": {
+    "summer": {
+      "blade": "#5a8c35"
+    },
+    "fall": {
+      "blade": "#c9b45a"
+    }
+  }
+}

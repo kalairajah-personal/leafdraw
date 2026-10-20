@@ -1,0 +1,58 @@
+{
+  "id": "oxalis-stricta",
+  "name": "Oxalis stricta",
+  "common": [
+    "Common yellow woodsorrel"
+  ],
+  "family": "Oxalidaceae",
+  "tier": "B",
+  "sources": [
+    "Ellis et al. 2009, Manual of Leaf Architecture",
+    "Flora of North America / POWO species descriptions (curated)"
+  ],
+  "traits": {
+    "structure": "ternate",
+    "phyllotaxis": "alternate"
+  },
+  "params": {
+    "length": [
+      25,
+      4
+    ],
+    "petiole": [
+      1.6,
+      0.2
+    ]
+  },
+  "compound": {
+    "palmate": true,
+    "leaflet": {
+      "traits": {
+        "shape": "obcordate",
+        "base": "cuneate",
+        "margin": "entire",
+        "marginMods": [
+          "ciliate"
+        ],
+        "secondary": "brochidodromous",
+        "tertiary": "none",
+        "areoles": "none"
+      },
+      "params": {
+        "length": [
+          12,
+          1.5
+        ],
+        "hairLength": 0.25
+      }
+    }
+  },
+  "palette": {
+    "summer": {
+      "blade": "#6a9a45"
+    },
+    "fall": {
+      "blade": "#9a6a3a"
+    }
+  }
+}
