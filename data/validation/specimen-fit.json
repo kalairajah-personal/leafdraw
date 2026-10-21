@@ -1,0 +1,110 @@
+[
+ {
+  "id": "tilia-americana",
+  "leaves": 14,
+  "target": {
+   "aspect": 1.179,
+   "widest": 0.525
+  },
+  "before": {
+   "aspect": 1.249,
+   "widest": 0.358
+  },
+  "after": {
+   "aspect": 1.157,
+   "widest": 0.542
+  },
+  "params": {
+   "aspect": [
+    1.092,
+    0.087
+   ],
+   "widest": [
+    0.54,
+    0.03
+   ]
+  }
+ },
+ {
+  "id": "quercus-alba",
+  "leaves": 30,
+  "target": {
+   "aspect": 1.729,
+   "widest": 0.575
+  },
+  "before": {
+   "aspect": 1.786,
+   "widest": 0.608
+  },
+  "after": {
+   "aspect": 1.773,
+   "widest": 0.608
+  },
+  "params": {
+   "aspect": [
+    1.9,
+    0.15
+   ],
+   "widest": [
+    0.62,
+    0.03
+   ],
+   "lobeDepth": [
+    0.715,
+    0.05
+   ]
+  }
+ },
+ {
+  "id": "magnolia-grandiflora",
+  "leaves": 20,
+  "target": {
+   "aspect": 2.201,
+   "widest": 0.517
+  },
+  "before": {
+   "aspect": 1.875,
+   "widest": 0.525
+  },
+  "after": {
+   "aspect": 2.121,
+   "widest": 0.508
+  },
+  "params": {
+   "aspect": [
+    2.541,
+    0.203
+   ],
+   "widest": [
+    0.52,
+    0.03
+   ]
+  }
+ },
+ {
+  "id": "cornus-florida",
+  "leaves": 29,
+  "target": {
+   "aspect": 1.808,
+   "widest": 0.492
+  },
+  "before": {
+   "aspect": 1.671,
+   "widest": 0.475
+  },
+  "after": {
+   "aspect": 1.789,
+   "widest": 0.475
+  },
+  "params": {
+   "aspect": [
+    1.932,
+    0.155
+   ],
+   "widest": [
+    0.5,
+    0.03
+   ]
+  }
+ }
+]

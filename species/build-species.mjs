@@ -277,6 +277,18 @@ const species = [
     { compound: { pinnaPairs: [10, 1] }, palette: pal('#4f8a35', '#a8743a') }),
 ];
 
+// Specimen fits (pipeline `specimens` + tools/fit_specimens.py): measured herbarium leaves override curated
+// shape params. A species with ≥ 12 measured leaves on ≥ 5 sheets is promoted to tier A.
+const fitFile = path.join(here, 'fitted.json');
+const FIT = fs.existsSync(fitFile) ? JSON.parse(fs.readFileSync(fitFile, 'utf8')) : {};
+for (const sp of species) {
+  const f = FIT[sp.id];
+  if (!f) continue;
+  sp.params = { ...sp.params, ...f.params };
+  sp.fit = { leaves: f.leaves, sheets: f.sheets, measured: f.measured, date: f.date, method: 'GBIF herbarium sheets → isolated leaves → measure.py' };
+  if (f.leaves >= 12 && f.sheets >= 5) { sp.tier = 'A'; sp.sources = [...sp.sources, `GBIF herbarium specimens (${f.sheets} sheets, ${f.leaves} leaves; occurrence keys in species/fitted.json)`]; }
+}
+
 let bad = 0;
 const dir = here;
 for (const sp of species) {
