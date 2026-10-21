@@ -24,12 +24,12 @@ from .measure import measure_leaf
 KEYS = ("aspect", "widest", "lobeDepth", "circularity", "apexAngle", "baseAngle")
 
 
-def fetch_image(url: str, width: int = 1800) -> np.ndarray | None:
+def fetch_image(url: str, width: int = 1400) -> np.ndarray | None:
     thumb = "https://api.gbif.org/v1/image/unsafe/" + f"{width}x/" + urllib.parse.quote(url, safe="")
-    for u in (thumb, url):
+    for u in (thumb,):
         try:
             req = urllib.request.Request(u, headers={"User-Agent": "leafdraw-pipeline/0.2"})
-            with urllib.request.urlopen(req, timeout=60) as r:
+            with urllib.request.urlopen(req, timeout=20) as r:
                 im = Image.open(io.BytesIO(r.read())).convert("RGB")
             s = width / max(im.size)
             if s < 1:
@@ -54,10 +54,12 @@ def measure_species(spec: dict, n_sheets: int = 20, per_sheet: int = 6, out_dir:
     mt = gbif.match_name(spec["name"])
     items = gbif.specimen_images(mt.get("acceptedUsageKey") or mt["usageKey"], n_sheets * 2)
     leaves, sheets, thumbs = [], [], []
-    for it in items:
+    from concurrent.futures import ThreadPoolExecutor
+    with ThreadPoolExecutor(8) as ex:  # downloads dominate run time; fetch in parallel
+        images = list(ex.map(lambda it: fetch_image(it["url"]), items[: int(n_sheets * 1.5) + 2]))
+    for it, rgb in zip(items, images):
         if len(sheets) >= n_sheets:
             break
-        rgb = fetch_image(it["url"])
         if rgb is None:
             continue
         try:

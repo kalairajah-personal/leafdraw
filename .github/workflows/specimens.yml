@@ -1,5 +1,5 @@
 # Measure real leaves on GBIF herbarium sheets and compare with the drawn species.
-# Results (report.json, per-species JSON, segmentation contact sheets) are committed to branch `specimens`.
+# 8 parallel shards; results (per-species JSON, segmentation contact sheets, merged report.json) go to branch `specimens`.
 name: specimens
 on:
   workflow_dispatch:
@@ -10,7 +10,10 @@ permissions: { contents: write }
 jobs:
   measure:
     runs-on: ubuntu-latest
-    timeout-minutes: 150
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix: { shard: [0, 1, 2, 3, 4, 5, 6, 7] }
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -19,17 +22,33 @@ jobs:
         with: { python-version: '3.11', cache: pip, cache-dependency-path: pipeline/requirements.txt }
       - run: npm ci
       - run: pip install -r pipeline/requirements.txt
-      - name: Measure
+      - name: Measure (shard ${{ matrix.shard }}/8)
         working-directory: pipeline
-        run: python -m leafdraw_pipeline.cli specimens ${{ inputs.species }} --n ${{ inputs.n || '15' }} --out ../specimens-out
-      - name: Save to branch `specimens`
+        run: python -m leafdraw_pipeline.cli specimens ${{ inputs.species }} --n ${{ inputs.n || '15' }} --shard ${{ matrix.shard }}/8 --out ../specimens-out
+      - uses: actions/upload-artifact@v4
         if: always()
+        with: { name: 'shard-${{ matrix.shard }}', path: specimens-out, if-no-files-found: ignore }
+  save:
+    needs: measure
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with: { path: shards, pattern: 'shard-*', merge-multiple: true }
+      - name: Merge + commit to branch `specimens`
         run: |
-          test -d specimens-out || exit 0
-          cp -r specimens-out /tmp/sp
+          test -d shards || exit 0
+          python - <<'PY'
+          import glob, json
+          rows = [r for f in sorted(glob.glob('shards/report-shard*.json')) for r in json.load(open(f))]
+          json.dump(rows, open('shards/report.json', 'w'), indent=1)
+          print(len(rows), 'species')
+          PY
+          cp -r shards /tmp/sp
           git config user.name "github-actions"; git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           if git fetch -q origin specimens; then git checkout -q -B specimens origin/specimens; else git checkout -q --orphan specimens; git rm -rfq --cached .; fi
           git rm -rqf data 2>/dev/null || true; mkdir -p out && cp /tmp/sp/* out/
-          stamp=$(date -u +%Y%m%d-%H%M%S); cp /tmp/sp/report.json "out/report-$stamp.json" 2>/dev/null || true
+          stamp=$(date -u +%Y%m%d-%H%M%S); cp /tmp/sp/report.json "out/report-$stamp.json"
           git add -A out && git commit -qm "specimens $stamp" || exit 0
           for i in 1 2 3 4 5; do git push -q origin HEAD:specimens && break; git pull -q --rebase -X theirs origin specimens || true; sleep 5; done

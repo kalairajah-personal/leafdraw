@@ -32,7 +32,7 @@ def main(argv=None):
     t = sub.add_parser("text"); t.add_argument("name"); t.add_argument("file"); t.add_argument("--llm", action="store_true")
     r = sub.add_parser("roundtrip"); r.add_argument("species", nargs="+")
     i = sub.add_parser("identify"); i.add_argument("images", nargs="+")
-    sp = sub.add_parser("specimens"); sp.add_argument("species", nargs="*"); sp.add_argument("--n", type=int, default=20); sp.add_argument("--out", default="specimens")
+    sp = sub.add_parser("specimens"); sp.add_argument("species", nargs="*"); sp.add_argument("--n", type=int, default=20); sp.add_argument("--out", default="specimens"); sp.add_argument("--shard", default="0/1")
     sc = sub.add_parser("score"); sc.add_argument("species", nargs="*"); sc.add_argument("--seeds", type=int, default=3); sc.add_argument("--style", default="photo"); sc.add_argument("--frame", default="blade"); sc.add_argument("--out", default="score.json")
     a = ap.parse_args(argv)
 
@@ -81,6 +81,8 @@ def main(argv=None):
         cat = json.load(open(os.path.join(ROOT, "data", "species.json")))
         simple = lambda s: not s.get("compound") and (s.get("traits", {}).get("plantGroup") or "dicot") in ("dicot", "monocot", "ginkgo")
         todo = [s for s in cat if (s["id"] in a.species) if a.species] if a.species else [s for s in cat if simple(s)]
+        k, n = map(int, a.shard.split("/"))
+        todo = todo[k::n]
         report = []
         for s in todo:
             try:
@@ -90,7 +92,7 @@ def main(argv=None):
             except Exception as e:
                 row = {"id": s["id"], "error": str(e)[:300]}
             report.append(row); print(json.dumps({k: row.get(k) for k in ("id", "sheets", "leaves", "error")}), flush=True)
-            json.dump(report, open(os.path.join(a.out, "report.json"), "w"), indent=1)
+            json.dump(report, open(os.path.join(a.out, f"report-shard{k}.json"), "w"), indent=1)
     elif a.cmd == "score":
         cat = json.load(open(os.path.join(ROOT, "data", "species.json")))
         todo = [s for s in cat if not a.species or s["id"] in a.species]
