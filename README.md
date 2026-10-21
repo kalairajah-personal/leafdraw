@@ -206,7 +206,7 @@ Studio: same path in the browser. If the page cannot reach GBIF/POWO, it asks Cl
 | Compound | 10 | white ash, black walnut, honey locust, silk tree, horse chestnut, white clover, woodsorrel, poison ivy, orange, West Indian locust |
 | Fern | 3 | Christmas fern, lady fern, bracken |
 
-**Tiers.** A = fitted from measured specimens. B = literature-curated, validated against published descriptions. C = any species, auto-built from its published description + family/genus template. Stored per species, shown on the label.
+**Tiers.** A = fitted from (or confirmed by) measured herbarium specimens (`species/fitted.json`). B = literature-curated, validated against published descriptions. C = any species, auto-built from its published description + family/genus template. Stored per species, shown on the label.
 
 **Species spec format**
 
@@ -277,6 +277,8 @@ Source text for both was fetched live (GBIF, Wikipedia, POWO) and is stored in `
 
 | **Pl@ntNet identification** (photo-trained plant ID; drawings rendered `--style scan --frame blade`, 62 species, 1–3 seeds) | `plantnet-score` Action → branch `scores` | Recognised as a plant 92%. Correct species top-1 ≈ 10%, top-5 ≈ 18%, correct genus top-1 ≈ 18%. Always right: white oak, horse chestnut, black walnut, lotus, lady fern; top-5: tulip tree, red oak, chestnut. Style/framing variants (photo, scan, colour, botanical, crop) moved scores within noise — the gap is a photo-trained model seeing drawings, plus species detail (lobe teeth, surface, 3-D) the drawings lack |
 
+| **Herbarium specimens** (GBIF, 15 sheets × 44 species, ≈1,900 isolated leaves; same morphometrics as renders) | `specimens` Action → branch `specimens`; `tools/fit_specimens.py` | 9 species fitted or confirmed → tier A (elm, beech, birch, dogwood, holly, English daisy aspect fitted; basswood, white oak, camphor confirmed within 4%). 35 measured but gated out: strap/narrow and monocot leaves fragment on sheets, round/peltate leaves fold, dissected leaves split, or specimens disagree / differ > 22% from the drawing (flagged for hand review) |
+
 **The 4 trait differences** are real variation, kept as drawn: wild radish (terminal lobe undulate vs. dentate stem leaves), lamb's quarters (lower leaves sometimes 3-lobed), sheep sorrel (basal rosette as well as stem leaves), large-flowered bellwort (Wikipedia "obovate" vs. flora "ovate–elliptic").
 
 **Fixed after validation:** banana length 1.5 → 2.2 m; American chestnut aspect 4.2 → 3.6; man-of-the-earth shape pandurate → cordate; orchid tree length 10 → 15 cm.
@@ -305,6 +307,7 @@ Source text for both was fetched live (GBIF, Wikipedia, POWO) and is stored in `
 - **0.1.0 (2026-10-18)** — core engines, venation, constraint matrix, 61 species, CLI, single-file bundle, studio, Python pipeline, tests.
 - **0.1.1 (2026-10-18)** — added *Cocos nucifera* (coconut palm: paripinnate frond, ~95 leaflet pairs). New compound params `taperMin`, `taperCenter`; pair cap raised to 130.
 
+- **0.3.0 (2026-10-21)** — herbarium specimen pipeline (`herbarium.py`: plant mask, stem cut, isolated-leaf filter; `specimens` Action, 8 shards, ~12 min); fit loop with quality gates; first 9 tier-A species; studio exports save to disk (no clipboard).
 - **0.2.6 (2026-10-20)** — Pl@ntNet loop live: `plantnet-score` Action (manual + weekly), results in branch `scores`; `scan` style; `--frame blade`; convex apex/base near the MLA chord (fixes rhombic elliptic leaves); magnolia, dogwood, holly corrected; resvg lighting crash on needles fixed.
 - **0.2.5 (2026-10-19)** — studio: photo style added, "On stem" view removed (CLI keeps `--view shoot`).
 - **0.2.4 (2026-10-19)** — `photo` render style (lamina texture, relief lighting, faint minor veins, drop shadow); scoring uses it by default (`--style`); score workflow commits results to branch `scores`; Pl@ntNet 404 = not recognised.

@@ -5,10 +5,11 @@
     "English holly"
   ],
   "family": "Aquifoliaceae",
-  "tier": "B",
+  "tier": "A",
   "sources": [
     "Ellis et al. 2009, Manual of Leaf Architecture",
-    "Flora of North America / POWO species descriptions (curated)"
+    "Flora of North America / POWO species descriptions (curated)",
+    "GBIF herbarium specimens (15 sheets, 55 leaves; occurrence keys in species/fitted.json)"
   ],
   "traits": {
     "shape": "elliptic",
@@ -27,8 +28,8 @@
       10
     ],
     "aspect": [
-      1.8,
-      0.12
+      1.9,
+      0.152
     ],
     "widest": [
       0.48,
@@ -58,5 +59,37 @@
     "fall": {
       "blade": "#264d22"
     }
+  },
+  "fit": {
+    "leaves": 55,
+    "sheets": 15,
+    "measured": {
+      "aspect": {
+        "median": 1.679,
+        "q1": 1.423,
+        "q3": 1.953,
+        "n": 55
+      },
+      "widest": {
+        "median": 0.458,
+        "q1": 0.342,
+        "q3": 0.592,
+        "n": 55
+      },
+      "lobeDepth": {
+        "median": 0.429,
+        "q1": 0.253,
+        "q3": 0.702,
+        "n": 55
+      },
+      "circularity": {
+        "median": 0.54,
+        "q1": 0.428,
+        "q3": 0.616,
+        "n": 55
+      }
+    },
+    "date": "2026-10-20",
+    "method": "GBIF herbarium sheets → isolated leaves → measure.py"
   }
 }

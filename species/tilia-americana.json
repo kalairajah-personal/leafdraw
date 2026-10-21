@@ -6,10 +6,11 @@
     "American linden"
   ],
   "family": "Malvaceae",
-  "tier": "B",
+  "tier": "A",
   "sources": [
     "Ellis et al. 2009, Manual of Leaf Architecture",
-    "Flora of North America / POWO species descriptions (curated)"
+    "Flora of North America / POWO species descriptions (curated)",
+    "GBIF herbarium specimens (15 sheets, 25 leaves; occurrence keys in species/fitted.json)"
   ],
   "traits": {
     "shape": "cordate",
@@ -69,5 +70,37 @@
     "fall": {
       "blade": "#d9bc4a"
     }
+  },
+  "fit": {
+    "leaves": 25,
+    "sheets": 15,
+    "measured": {
+      "aspect": {
+        "median": 1.248,
+        "q1": 1.139,
+        "q3": 1.342,
+        "n": 25
+      },
+      "widest": {
+        "median": 0.542,
+        "q1": 0.475,
+        "q3": 0.592,
+        "n": 25
+      },
+      "lobeDepth": {
+        "median": 0.503,
+        "q1": 0.229,
+        "q3": 0.77,
+        "n": 25
+      },
+      "circularity": {
+        "median": 0.667,
+        "q1": 0.603,
+        "q3": 0.72,
+        "n": 25
+      }
+    },
+    "date": "2026-10-20",
+    "method": "GBIF herbarium sheets → isolated leaves → measure.py"
   }
 }

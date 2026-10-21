@@ -5,10 +5,11 @@
     "Paper birch"
   ],
   "family": "Betulaceae",
-  "tier": "B",
+  "tier": "A",
   "sources": [
     "Ellis et al. 2009, Manual of Leaf Architecture",
-    "Flora of North America / POWO species descriptions (curated)"
+    "Flora of North America / POWO species descriptions (curated)",
+    "GBIF herbarium specimens (15 sheets, 62 leaves; occurrence keys in species/fitted.json)"
   ],
   "traits": {
     "shape": "ovate",
@@ -26,8 +27,8 @@
       10
     ],
     "aspect": [
-      1.45,
-      0.1
+      1.564,
+      0.125
     ],
     "widest": [
       0.36,
@@ -60,5 +61,37 @@
     "fall": {
       "blade": "#e3c13c"
     }
+  },
+  "fit": {
+    "leaves": 62,
+    "sheets": 15,
+    "measured": {
+      "aspect": {
+        "median": 1.489,
+        "q1": 1.306,
+        "q3": 1.581,
+        "n": 62
+      },
+      "widest": {
+        "median": 0.425,
+        "q1": 0.325,
+        "q3": 0.625,
+        "n": 62
+      },
+      "lobeDepth": {
+        "median": 0.268,
+        "q1": 0.218,
+        "q3": 0.376,
+        "n": 62
+      },
+      "circularity": {
+        "median": 0.684,
+        "q1": 0.638,
+        "q3": 0.7,
+        "n": 62
+      }
+    },
+    "date": "2026-10-20",
+    "method": "GBIF herbarium sheets → isolated leaves → measure.py"
   }
 }

@@ -1,6 +1,6 @@
 {
  "summary": {
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "species": 62,
   "taxonomy": {
    "gbifAccepted": 61,
@@ -736,7 +736,7 @@
     "verdict": "agree",
     "evidence": "the leaves are opposite, simple, ovate, 6–13 cm (2.4–5.1 in) long and 4–6 cm (1.6–2.4 in) broad, with an apparently entire margin (actually very finely toothed, under a lens)",
     "aspect": {
-     "curated": 1.8,
+     "curated": 2.007,
      "text": [
       1,
       3.25

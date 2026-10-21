@@ -1,110 +1,454 @@
 [
  {
-  "id": "tilia-americana",
-  "leaves": 14,
+  "id": "ulmus-americana",
+  "leaves": 60,
   "target": {
-   "aspect": 1.179,
-   "widest": 0.525
-  },
-  "before": {
-   "aspect": 1.249,
-   "widest": 0.358
-  },
-  "after": {
-   "aspect": 1.157,
-   "widest": 0.542
-  },
-  "params": {
-   "aspect": [
-    1.092,
-    0.087
-   ],
-   "widest": [
-    0.54,
-    0.03
-   ]
-  }
- },
- {
-  "id": "quercus-alba",
-  "leaves": 30,
-  "target": {
-   "aspect": 1.729,
-   "widest": 0.575
-  },
-  "before": {
-   "aspect": 1.786,
-   "widest": 0.608
-  },
-  "after": {
-   "aspect": 1.773,
-   "widest": 0.608
-  },
-  "params": {
-   "aspect": [
-    1.9,
-    0.15
-   ],
-   "widest": [
-    0.62,
-    0.03
-   ],
-   "lobeDepth": [
-    0.715,
-    0.05
-   ]
-  }
- },
- {
-  "id": "magnolia-grandiflora",
-  "leaves": 20,
-  "target": {
-   "aspect": 2.201,
-   "widest": 0.517
-  },
-  "before": {
-   "aspect": 1.875,
-   "widest": 0.525
-  },
-  "after": {
-   "aspect": 2.121,
+   "aspect": 1.913,
    "widest": 0.508
   },
+  "before": {
+   "aspect": 1.772,
+   "widest": 0.475
+  },
+  "after": {
+   "aspect": 1.889,
+   "widest": 0.492
+  },
   "params": {
    "aspect": [
-    2.541,
-    0.203
+    2.089,
+    0.167
    ],
    "widest": [
-    0.52,
+    0.46,
     0.03
    ]
   }
+ },
+ {
+  "id": "quercus-rubra",
+  "leaves": 35,
+  "skipped": "specimen aspect 1.52 vs drawn 2.095: > 22% apart, review by hand",
+  "specimenAspect": 1.52,
+  "drawnAspect": 2.095
  },
  {
   "id": "cornus-florida",
-  "leaves": 29,
+  "leaves": 43,
   "target": {
-   "aspect": 1.808,
-   "widest": 0.492
+   "aspect": 1.886,
+   "widest": 0.508
   },
   "before": {
    "aspect": 1.671,
    "widest": 0.475
   },
   "after": {
-   "aspect": 1.789,
+   "aspect": 1.856,
    "widest": 0.475
   },
   "params": {
    "aspect": [
-    1.932,
-    0.155
+    2.007,
+    0.161
    ],
    "widest": [
     0.5,
     0.03
    ]
   }
+ },
+ {
+  "id": "rosmarinus-officinalis",
+  "leaves": 14,
+  "skipped": "narrow, strap-shaped or monocot leaf (fragments/folds on sheets)",
+  "specimenAspect": 2.042,
+  "drawnAspect": 9.953
+ },
+ {
+  "id": "hedera-helix",
+  "leaves": 49,
+  "skipped": "dissected leaf (segments measured separately)",
+  "specimenAspect": 1.361,
+  "drawnAspect": 1.126
+ },
+ {
+  "id": "musa-acuminata",
+  "leaves": 33,
+  "skipped": "narrow, strap-shaped or monocot leaf (fragments/folds on sheets)",
+  "specimenAspect": 2.169,
+  "drawnAspect": 3.752
+ },
+ {
+  "id": "fagus-grandifolia",
+  "leaves": 51,
+  "target": {
+   "aspect": 1.823,
+   "widest": 0.458
+  },
+  "before": {
+   "aspect": 1.937,
+   "widest": 0.425
+  },
+  "after": {
+   "aspect": 1.843,
+   "widest": 0.425
+  },
+  "params": {
+   "aspect": [
+    1.988,
+    0.159
+   ],
+   "widest": [
+    0.45,
+    0.03
+   ]
+  }
+ },
+ {
+  "id": "raphanus-raphanistrum",
+  "leaves": 50,
+  "skipped": "inconsistent specimens (IQR 1.767\u20134.194)",
+  "specimenAspect": 2.692,
+  "drawnAspect": 2.748
+ },
+ {
+  "id": "eucalyptus-globulus",
+  "leaves": 34,
+  "skipped": "narrow, strap-shaped or monocot leaf (fragments/folds on sheets)",
+  "specimenAspect": 2.116,
+  "drawnAspect": 4.958
+ },
+ {
+  "id": "cercis-canadensis",
+  "leaves": 19,
+  "skipped": "inconsistent specimens (IQR 1.291\u20134.093)",
+  "specimenAspect": 1.864,
+  "drawnAspect": 1.166
+ },
+ {
+  "id": "nelumbo-nucifera",
+  "leaves": 53,
+  "skipped": "round/peltate leaf (folds on sheets)",
+  "specimenAspect": 2.099,
+  "drawnAspect": 1.0
+ },
+ {
+  "id": "sagittaria-latifolia",
+  "leaves": 28,
+  "skipped": "narrow, strap-shaped or monocot leaf (fragments/folds on sheets)",
+  "specimenAspect": 2.782,
+  "drawnAspect": 1.565
+ },
+ {
+  "id": "betula-papyrifera",
+  "leaves": 62,
+  "target": {
+   "aspect": 1.489,
+   "widest": 0.425
+  },
+  "before": {
+   "aspect": 1.369,
+   "widest": 0.408
+  },
+  "after": {
+   "aspect": 1.476,
+   "widest": 0.375
+  },
+  "params": {
+   "aspect": [
+    1.564,
+    0.125
+   ],
+   "widest": [
+    0.36,
+    0.03
+   ]
+  }
+ },
+ {
+  "id": "taraxacum-officinale",
+  "leaves": 45,
+  "skipped": "narrow, strap-shaped or monocot leaf (fragments/folds on sheets)",
+  "specimenAspect": 1.577,
+  "drawnAspect": 3.322
+ },
+ {
+  "id": "cinnamomum-camphora",
+  "leaves": 51,
+  "target": {
+   "aspect": 1.946,
+   "widest": 0.442
+  },
+  "before": {
+   "aspect": 2.025,
+   "widest": 0.492
+  },
+  "after": {
+   "aspect": 2.025,
+   "widest": 0.492
+  },
+  "params": null
+ },
+ {
+  "id": "asarum-canadense",
+  "leaves": 30,
+  "skipped": "inconsistent specimens (IQR 1.228\u20132.208)",
+  "specimenAspect": 1.485,
+  "drawnAspect": 1.141
+ },
+ {
+  "id": "tropaeolum-majus",
+  "leaves": 49,
+  "skipped": "round/peltate leaf (folds on sheets)",
+  "specimenAspect": 1.294,
+  "drawnAspect": 1.0
+ },
+ {
+  "id": "veratrum-viride",
+  "leaves": 27,
+  "skipped": "narrow, strap-shaped or monocot leaf (fragments/folds on sheets)",
+  "specimenAspect": 2.121,
+  "drawnAspect": 1.95
+ },
+ {
+  "id": "castanea-dentata",
+  "leaves": 32,
+  "skipped": "narrow, strap-shaped or monocot leaf (fragments/folds on sheets)",
+  "specimenAspect": 2.415,
+  "drawnAspect": 3.307
+ },
+ {
+  "id": "achillea-millefolium",
+  "leaves": 51,
+  "skipped": "narrow, strap-shaped or monocot leaf (fragments/folds on sheets)",
+  "specimenAspect": 2.586,
+  "drawnAspect": 4.072
+ },
+ {
+  "id": "ilex-aquifolium",
+  "leaves": 55,
+  "target": {
+   "aspect": 1.679,
+   "widest": 0.458
+  },
+  "before": {
+   "aspect": 1.581,
+   "widest": 0.492
+  },
+  "after": {
+   "aspect": 1.647,
+   "widest": 0.508
+  },
+  "params": {
+   "aspect": [
+    1.9,
+    0.152
+   ],
+   "widest": [
+    0.48,
+    0.03
+   ]
+  }
+ },
+ {
+  "id": "acer-rubrum",
+  "leaves": 57,
+  "skipped": "round/peltate leaf (folds on sheets)",
+  "specimenAspect": 1.114,
+  "drawnAspect": 1.08
+ },
+ {
+  "id": "helleborus-foetidus",
+  "leaves": 68,
+  "skipped": "dissected leaf (segments measured separately)",
+  "specimenAspect": 3.224,
+  "drawnAspect": 1.191
+ },
+ {
+  "id": "uvularia-perfoliata",
+  "leaves": 54,
+  "skipped": "narrow, strap-shaped or monocot leaf (fragments/folds on sheets)",
+  "specimenAspect": 2.489,
+  "drawnAspect": 2.011
+ },
+ {
+  "id": "populus-deltoides",
+  "leaves": 47,
+  "skipped": "round/peltate leaf (folds on sheets)",
+  "specimenAspect": 1.199,
+  "drawnAspect": 0.964
+ },
+ {
+  "id": "monstera-deliciosa",
+  "leaves": 38,
+  "skipped": "narrow, strap-shaped or monocot leaf (fragments/folds on sheets)",
+  "specimenAspect": 2.162,
+  "drawnAspect": 1.207
+ },
+ {
+  "id": "chenopodium-album",
+  "leaves": 47,
+  "skipped": "inconsistent specimens (IQR 1.364\u20132.445)",
+  "specimenAspect": 1.623,
+  "drawnAspect": 1.569
+ },
+ {
+  "id": "acer-saccharum",
+  "leaves": 40,
+  "skipped": "round/peltate leaf (folds on sheets)",
+  "specimenAspect": 1.176,
+  "drawnAspect": 1.029
+ },
+ {
+  "id": "ginkgo-biloba",
+  "leaves": 41,
+  "skipped": "specimen aspect 1.276 vs drawn 1.841: > 22% apart, review by hand",
+  "specimenAspect": 1.276,
+  "drawnAspect": 1.841
+ },
+ {
+  "id": "tilia-americana",
+  "leaves": 25,
+  "target": {
+   "aspect": 1.248,
+   "widest": 0.542
+  },
+  "before": {
+   "aspect": 1.249,
+   "widest": 0.358
+  },
+  "after": {
+   "aspect": 1.249,
+   "widest": 0.358
+  },
+  "params": null
+ },
+ {
+  "id": "magnolia-grandiflora",
+  "leaves": 29,
+  "skipped": "specimen aspect 2.318 vs drawn 1.875: > 22% apart, review by hand",
+  "specimenAspect": 2.318,
+  "drawnAspect": 1.875
+ },
+ {
+  "id": "bellis-perennis",
+  "leaves": 29,
+  "target": {
+   "aspect": 1.947,
+   "widest": 0.508
+  },
+  "before": {
+   "aspect": 2.386,
+   "widest": 0.758
+  },
+  "after": {
+   "aspect": 1.986,
+   "widest": 0.758
+  },
+  "params": {
+   "aspect": [
+    2.352,
+    0.188
+   ],
+   "widest": [
+    0.82,
+    0.02
+   ]
+  }
+ },
+ {
+  "id": "acer-palmatum",
+  "leaves": 49,
+  "skipped": "round/peltate leaf (folds on sheets)",
+  "specimenAspect": 1.272,
+  "drawnAspect": 1.078
+ },
+ {
+  "id": "zea-mays",
+  "leaves": 23,
+  "skipped": "narrow, strap-shaped or monocot leaf (fragments/folds on sheets)",
+  "specimenAspect": 2.792,
+  "drawnAspect": 10.422
+ },
+ {
+  "id": "bauhinia-variegata",
+  "leaves": 27,
+  "skipped": "round/peltate leaf (folds on sheets)",
+  "specimenAspect": 1.767,
+  "drawnAspect": 1.082
+ },
+ {
+  "id": "liriodendron-tulipifera",
+  "leaves": 43,
+  "skipped": "round/peltate leaf (folds on sheets)",
+  "specimenAspect": 1.363,
+  "drawnAspect": 1.061
+ },
+ {
+  "id": "prunus-serotina",
+  "leaves": 79,
+  "skipped": "specimen aspect 1.892 vs drawn 2.558: > 22% apart, review by hand",
+  "specimenAspect": 1.892,
+  "drawnAspect": 2.558
+ },
+ {
+  "id": "ipomoea-pandurata",
+  "leaves": 42,
+  "skipped": "inconsistent specimens (IQR 1.367\u20132.291)",
+  "specimenAspect": 1.729,
+  "drawnAspect": 1.377
+ },
+ {
+  "id": "liquidambar-styraciflua",
+  "leaves": 49,
+  "skipped": "round/peltate leaf (folds on sheets)",
+  "specimenAspect": 1.352,
+  "drawnAspect": 1.114
+ },
+ {
+  "id": "quercus-alba",
+  "leaves": 56,
+  "target": {
+   "aspect": 1.766,
+   "widest": 0.583
+  },
+  "before": {
+   "aspect": 1.786,
+   "widest": 0.608
+  },
+  "after": {
+   "aspect": 1.786,
+   "widest": 0.608
+  },
+  "params": null
+ },
+ {
+  "id": "salix-babylonica",
+  "leaves": 52,
+  "skipped": "narrow, strap-shaped or monocot leaf (fragments/folds on sheets)",
+  "specimenAspect": 4.921,
+  "drawnAspect": 5.89
+ },
+ {
+  "id": "rumex-acetosella",
+  "leaves": 21,
+  "skipped": "inconsistent specimens (IQR 2.249\u20133.601)",
+  "specimenAspect": 3.036,
+  "drawnAspect": 2.155
+ },
+ {
+  "id": "platanus-occidentalis",
+  "leaves": 34,
+  "skipped": "round/peltate leaf (folds on sheets)",
+  "specimenAspect": 1.295,
+  "drawnAspect": 1.069
+ },
+ {
+  "id": "clivia-miniata",
+  "leaves": 32,
+  "skipped": "narrow, strap-shaped or monocot leaf (fragments/folds on sheets)",
+  "specimenAspect": 1.81,
+  "drawnAspect": 11.436
  }
 ]

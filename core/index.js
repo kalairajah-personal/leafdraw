@@ -15,7 +15,7 @@ export { renderGcode, renderHPGL, plotterPaths } from './render/plotter.js';
 export { resolvePalette } from './palette.js';
 export { TRAITS, GLOSSARY, findTerm, lookup, parseTraitList, listTerms, validate, RULES, DEFAULTS, resolve };
 
-export const VERSION = '0.2.6';
+export const VERSION = '0.3.0';
 const registry = new Map();
 
 export function registerSpecies(list) {

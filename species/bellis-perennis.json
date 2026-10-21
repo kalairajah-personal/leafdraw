@@ -5,10 +5,11 @@
     "Common daisy"
   ],
   "family": "Asteraceae",
-  "tier": "B",
+  "tier": "A",
   "sources": [
     "Ellis et al. 2009, Manual of Leaf Architecture",
-    "Flora of North America / POWO species descriptions (curated)"
+    "Flora of North America / POWO species descriptions (curated)",
+    "GBIF herbarium specimens (15 sheets, 29 leaves; occurrence keys in species/fitted.json)"
   ],
   "traits": {
     "shape": "spatulate",
@@ -26,8 +27,8 @@
       8
     ],
     "aspect": [
-      3,
-      0.25
+      2.352,
+      0.188
     ],
     "widest": [
       0.82,
@@ -53,5 +54,37 @@
     "fall": {
       "blade": "#8f8a44"
     }
+  },
+  "fit": {
+    "leaves": 29,
+    "sheets": 15,
+    "measured": {
+      "aspect": {
+        "median": 1.947,
+        "q1": 1.586,
+        "q3": 2.436,
+        "n": 29
+      },
+      "widest": {
+        "median": 0.508,
+        "q1": 0.342,
+        "q3": 0.708,
+        "n": 29
+      },
+      "lobeDepth": {
+        "median": 0.914,
+        "q1": 0.525,
+        "q3": 0.989,
+        "n": 29
+      },
+      "circularity": {
+        "median": 0.416,
+        "q1": 0.284,
+        "q3": 0.526,
+        "n": 29
+      }
+    },
+    "date": "2026-10-20",
+    "method": "GBIF herbarium sheets → isolated leaves → measure.py"
   }
 }

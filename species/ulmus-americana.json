@@ -5,10 +5,11 @@
     "American elm"
   ],
   "family": "Ulmaceae",
-  "tier": "B",
+  "tier": "A",
   "sources": [
     "Ellis et al. 2009, Manual of Leaf Architecture",
-    "Flora of North America / POWO species descriptions (curated)"
+    "Flora of North America / POWO species descriptions (curated)",
+    "GBIF herbarium specimens (15 sheets, 60 leaves; occurrence keys in species/fitted.json)"
   ],
   "traits": {
     "shape": "elliptic",
@@ -26,8 +27,8 @@
       15
     ],
     "aspect": [
-      1.95,
-      0.15
+      2.089,
+      0.167
     ],
     "widest": [
       0.46,
@@ -65,5 +66,37 @@
     "fall": {
       "blade": "#d6b23e"
     }
+  },
+  "fit": {
+    "leaves": 60,
+    "sheets": 15,
+    "measured": {
+      "aspect": {
+        "median": 1.913,
+        "q1": 1.612,
+        "q3": 2.15,
+        "n": 60
+      },
+      "widest": {
+        "median": 0.508,
+        "q1": 0.425,
+        "q3": 0.542,
+        "n": 60
+      },
+      "lobeDepth": {
+        "median": 0.341,
+        "q1": 0.227,
+        "q3": 0.768,
+        "n": 60
+      },
+      "circularity": {
+        "median": 0.545,
+        "q1": 0.435,
+        "q3": 0.579,
+        "n": 60
+      }
+    },
+    "date": "2026-10-20",
+    "method": "GBIF herbarium sheets → isolated leaves → measure.py"
   }
 }

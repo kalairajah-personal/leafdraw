@@ -5,10 +5,11 @@
     "White oak"
   ],
   "family": "Fagaceae",
-  "tier": "B",
+  "tier": "A",
   "sources": [
     "Ellis et al. 2009, Manual of Leaf Architecture",
-    "Flora of North America / POWO species descriptions (curated)"
+    "Flora of North America / POWO species descriptions (curated)",
+    "GBIF herbarium specimens (15 sheets, 56 leaves; occurrence keys in species/fitted.json)"
   ],
   "traits": {
     "shape": "obovate",
@@ -56,5 +57,37 @@
     "fall": {
       "blade": "#8e3d1f"
     }
+  },
+  "fit": {
+    "leaves": 56,
+    "sheets": 15,
+    "measured": {
+      "aspect": {
+        "median": 1.766,
+        "q1": 1.475,
+        "q3": 2.214,
+        "n": 56
+      },
+      "widest": {
+        "median": 0.583,
+        "q1": 0.508,
+        "q3": 0.692,
+        "n": 56
+      },
+      "lobeDepth": {
+        "median": 0.837,
+        "q1": 0.605,
+        "q3": 0.989,
+        "n": 56
+      },
+      "circularity": {
+        "median": 0.28,
+        "q1": 0.212,
+        "q3": 0.344,
+        "n": 56
+      }
+    },
+    "date": "2026-10-20",
+    "method": "GBIF herbarium sheets → isolated leaves → measure.py"
   }
 }

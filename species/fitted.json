@@ -1,0 +1,344 @@
+{
+ "ulmus-americana": {
+  "params": {
+   "aspect": [
+    2.089,
+    0.167
+   ],
+   "widest": [
+    0.46,
+    0.03
+   ]
+  },
+  "leaves": 60,
+  "sheets": 15,
+  "date": "2026-10-20",
+  "measured": {
+   "aspect": {
+    "median": 1.913,
+    "q1": 1.612,
+    "q3": 2.15,
+    "n": 60
+   },
+   "widest": {
+    "median": 0.508,
+    "q1": 0.425,
+    "q3": 0.542,
+    "n": 60
+   },
+   "lobeDepth": {
+    "median": 0.341,
+    "q1": 0.227,
+    "q3": 0.768,
+    "n": 60
+   },
+   "circularity": {
+    "median": 0.545,
+    "q1": 0.435,
+    "q3": 0.579,
+    "n": 60
+   }
+  }
+ },
+ "cornus-florida": {
+  "params": {
+   "aspect": [
+    2.007,
+    0.161
+   ],
+   "widest": [
+    0.5,
+    0.03
+   ]
+  },
+  "leaves": 43,
+  "sheets": 15,
+  "date": "2026-10-20",
+  "measured": {
+   "aspect": {
+    "median": 1.886,
+    "q1": 1.58,
+    "q3": 2.11,
+    "n": 43
+   },
+   "widest": {
+    "median": 0.508,
+    "q1": 0.458,
+    "q3": 0.592,
+    "n": 43
+   },
+   "lobeDepth": {
+    "median": 0.25,
+    "q1": 0.158,
+    "q3": 0.72,
+    "n": 43
+   },
+   "circularity": {
+    "median": 0.607,
+    "q1": 0.474,
+    "q3": 0.688,
+    "n": 43
+   }
+  }
+ },
+ "fagus-grandifolia": {
+  "params": {
+   "aspect": [
+    1.988,
+    0.159
+   ],
+   "widest": [
+    0.45,
+    0.03
+   ]
+  },
+  "leaves": 51,
+  "sheets": 15,
+  "date": "2026-10-20",
+  "measured": {
+   "aspect": {
+    "median": 1.823,
+    "q1": 1.641,
+    "q3": 2.022,
+    "n": 51
+   },
+   "widest": {
+    "median": 0.458,
+    "q1": 0.375,
+    "q3": 0.542,
+    "n": 51
+   },
+   "lobeDepth": {
+    "median": 0.174,
+    "q1": 0.11,
+    "q3": 0.584,
+    "n": 51
+   },
+   "circularity": {
+    "median": 0.643,
+    "q1": 0.544,
+    "q3": 0.69,
+    "n": 51
+   }
+  }
+ },
+ "betula-papyrifera": {
+  "params": {
+   "aspect": [
+    1.564,
+    0.125
+   ],
+   "widest": [
+    0.36,
+    0.03
+   ]
+  },
+  "leaves": 62,
+  "sheets": 15,
+  "date": "2026-10-20",
+  "measured": {
+   "aspect": {
+    "median": 1.489,
+    "q1": 1.306,
+    "q3": 1.581,
+    "n": 62
+   },
+   "widest": {
+    "median": 0.425,
+    "q1": 0.325,
+    "q3": 0.625,
+    "n": 62
+   },
+   "lobeDepth": {
+    "median": 0.268,
+    "q1": 0.218,
+    "q3": 0.376,
+    "n": 62
+   },
+   "circularity": {
+    "median": 0.684,
+    "q1": 0.638,
+    "q3": 0.7,
+    "n": 62
+   }
+  }
+ },
+ "cinnamomum-camphora": {
+  "params": {},
+  "leaves": 51,
+  "sheets": 15,
+  "date": "2026-10-20",
+  "measured": {
+   "aspect": {
+    "median": 1.946,
+    "q1": 1.53,
+    "q3": 2.426,
+    "n": 51
+   },
+   "widest": {
+    "median": 0.442,
+    "q1": 0.342,
+    "q3": 0.608,
+    "n": 51
+   },
+   "lobeDepth": {
+    "median": 0.695,
+    "q1": 0.27,
+    "q3": 0.943,
+    "n": 51
+   },
+   "circularity": {
+    "median": 0.425,
+    "q1": 0.307,
+    "q3": 0.634,
+    "n": 51
+   }
+  }
+ },
+ "ilex-aquifolium": {
+  "params": {
+   "aspect": [
+    1.9,
+    0.152
+   ],
+   "widest": [
+    0.48,
+    0.03
+   ]
+  },
+  "leaves": 55,
+  "sheets": 15,
+  "date": "2026-10-20",
+  "measured": {
+   "aspect": {
+    "median": 1.679,
+    "q1": 1.423,
+    "q3": 1.953,
+    "n": 55
+   },
+   "widest": {
+    "median": 0.458,
+    "q1": 0.342,
+    "q3": 0.592,
+    "n": 55
+   },
+   "lobeDepth": {
+    "median": 0.429,
+    "q1": 0.253,
+    "q3": 0.702,
+    "n": 55
+   },
+   "circularity": {
+    "median": 0.54,
+    "q1": 0.428,
+    "q3": 0.616,
+    "n": 55
+   }
+  }
+ },
+ "tilia-americana": {
+  "params": {},
+  "leaves": 25,
+  "sheets": 15,
+  "date": "2026-10-20",
+  "measured": {
+   "aspect": {
+    "median": 1.248,
+    "q1": 1.139,
+    "q3": 1.342,
+    "n": 25
+   },
+   "widest": {
+    "median": 0.542,
+    "q1": 0.475,
+    "q3": 0.592,
+    "n": 25
+   },
+   "lobeDepth": {
+    "median": 0.503,
+    "q1": 0.229,
+    "q3": 0.77,
+    "n": 25
+   },
+   "circularity": {
+    "median": 0.667,
+    "q1": 0.603,
+    "q3": 0.72,
+    "n": 25
+   }
+  }
+ },
+ "bellis-perennis": {
+  "params": {
+   "aspect": [
+    2.352,
+    0.188
+   ],
+   "widest": [
+    0.82,
+    0.02
+   ]
+  },
+  "leaves": 29,
+  "sheets": 15,
+  "date": "2026-10-20",
+  "measured": {
+   "aspect": {
+    "median": 1.947,
+    "q1": 1.586,
+    "q3": 2.436,
+    "n": 29
+   },
+   "widest": {
+    "median": 0.508,
+    "q1": 0.342,
+    "q3": 0.708,
+    "n": 29
+   },
+   "lobeDepth": {
+    "median": 0.914,
+    "q1": 0.525,
+    "q3": 0.989,
+    "n": 29
+   },
+   "circularity": {
+    "median": 0.416,
+    "q1": 0.284,
+    "q3": 0.526,
+    "n": 29
+   }
+  }
+ },
+ "quercus-alba": {
+  "params": {},
+  "leaves": 56,
+  "sheets": 15,
+  "date": "2026-10-20",
+  "measured": {
+   "aspect": {
+    "median": 1.766,
+    "q1": 1.475,
+    "q3": 2.214,
+    "n": 56
+   },
+   "widest": {
+    "median": 0.583,
+    "q1": 0.508,
+    "q3": 0.692,
+    "n": 56
+   },
+   "lobeDepth": {
+    "median": 0.837,
+    "q1": 0.605,
+    "q3": 0.989,
+    "n": 56
+   },
+   "circularity": {
+    "median": 0.28,
+    "q1": 0.212,
+    "q3": 0.344,
+    "n": 56
+   }
+  }
+ }
+}

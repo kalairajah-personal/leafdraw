@@ -5,10 +5,11 @@
     "Camphor tree"
   ],
   "family": "Lauraceae",
-  "tier": "B",
+  "tier": "A",
   "sources": [
     "Ellis et al. 2009, Manual of Leaf Architecture",
-    "Flora of North America / POWO species descriptions (curated)"
+    "Flora of North America / POWO species descriptions (curated)",
+    "GBIF herbarium specimens (15 sheets, 51 leaves; occurrence keys in species/fitted.json)"
   ],
   "traits": {
     "shape": "elliptic",
@@ -51,5 +52,37 @@
     "fall": {
       "blade": "#b54a2a"
     }
+  },
+  "fit": {
+    "leaves": 51,
+    "sheets": 15,
+    "measured": {
+      "aspect": {
+        "median": 1.946,
+        "q1": 1.53,
+        "q3": 2.426,
+        "n": 51
+      },
+      "widest": {
+        "median": 0.442,
+        "q1": 0.342,
+        "q3": 0.608,
+        "n": 51
+      },
+      "lobeDepth": {
+        "median": 0.695,
+        "q1": 0.27,
+        "q3": 0.943,
+        "n": 51
+      },
+      "circularity": {
+        "median": 0.425,
+        "q1": 0.307,
+        "q3": 0.634,
+        "n": 51
+      }
+    },
+    "date": "2026-10-20",
+    "method": "GBIF herbarium sheets → isolated leaves → measure.py"
   }
 }
