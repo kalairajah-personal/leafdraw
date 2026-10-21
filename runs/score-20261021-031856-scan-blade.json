@@ -1,0 +1,92 @@
+[
+ {
+  "species": "ulmus-americana",
+  "style": "scan",
+  "frame": "blade",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.3333333333333333,
+  "recognised": 1.0,
+  "guess": "Ulmus laevis"
+ },
+ {
+  "species": "fagus-grandifolia",
+  "style": "scan",
+  "frame": "blade",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 0.6666666666666666,
+  "guess": null
+ },
+ {
+  "species": "betula-papyrifera",
+  "style": "scan",
+  "frame": "blade",
+  "top1": 0.6666666666666666,
+  "top5": 1.0,
+  "genus1": 0.6666666666666666,
+  "recognised": 1.0,
+  "guess": "Tilia dasystyla"
+ },
+ {
+  "species": "tilia-americana",
+  "style": "scan",
+  "frame": "blade",
+  "top1": 0.0,
+  "top5": 0.6666666666666666,
+  "genus1": 0.6666666666666666,
+  "recognised": 1.0,
+  "guess": "Tilia dasystyla"
+ },
+ {
+  "species": "quercus-alba",
+  "style": "scan",
+  "frame": "blade",
+  "top1": 1.0,
+  "top5": 1.0,
+  "genus1": 1.0,
+  "recognised": 1.0,
+  "guess": "Quercus alba"
+ },
+ {
+  "species": "cornus-florida",
+  "style": "scan",
+  "frame": "blade",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 0.0,
+  "guess": null
+ },
+ {
+  "species": "cinnamomum-camphora",
+  "style": "scan",
+  "frame": "blade",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.3333333333333333,
+  "recognised": 1.0,
+  "guess": "Hoya latifolia"
+ },
+ {
+  "species": "ilex-aquifolium",
+  "style": "scan",
+  "frame": "blade",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 0.3333333333333333,
+  "guess": null
+ },
+ {
+  "species": "bellis-perennis",
+  "style": "scan",
+  "frame": "blade",
+  "top1": 0.0,
+  "top5": 0.0,
+  "genus1": 0.0,
+  "recognised": 1.0,
+  "guess": "Scutellaria columnae"
+ }
+]
