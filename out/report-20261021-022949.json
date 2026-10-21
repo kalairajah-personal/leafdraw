@@ -1,0 +1,180 @@
+[
+ {
+  "id": "tilia-americana",
+  "sheets": 6,
+  "leaves": 12,
+  "candidates": 12,
+  "fetchErrors": [
+   "HTTPError: HTTP Error 400: Image cache requests must be signed or use the occurrence API",
+   "HTTPError: HTTP Error 400: Image cache requests must be signed or use the occurrence API",
+   "HTTPError: HTTP Error 400: Image cache requests must be signed or use the occurrence API",
+   "OSError: image file is truncated (30 bytes not processed)",
+   "OSError: image file is truncated (29 bytes not processed)"
+  ],
+  "specimen": {
+   "aspect": {
+    "median": 1.159,
+    "q1": 1.123,
+    "q3": 1.242,
+    "n": 12
+   },
+   "widest": {
+    "median": 0.542,
+    "q1": 0.425,
+    "q3": 0.608,
+    "n": 12
+   },
+   "lobeDepth": {
+    "median": 0.291,
+    "q1": 0.179,
+    "q3": 0.444,
+    "n": 12
+   },
+   "circularity": {
+    "median": 0.645,
+    "q1": 0.599,
+    "q3": 0.709,
+    "n": 12
+   },
+   "apexAngle": {
+    "median": 131.86,
+    "q1": 125.305,
+    "q3": 137.88,
+    "n": 12
+   },
+   "baseAngle": {
+    "median": 132.765,
+    "q1": 130.753,
+    "q3": 136.254,
+    "n": 12
+   }
+  },
+  "drawn": {
+   "aspect": {
+    "median": 1.249,
+    "q1": 1.121,
+    "q3": 1.251,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.358,
+    "q1": 0.342,
+    "q3": 0.375,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 0.033,
+    "q1": 0.028,
+    "q3": 0.04,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.745,
+    "q1": 0.736,
+    "q3": 0.777,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 115.333,
+    "q1": 108.283,
+    "q3": 115.658,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 145.505,
+    "q1": 144.922,
+    "q3": 147.59,
+    "n": 5
+   }
+  }
+ },
+ {
+  "id": "cornus-florida",
+  "sheets": 6,
+  "leaves": 17,
+  "candidates": 12,
+  "fetchErrors": [
+   "HTTPError: HTTP Error 400: Image cache requests must be signed or use the occurrence API",
+   "HTTPError: HTTP Error 400: Image cache requests must be signed or use the occurrence API",
+   "HTTPError: HTTP Error 400: Image cache requests must be signed or use the occurrence API",
+   "HTTPError: HTTP Error 400: Image cache requests must be signed or use the occurrence API",
+   "URLError: <urlopen error timed out>"
+  ],
+  "specimen": {
+   "aspect": {
+    "median": 1.905,
+    "q1": 1.636,
+    "q3": 2.093,
+    "n": 17
+   },
+   "widest": {
+    "median": 0.492,
+    "q1": 0.442,
+    "q3": 0.558,
+    "n": 17
+   },
+   "lobeDepth": {
+    "median": 0.195,
+    "q1": 0.125,
+    "q3": 0.464,
+    "n": 17
+   },
+   "circularity": {
+    "median": 0.665,
+    "q1": 0.582,
+    "q3": 0.691,
+    "n": 17
+   },
+   "apexAngle": {
+    "median": 87.037,
+    "q1": 72.959,
+    "q3": 116.228,
+    "n": 17
+   },
+   "baseAngle": {
+    "median": 98.075,
+    "q1": 88.551,
+    "q3": 108.219,
+    "n": 17
+   }
+  },
+  "drawn": {
+   "aspect": {
+    "median": 1.671,
+    "q1": 1.654,
+    "q3": 1.675,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.475,
+    "q1": 0.458,
+    "q3": 0.492,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 0.004,
+    "q1": 0.004,
+    "q3": 0.005,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.79,
+    "q1": 0.785,
+    "q3": 0.793,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 95.86,
+    "q1": 95.44,
+    "q3": 96.287,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 117.99,
+    "q1": 114.372,
+    "q3": 118.866,
+    "n": 5
+   }
+  }
+ }
+]
