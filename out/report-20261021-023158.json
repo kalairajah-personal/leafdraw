@@ -1,0 +1,168 @@
+[
+ {
+  "id": "tilia-americana",
+  "sheets": 6,
+  "leaves": 13,
+  "candidates": 12,
+  "fetchErrors": [],
+  "specimen": {
+   "aspect": {
+    "median": 1.175,
+    "q1": 1.124,
+    "q3": 1.32,
+    "n": 13
+   },
+   "widest": {
+    "median": 0.542,
+    "q1": 0.375,
+    "q3": 0.558,
+    "n": 13
+   },
+   "lobeDepth": {
+    "median": 0.237,
+    "q1": 0.168,
+    "q3": 0.39,
+    "n": 13
+   },
+   "circularity": {
+    "median": 0.678,
+    "q1": 0.607,
+    "q3": 0.72,
+    "n": 13
+   },
+   "apexAngle": {
+    "median": 129.218,
+    "q1": 119.333,
+    "q3": 137.888,
+    "n": 13
+   },
+   "baseAngle": {
+    "median": 133.962,
+    "q1": 126.484,
+    "q3": 136.637,
+    "n": 13
+   }
+  },
+  "drawn": {
+   "aspect": {
+    "median": 1.249,
+    "q1": 1.121,
+    "q3": 1.251,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.358,
+    "q1": 0.342,
+    "q3": 0.375,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 0.033,
+    "q1": 0.028,
+    "q3": 0.04,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.745,
+    "q1": 0.736,
+    "q3": 0.777,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 115.333,
+    "q1": 108.283,
+    "q3": 115.658,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 145.505,
+    "q1": 144.922,
+    "q3": 147.59,
+    "n": 5
+   }
+  }
+ },
+ {
+  "id": "cornus-florida",
+  "sheets": 6,
+  "leaves": 24,
+  "candidates": 12,
+  "fetchErrors": [],
+  "specimen": {
+   "aspect": {
+    "median": 1.919,
+    "q1": 1.752,
+    "q3": 2.095,
+    "n": 24
+   },
+   "widest": {
+    "median": 0.5,
+    "q1": 0.458,
+    "q3": 0.592,
+    "n": 24
+   },
+   "lobeDepth": {
+    "median": 0.203,
+    "q1": 0.135,
+    "q3": 0.561,
+    "n": 24
+   },
+   "circularity": {
+    "median": 0.608,
+    "q1": 0.488,
+    "q3": 0.671,
+    "n": 24
+   },
+   "apexAngle": {
+    "median": 83.071,
+    "q1": 71.118,
+    "q3": 118.956,
+    "n": 24
+   },
+   "baseAngle": {
+    "median": 93.97,
+    "q1": 84.392,
+    "q3": 109.582,
+    "n": 24
+   }
+  },
+  "drawn": {
+   "aspect": {
+    "median": 1.671,
+    "q1": 1.654,
+    "q3": 1.675,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.475,
+    "q1": 0.458,
+    "q3": 0.492,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 0.004,
+    "q1": 0.004,
+    "q3": 0.005,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.79,
+    "q1": 0.785,
+    "q3": 0.793,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 95.86,
+    "q1": 95.44,
+    "q3": 96.287,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 117.99,
+    "q1": 114.372,
+    "q3": 118.866,
+    "n": 5
+   }
+  }
+ }
+]

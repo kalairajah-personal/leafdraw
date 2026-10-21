@@ -2,51 +2,45 @@
  {
   "id": "tilia-americana",
   "sheets": 6,
-  "leaves": 12,
+  "leaves": 13,
   "candidates": 12,
-  "fetchErrors": [
-   "HTTPError: HTTP Error 400: Image cache requests must be signed or use the occurrence API",
-   "HTTPError: HTTP Error 400: Image cache requests must be signed or use the occurrence API",
-   "HTTPError: HTTP Error 400: Image cache requests must be signed or use the occurrence API",
-   "OSError: image file is truncated (30 bytes not processed)",
-   "OSError: image file is truncated (29 bytes not processed)"
-  ],
+  "fetchErrors": [],
   "specimen": {
    "aspect": {
-    "median": 1.159,
-    "q1": 1.123,
-    "q3": 1.242,
-    "n": 12
+    "median": 1.175,
+    "q1": 1.124,
+    "q3": 1.32,
+    "n": 13
    },
    "widest": {
     "median": 0.542,
-    "q1": 0.425,
-    "q3": 0.608,
-    "n": 12
+    "q1": 0.375,
+    "q3": 0.558,
+    "n": 13
    },
    "lobeDepth": {
-    "median": 0.291,
-    "q1": 0.179,
-    "q3": 0.444,
-    "n": 12
+    "median": 0.237,
+    "q1": 0.168,
+    "q3": 0.39,
+    "n": 13
    },
    "circularity": {
-    "median": 0.645,
-    "q1": 0.599,
-    "q3": 0.709,
-    "n": 12
+    "median": 0.678,
+    "q1": 0.607,
+    "q3": 0.72,
+    "n": 13
    },
    "apexAngle": {
-    "median": 131.86,
-    "q1": 125.305,
-    "q3": 137.88,
-    "n": 12
+    "median": 129.218,
+    "q1": 119.333,
+    "q3": 137.888,
+    "n": 13
    },
    "baseAngle": {
-    "median": 132.765,
-    "q1": 130.753,
-    "q3": 136.254,
-    "n": 12
+    "median": 133.962,
+    "q1": 126.484,
+    "q3": 136.637,
+    "n": 13
    }
   },
   "drawn": {

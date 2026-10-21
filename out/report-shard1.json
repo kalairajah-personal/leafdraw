@@ -2,51 +2,45 @@
  {
   "id": "cornus-florida",
   "sheets": 6,
-  "leaves": 17,
+  "leaves": 24,
   "candidates": 12,
-  "fetchErrors": [
-   "HTTPError: HTTP Error 400: Image cache requests must be signed or use the occurrence API",
-   "HTTPError: HTTP Error 400: Image cache requests must be signed or use the occurrence API",
-   "HTTPError: HTTP Error 400: Image cache requests must be signed or use the occurrence API",
-   "HTTPError: HTTP Error 400: Image cache requests must be signed or use the occurrence API",
-   "URLError: <urlopen error timed out>"
-  ],
+  "fetchErrors": [],
   "specimen": {
    "aspect": {
-    "median": 1.905,
-    "q1": 1.636,
-    "q3": 2.093,
-    "n": 17
+    "median": 1.919,
+    "q1": 1.752,
+    "q3": 2.095,
+    "n": 24
    },
    "widest": {
-    "median": 0.492,
-    "q1": 0.442,
-    "q3": 0.558,
-    "n": 17
+    "median": 0.5,
+    "q1": 0.458,
+    "q3": 0.592,
+    "n": 24
    },
    "lobeDepth": {
-    "median": 0.195,
-    "q1": 0.125,
-    "q3": 0.464,
-    "n": 17
+    "median": 0.203,
+    "q1": 0.135,
+    "q3": 0.561,
+    "n": 24
    },
    "circularity": {
-    "median": 0.665,
-    "q1": 0.582,
-    "q3": 0.691,
-    "n": 17
+    "median": 0.608,
+    "q1": 0.488,
+    "q3": 0.671,
+    "n": 24
    },
    "apexAngle": {
-    "median": 87.037,
-    "q1": 72.959,
-    "q3": 116.228,
-    "n": 17
+    "median": 83.071,
+    "q1": 71.118,
+    "q3": 118.956,
+    "n": 24
    },
    "baseAngle": {
-    "median": 98.075,
-    "q1": 88.551,
-    "q3": 108.219,
-    "n": 17
+    "median": 93.97,
+    "q1": 84.392,
+    "q3": 109.582,
+    "n": 24
    }
   },
   "drawn": {
