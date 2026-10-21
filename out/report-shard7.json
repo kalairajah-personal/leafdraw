@@ -1,0 +1,257 @@
+[
+ {
+  "id": "quercus-alba",
+  "sheets": 0,
+  "leaves": 0,
+  "specimen": {
+   "aspect": null,
+   "widest": null,
+   "lobeDepth": null,
+   "circularity": null,
+   "apexAngle": null,
+   "baseAngle": null
+  },
+  "drawn": {
+   "aspect": {
+    "median": 1.786,
+    "q1": 1.757,
+    "q3": 1.847,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.608,
+    "q1": 0.608,
+    "q3": 0.608,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 0.656,
+    "q1": 0.647,
+    "q3": 0.697,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.256,
+    "q1": 0.214,
+    "q3": 0.263,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 72.705,
+    "q1": 65.59,
+    "q3": 73.445,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 77.858,
+    "q1": 76.927,
+    "q3": 78.881,
+    "n": 5
+   }
+  }
+ },
+ {
+  "id": "salix-babylonica",
+  "sheets": 0,
+  "leaves": 0,
+  "specimen": {
+   "aspect": null,
+   "widest": null,
+   "lobeDepth": null,
+   "circularity": null,
+   "apexAngle": null,
+   "baseAngle": null
+  },
+  "drawn": {
+   "aspect": {
+    "median": 5.89,
+    "q1": 5.821,
+    "q3": 5.955,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.442,
+    "q1": 0.442,
+    "q3": 0.458,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 0.035,
+    "q1": 0.034,
+    "q3": 0.035,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.327,
+    "q1": 0.324,
+    "q3": 0.328,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 47.86,
+    "q1": 46.997,
+    "q3": 49.364,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 56.653,
+    "q1": 55.951,
+    "q3": 61.379,
+    "n": 5
+   }
+  }
+ },
+ {
+  "id": "rumex-acetosella",
+  "sheets": 0,
+  "leaves": 0,
+  "specimen": {
+   "aspect": null,
+   "widest": null,
+   "lobeDepth": null,
+   "circularity": null,
+   "apexAngle": null,
+   "baseAngle": null
+  },
+  "drawn": {
+   "aspect": {
+    "median": 2.155,
+    "q1": 2.086,
+    "q3": 2.331,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.108,
+    "q1": 0.092,
+    "q3": 0.108,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 0.037,
+    "q1": 0.029,
+    "q3": 0.038,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.536,
+    "q1": 0.529,
+    "q3": 0.558,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 59.677,
+    "q1": 58.649,
+    "q3": 60.504,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 133.361,
+    "q1": 130.001,
+    "q3": 134.521,
+    "n": 5
+   }
+  }
+ },
+ {
+  "id": "platanus-occidentalis",
+  "sheets": 0,
+  "leaves": 0,
+  "specimen": {
+   "aspect": null,
+   "widest": null,
+   "lobeDepth": null,
+   "circularity": null,
+   "apexAngle": null,
+   "baseAngle": null
+  },
+  "drawn": {
+   "aspect": {
+    "median": 1.069,
+    "q1": 1.059,
+    "q3": 1.078,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.558,
+    "q1": 0.558,
+    "q3": 0.575,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 0.466,
+    "q1": 0.39,
+    "q3": 0.468,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.553,
+    "q1": 0.539,
+    "q3": 0.564,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 117.206,
+    "q1": 117.065,
+    "q3": 122.085,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 127.021,
+    "q1": 126.227,
+    "q3": 135.894,
+    "n": 5
+   }
+  }
+ },
+ {
+  "id": "clivia-miniata",
+  "sheets": 0,
+  "leaves": 0,
+  "specimen": {
+   "aspect": null,
+   "widest": null,
+   "lobeDepth": null,
+   "circularity": null,
+   "apexAngle": null,
+   "baseAngle": null
+  },
+  "drawn": {
+   "aspect": {
+    "median": 11.436,
+    "q1": 8.707,
+    "q3": 11.98,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.375,
+    "q1": 0.375,
+    "q3": 0.375,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 0.014,
+    "q1": 0.011,
+    "q3": 0.014,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.232,
+    "q1": 0.222,
+    "q3": 0.292,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 42.29,
+    "q1": 40.866,
+    "q3": 54.787,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 44.508,
+    "q1": 42.547,
+    "q3": 56.295,
+    "n": 5
+   }
+  }
+ }
+]

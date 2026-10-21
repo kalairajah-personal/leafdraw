@@ -1,0 +1,308 @@
+[
+ {
+  "id": "betula-papyrifera",
+  "sheets": 0,
+  "leaves": 0,
+  "specimen": {
+   "aspect": null,
+   "widest": null,
+   "lobeDepth": null,
+   "circularity": null,
+   "apexAngle": null,
+   "baseAngle": null
+  },
+  "drawn": {
+   "aspect": {
+    "median": 1.369,
+    "q1": 1.326,
+    "q3": 1.402,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.408,
+    "q1": 0.392,
+    "q3": 0.408,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 0.089,
+    "q1": 0.082,
+    "q3": 0.098,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.69,
+    "q1": 0.688,
+    "q3": 0.699,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 101.046,
+    "q1": 100.749,
+    "q3": 102.463,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 137.544,
+    "q1": 135.678,
+    "q3": 137.545,
+    "n": 5
+   }
+  }
+ },
+ {
+  "id": "taraxacum-officinale",
+  "sheets": 0,
+  "leaves": 0,
+  "specimen": {
+   "aspect": null,
+   "widest": null,
+   "lobeDepth": null,
+   "circularity": null,
+   "apexAngle": null,
+   "baseAngle": null
+  },
+  "drawn": {
+   "aspect": {
+    "median": 3.322,
+    "q1": 3.081,
+    "q3": 3.75,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.592,
+    "q1": 0.525,
+    "q3": 0.692,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 0.773,
+    "q1": 0.708,
+    "q3": 0.849,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.244,
+    "q1": 0.229,
+    "q3": 0.268,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 48.163,
+    "q1": 47.921,
+    "q3": 95.697,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 83.335,
+    "q1": 80.677,
+    "q3": 83.66,
+    "n": 5
+   }
+  }
+ },
+ {
+  "id": "cinnamomum-camphora",
+  "sheets": 0,
+  "leaves": 0,
+  "specimen": {
+   "aspect": null,
+   "widest": null,
+   "lobeDepth": null,
+   "circularity": null,
+   "apexAngle": null,
+   "baseAngle": null
+  },
+  "drawn": {
+   "aspect": {
+    "median": 2.025,
+    "q1": 1.872,
+    "q3": 2.087,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.492,
+    "q1": 0.492,
+    "q3": 0.508,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 0.008,
+    "q1": 0.007,
+    "q3": 0.008,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.684,
+    "q1": 0.676,
+    "q3": 0.699,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 93.18,
+    "q1": 75.945,
+    "q3": 96.446,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 81.004,
+    "q1": 80.369,
+    "q3": 99.239,
+    "n": 5
+   }
+  }
+ },
+ {
+  "id": "asarum-canadense",
+  "sheets": 0,
+  "leaves": 0,
+  "specimen": {
+   "aspect": null,
+   "widest": null,
+   "lobeDepth": null,
+   "circularity": null,
+   "apexAngle": null,
+   "baseAngle": null
+  },
+  "drawn": {
+   "aspect": {
+    "median": 1.141,
+    "q1": 1.097,
+    "q3": 1.172,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.608,
+    "q1": 0.375,
+    "q3": 0.625,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 0.205,
+    "q1": 0.203,
+    "q3": 0.215,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.835,
+    "q1": 0.831,
+    "q3": 0.838,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 138.907,
+    "q1": 137.421,
+    "q3": 140.361,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 141.712,
+    "q1": 140.28,
+    "q3": 142.557,
+    "n": 5
+   }
+  }
+ },
+ {
+  "id": "tropaeolum-majus",
+  "sheets": 0,
+  "leaves": 0,
+  "specimen": {
+   "aspect": null,
+   "widest": null,
+   "lobeDepth": null,
+   "circularity": null,
+   "apexAngle": null,
+   "baseAngle": null
+  },
+  "drawn": {
+   "aspect": {
+    "median": 1.0,
+    "q1": 1.0,
+    "q3": 1.0,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.492,
+    "q1": 0.492,
+    "q3": 0.492,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 0.003,
+    "q1": 0.003,
+    "q3": 0.003,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.898,
+    "q1": 0.898,
+    "q3": 0.899,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 142.914,
+    "q1": 142.913,
+    "q3": 142.915,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 145.283,
+    "q1": 145.269,
+    "q3": 145.284,
+    "n": 5
+   }
+  }
+ },
+ {
+  "id": "veratrum-viride",
+  "sheets": 0,
+  "leaves": 0,
+  "specimen": {
+   "aspect": null,
+   "widest": null,
+   "lobeDepth": null,
+   "circularity": null,
+   "apexAngle": null,
+   "baseAngle": null
+  },
+  "drawn": {
+   "aspect": {
+    "median": 1.95,
+    "q1": 1.736,
+    "q3": 2.018,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.525,
+    "q1": 0.508,
+    "q3": 0.525,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 0.021,
+    "q1": 0.012,
+    "q3": 0.024,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.715,
+    "q1": 0.706,
+    "q3": 0.738,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 92.251,
+    "q1": 88.442,
+    "q3": 96.402,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 90.974,
+    "q1": 88.253,
+    "q3": 91.975,
+    "n": 5
+   }
+  }
+ }
+]

@@ -1,0 +1,17 @@
+{
+ "id": "hedera-helix",
+ "name": "Hedera helix",
+ "gbifKey": 8351737,
+ "sheets": 0,
+ "leaves": 0,
+ "stats": {
+  "aspect": null,
+  "widest": null,
+  "lobeDepth": null,
+  "circularity": null,
+  "apexAngle": null,
+  "baseAngle": null
+ },
+ "sources": [],
+ "raw": []
+}

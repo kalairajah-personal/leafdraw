@@ -1,0 +1,308 @@
+[
+ {
+  "id": "castanea-dentata",
+  "sheets": 0,
+  "leaves": 0,
+  "specimen": {
+   "aspect": null,
+   "widest": null,
+   "lobeDepth": null,
+   "circularity": null,
+   "apexAngle": null,
+   "baseAngle": null
+  },
+  "drawn": {
+   "aspect": {
+    "median": 3.307,
+    "q1": 3.006,
+    "q3": 3.309,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.525,
+    "q1": 0.525,
+    "q3": 0.542,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 0.099,
+    "q1": 0.097,
+    "q3": 0.112,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.462,
+    "q1": 0.458,
+    "q3": 0.466,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 82.335,
+    "q1": 80.308,
+    "q3": 83.55,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 83.032,
+    "q1": 75.823,
+    "q3": 83.305,
+    "n": 5
+   }
+  }
+ },
+ {
+  "id": "achillea-millefolium",
+  "sheets": 0,
+  "leaves": 0,
+  "specimen": {
+   "aspect": null,
+   "widest": null,
+   "lobeDepth": null,
+   "circularity": null,
+   "apexAngle": null,
+   "baseAngle": null
+  },
+  "drawn": {
+   "aspect": {
+    "median": 4.072,
+    "q1": 2.968,
+    "q3": 4.128,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.558,
+    "q1": 0.508,
+    "q3": 0.575,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 0.922,
+    "q1": 0.903,
+    "q3": 0.923,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.14,
+    "q1": 0.131,
+    "q3": 0.163,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 74.536,
+    "q1": 73.943,
+    "q3": 109.206,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 80.772,
+    "q1": 69.092,
+    "q3": 105.927,
+    "n": 5
+   }
+  }
+ },
+ {
+  "id": "ilex-aquifolium",
+  "sheets": 0,
+  "leaves": 0,
+  "specimen": {
+   "aspect": null,
+   "widest": null,
+   "lobeDepth": null,
+   "circularity": null,
+   "apexAngle": null,
+   "baseAngle": null
+  },
+  "drawn": {
+   "aspect": {
+    "median": 1.581,
+    "q1": 1.504,
+    "q3": 1.585,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.492,
+    "q1": 0.475,
+    "q3": 0.508,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 0.359,
+    "q1": 0.335,
+    "q3": 0.414,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.484,
+    "q1": 0.479,
+    "q3": 0.559,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 97.628,
+    "q1": 95.956,
+    "q3": 100.416,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 114.509,
+    "q1": 113.193,
+    "q3": 119.991,
+    "n": 5
+   }
+  }
+ },
+ {
+  "id": "acer-rubrum",
+  "sheets": 0,
+  "leaves": 0,
+  "specimen": {
+   "aspect": null,
+   "widest": null,
+   "lobeDepth": null,
+   "circularity": null,
+   "apexAngle": null,
+   "baseAngle": null
+  },
+  "drawn": {
+   "aspect": {
+    "median": 1.08,
+    "q1": 1.071,
+    "q3": 1.103,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.558,
+    "q1": 0.525,
+    "q3": 0.592,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 0.688,
+    "q1": 0.672,
+    "q3": 0.79,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.463,
+    "q1": 0.422,
+    "q3": 0.492,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 106.117,
+    "q1": 105.427,
+    "q3": 111.829,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 117.358,
+    "q1": 113.506,
+    "q3": 117.647,
+    "n": 5
+   }
+  }
+ },
+ {
+  "id": "helleborus-foetidus",
+  "sheets": 0,
+  "leaves": 0,
+  "specimen": {
+   "aspect": null,
+   "widest": null,
+   "lobeDepth": null,
+   "circularity": null,
+   "apexAngle": null,
+   "baseAngle": null
+  },
+  "drawn": {
+   "aspect": {
+    "median": 1.191,
+    "q1": 1.096,
+    "q3": 1.278,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.558,
+    "q1": 0.542,
+    "q3": 0.558,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 1.0,
+    "q1": 0.999,
+    "q3": 1.0,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.116,
+    "q1": 0.098,
+    "q3": 0.118,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 135.632,
+    "q1": 135.353,
+    "q3": 136.797,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 136.188,
+    "q1": 135.582,
+    "q3": 137.426,
+    "n": 5
+   }
+  }
+ },
+ {
+  "id": "uvularia-perfoliata",
+  "sheets": 0,
+  "leaves": 0,
+  "specimen": {
+   "aspect": null,
+   "widest": null,
+   "lobeDepth": null,
+   "circularity": null,
+   "apexAngle": null,
+   "baseAngle": null
+  },
+  "drawn": {
+   "aspect": {
+    "median": 2.011,
+    "q1": 1.969,
+    "q3": 2.028,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.392,
+    "q1": 0.375,
+    "q3": 0.392,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 0.011,
+    "q1": 0.011,
+    "q3": 0.012,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.693,
+    "q1": 0.69,
+    "q3": 0.711,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 74.373,
+    "q1": 72.892,
+    "q3": 77.787,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 118.394,
+    "q1": 117.33,
+    "q3": 118.394,
+    "n": 5
+   }
+  }
+ }
+]

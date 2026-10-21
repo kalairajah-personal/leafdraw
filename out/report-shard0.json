@@ -1,0 +1,308 @@
+[
+ {
+  "id": "ulmus-americana",
+  "sheets": 0,
+  "leaves": 0,
+  "specimen": {
+   "aspect": null,
+   "widest": null,
+   "lobeDepth": null,
+   "circularity": null,
+   "apexAngle": null,
+   "baseAngle": null
+  },
+  "drawn": {
+   "aspect": {
+    "median": 1.772,
+    "q1": 1.754,
+    "q3": 1.919,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.475,
+    "q1": 0.475,
+    "q3": 0.492,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 0.054,
+    "q1": 0.041,
+    "q3": 0.061,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.639,
+    "q1": 0.638,
+    "q3": 0.644,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 111.365,
+    "q1": 108.579,
+    "q3": 116.149,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 109.475,
+    "q1": 106.297,
+    "q3": 109.637,
+    "n": 5
+   }
+  }
+ },
+ {
+  "id": "quercus-rubra",
+  "sheets": 0,
+  "leaves": 0,
+  "specimen": {
+   "aspect": null,
+   "widest": null,
+   "lobeDepth": null,
+   "circularity": null,
+   "apexAngle": null,
+   "baseAngle": null
+  },
+  "drawn": {
+   "aspect": {
+    "median": 2.095,
+    "q1": 2.077,
+    "q3": 2.121,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.425,
+    "q1": 0.425,
+    "q3": 0.442,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 0.473,
+    "q1": 0.433,
+    "q3": 0.517,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.37,
+    "q1": 0.354,
+    "q3": 0.374,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 54.804,
+    "q1": 52.577,
+    "q3": 60.447,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 95.427,
+    "q1": 89.288,
+    "q3": 99.295,
+    "n": 5
+   }
+  }
+ },
+ {
+  "id": "cornus-florida",
+  "sheets": 0,
+  "leaves": 0,
+  "specimen": {
+   "aspect": null,
+   "widest": null,
+   "lobeDepth": null,
+   "circularity": null,
+   "apexAngle": null,
+   "baseAngle": null
+  },
+  "drawn": {
+   "aspect": {
+    "median": 1.671,
+    "q1": 1.654,
+    "q3": 1.675,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.475,
+    "q1": 0.458,
+    "q3": 0.492,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 0.004,
+    "q1": 0.004,
+    "q3": 0.005,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.79,
+    "q1": 0.785,
+    "q3": 0.793,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 95.86,
+    "q1": 95.44,
+    "q3": 96.287,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 117.99,
+    "q1": 114.372,
+    "q3": 118.866,
+    "n": 5
+   }
+  }
+ },
+ {
+  "id": "rosmarinus-officinalis",
+  "sheets": 0,
+  "leaves": 0,
+  "specimen": {
+   "aspect": null,
+   "widest": null,
+   "lobeDepth": null,
+   "circularity": null,
+   "apexAngle": null,
+   "baseAngle": null
+  },
+  "drawn": {
+   "aspect": {
+    "median": 9.953,
+    "q1": 9.737,
+    "q3": 10.22,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.408,
+    "q1": 0.375,
+    "q3": 0.408,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 0.015,
+    "q1": 0.015,
+    "q3": 0.016,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.261,
+    "q1": 0.254,
+    "q3": 0.266,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 48.461,
+    "q1": 46.067,
+    "q3": 49.036,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 48.863,
+    "q1": 48.737,
+    "q3": 49.579,
+    "n": 5
+   }
+  }
+ },
+ {
+  "id": "hedera-helix",
+  "sheets": 0,
+  "leaves": 0,
+  "specimen": {
+   "aspect": null,
+   "widest": null,
+   "lobeDepth": null,
+   "circularity": null,
+   "apexAngle": null,
+   "baseAngle": null
+  },
+  "drawn": {
+   "aspect": {
+    "median": 1.126,
+    "q1": 1.087,
+    "q3": 1.127,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.592,
+    "q1": 0.492,
+    "q3": 0.592,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 0.985,
+    "q1": 0.806,
+    "q3": 0.993,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.493,
+    "q1": 0.475,
+    "q3": 0.499,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 138.95,
+    "q1": 136.885,
+    "q3": 139.46,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 140.849,
+    "q1": 140.235,
+    "q3": 140.894,
+    "n": 5
+   }
+  }
+ },
+ {
+  "id": "musa-acuminata",
+  "sheets": 0,
+  "leaves": 0,
+  "specimen": {
+   "aspect": null,
+   "widest": null,
+   "lobeDepth": null,
+   "circularity": null,
+   "apexAngle": null,
+   "baseAngle": null
+  },
+  "drawn": {
+   "aspect": {
+    "median": 3.752,
+    "q1": 3.706,
+    "q3": 3.814,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.508,
+    "q1": 0.508,
+    "q3": 0.525,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 0.008,
+    "q1": 0.007,
+    "q3": 0.008,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.537,
+    "q1": 0.529,
+    "q3": 0.54,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 101.057,
+    "q1": 99.435,
+    "q3": 101.069,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 94.517,
+    "q1": 93.322,
+    "q3": 95.151,
+    "n": 5
+   }
+  }
+ }
+]

@@ -1,0 +1,17 @@
+{
+ "id": "zea-mays",
+ "name": "Zea mays",
+ "gbifKey": 5290052,
+ "sheets": 0,
+ "leaves": 0,
+ "stats": {
+  "aspect": null,
+  "widest": null,
+  "lobeDepth": null,
+  "circularity": null,
+  "apexAngle": null,
+  "baseAngle": null
+ },
+ "sources": [],
+ "raw": []
+}

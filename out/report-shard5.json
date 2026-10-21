@@ -1,0 +1,308 @@
+[
+ {
+  "id": "tilia-americana",
+  "sheets": 0,
+  "leaves": 0,
+  "specimen": {
+   "aspect": null,
+   "widest": null,
+   "lobeDepth": null,
+   "circularity": null,
+   "apexAngle": null,
+   "baseAngle": null
+  },
+  "drawn": {
+   "aspect": {
+    "median": 1.249,
+    "q1": 1.121,
+    "q3": 1.251,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.358,
+    "q1": 0.342,
+    "q3": 0.375,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 0.033,
+    "q1": 0.028,
+    "q3": 0.04,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.745,
+    "q1": 0.736,
+    "q3": 0.777,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 115.333,
+    "q1": 108.283,
+    "q3": 115.658,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 145.505,
+    "q1": 144.922,
+    "q3": 147.59,
+    "n": 5
+   }
+  }
+ },
+ {
+  "id": "magnolia-grandiflora",
+  "sheets": 0,
+  "leaves": 0,
+  "specimen": {
+   "aspect": null,
+   "widest": null,
+   "lobeDepth": null,
+   "circularity": null,
+   "apexAngle": null,
+   "baseAngle": null
+  },
+  "drawn": {
+   "aspect": {
+    "median": 1.875,
+    "q1": 1.853,
+    "q3": 1.973,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.525,
+    "q1": 0.508,
+    "q3": 0.525,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 0.005,
+    "q1": 0.005,
+    "q3": 0.005,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.749,
+    "q1": 0.729,
+    "q3": 0.75,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 95.605,
+    "q1": 95.527,
+    "q3": 99.546,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 94.84,
+    "q1": 91.825,
+    "q3": 97.451,
+    "n": 5
+   }
+  }
+ },
+ {
+  "id": "bellis-perennis",
+  "sheets": 0,
+  "leaves": 0,
+  "specimen": {
+   "aspect": null,
+   "widest": null,
+   "lobeDepth": null,
+   "circularity": null,
+   "apexAngle": null,
+   "baseAngle": null
+  },
+  "drawn": {
+   "aspect": {
+    "median": 2.386,
+    "q1": 2.304,
+    "q3": 2.544,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.758,
+    "q1": 0.758,
+    "q3": 0.758,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 0.17,
+    "q1": 0.158,
+    "q3": 0.18,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.499,
+    "q1": 0.499,
+    "q3": 0.502,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 120.991,
+    "q1": 117.973,
+    "q3": 123.416,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 72.135,
+    "q1": 71.215,
+    "q3": 75.726,
+    "n": 5
+   }
+  }
+ },
+ {
+  "id": "acer-palmatum",
+  "sheets": 0,
+  "leaves": 0,
+  "specimen": {
+   "aspect": null,
+   "widest": null,
+   "lobeDepth": null,
+   "circularity": null,
+   "apexAngle": null,
+   "baseAngle": null
+  },
+  "drawn": {
+   "aspect": {
+    "median": 1.078,
+    "q1": 1.064,
+    "q3": 1.079,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.592,
+    "q1": 0.592,
+    "q3": 0.592,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 1.0,
+    "q1": 0.999,
+    "q3": 1.0,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.123,
+    "q1": 0.116,
+    "q3": 0.129,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 133.332,
+    "q1": 132.729,
+    "q3": 134.354,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 135.652,
+    "q1": 54.216,
+    "q3": 136.948,
+    "n": 5
+   }
+  }
+ },
+ {
+  "id": "zea-mays",
+  "sheets": 0,
+  "leaves": 0,
+  "specimen": {
+   "aspect": null,
+   "widest": null,
+   "lobeDepth": null,
+   "circularity": null,
+   "apexAngle": null,
+   "baseAngle": null
+  },
+  "drawn": {
+   "aspect": {
+    "median": 10.422,
+    "q1": 10.231,
+    "q3": 10.461,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.408,
+    "q1": 0.408,
+    "q3": 0.492,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 0.013,
+    "q1": 0.013,
+    "q3": 0.013,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.253,
+    "q1": 0.252,
+    "q3": 0.257,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 47.309,
+    "q1": 47.023,
+    "q3": 48.65,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 48.198,
+    "q1": 47.881,
+    "q3": 48.65,
+    "n": 5
+   }
+  }
+ },
+ {
+  "id": "bauhinia-variegata",
+  "sheets": 0,
+  "leaves": 0,
+  "specimen": {
+   "aspect": null,
+   "widest": null,
+   "lobeDepth": null,
+   "circularity": null,
+   "apexAngle": null,
+   "baseAngle": null
+  },
+  "drawn": {
+   "aspect": {
+    "median": 1.082,
+    "q1": 1.013,
+    "q3": 1.12,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.475,
+    "q1": 0.375,
+    "q3": 0.642,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 0.027,
+    "q1": 0.027,
+    "q3": 0.028,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.783,
+    "q1": 0.779,
+    "q3": 0.785,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 138.876,
+    "q1": 123.678,
+    "q3": 148.953,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 141.993,
+    "q1": 116.102,
+    "q3": 148.76,
+    "n": 5
+   }
+  }
+ }
+]
