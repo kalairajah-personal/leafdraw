@@ -25,19 +25,29 @@ KEYS = ("aspect", "widest", "lobeDepth", "circularity", "apexAngle", "baseAngle"
 
 
 def fetch_image(url: str, width: int = 1400) -> np.ndarray | None:
-    thumb = "https://api.gbif.org/v1/image/unsafe/" + f"{width}x/" + urllib.parse.quote(url, safe="")
-    for u in (thumb,):
+    # GBIF's resizing service first (small, fast); the original as a size-capped fallback.
+    tries = ["https://api.gbif.org/v1/image/unsafe/" + f"{width}x/" + urllib.parse.quote(url, safe=""),
+             "https://api.gbif.org/v1/image/unsafe/" + f"{width}x/" + url, url]
+    for u in tries:
         try:
             req = urllib.request.Request(u, headers={"User-Agent": "leafdraw-pipeline/0.2"})
-            with urllib.request.urlopen(req, timeout=20) as r:
-                im = Image.open(io.BytesIO(r.read())).convert("RGB")
+            with urllib.request.urlopen(req, timeout=25) as r:
+                data = r.read(40_000_000)
+            Image.MAX_IMAGE_PIXELS = 300_000_000
+            im = Image.open(io.BytesIO(data))
+            im.draft("RGB", (width, width))  # fast JPEG downscale on decode
+            im = im.convert("RGB")
             s = width / max(im.size)
             if s < 1:
                 im = im.resize((int(im.width * s), int(im.height * s)))
             return np.asarray(im).astype(np.float32) / 255.0
-        except Exception:
+        except Exception as e:
+            FETCH_ERRORS.append(f"{type(e).__name__}: {str(e)[:80]}")
             continue
     return None
+
+
+FETCH_ERRORS: list[str] = []
 
 
 def _stats(xs):
@@ -90,6 +100,7 @@ def measure_species(spec: dict, n_sheets: int = 20, per_sheet: int = 6, out_dir:
             sheet.paste(t, (x, y)); x += t.width
         sheet.save(os.path.join(out_dir, f"{spec['id']}.jpg"), quality=70)
     res = {"id": spec["id"], "name": spec["name"], "gbifKey": mt.get("usageKey"), "sheets": len(sheets), "leaves": len(leaves),
+           "candidates": len(items), "fetchErrors": FETCH_ERRORS[-5:],
            "stats": {k: _stats([l[k] for l in leaves]) for k in KEYS}, "sources": sheets, "raw": leaves}
     with open(os.path.join(out_dir, f"{spec['id']}.json"), "w") as f:
         json.dump(res, f, indent=1)

@@ -88,7 +88,7 @@ def main(argv=None):
             try:
                 r = measure_species(s, n_sheets=a.n, out_dir=a.out)
                 drawn = measure_drawn(s["id"])
-                row = {"id": s["id"], "sheets": r["sheets"], "leaves": r["leaves"], "specimen": r["stats"], "drawn": drawn}
+                row = {"id": s["id"], "sheets": r["sheets"], "leaves": r["leaves"], "candidates": r["candidates"], "fetchErrors": r["fetchErrors"], "specimen": r["stats"], "drawn": drawn}
             except Exception as e:
                 row = {"id": s["id"], "error": str(e)[:300]}
             report.append(row); print(json.dumps({k: row.get(k) for k in ("id", "sheets", "leaves", "error")}), flush=True)
