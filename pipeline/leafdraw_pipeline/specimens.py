@@ -24,15 +24,20 @@ from .measure import measure_leaf
 KEYS = ("aspect", "widest", "lobeDepth", "circularity", "apexAngle", "baseAngle")
 
 
-def fetch_image(url: str, width: int = 1400) -> np.ndarray | None:
+def fetch_image(url: str, width: int = 1400, occurrence: int | None = None) -> np.ndarray | None:
     # GBIF's resizing service first (small, fast); the original as a size-capped fallback.
-    tries = ["https://api.gbif.org/v1/image/unsafe/" + f"{width}x/" + urllib.parse.quote(url, safe=""),
-             "https://api.gbif.org/v1/image/unsafe/" + f"{width}x/" + url, url]
+    import hashlib
+    from PIL import ImageFile
+    ImageFile.LOAD_TRUNCATED_IMAGES = True
+    tries = []
+    if occurrence:  # GBIF image cache via the occurrence API (unsigned /unsafe/ requests are refused)
+        tries.append(f"https://api.gbif.org/v1/image/cache/{width}x/occurrence/{occurrence}/media/{hashlib.md5(url.encode()).hexdigest()}")
+    tries.append(url)
     for u in tries:
         try:
             req = urllib.request.Request(u, headers={"User-Agent": "leafdraw-pipeline/0.2"})
             with urllib.request.urlopen(req, timeout=25) as r:
-                data = r.read(40_000_000)
+                data = r.read(120_000_000)
             Image.MAX_IMAGE_PIXELS = 300_000_000
             im = Image.open(io.BytesIO(data))
             im.draft("RGB", (width, width))  # fast JPEG downscale on decode
@@ -66,7 +71,7 @@ def measure_species(spec: dict, n_sheets: int = 20, per_sheet: int = 6, out_dir:
     leaves, sheets, thumbs = [], [], []
     from concurrent.futures import ThreadPoolExecutor
     with ThreadPoolExecutor(8) as ex:  # downloads dominate run time; fetch in parallel
-        images = list(ex.map(lambda it: fetch_image(it["url"]), items[: int(n_sheets * 1.5) + 2]))
+        images = list(ex.map(lambda it: fetch_image(it["url"], occurrence=it.get("occurrence")), items[: int(n_sheets * 1.5) + 2]))
     for it, rgb in zip(items, images):
         if len(sheets) >= n_sheets:
             break
