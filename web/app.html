@@ -404,16 +404,25 @@ button.btn:hover { border-color: var(--accent); }
   let downloads = null;
   if (window.claude?.use) window.claude.use('downloads').then((d) => { downloads = d; }).catch(() => {});
   const fname = () => `${(state.spec?.id || 'leaf')}-seed${$('seed').value}`;
-  async function offer(filename, data, textFallback) {
+  // Save to disk: Claude's downloads capability inside Claude; a normal browser download everywhere else.
+  function anchorSave(filename, data, mime) {
+    const blob = data instanceof Blob ? data : new Blob([data], { type: mime || 'application/octet-stream' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = filename; a.rel = 'noopener'; a.style.display = 'none';
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 10000);
+  }
+  async function offer(filename, data, mime) {
     const msg = $('exportMsg');
     if (downloads) {
-      try { await downloads.save({ filename, data }); msg.textContent = `Saved ${filename}.`; return; }
+      // The Claude viewer only accepts common extensions; plotter files travel as .txt there.
+      const fn = /\.(gcode|hpgl)$/.test(filename) ? filename + '.txt' : filename;
+      try { await downloads.save({ filename: fn, data }); msg.textContent = `Saved ${fn}.`; return; }
       catch (e) { if (e?.code === 'declined') { msg.textContent = 'Save cancelled.'; return; } }
     }
-    if (textFallback != null) {
-      try { await navigator.clipboard.writeText(textFallback); msg.textContent = `Copied ${filename} to the clipboard.`; }
-      catch (e) { msg.textContent = 'This view cannot save or copy files. Use the leafdraw command line tool instead.'; }
-    } else msg.textContent = 'This view cannot save files. Use the leafdraw command line tool instead.';
+    try { anchorSave(filename, data, mime); msg.textContent = `Downloaded ${filename}.`; }
+    catch (e) { msg.textContent = 'This view blocks downloads. Open the studio at kalairajah-personal.github.io/leafdraw or use the command line tool.'; }
   }
   function pngBlob(svg, width) {
     return new Promise((res, rej) => {
@@ -431,12 +440,12 @@ button.btn:hover { border-color: var(--accent); }
   document.querySelectorAll('[data-export]').forEach((b) => b.addEventListener('click', async () => {
     if (!state.scene) return;
     const k = b.dataset.export, sc = state.scene;
-    if (k === 'svg') { const s = L.renderSVG(sc, renderOpts()); return offer(fname() + '.svg', s, s); }
-    if (k === 'png') { const blob = await pngBlob(L.renderSVG(sc, renderOpts()), 2400); return offer(fname() + '.png', blob, null); }
-    if (k === 'gcode') { const s = L.renderGcode(sc, { hatch: $('style').value === 'hatch' }); return offer(fname() + '.gcode.txt', s, s); }
-    if (k === 'hpgl') { const s = L.renderHPGL(sc, { hatch: $('style').value === 'hatch' }); return offer(fname() + '.hpgl.txt', s, s); }
-    if (k === 'json') { const s = L.sceneToJSON(sc); return offer(fname() + '.scene.json', s, s); }
-    if (k === 'spec') { const s = JSON.stringify(state.spec, null, 2); return offer((state.spec?.id || 'leaf') + '.spec.json', s, s); }
+    if (k === 'svg') return offer(fname() + '.svg', L.renderSVG(sc, renderOpts()), 'image/svg+xml');
+    if (k === 'png') return offer(fname() + '.png', await pngBlob(L.renderSVG(sc, renderOpts()), 2400), 'image/png');
+    if (k === 'gcode') return offer(fname() + '.gcode', L.renderGcode(sc, { hatch: $('style').value === 'hatch' }), 'text/plain');
+    if (k === 'hpgl') return offer(fname() + '.hpgl', L.renderHPGL(sc, { hatch: $('style').value === 'hatch' }), 'text/plain');
+    if (k === 'json') return offer(fname() + '.scene.json', L.sceneToJSON(sc), 'application/json');
+    if (k === 'spec') return offer((state.spec?.id || 'leaf') + '.spec.json', JSON.stringify(state.spec, null, 2), 'application/json');
   }));
 
   // ---------- boot ----------

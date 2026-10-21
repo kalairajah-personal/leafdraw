@@ -54,6 +54,25 @@ def main():
             continue
         lobed = (sp["traits"].get("lobation") or "none") != "none"
         base = dict(sp["params"])
+        # Quality gates — herbarium segmentation is trustworthy only for mid-sized, mid-aspect blades:
+        # narrow/strap leaves fragment or fold on the sheet, very round/peltate leaves fold and overlap,
+        # dissected leaves split into segments. Out-of-gate species are measured but not auto-fitted.
+        A, D0 = S["aspect"], r["drawn"]["aspect"]
+        reason = None
+        if mean_of(base.get("aspect", 2)) > 3.5 or sp["traits"].get("plantGroup") == "monocot":
+            reason = "narrow, strap-shaped or monocot leaf (fragments/folds on sheets)"
+        elif D0["median"] < 1.12 or sp["traits"].get("attachment") == "peltate":
+            reason = "round/peltate leaf (folds on sheets)"
+        elif r["drawn"]["lobeDepth"]["median"] > 0.85:
+            reason = "dissected leaf (segments measured separately)"
+        elif A["q3"] / max(A["q1"], 1e-6) > 1.6:
+            reason = f"inconsistent specimens (IQR {A['q1']}–{A['q3']})"
+        elif abs(A["median"] / D0["median"] - 1) > 0.22:
+            reason = f"specimen aspect {A['median']} vs drawn {D0['median']}: > 22% apart, review by hand"
+        if reason:
+            row = {"id": sid, "leaves": r["leaves"], "skipped": reason, "specimenAspect": A["median"], "drawnAspect": D0["median"]}
+            log.append(row); print(json.dumps(row), flush=True)
+            continue
         if "aspect" not in base and S["aspect"]:
             continue  # aspect comes from the term definition; leave unfitted rather than invent a param shape
         p = {k: base[k] for k in ("aspect", "widest", "lobeDepth") if k in base}
@@ -61,8 +80,8 @@ def main():
         # Base/apex orientation on sheets is inferred from the petiole stub and can flip; fit the widest point
         # only when the leaves agree on which half is wider (IQR does not straddle the middle).
         W = S["widest"]
-        wid_ok = bool(W) and "widest" in p and (W["q3"] - W["q1"]) <= 0.2 and (W["q1"] > 0.5 or W["q3"] < 0.5)
-        lob_ok = lobed and S["lobeDepth"] and "lobeDepth" in p
+        wid_ok = bool(W) and not lobed and "widest" in p and (W["q3"] - W["q1"]) <= 0.2 and (W["q1"] > 0.5 or W["q3"] < 0.5)
+        lob_ok = lobed and S["lobeDepth"] and "lobeDepth" in p and (S["lobeDepth"]["q3"] - S["lobeDepth"]["q1"]) < 0.35
         before = r["drawn"]
         for it in range(a.iters):
             D = measure_drawn(sid)
