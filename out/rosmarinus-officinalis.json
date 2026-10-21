@@ -2,16 +2,272 @@
  "id": "rosmarinus-officinalis",
  "name": "Salvia rosmarinus",
  "gbifKey": 10902460,
- "sheets": 0,
- "leaves": 0,
+ "sheets": 15,
+ "leaves": 14,
+ "candidates": 30,
+ "fetchErrors": [
+  "HTTPError: HTTP Error 429: Too Many Requests",
+  "HTTPError: HTTP Error 429: Too Many Requests",
+  "HTTPError: HTTP Error 429: Too Many Requests",
+  "HTTPError: HTTP Error 429: Too Many Requests",
+  "HTTPError: HTTP Error 429: Too Many Requests"
+ ],
  "stats": {
-  "aspect": null,
-  "widest": null,
-  "lobeDepth": null,
-  "circularity": null,
-  "apexAngle": null,
-  "baseAngle": null
+  "aspect": {
+   "median": 2.042,
+   "q1": 1.672,
+   "q3": 3.467,
+   "n": 14
+  },
+  "widest": {
+   "median": 0.517,
+   "q1": 0.358,
+   "q3": 0.758,
+   "n": 14
+  },
+  "lobeDepth": {
+   "median": 0.845,
+   "q1": 0.528,
+   "q3": 0.995,
+   "n": 14
+  },
+  "circularity": {
+   "median": 0.371,
+   "q1": 0.267,
+   "q3": 0.421,
+   "n": 14
+  },
+  "apexAngle": {
+   "median": 101.953,
+   "q1": 71.498,
+   "q3": 130.328,
+   "n": 14
+  },
+  "baseAngle": {
+   "median": 97.638,
+   "q1": 63.579,
+   "q3": 112.501,
+   "n": 14
+  }
  },
- "sources": [],
- "raw": []
+ "sources": [
+  {
+   "occurrence": 4850285567,
+   "institution": "NMNZ",
+   "license": "http://creativecommons.org/licenses/by/4.0/",
+   "leaves": 0
+  },
+  {
+   "occurrence": 4850285567,
+   "institution": "NMNZ",
+   "license": "http://creativecommons.org/licenses/by/4.0/",
+   "leaves": 0
+  },
+  {
+   "occurrence": 5011557521,
+   "institution": "ERSK",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+   "leaves": 0
+  },
+  {
+   "occurrence": 5011557522,
+   "institution": "ERSK",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+   "leaves": 0
+  },
+  {
+   "occurrence": 3897611590,
+   "institution": "OBI",
+   "license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+   "leaves": 3
+  },
+  {
+   "occurrence": 4129388134,
+   "institution": "NY",
+   "license": "http://creativecommons.org/licenses/by/4.0/",
+   "leaves": 0
+  },
+  {
+   "occurrence": 5004381857,
+   "institution": "GJO",
+   "license": "http://creativecommons.org/licenses/by/4.0/",
+   "leaves": 2
+  },
+  {
+   "occurrence": 5011557751,
+   "institution": "ERSK",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+   "leaves": 1
+  },
+  {
+   "occurrence": 5072911530,
+   "institution": "ERSK",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+   "leaves": 1
+  },
+  {
+   "occurrence": 3327454684,
+   "institution": "PI",
+   "license": "http://creativecommons.org/licenses/by/4.0/",
+   "leaves": 1
+  },
+  {
+   "occurrence": 6392822519,
+   "institution": "UNILA",
+   "license": "http://creativecommons.org/licenses/by/4.0/",
+   "leaves": 0
+  },
+  {
+   "occurrence": 3425145414,
+   "institution": "ASU",
+   "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+   "leaves": 1
+  },
+  {
+   "occurrence": 2640540323,
+   "institution": "NCU",
+   "license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+   "leaves": 1
+  },
+  {
+   "occurrence": 2566055520,
+   "institution": "OBI",
+   "license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+   "leaves": 1
+  },
+  {
+   "occurrence": 2610101855,
+   "institution": "RSA",
+   "license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+   "leaves": 3
+  }
+ ],
+ "raw": [
+  {
+   "aspect": 2.0325,
+   "widest": 0.7583,
+   "lobeDepth": 0.5272,
+   "circularity": 0.4215,
+   "apexAngle": 130.3865,
+   "baseAngle": 131.5684,
+   "occurrence": 3897611590
+  },
+  {
+   "aspect": 3.467,
+   "widest": 0.3917,
+   "lobeDepth": 0.2137,
+   "circularity": 0.4867,
+   "apexAngle": 106.1951,
+   "baseAngle": 106.202,
+   "occurrence": 3897611590
+  },
+  {
+   "aspect": 1.9055,
+   "widest": 0.4417,
+   "lobeDepth": 0.9712,
+   "circularity": 0.5121,
+   "apexAngle": 130.3282,
+   "baseAngle": 31.5556,
+   "occurrence": 3897611590
+  },
+  {
+   "aspect": 1.8183,
+   "widest": 0.0417,
+   "lobeDepth": 0.7561,
+   "circularity": 0.3314,
+   "apexAngle": 49.0696,
+   "baseAngle": 132.69,
+   "occurrence": 5004381857
+  },
+  {
+   "aspect": 1.4034,
+   "widest": 0.225,
+   "lobeDepth": 0.5283,
+   "circularity": 0.378,
+   "apexAngle": 115.689,
+   "baseAngle": 120.8148,
+   "occurrence": 5004381857
+  },
+  {
+   "aspect": 3.2977,
+   "widest": 0.3583,
+   "lobeDepth": 0.8556,
+   "circularity": 0.292,
+   "apexAngle": 76.9581,
+   "baseAngle": 63.5789,
+   "occurrence": 5011557751
+  },
+  {
+   "aspect": 3.947,
+   "widest": 0.575,
+   "lobeDepth": 0.9969,
+   "circularity": 0.2266,
+   "apexAngle": 51.9604,
+   "baseAngle": 86.3525,
+   "occurrence": 5072911530
+  },
+  {
+   "aspect": 1.6724,
+   "widest": 0.825,
+   "lobeDepth": 0.4392,
+   "circularity": 0.4552,
+   "apexAngle": 142.0134,
+   "baseAngle": 112.5005,
+   "occurrence": 3327454684
+  },
+  {
+   "aspect": 4.2493,
+   "widest": 0.575,
+   "lobeDepth": 0.9954,
+   "circularity": 0.3667,
+   "apexAngle": 95.9318,
+   "baseAngle": 95.3574,
+   "occurrence": 3425145414
+  },
+  {
+   "aspect": 5.5297,
+   "widest": 0.2917,
+   "lobeDepth": 0.834,
+   "circularity": 0.2666,
+   "apexAngle": 71.4982,
+   "baseAngle": 51.8863,
+   "occurrence": 2640540323
+  },
+  {
+   "aspect": 2.5882,
+   "widest": 0.525,
+   "lobeDepth": 0.8827,
+   "circularity": 0.3755,
+   "apexAngle": 97.7104,
+   "baseAngle": 67.5603,
+   "occurrence": 2566055520
+  },
+  {
+   "aspect": 1.2734,
+   "widest": 0.8583,
+   "lobeDepth": 0.9963,
+   "circularity": 0.2524,
+   "apexAngle": 149.134,
+   "baseAngle": 47.7481,
+   "occurrence": 2610101855
+  },
+  {
+   "aspect": 1.2102,
+   "widest": 0.5083,
+   "lobeDepth": 0.7331,
+   "circularity": 0.3929,
+   "apexAngle": 60.8481,
+   "baseAngle": 103.0641,
+   "occurrence": 2610101855
+  },
+  {
+   "aspect": 2.0522,
+   "widest": 0.7917,
+   "lobeDepth": 0.9975,
+   "circularity": 0.2157,
+   "apexAngle": 120.8095,
+   "baseAngle": 99.9183,
+   "occurrence": 2610101855
+  }
+ ]
 }

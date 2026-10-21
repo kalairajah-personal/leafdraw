@@ -1,15 +1,53 @@
 [
  {
   "id": "tilia-americana",
-  "sheets": 0,
-  "leaves": 0,
+  "sheets": 15,
+  "leaves": 25,
+  "candidates": 30,
+  "fetchErrors": [
+   "HTTPError: HTTP Error 403: Forbidden",
+   "HTTPError: HTTP Error 403: Forbidden",
+   "HTTPError: HTTP Error 403: Forbidden",
+   "HTTPError: HTTP Error 403: Forbidden",
+   "HTTPError: HTTP Error 403: Forbidden"
+  ],
   "specimen": {
-   "aspect": null,
-   "widest": null,
-   "lobeDepth": null,
-   "circularity": null,
-   "apexAngle": null,
-   "baseAngle": null
+   "aspect": {
+    "median": 1.248,
+    "q1": 1.139,
+    "q3": 1.342,
+    "n": 25
+   },
+   "widest": {
+    "median": 0.542,
+    "q1": 0.475,
+    "q3": 0.592,
+    "n": 25
+   },
+   "lobeDepth": {
+    "median": 0.503,
+    "q1": 0.229,
+    "q3": 0.77,
+    "n": 25
+   },
+   "circularity": {
+    "median": 0.667,
+    "q1": 0.603,
+    "q3": 0.72,
+    "n": 25
+   },
+   "apexAngle": {
+    "median": 125.735,
+    "q1": 107.024,
+    "q3": 135.912,
+    "n": 25
+   },
+   "baseAngle": {
+    "median": 126.484,
+    "q1": 109.88,
+    "q3": 136.474,
+    "n": 25
+   }
   },
   "drawn": {
    "aspect": {
@@ -52,15 +90,53 @@
  },
  {
   "id": "magnolia-grandiflora",
-  "sheets": 0,
-  "leaves": 0,
+  "sheets": 15,
+  "leaves": 29,
+  "candidates": 30,
+  "fetchErrors": [
+   "HTTPError: HTTP Error 403: Forbidden",
+   "HTTPError: HTTP Error 504: Gateway Timeout",
+   "HTTPError: HTTP Error 403: Forbidden",
+   "HTTPError: HTTP Error 504: Gateway Timeout",
+   "HTTPError: HTTP Error 403: Forbidden"
+  ],
   "specimen": {
-   "aspect": null,
-   "widest": null,
-   "lobeDepth": null,
-   "circularity": null,
-   "apexAngle": null,
-   "baseAngle": null
+   "aspect": {
+    "median": 2.318,
+    "q1": 1.929,
+    "q3": 2.592,
+    "n": 29
+   },
+   "widest": {
+    "median": 0.508,
+    "q1": 0.425,
+    "q3": 0.542,
+    "n": 29
+   },
+   "lobeDepth": {
+    "median": 0.102,
+    "q1": 0.03,
+    "q3": 0.289,
+    "n": 29
+   },
+   "circularity": {
+    "median": 0.615,
+    "q1": 0.558,
+    "q3": 0.666,
+    "n": 29
+   },
+   "apexAngle": {
+    "median": 90.974,
+    "q1": 79.592,
+    "q3": 100.414,
+    "n": 29
+   },
+   "baseAngle": {
+    "median": 90.892,
+    "q1": 80.963,
+    "q3": 110.615,
+    "n": 29
+   }
   },
   "drawn": {
    "aspect": {
@@ -103,15 +179,53 @@
  },
  {
   "id": "bellis-perennis",
-  "sheets": 0,
-  "leaves": 0,
+  "sheets": 15,
+  "leaves": 29,
+  "candidates": 30,
+  "fetchErrors": [
+   "HTTPError: HTTP Error 403: Forbidden",
+   "HTTPError: HTTP Error 504: Gateway Timeout",
+   "HTTPError: HTTP Error 403: Forbidden",
+   "HTTPError: HTTP Error 504: Gateway Timeout",
+   "HTTPError: HTTP Error 403: Forbidden"
+  ],
   "specimen": {
-   "aspect": null,
-   "widest": null,
-   "lobeDepth": null,
-   "circularity": null,
-   "apexAngle": null,
-   "baseAngle": null
+   "aspect": {
+    "median": 1.947,
+    "q1": 1.586,
+    "q3": 2.436,
+    "n": 29
+   },
+   "widest": {
+    "median": 0.508,
+    "q1": 0.342,
+    "q3": 0.708,
+    "n": 29
+   },
+   "lobeDepth": {
+    "median": 0.914,
+    "q1": 0.525,
+    "q3": 0.989,
+    "n": 29
+   },
+   "circularity": {
+    "median": 0.416,
+    "q1": 0.284,
+    "q3": 0.526,
+    "n": 29
+   },
+   "apexAngle": {
+    "median": 106.905,
+    "q1": 59.958,
+    "q3": 122.159,
+    "n": 29
+   },
+   "baseAngle": {
+    "median": 103.573,
+    "q1": 71.728,
+    "q3": 126.616,
+    "n": 29
+   }
   },
   "drawn": {
    "aspect": {
@@ -154,15 +268,53 @@
  },
  {
   "id": "acer-palmatum",
-  "sheets": 0,
-  "leaves": 0,
+  "sheets": 15,
+  "leaves": 49,
+  "candidates": 30,
+  "fetchErrors": [
+   "HTTPError: HTTP Error 403: Forbidden",
+   "HTTPError: HTTP Error 504: Gateway Timeout",
+   "HTTPError: HTTP Error 403: Forbidden",
+   "HTTPError: HTTP Error 504: Gateway Timeout",
+   "HTTPError: HTTP Error 403: Forbidden"
+  ],
   "specimen": {
-   "aspect": null,
-   "widest": null,
-   "lobeDepth": null,
-   "circularity": null,
-   "apexAngle": null,
-   "baseAngle": null
+   "aspect": {
+    "median": 1.272,
+    "q1": 1.167,
+    "q3": 1.65,
+    "n": 49
+   },
+   "widest": {
+    "median": 0.525,
+    "q1": 0.325,
+    "q3": 0.642,
+    "n": 49
+   },
+   "lobeDepth": {
+    "median": 0.998,
+    "q1": 0.989,
+    "q3": 0.999,
+    "n": 49
+   },
+   "circularity": {
+    "median": 0.157,
+    "q1": 0.116,
+    "q3": 0.191,
+    "n": 49
+   },
+   "apexAngle": {
+    "median": 84.631,
+    "q1": 55.511,
+    "q3": 125.039,
+    "n": 49
+   },
+   "baseAngle": {
+    "median": 120.668,
+    "q1": 77.193,
+    "q3": 134.682,
+    "n": 49
+   }
   },
   "drawn": {
    "aspect": {
@@ -205,15 +357,53 @@
  },
  {
   "id": "zea-mays",
-  "sheets": 0,
-  "leaves": 0,
+  "sheets": 15,
+  "leaves": 23,
+  "candidates": 30,
+  "fetchErrors": [
+   "HTTPError: HTTP Error 403: Forbidden",
+   "HTTPError: HTTP Error 415: Unsupported Media Type",
+   "HTTPError: HTTP Error 403: Forbidden",
+   "HTTPError: HTTP Error 400: Bad Request",
+   "UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x7fb0eb31be20>"
+  ],
   "specimen": {
-   "aspect": null,
-   "widest": null,
-   "lobeDepth": null,
-   "circularity": null,
-   "apexAngle": null,
-   "baseAngle": null
+   "aspect": {
+    "median": 2.792,
+    "q1": 1.962,
+    "q3": 3.667,
+    "n": 23
+   },
+   "widest": {
+    "median": 0.608,
+    "q1": 0.492,
+    "q3": 0.858,
+    "n": 23
+   },
+   "lobeDepth": {
+    "median": 0.55,
+    "q1": 0.24,
+    "q3": 0.983,
+    "n": 23
+   },
+   "circularity": {
+    "median": 0.342,
+    "q1": 0.299,
+    "q3": 0.5,
+    "n": 23
+   },
+   "apexAngle": {
+    "median": 82.702,
+    "q1": 72.132,
+    "q3": 116.196,
+    "n": 23
+   },
+   "baseAngle": {
+    "median": 77.402,
+    "q1": 37.987,
+    "q3": 101.548,
+    "n": 23
+   }
   },
   "drawn": {
    "aspect": {
@@ -256,15 +446,53 @@
  },
  {
   "id": "bauhinia-variegata",
-  "sheets": 0,
-  "leaves": 0,
+  "sheets": 15,
+  "leaves": 27,
+  "candidates": 30,
+  "fetchErrors": [
+   "HTTPError: HTTP Error 403: Forbidden",
+   "HTTPError: HTTP Error 400: Bad Request",
+   "UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x7fb0eb31be20>",
+   "HTTPError: HTTP Error 504: Gateway Timeout",
+   "URLError: <urlopen error timed out>"
+  ],
   "specimen": {
-   "aspect": null,
-   "widest": null,
-   "lobeDepth": null,
-   "circularity": null,
-   "apexAngle": null,
-   "baseAngle": null
+   "aspect": {
+    "median": 1.767,
+    "q1": 1.559,
+    "q3": 3.252,
+    "n": 27
+   },
+   "widest": {
+    "median": 0.575,
+    "q1": 0.358,
+    "q3": 0.708,
+    "n": 27
+   },
+   "lobeDepth": {
+    "median": 0.678,
+    "q1": 0.318,
+    "q3": 0.998,
+    "n": 27
+   },
+   "circularity": {
+    "median": 0.375,
+    "q1": 0.302,
+    "q3": 0.427,
+    "n": 27
+   },
+   "apexAngle": {
+    "median": 96.154,
+    "q1": 78.708,
+    "q3": 124.748,
+    "n": 27
+   },
+   "baseAngle": {
+    "median": 102.541,
+    "q1": 59.91,
+    "q3": 132.375,
+    "n": 27
+   }
   },
   "drawn": {
    "aspect": {

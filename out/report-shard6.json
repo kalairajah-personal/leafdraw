@@ -1,15 +1,53 @@
 [
  {
   "id": "liriodendron-tulipifera",
-  "sheets": 0,
-  "leaves": 0,
+  "sheets": 15,
+  "leaves": 43,
+  "candidates": 30,
+  "fetchErrors": [
+   "HTTPError: HTTP Error 403: Forbidden",
+   "HTTPError: HTTP Error 403: Forbidden",
+   "HTTPError: HTTP Error 403: Forbidden",
+   "HTTPError: HTTP Error 504: Gateway Timeout",
+   "HTTPError: HTTP Error 403: Forbidden"
+  ],
   "specimen": {
-   "aspect": null,
-   "widest": null,
-   "lobeDepth": null,
-   "circularity": null,
-   "apexAngle": null,
-   "baseAngle": null
+   "aspect": {
+    "median": 1.363,
+    "q1": 1.165,
+    "q3": 1.617,
+    "n": 43
+   },
+   "widest": {
+    "median": 0.558,
+    "q1": 0.358,
+    "q3": 0.725,
+    "n": 43
+   },
+   "lobeDepth": {
+    "median": 0.633,
+    "q1": 0.389,
+    "q3": 0.972,
+    "n": 43
+   },
+   "circularity": {
+    "median": 0.537,
+    "q1": 0.311,
+    "q3": 0.636,
+    "n": 43
+   },
+   "apexAngle": {
+    "median": 116.078,
+    "q1": 98.418,
+    "q3": 132.87,
+    "n": 43
+   },
+   "baseAngle": {
+    "median": 125.17,
+    "q1": 115.654,
+    "q3": 138.715,
+    "n": 43
+   }
   },
   "drawn": {
    "aspect": {
@@ -52,15 +90,53 @@
  },
  {
   "id": "prunus-serotina",
-  "sheets": 0,
-  "leaves": 0,
+  "sheets": 15,
+  "leaves": 79,
+  "candidates": 30,
+  "fetchErrors": [
+   "HTTPError: HTTP Error 403: Forbidden",
+   "HTTPError: HTTP Error 504: Gateway Timeout",
+   "HTTPError: HTTP Error 504: Gateway Timeout",
+   "HTTPError: HTTP Error 403: Forbidden",
+   "HTTPError: HTTP Error 403: Forbidden"
+  ],
   "specimen": {
-   "aspect": null,
-   "widest": null,
-   "lobeDepth": null,
-   "circularity": null,
-   "apexAngle": null,
-   "baseAngle": null
+   "aspect": {
+    "median": 1.892,
+    "q1": 1.683,
+    "q3": 2.137,
+    "n": 79
+   },
+   "widest": {
+    "median": 0.492,
+    "q1": 0.442,
+    "q3": 0.558,
+    "n": 79
+   },
+   "lobeDepth": {
+    "median": 0.296,
+    "q1": 0.144,
+    "q3": 0.711,
+    "n": 79
+   },
+   "circularity": {
+    "median": 0.634,
+    "q1": 0.522,
+    "q3": 0.687,
+    "n": 79
+   },
+   "apexAngle": {
+    "median": 85.312,
+    "q1": 67.848,
+    "q3": 103.513,
+    "n": 79
+   },
+   "baseAngle": {
+    "median": 91.585,
+    "q1": 78.537,
+    "q3": 106.327,
+    "n": 79
+   }
   },
   "drawn": {
    "aspect": {
@@ -103,15 +179,53 @@
  },
  {
   "id": "ipomoea-pandurata",
-  "sheets": 0,
-  "leaves": 0,
+  "sheets": 15,
+  "leaves": 42,
+  "candidates": 30,
+  "fetchErrors": [
+   "URLError: <urlopen error timed out>",
+   "URLError: <urlopen error timed out>",
+   "URLError: <urlopen error timed out>",
+   "URLError: <urlopen error timed out>",
+   "URLError: <urlopen error timed out>"
+  ],
   "specimen": {
-   "aspect": null,
-   "widest": null,
-   "lobeDepth": null,
-   "circularity": null,
-   "apexAngle": null,
-   "baseAngle": null
+   "aspect": {
+    "median": 1.729,
+    "q1": 1.367,
+    "q3": 2.291,
+    "n": 42
+   },
+   "widest": {
+    "median": 0.475,
+    "q1": 0.308,
+    "q3": 0.692,
+    "n": 42
+   },
+   "lobeDepth": {
+    "median": 0.604,
+    "q1": 0.415,
+    "q3": 0.916,
+    "n": 42
+   },
+   "circularity": {
+    "median": 0.507,
+    "q1": 0.414,
+    "q3": 0.579,
+    "n": 42
+   },
+   "apexAngle": {
+    "median": 101.722,
+    "q1": 62.249,
+    "q3": 131.089,
+    "n": 42
+   },
+   "baseAngle": {
+    "median": 114.825,
+    "q1": 79.993,
+    "q3": 124.754,
+    "n": 42
+   }
   },
   "drawn": {
    "aspect": {
@@ -154,15 +268,53 @@
  },
  {
   "id": "liquidambar-styraciflua",
-  "sheets": 0,
-  "leaves": 0,
+  "sheets": 15,
+  "leaves": 49,
+  "candidates": 30,
+  "fetchErrors": [
+   "HTTPError: HTTP Error 403: Forbidden",
+   "HTTPError: HTTP Error 400: Bad Request",
+   "UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x7f8165c924d0>",
+   "HTTPError: HTTP Error 403: Forbidden",
+   "URLError: <urlopen error timed out>"
+  ],
   "specimen": {
-   "aspect": null,
-   "widest": null,
-   "lobeDepth": null,
-   "circularity": null,
-   "apexAngle": null,
-   "baseAngle": null
+   "aspect": {
+    "median": 1.352,
+    "q1": 1.214,
+    "q3": 1.595,
+    "n": 49
+   },
+   "widest": {
+    "median": 0.475,
+    "q1": 0.358,
+    "q3": 0.575,
+    "n": 49
+   },
+   "lobeDepth": {
+    "median": 0.991,
+    "q1": 0.81,
+    "q3": 0.998,
+    "n": 49
+   },
+   "circularity": {
+    "median": 0.253,
+    "q1": 0.219,
+    "q3": 0.324,
+    "n": 49
+   },
+   "apexAngle": {
+    "median": 88.881,
+    "q1": 54.299,
+    "q3": 124.239,
+    "n": 49
+   },
+   "baseAngle": {
+    "median": 106.655,
+    "q1": 82.412,
+    "q3": 130.063,
+    "n": 49
+   }
   },
   "drawn": {
    "aspect": {

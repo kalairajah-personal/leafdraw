@@ -2,16 +2,587 @@
  "id": "hedera-helix",
  "name": "Hedera helix",
  "gbifKey": 8351737,
- "sheets": 0,
- "leaves": 0,
+ "sheets": 15,
+ "leaves": 49,
+ "candidates": 30,
+ "fetchErrors": [
+  "HTTPError: HTTP Error 429: Too Many Requests",
+  "HTTPError: HTTP Error 504: Gateway Timeout",
+  "HTTPError: HTTP Error 504: Gateway Timeout",
+  "HTTPError: HTTP Error 504: Gateway Timeout",
+  "HTTPError: HTTP Error 403: Forbidden"
+ ],
  "stats": {
-  "aspect": null,
-  "widest": null,
-  "lobeDepth": null,
-  "circularity": null,
-  "apexAngle": null,
-  "baseAngle": null
+  "aspect": {
+   "median": 1.361,
+   "q1": 1.161,
+   "q3": 1.722,
+   "n": 49
+  },
+  "widest": {
+   "median": 0.508,
+   "q1": 0.325,
+   "q3": 0.658,
+   "n": 49
+  },
+  "lobeDepth": {
+   "median": 0.816,
+   "q1": 0.521,
+   "q3": 0.982,
+   "n": 49
+  },
+  "circularity": {
+   "median": 0.462,
+   "q1": 0.288,
+   "q3": 0.562,
+   "n": 49
+  },
+  "apexAngle": {
+   "median": 97.52,
+   "q1": 78.957,
+   "q3": 125.466,
+   "n": 49
+  },
+  "baseAngle": {
+   "median": 101.885,
+   "q1": 76.681,
+   "q3": 126.854,
+   "n": 49
+  }
  },
- "sources": [],
- "raw": []
+ "sources": [
+  {
+   "occurrence": 6553557301,
+   "institution": null,
+   "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+   "leaves": 2
+  },
+  {
+   "occurrence": 6483814547,
+   "institution": "NSW",
+   "license": "http://creativecommons.org/licenses/by/4.0/",
+   "leaves": 2
+  },
+  {
+   "occurrence": 6483814632,
+   "institution": "NSW",
+   "license": "http://creativecommons.org/licenses/by/4.0/",
+   "leaves": 4
+  },
+  {
+   "occurrence": 6177134258,
+   "institution": "PI",
+   "license": "http://creativecommons.org/licenses/by/4.0/",
+   "leaves": 3
+  },
+  {
+   "occurrence": 4862900303,
+   "institution": "NCU",
+   "license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+   "leaves": 6
+  },
+  {
+   "occurrence": 4900813328,
+   "institution": "NCU",
+   "license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+   "leaves": 2
+  },
+  {
+   "occurrence": 5106240490,
+   "institution": "UNCC",
+   "license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+   "leaves": 5
+  },
+  {
+   "occurrence": 4850285630,
+   "institution": "NMNZ",
+   "license": "http://creativecommons.org/licenses/by/4.0/",
+   "leaves": 1
+  },
+  {
+   "occurrence": 5886542347,
+   "institution": "NHA",
+   "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+   "leaves": 6
+  },
+  {
+   "occurrence": 5081478317,
+   "institution": "CLEMS",
+   "license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+   "leaves": 0
+  },
+  {
+   "occurrence": 5101160784,
+   "institution": "CINC",
+   "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+   "leaves": 0
+  },
+  {
+   "occurrence": 5101160762,
+   "institution": "CINC",
+   "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+   "leaves": 4
+  },
+  {
+   "occurrence": 5101160712,
+   "institution": "CINC",
+   "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+   "leaves": 2
+  },
+  {
+   "occurrence": 4939473637,
+   "institution": "UF",
+   "license": "http://creativecommons.org/licenses/by-nc/4.0/",
+   "leaves": 6
+  },
+  {
+   "occurrence": 4070437387,
+   "institution": "IRVC",
+   "license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+   "leaves": 6
+  }
+ ],
+ "raw": [
+  {
+   "aspect": 1.4985,
+   "widest": 0.525,
+   "lobeDepth": 0.0613,
+   "circularity": 0.7742,
+   "apexAngle": 121.6538,
+   "baseAngle": 100.0755,
+   "occurrence": 6553557301
+  },
+  {
+   "aspect": 5.1984,
+   "widest": 0.925,
+   "lobeDepth": 0.9752,
+   "circularity": 0.229,
+   "apexAngle": 86.7408,
+   "baseAngle": 68.5316,
+   "occurrence": 6553557301
+  },
+  {
+   "aspect": 1.1432,
+   "widest": 0.475,
+   "lobeDepth": 0.9394,
+   "circularity": 0.4917,
+   "apexAngle": 109.4394,
+   "baseAngle": 74.1388,
+   "occurrence": 6483814547
+  },
+  {
+   "aspect": 1.5529,
+   "widest": 0.575,
+   "lobeDepth": 0.9995,
+   "circularity": 0.2463,
+   "apexAngle": 125.8547,
+   "baseAngle": 88.7999,
+   "occurrence": 6483814547
+  },
+  {
+   "aspect": 1.3737,
+   "widest": 0.5583,
+   "lobeDepth": 0.9966,
+   "circularity": 0.155,
+   "apexAngle": 112.7996,
+   "baseAngle": 124.7385,
+   "occurrence": 6483814632
+  },
+  {
+   "aspect": 1.2404,
+   "widest": 0.775,
+   "lobeDepth": 0.9892,
+   "circularity": 0.3077,
+   "apexAngle": 133.3599,
+   "baseAngle": 124.6568,
+   "occurrence": 6483814632
+  },
+  {
+   "aspect": 1.7233,
+   "widest": 0.325,
+   "lobeDepth": 0.4768,
+   "circularity": 0.5748,
+   "apexAngle": 129.7356,
+   "baseAngle": 115.9804,
+   "occurrence": 6483814632
+  },
+  {
+   "aspect": 1.7224,
+   "widest": 0.5083,
+   "lobeDepth": 0.982,
+   "circularity": 0.5131,
+   "apexAngle": 97.5202,
+   "baseAngle": 65.2944,
+   "occurrence": 6483814632
+  },
+  {
+   "aspect": 4.4812,
+   "widest": 0.7583,
+   "lobeDepth": 0.7494,
+   "circularity": 0.1932,
+   "apexAngle": 44.5077,
+   "baseAngle": 44.466,
+   "occurrence": 6177134258
+  },
+  {
+   "aspect": 1.5396,
+   "widest": 0.1417,
+   "lobeDepth": 0.9994,
+   "circularity": 0.1435,
+   "apexAngle": 44.2831,
+   "baseAngle": 134.9877,
+   "occurrence": 6177134258
+  },
+  {
+   "aspect": 2.7365,
+   "widest": 0.625,
+   "lobeDepth": 0.9427,
+   "circularity": 0.3524,
+   "apexAngle": 78.9567,
+   "baseAngle": 25.0296,
+   "occurrence": 6177134258
+  },
+  {
+   "aspect": 1.1607,
+   "widest": 0.5583,
+   "lobeDepth": 0.8357,
+   "circularity": 0.6959,
+   "apexAngle": 91.3031,
+   "baseAngle": 133.1071,
+   "occurrence": 4862900303
+  },
+  {
+   "aspect": 2.0848,
+   "widest": 0.3417,
+   "lobeDepth": 0.4386,
+   "circularity": 0.5831,
+   "apexAngle": 47.1558,
+   "baseAngle": 106.2336,
+   "occurrence": 4862900303
+  },
+  {
+   "aspect": 1.2087,
+   "widest": 0.3083,
+   "lobeDepth": 0.8156,
+   "circularity": 0.5348,
+   "apexAngle": 53.4757,
+   "baseAngle": 146.4752,
+   "occurrence": 4862900303
+  },
+  {
+   "aspect": 1.2491,
+   "widest": 0.2417,
+   "lobeDepth": 0.9106,
+   "circularity": 0.5444,
+   "apexAngle": 65.4733,
+   "baseAngle": 119.0551,
+   "occurrence": 4862900303
+  },
+  {
+   "aspect": 1.0253,
+   "widest": 0.275,
+   "lobeDepth": 0.9875,
+   "circularity": 0.5245,
+   "apexAngle": 116.7963,
+   "baseAngle": 101.7366,
+   "occurrence": 4862900303
+  },
+  {
+   "aspect": 1.1579,
+   "widest": 0.2417,
+   "lobeDepth": 0.3524,
+   "circularity": 0.5412,
+   "apexAngle": 57.778,
+   "baseAngle": 147.9686,
+   "occurrence": 4862900303
+  },
+  {
+   "aspect": 1.2374,
+   "widest": 0.4083,
+   "lobeDepth": 0.612,
+   "circularity": 0.341,
+   "apexAngle": 93.4671,
+   "baseAngle": 145.6728,
+   "occurrence": 4900813328
+  },
+  {
+   "aspect": 1.1409,
+   "widest": 0.5583,
+   "lobeDepth": 0.7265,
+   "circularity": 0.4129,
+   "apexAngle": 122.6502,
+   "baseAngle": 126.8536,
+   "occurrence": 4900813328
+  },
+  {
+   "aspect": 5.9126,
+   "widest": 0.825,
+   "lobeDepth": 0.7478,
+   "circularity": 0.2306,
+   "apexAngle": 63.2357,
+   "baseAngle": 51.2902,
+   "occurrence": 5106240490
+  },
+  {
+   "aspect": 1.5383,
+   "widest": 0.5083,
+   "lobeDepth": 0.8262,
+   "circularity": 0.3795,
+   "apexAngle": 97.126,
+   "baseAngle": 126.2422,
+   "occurrence": 5106240490
+  },
+  {
+   "aspect": 1.0807,
+   "widest": 0.6417,
+   "lobeDepth": 0.675,
+   "circularity": 0.5256,
+   "apexAngle": 90.4246,
+   "baseAngle": 80.3203,
+   "occurrence": 5106240490
+  },
+  {
+   "aspect": 1.2199,
+   "widest": 0.425,
+   "lobeDepth": 0.6252,
+   "circularity": 0.4619,
+   "apexAngle": 130.2118,
+   "baseAngle": 129.7668,
+   "occurrence": 5106240490
+  },
+  {
+   "aspect": 1.1543,
+   "widest": 0.6083,
+   "lobeDepth": 0.4721,
+   "circularity": 0.6584,
+   "apexAngle": 135.4892,
+   "baseAngle": 145.6461,
+   "occurrence": 5106240490
+  },
+  {
+   "aspect": 2.6392,
+   "widest": 0.5417,
+   "lobeDepth": 0.9827,
+   "circularity": 0.4396,
+   "apexAngle": 82.799,
+   "baseAngle": 58.53,
+   "occurrence": 4850285630
+  },
+  {
+   "aspect": 1.2102,
+   "widest": 0.5417,
+   "lobeDepth": 0.498,
+   "circularity": 0.5378,
+   "apexAngle": 82.2126,
+   "baseAngle": 76.6812,
+   "occurrence": 5886542347
+  },
+  {
+   "aspect": 2.9771,
+   "widest": 0.5417,
+   "lobeDepth": 0.415,
+   "circularity": 0.42,
+   "apexAngle": 51.8942,
+   "baseAngle": 34.4763,
+   "occurrence": 5886542347
+  },
+  {
+   "aspect": 1.7163,
+   "widest": 0.375,
+   "lobeDepth": 0.462,
+   "circularity": 0.6209,
+   "apexAngle": 69.3683,
+   "baseAngle": 115.8606,
+   "occurrence": 5886542347
+  },
+  {
+   "aspect": 1.4437,
+   "widest": 0.425,
+   "lobeDepth": 0.5189,
+   "circularity": 0.2877,
+   "apexAngle": 79.7715,
+   "baseAngle": 134.2839,
+   "occurrence": 5886542347
+  },
+  {
+   "aspect": 1.3279,
+   "widest": 0.3083,
+   "lobeDepth": 0.4832,
+   "circularity": 0.4093,
+   "apexAngle": 117.3763,
+   "baseAngle": 96.6991,
+   "occurrence": 5886542347
+  },
+  {
+   "aspect": 1.1995,
+   "widest": 0.4583,
+   "lobeDepth": 0.6206,
+   "circularity": 0.4944,
+   "apexAngle": 91.6535,
+   "baseAngle": 101.8845,
+   "occurrence": 5886542347
+  },
+  {
+   "aspect": 7.2924,
+   "widest": 0.7583,
+   "lobeDepth": 0.852,
+   "circularity": 0.1884,
+   "apexAngle": 53.7737,
+   "baseAngle": 57.9404,
+   "occurrence": 5101160762
+  },
+  {
+   "aspect": 1.1457,
+   "widest": 0.725,
+   "lobeDepth": 0.8717,
+   "circularity": 0.642,
+   "apexAngle": 123.9188,
+   "baseAngle": 94.8716,
+   "occurrence": 5101160762
+  },
+  {
+   "aspect": 1.0206,
+   "widest": 0.2583,
+   "lobeDepth": 0.5306,
+   "circularity": 0.6062,
+   "apexAngle": 125.4662,
+   "baseAngle": 131.0713,
+   "occurrence": 5101160762
+  },
+  {
+   "aspect": 1.0244,
+   "widest": 0.775,
+   "lobeDepth": 0.9687,
+   "circularity": 0.6348,
+   "apexAngle": 107.6319,
+   "baseAngle": 120.8373,
+   "occurrence": 5101160762
+  },
+  {
+   "aspect": 1.4478,
+   "widest": 0.7417,
+   "lobeDepth": 0.9997,
+   "circularity": 0.0967,
+   "apexAngle": 128.3515,
+   "baseAngle": 49.9672,
+   "occurrence": 5101160712
+  },
+  {
+   "aspect": 1.7681,
+   "widest": 0.925,
+   "lobeDepth": 0.9971,
+   "circularity": 0.2216,
+   "apexAngle": 139.5875,
+   "baseAngle": 79.3056,
+   "occurrence": 5101160712
+  },
+  {
+   "aspect": 1.0729,
+   "widest": 0.325,
+   "lobeDepth": 0.3677,
+   "circularity": 0.5785,
+   "apexAngle": 138.454,
+   "baseAngle": 149.2859,
+   "occurrence": 4939473637
+  },
+  {
+   "aspect": 1.0897,
+   "widest": 0.275,
+   "lobeDepth": 0.4556,
+   "circularity": 0.649,
+   "apexAngle": 126.0951,
+   "baseAngle": 146.3697,
+   "occurrence": 4939473637
+  },
+  {
+   "aspect": 1.5082,
+   "widest": 0.4083,
+   "lobeDepth": 0.9785,
+   "circularity": 0.5622,
+   "apexAngle": 128.385,
+   "baseAngle": 71.7154,
+   "occurrence": 4939473637
+  },
+  {
+   "aspect": 1.4329,
+   "widest": 0.4083,
+   "lobeDepth": 0.6352,
+   "circularity": 0.6282,
+   "apexAngle": 114.9032,
+   "baseAngle": 106.1241,
+   "occurrence": 4939473637
+  },
+  {
+   "aspect": 1.188,
+   "widest": 0.325,
+   "lobeDepth": 0.9262,
+   "circularity": 0.5141,
+   "apexAngle": 90.6163,
+   "baseAngle": 101.1061,
+   "occurrence": 4939473637
+  },
+  {
+   "aspect": 1.3614,
+   "widest": 0.3083,
+   "lobeDepth": 0.5209,
+   "circularity": 0.5144,
+   "apexAngle": 90.8257,
+   "baseAngle": 105.1645,
+   "occurrence": 4939473637
+  },
+  {
+   "aspect": 1.236,
+   "widest": 0.825,
+   "lobeDepth": 0.685,
+   "circularity": 0.2275,
+   "apexAngle": 136.0096,
+   "baseAngle": 103.7169,
+   "occurrence": 4070437387
+  },
+  {
+   "aspect": 1.3953,
+   "widest": 0.175,
+   "lobeDepth": 0.7902,
+   "circularity": 0.2982,
+   "apexAngle": 73.6213,
+   "baseAngle": 133.7735,
+   "occurrence": 4070437387
+  },
+  {
+   "aspect": 1.3386,
+   "widest": 0.6583,
+   "lobeDepth": 0.989,
+   "circularity": 0.3092,
+   "apexAngle": 78.6716,
+   "baseAngle": 100.0668,
+   "occurrence": 4070437387
+  },
+  {
+   "aspect": 2.6951,
+   "widest": 0.9083,
+   "lobeDepth": 0.9977,
+   "circularity": 0.1837,
+   "apexAngle": 122.2635,
+   "baseAngle": 43.6289,
+   "occurrence": 4070437387
+  },
+  {
+   "aspect": 2.4082,
+   "widest": 0.4417,
+   "lobeDepth": 0.9983,
+   "circularity": 0.2095,
+   "apexAngle": 111.6099,
+   "baseAngle": 79.1107,
+   "occurrence": 4070437387
+  },
+  {
+   "aspect": 1.0906,
+   "widest": 0.8083,
+   "lobeDepth": 0.9941,
+   "circularity": 0.295,
+   "apexAngle": 139.2365,
+   "baseAngle": 87.7048,
+   "occurrence": 4070437387
+  }
+ ]
 }

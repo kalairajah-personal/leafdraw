@@ -1,15 +1,47 @@
 [
  {
   "id": "betula-papyrifera",
-  "sheets": 0,
-  "leaves": 0,
+  "sheets": 15,
+  "leaves": 62,
+  "candidates": 30,
+  "fetchErrors": [],
   "specimen": {
-   "aspect": null,
-   "widest": null,
-   "lobeDepth": null,
-   "circularity": null,
-   "apexAngle": null,
-   "baseAngle": null
+   "aspect": {
+    "median": 1.489,
+    "q1": 1.306,
+    "q3": 1.581,
+    "n": 62
+   },
+   "widest": {
+    "median": 0.425,
+    "q1": 0.325,
+    "q3": 0.625,
+    "n": 62
+   },
+   "lobeDepth": {
+    "median": 0.268,
+    "q1": 0.218,
+    "q3": 0.376,
+    "n": 62
+   },
+   "circularity": {
+    "median": 0.684,
+    "q1": 0.638,
+    "q3": 0.7,
+    "n": 62
+   },
+   "apexAngle": {
+    "median": 85.473,
+    "q1": 67.597,
+    "q3": 127.52,
+    "n": 62
+   },
+   "baseAngle": {
+    "median": 126.042,
+    "q1": 74.673,
+    "q3": 137.444,
+    "n": 62
+   }
   },
   "drawn": {
    "aspect": {
@@ -52,15 +84,51 @@
  },
  {
   "id": "taraxacum-officinale",
-  "sheets": 0,
-  "leaves": 0,
+  "sheets": 15,
+  "leaves": 45,
+  "candidates": 30,
+  "fetchErrors": [
+   "HTTPError: HTTP Error 504: Gateway Timeout",
+   "HTTPError: HTTP Error 404: Not Found",
+   "UnicodeEncodeError: 'ascii' codec can't encode characters in position 44-45: ordinal not in range(12"
+  ],
   "specimen": {
-   "aspect": null,
-   "widest": null,
-   "lobeDepth": null,
-   "circularity": null,
-   "apexAngle": null,
-   "baseAngle": null
+   "aspect": {
+    "median": 1.577,
+    "q1": 1.297,
+    "q3": 2.675,
+    "n": 45
+   },
+   "widest": {
+    "median": 0.475,
+    "q1": 0.342,
+    "q3": 0.675,
+    "n": 45
+   },
+   "lobeDepth": {
+    "median": 0.98,
+    "q1": 0.751,
+    "q3": 0.997,
+    "n": 45
+   },
+   "circularity": {
+    "median": 0.27,
+    "q1": 0.186,
+    "q3": 0.335,
+    "n": 45
+   },
+   "apexAngle": {
+    "median": 75.597,
+    "q1": 50.526,
+    "q3": 105.709,
+    "n": 45
+   },
+   "baseAngle": {
+    "median": 89.709,
+    "q1": 59.449,
+    "q3": 119.519,
+    "n": 45
+   }
   },
   "drawn": {
    "aspect": {
@@ -103,15 +171,51 @@
  },
  {
   "id": "cinnamomum-camphora",
-  "sheets": 0,
-  "leaves": 0,
+  "sheets": 15,
+  "leaves": 51,
+  "candidates": 30,
+  "fetchErrors": [
+   "HTTPError: HTTP Error 504: Gateway Timeout",
+   "HTTPError: HTTP Error 404: Not Found",
+   "UnicodeEncodeError: 'ascii' codec can't encode characters in position 44-45: ordinal not in range(12"
+  ],
   "specimen": {
-   "aspect": null,
-   "widest": null,
-   "lobeDepth": null,
-   "circularity": null,
-   "apexAngle": null,
-   "baseAngle": null
+   "aspect": {
+    "median": 1.946,
+    "q1": 1.53,
+    "q3": 2.426,
+    "n": 51
+   },
+   "widest": {
+    "median": 0.442,
+    "q1": 0.342,
+    "q3": 0.608,
+    "n": 51
+   },
+   "lobeDepth": {
+    "median": 0.695,
+    "q1": 0.27,
+    "q3": 0.943,
+    "n": 51
+   },
+   "circularity": {
+    "median": 0.425,
+    "q1": 0.307,
+    "q3": 0.634,
+    "n": 51
+   },
+   "apexAngle": {
+    "median": 88.154,
+    "q1": 67.142,
+    "q3": 119.232,
+    "n": 51
+   },
+   "baseAngle": {
+    "median": 86.746,
+    "q1": 64.974,
+    "q3": 103.603,
+    "n": 51
+   }
   },
   "drawn": {
    "aspect": {
@@ -154,15 +258,52 @@
  },
  {
   "id": "asarum-canadense",
-  "sheets": 0,
-  "leaves": 0,
+  "sheets": 15,
+  "leaves": 30,
+  "candidates": 30,
+  "fetchErrors": [
+   "HTTPError: HTTP Error 504: Gateway Timeout",
+   "HTTPError: HTTP Error 404: Not Found",
+   "UnicodeEncodeError: 'ascii' codec can't encode characters in position 44-45: ordinal not in range(12",
+   "HTTPError: HTTP Error 504: Gateway Timeout"
+  ],
   "specimen": {
-   "aspect": null,
-   "widest": null,
-   "lobeDepth": null,
-   "circularity": null,
-   "apexAngle": null,
-   "baseAngle": null
+   "aspect": {
+    "median": 1.485,
+    "q1": 1.228,
+    "q3": 2.208,
+    "n": 30
+   },
+   "widest": {
+    "median": 0.417,
+    "q1": 0.325,
+    "q3": 0.592,
+    "n": 30
+   },
+   "lobeDepth": {
+    "median": 0.721,
+    "q1": 0.606,
+    "q3": 0.809,
+    "n": 30
+   },
+   "circularity": {
+    "median": 0.466,
+    "q1": 0.358,
+    "q3": 0.605,
+    "n": 30
+   },
+   "apexAngle": {
+    "median": 114.062,
+    "q1": 67.862,
+    "q3": 132.223,
+    "n": 30
+   },
+   "baseAngle": {
+    "median": 126.678,
+    "q1": 75.786,
+    "q3": 133.306,
+    "n": 30
+   }
   },
   "drawn": {
    "aspect": {
@@ -205,15 +346,53 @@
  },
  {
   "id": "tropaeolum-majus",
-  "sheets": 0,
-  "leaves": 0,
+  "sheets": 15,
+  "leaves": 49,
+  "candidates": 30,
+  "fetchErrors": [
+   "HTTPError: HTTP Error 504: Gateway Timeout",
+   "HTTPError: HTTP Error 400: Bad Request",
+   "UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x7fa78e897e70>",
+   "HTTPError: HTTP Error 400: Bad Request",
+   "UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x7fa78e83bf10>"
+  ],
   "specimen": {
-   "aspect": null,
-   "widest": null,
-   "lobeDepth": null,
-   "circularity": null,
-   "apexAngle": null,
-   "baseAngle": null
+   "aspect": {
+    "median": 1.294,
+    "q1": 1.125,
+    "q3": 1.706,
+    "n": 49
+   },
+   "widest": {
+    "median": 0.492,
+    "q1": 0.408,
+    "q3": 0.625,
+    "n": 49
+   },
+   "lobeDepth": {
+    "median": 0.402,
+    "q1": 0.177,
+    "q3": 0.757,
+    "n": 49
+   },
+   "circularity": {
+    "median": 0.619,
+    "q1": 0.443,
+    "q3": 0.755,
+    "n": 49
+   },
+   "apexAngle": {
+    "median": 129.095,
+    "q1": 110.043,
+    "q3": 135.272,
+    "n": 49
+   },
+   "baseAngle": {
+    "median": 122.806,
+    "q1": 101.609,
+    "q3": 138.292,
+    "n": 49
+   }
   },
   "drawn": {
    "aspect": {
@@ -225,7 +404,7 @@
    "widest": {
     "median": 0.492,
     "q1": 0.492,
-    "q3": 0.492,
+    "q3": 0.508,
     "n": 5
    },
    "lobeDepth": {
@@ -256,15 +435,53 @@
  },
  {
   "id": "veratrum-viride",
-  "sheets": 0,
-  "leaves": 0,
+  "sheets": 15,
+  "leaves": 27,
+  "candidates": 30,
+  "fetchErrors": [
+   "HTTPError: HTTP Error 504: Gateway Timeout",
+   "HTTPError: HTTP Error 400: Bad Request",
+   "UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x7fa78e897e70>",
+   "HTTPError: HTTP Error 400: Bad Request",
+   "UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x7fa78e83bf10>"
+  ],
   "specimen": {
-   "aspect": null,
-   "widest": null,
-   "lobeDepth": null,
-   "circularity": null,
-   "apexAngle": null,
-   "baseAngle": null
+   "aspect": {
+    "median": 2.121,
+    "q1": 1.839,
+    "q3": 5.071,
+    "n": 27
+   },
+   "widest": {
+    "median": 0.392,
+    "q1": 0.242,
+    "q3": 0.608,
+    "n": 27
+   },
+   "lobeDepth": {
+    "median": 0.478,
+    "q1": 0.234,
+    "q3": 0.71,
+    "n": 27
+   },
+   "circularity": {
+    "median": 0.407,
+    "q1": 0.26,
+    "q3": 0.507,
+    "n": 27
+   },
+   "apexAngle": {
+    "median": 86.215,
+    "q1": 51.445,
+    "q3": 120.223,
+    "n": 27
+   },
+   "baseAngle": {
+    "median": 92.076,
+    "q1": 67.498,
+    "q3": 121.008,
+    "n": 27
+   }
   },
   "drawn": {
    "aspect": {

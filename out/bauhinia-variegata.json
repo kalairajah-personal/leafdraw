@@ -2,16 +2,389 @@
  "id": "bauhinia-variegata",
  "name": "Bauhinia variegata",
  "gbifKey": 2953251,
- "sheets": 0,
- "leaves": 0,
+ "sheets": 15,
+ "leaves": 27,
+ "candidates": 30,
+ "fetchErrors": [
+  "HTTPError: HTTP Error 403: Forbidden",
+  "HTTPError: HTTP Error 400: Bad Request",
+  "UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x7fb0eb31be20>",
+  "HTTPError: HTTP Error 504: Gateway Timeout",
+  "URLError: <urlopen error timed out>"
+ ],
  "stats": {
-  "aspect": null,
-  "widest": null,
-  "lobeDepth": null,
-  "circularity": null,
-  "apexAngle": null,
-  "baseAngle": null
+  "aspect": {
+   "median": 1.767,
+   "q1": 1.559,
+   "q3": 3.252,
+   "n": 27
+  },
+  "widest": {
+   "median": 0.575,
+   "q1": 0.358,
+   "q3": 0.708,
+   "n": 27
+  },
+  "lobeDepth": {
+   "median": 0.678,
+   "q1": 0.318,
+   "q3": 0.998,
+   "n": 27
+  },
+  "circularity": {
+   "median": 0.375,
+   "q1": 0.302,
+   "q3": 0.427,
+   "n": 27
+  },
+  "apexAngle": {
+   "median": 96.154,
+   "q1": 78.708,
+   "q3": 124.748,
+   "n": 27
+  },
+  "baseAngle": {
+   "median": 102.541,
+   "q1": 59.91,
+   "q3": 132.375,
+   "n": 27
+  }
  },
- "sources": [],
- "raw": []
+ "sources": [
+  {
+   "occurrence": 6392819699,
+   "institution": "UNILA",
+   "license": "http://creativecommons.org/licenses/by/4.0/",
+   "leaves": 2
+  },
+  {
+   "occurrence": 6392818881,
+   "institution": "UNILA",
+   "license": "http://creativecommons.org/licenses/by/4.0/",
+   "leaves": 2
+  },
+  {
+   "occurrence": 6392819183,
+   "institution": "UNILA",
+   "license": "http://creativecommons.org/licenses/by/4.0/",
+   "leaves": 1
+  },
+  {
+   "occurrence": 4426514304,
+   "institution": "UF",
+   "license": "http://creativecommons.org/licenses/by-nc/4.0/",
+   "leaves": 1
+  },
+  {
+   "occurrence": 4435957302,
+   "institution": "JBRJ",
+   "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+   "leaves": 4
+  },
+  {
+   "occurrence": 1990854142,
+   "institution": "JBRJ",
+   "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+   "leaves": 4
+  },
+  {
+   "occurrence": 3769962548,
+   "institution": "PI",
+   "license": "http://creativecommons.org/licenses/by/4.0/",
+   "leaves": 1
+  },
+  {
+   "occurrence": 3769962582,
+   "institution": "PI",
+   "license": "http://creativecommons.org/licenses/by/4.0/",
+   "leaves": 3
+  },
+  {
+   "occurrence": 6392816436,
+   "institution": "UNILA",
+   "license": "http://creativecommons.org/licenses/by/4.0/",
+   "leaves": 0
+  },
+  {
+   "occurrence": 4130374790,
+   "institution": "AU",
+   "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+   "leaves": 5
+  },
+  {
+   "occurrence": 4519408604,
+   "institution": "K",
+   "license": "http://creativecommons.org/licenses/by/4.0/",
+   "leaves": 1
+  },
+  {
+   "occurrence": 6392818734,
+   "institution": "UNILA",
+   "license": "http://creativecommons.org/licenses/by/4.0/",
+   "leaves": 1
+  },
+  {
+   "occurrence": 4439071673,
+   "institution": "NY",
+   "license": "http://creativecommons.org/licenses/by/4.0/",
+   "leaves": 1
+  },
+  {
+   "occurrence": 1819183783,
+   "institution": "JBRJ",
+   "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+   "leaves": 1
+  },
+  {
+   "occurrence": 6517401301,
+   "institution": "K",
+   "license": "http://creativecommons.org/licenses/by/4.0/",
+   "leaves": 0
+  }
+ ],
+ "raw": [
+  {
+   "aspect": 1.6278,
+   "widest": 0.825,
+   "lobeDepth": 0.9991,
+   "circularity": 0.4046,
+   "apexAngle": 138.3854,
+   "baseAngle": 130.6594,
+   "occurrence": 6392819699
+  },
+  {
+   "aspect": 1.5343,
+   "widest": 0.6917,
+   "lobeDepth": 0.9989,
+   "circularity": 0.3971,
+   "apexAngle": 113.8403,
+   "baseAngle": 90.7126,
+   "occurrence": 6392819699
+  },
+  {
+   "aspect": 4.8098,
+   "widest": 0.225,
+   "lobeDepth": 0.0855,
+   "circularity": 0.4179,
+   "apexAngle": 87.2144,
+   "baseAngle": 89.0605,
+   "occurrence": 6392818881
+  },
+  {
+   "aspect": 1.3594,
+   "widest": 0.375,
+   "lobeDepth": 0.0306,
+   "circularity": 0.8387,
+   "apexAngle": 120.7569,
+   "baseAngle": 135.7305,
+   "occurrence": 6392818881
+  },
+  {
+   "aspect": 1.3062,
+   "widest": 0.675,
+   "lobeDepth": 0.9987,
+   "circularity": 0.2345,
+   "apexAngle": 144.8462,
+   "baseAngle": 128.6271,
+   "occurrence": 6392819183
+  },
+  {
+   "aspect": 1.2419,
+   "widest": 0.2583,
+   "lobeDepth": 1.0,
+   "circularity": 0.4002,
+   "apexAngle": 78.7083,
+   "baseAngle": 146.0968,
+   "occurrence": 4426514304
+  },
+  {
+   "aspect": 3.2522,
+   "widest": 0.5083,
+   "lobeDepth": 0.6779,
+   "circularity": 0.4266,
+   "apexAngle": 28.8679,
+   "baseAngle": 71.1129,
+   "occurrence": 4435957302
+  },
+  {
+   "aspect": 1.7643,
+   "widest": 0.775,
+   "lobeDepth": 0.8604,
+   "circularity": 0.2605,
+   "apexAngle": 91.6061,
+   "baseAngle": 40.8706,
+   "occurrence": 4435957302
+  },
+  {
+   "aspect": 2.2922,
+   "widest": 0.4083,
+   "lobeDepth": 0.4803,
+   "circularity": 0.4409,
+   "apexAngle": 48.5121,
+   "baseAngle": 102.0857,
+   "occurrence": 4435957302
+  },
+  {
+   "aspect": 8.6021,
+   "widest": 0.1083,
+   "lobeDepth": 0.5495,
+   "circularity": 0.2075,
+   "apexAngle": 40.0107,
+   "baseAngle": 59.9101,
+   "occurrence": 4435957302
+  },
+  {
+   "aspect": 2.4845,
+   "widest": 0.9583,
+   "lobeDepth": 0.3183,
+   "circularity": 0.414,
+   "apexAngle": 125.114,
+   "baseAngle": 39.5056,
+   "occurrence": 1990854142
+  },
+  {
+   "aspect": 4.3326,
+   "widest": 0.9583,
+   "lobeDepth": 0.2557,
+   "circularity": 0.3454,
+   "apexAngle": 96.1542,
+   "baseAngle": 36.6276,
+   "occurrence": 1990854142
+  },
+  {
+   "aspect": 1.0182,
+   "widest": 0.4583,
+   "lobeDepth": 0.9946,
+   "circularity": 0.2798,
+   "apexAngle": 94.1717,
+   "baseAngle": 137.3796,
+   "occurrence": 1990854142
+  },
+  {
+   "aspect": 6.4096,
+   "widest": 0.6083,
+   "lobeDepth": 0.2086,
+   "circularity": 0.3064,
+   "apexAngle": 50.9378,
+   "baseAngle": 38.8176,
+   "occurrence": 1990854142
+  },
+  {
+   "aspect": 1.0278,
+   "widest": 0.7083,
+   "lobeDepth": 0.4681,
+   "circularity": 0.7189,
+   "apexAngle": 146.2743,
+   "baseAngle": 147.886,
+   "occurrence": 3769962548
+  },
+  {
+   "aspect": 1.2682,
+   "widest": 0.625,
+   "lobeDepth": 0.9998,
+   "circularity": 0.2856,
+   "apexAngle": 121.5558,
+   "baseAngle": 113.3871,
+   "occurrence": 3769962582
+  },
+  {
+   "aspect": 1.8293,
+   "widest": 0.8583,
+   "lobeDepth": 0.9722,
+   "circularity": 0.3326,
+   "apexAngle": 136.1013,
+   "baseAngle": 133.7272,
+   "occurrence": 3769962582
+  },
+  {
+   "aspect": 3.3182,
+   "widest": 0.575,
+   "lobeDepth": 0.263,
+   "circularity": 0.4788,
+   "apexAngle": 77.6452,
+   "baseAngle": 58.4798,
+   "occurrence": 3769962582
+  },
+  {
+   "aspect": 2.3237,
+   "widest": 0.7417,
+   "lobeDepth": 0.9979,
+   "circularity": 0.3408,
+   "apexAngle": 115.3046,
+   "baseAngle": 102.5408,
+   "occurrence": 4130374790
+  },
+  {
+   "aspect": 1.7328,
+   "widest": 0.6083,
+   "lobeDepth": 0.9982,
+   "circularity": 0.3166,
+   "apexAngle": 124.748,
+   "baseAngle": 86.9153,
+   "occurrence": 4130374790
+  },
+  {
+   "aspect": 2.5554,
+   "widest": 0.3417,
+   "lobeDepth": 0.9981,
+   "circularity": 0.2635,
+   "apexAngle": 72.9817,
+   "baseAngle": 34.7124,
+   "occurrence": 4130374790
+  },
+  {
+   "aspect": 3.3154,
+   "widest": 0.3583,
+   "lobeDepth": 0.716,
+   "circularity": 0.3021,
+   "apexAngle": 61.703,
+   "baseAngle": 50.2578,
+   "occurrence": 4130374790
+  },
+  {
+   "aspect": 1.5785,
+   "widest": 0.2083,
+   "lobeDepth": 0.7563,
+   "circularity": 0.2731,
+   "apexAngle": 92.9843,
+   "baseAngle": 142.3052,
+   "occurrence": 4130374790
+  },
+  {
+   "aspect": 1.5592,
+   "widest": 0.3083,
+   "lobeDepth": 0.2294,
+   "circularity": 0.6709,
+   "apexAngle": 90.6983,
+   "baseAngle": 132.3745,
+   "occurrence": 4519408604
+  },
+  {
+   "aspect": 1.7666,
+   "widest": 0.2083,
+   "lobeDepth": 0.6579,
+   "circularity": 0.3746,
+   "apexAngle": 119.9142,
+   "baseAngle": 131.0662,
+   "occurrence": 6392818734
+  },
+  {
+   "aspect": 1.9712,
+   "widest": 0.4917,
+   "lobeDepth": 0.6105,
+   "circularity": 0.4037,
+   "apexAngle": 115.5214,
+   "baseAngle": 119.8355,
+   "occurrence": 4439071673
+  },
+  {
+   "aspect": 1.613,
+   "widest": 0.675,
+   "lobeDepth": 0.0463,
+   "circularity": 0.724,
+   "apexAngle": 137.8904,
+   "baseAngle": 124.2719,
+   "occurrence": 1819183783
+  }
+ ]
 }

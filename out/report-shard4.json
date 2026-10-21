@@ -1,15 +1,50 @@
 [
  {
   "id": "populus-deltoides",
-  "sheets": 0,
-  "leaves": 0,
+  "sheets": 15,
+  "leaves": 47,
+  "candidates": 30,
+  "fetchErrors": [
+   "HTTPError: HTTP Error 403: Forbidden",
+   "HTTPError: HTTP Error 403: Forbidden"
+  ],
   "specimen": {
-   "aspect": null,
-   "widest": null,
-   "lobeDepth": null,
-   "circularity": null,
-   "apexAngle": null,
-   "baseAngle": null
+   "aspect": {
+    "median": 1.199,
+    "q1": 1.087,
+    "q3": 1.406,
+    "n": 47
+   },
+   "widest": {
+    "median": 0.492,
+    "q1": 0.425,
+    "q3": 0.558,
+    "n": 47
+   },
+   "lobeDepth": {
+    "median": 0.246,
+    "q1": 0.14,
+    "q3": 0.497,
+    "n": 47
+   },
+   "circularity": {
+    "median": 0.641,
+    "q1": 0.535,
+    "q3": 0.689,
+    "n": 47
+   },
+   "apexAngle": {
+    "median": 124.908,
+    "q1": 111.515,
+    "q3": 131.499,
+    "n": 47
+   },
+   "baseAngle": {
+    "median": 127.672,
+    "q1": 115.615,
+    "q3": 132.665,
+    "n": 47
+   }
   },
   "drawn": {
    "aspect": {
@@ -52,15 +87,50 @@
  },
  {
   "id": "monstera-deliciosa",
-  "sheets": 0,
-  "leaves": 0,
+  "sheets": 15,
+  "leaves": 38,
+  "candidates": 30,
+  "fetchErrors": [
+   "HTTPError: HTTP Error 403: Forbidden",
+   "HTTPError: HTTP Error 403: Forbidden"
+  ],
   "specimen": {
-   "aspect": null,
-   "widest": null,
-   "lobeDepth": null,
-   "circularity": null,
-   "apexAngle": null,
-   "baseAngle": null
+   "aspect": {
+    "median": 2.162,
+    "q1": 1.609,
+    "q3": 4.462,
+    "n": 38
+   },
+   "widest": {
+    "median": 0.525,
+    "q1": 0.275,
+    "q3": 0.758,
+    "n": 38
+   },
+   "lobeDepth": {
+    "median": 0.646,
+    "q1": 0.428,
+    "q3": 0.933,
+    "n": 38
+   },
+   "circularity": {
+    "median": 0.412,
+    "q1": 0.276,
+    "q3": 0.535,
+    "n": 38
+   },
+   "apexAngle": {
+    "median": 81.981,
+    "q1": 70.101,
+    "q3": 106.166,
+    "n": 38
+   },
+   "baseAngle": {
+    "median": 72.847,
+    "q1": 45.108,
+    "q3": 115.092,
+    "n": 38
+   }
   },
   "drawn": {
    "aspect": {
@@ -103,15 +173,53 @@
  },
  {
   "id": "chenopodium-album",
-  "sheets": 0,
-  "leaves": 0,
+  "sheets": 15,
+  "leaves": 47,
+  "candidates": 30,
+  "fetchErrors": [
+   "HTTPError: HTTP Error 404: Not Found",
+   "HTTPError: HTTP Error 404: Not Found",
+   "HTTPError: HTTP Error 500: Internal Server Error",
+   "HTTPError: HTTP Error 504: Gateway Timeout",
+   "HTTPError: HTTP Error 500: Internal Server Error"
+  ],
   "specimen": {
-   "aspect": null,
-   "widest": null,
-   "lobeDepth": null,
-   "circularity": null,
-   "apexAngle": null,
-   "baseAngle": null
+   "aspect": {
+    "median": 1.623,
+    "q1": 1.364,
+    "q3": 2.445,
+    "n": 47
+   },
+   "widest": {
+    "median": 0.442,
+    "q1": 0.375,
+    "q3": 0.658,
+    "n": 47
+   },
+   "lobeDepth": {
+    "median": 0.639,
+    "q1": 0.333,
+    "q3": 0.965,
+    "n": 47
+   },
+   "circularity": {
+    "median": 0.409,
+    "q1": 0.29,
+    "q3": 0.562,
+    "n": 47
+   },
+   "apexAngle": {
+    "median": 87.352,
+    "q1": 64.011,
+    "q3": 100.628,
+    "n": 47
+   },
+   "baseAngle": {
+    "median": 97.664,
+    "q1": 76.153,
+    "q3": 123.607,
+    "n": 47
+   }
   },
   "drawn": {
    "aspect": {
@@ -154,15 +262,53 @@
  },
  {
   "id": "acer-saccharum",
-  "sheets": 0,
-  "leaves": 0,
+  "sheets": 15,
+  "leaves": 40,
+  "candidates": 30,
+  "fetchErrors": [
+   "HTTPError: HTTP Error 404: Not Found",
+   "HTTPError: HTTP Error 404: Not Found",
+   "HTTPError: HTTP Error 500: Internal Server Error",
+   "HTTPError: HTTP Error 504: Gateway Timeout",
+   "HTTPError: HTTP Error 500: Internal Server Error"
+  ],
   "specimen": {
-   "aspect": null,
-   "widest": null,
-   "lobeDepth": null,
-   "circularity": null,
-   "apexAngle": null,
-   "baseAngle": null
+   "aspect": {
+    "median": 1.176,
+    "q1": 1.11,
+    "q3": 1.341,
+    "n": 40
+   },
+   "widest": {
+    "median": 0.508,
+    "q1": 0.458,
+    "q3": 0.608,
+    "n": 40
+   },
+   "lobeDepth": {
+    "median": 0.751,
+    "q1": 0.637,
+    "q3": 0.939,
+    "n": 40
+   },
+   "circularity": {
+    "median": 0.4,
+    "q1": 0.319,
+    "q3": 0.447,
+    "n": 40
+   },
+   "apexAngle": {
+    "median": 118.887,
+    "q1": 90.926,
+    "q3": 132.864,
+    "n": 40
+   },
+   "baseAngle": {
+    "median": 120.02,
+    "q1": 79.633,
+    "q3": 133.863,
+    "n": 40
+   }
   },
   "drawn": {
    "aspect": {
@@ -205,15 +351,53 @@
  },
  {
   "id": "ginkgo-biloba",
-  "sheets": 0,
-  "leaves": 0,
+  "sheets": 15,
+  "leaves": 41,
+  "candidates": 30,
+  "fetchErrors": [
+   "HTTPError: HTTP Error 404: Not Found",
+   "HTTPError: HTTP Error 404: Not Found",
+   "HTTPError: HTTP Error 500: Internal Server Error",
+   "HTTPError: HTTP Error 504: Gateway Timeout",
+   "HTTPError: HTTP Error 500: Internal Server Error"
+  ],
   "specimen": {
-   "aspect": null,
-   "widest": null,
-   "lobeDepth": null,
-   "circularity": null,
-   "apexAngle": null,
-   "baseAngle": null
+   "aspect": {
+    "median": 1.276,
+    "q1": 1.128,
+    "q3": 1.463,
+    "n": 41
+   },
+   "widest": {
+    "median": 0.458,
+    "q1": 0.425,
+    "q3": 0.492,
+    "n": 41
+   },
+   "lobeDepth": {
+    "median": 0.701,
+    "q1": 0.311,
+    "q3": 0.925,
+    "n": 41
+   },
+   "circularity": {
+    "median": 0.518,
+    "q1": 0.438,
+    "q3": 0.59,
+    "n": 41
+   },
+   "apexAngle": {
+    "median": 105.465,
+    "q1": 96.189,
+    "q3": 124.484,
+    "n": 41
+   },
+   "baseAngle": {
+    "median": 109.118,
+    "q1": 95.864,
+    "q3": 116.048,
+    "n": 41
+   }
   },
   "drawn": {
    "aspect": {

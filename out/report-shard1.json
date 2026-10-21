@@ -1,83 +1,533 @@
 [
  {
-  "id": "cornus-florida",
-  "sheets": 6,
-  "leaves": 24,
-  "candidates": 12,
-  "fetchErrors": [],
+  "id": "fagus-grandifolia",
+  "sheets": 15,
+  "leaves": 51,
+  "candidates": 30,
+  "fetchErrors": [
+   "HTTPError: HTTP Error 403: Forbidden",
+   "HTTPError: HTTP Error 403: Forbidden",
+   "HTTPError: HTTP Error 504: Gateway Timeout",
+   "HTTPError: HTTP Error 403: Forbidden"
+  ],
   "specimen": {
    "aspect": {
-    "median": 1.919,
-    "q1": 1.752,
-    "q3": 2.095,
-    "n": 24
+    "median": 1.823,
+    "q1": 1.641,
+    "q3": 2.022,
+    "n": 51
    },
    "widest": {
-    "median": 0.5,
-    "q1": 0.458,
-    "q3": 0.592,
-    "n": 24
+    "median": 0.458,
+    "q1": 0.375,
+    "q3": 0.542,
+    "n": 51
    },
    "lobeDepth": {
-    "median": 0.203,
-    "q1": 0.135,
-    "q3": 0.561,
-    "n": 24
+    "median": 0.174,
+    "q1": 0.11,
+    "q3": 0.584,
+    "n": 51
    },
    "circularity": {
-    "median": 0.608,
-    "q1": 0.488,
-    "q3": 0.671,
-    "n": 24
+    "median": 0.643,
+    "q1": 0.544,
+    "q3": 0.69,
+    "n": 51
    },
    "apexAngle": {
-    "median": 83.071,
-    "q1": 71.118,
-    "q3": 118.956,
-    "n": 24
+    "median": 83.848,
+    "q1": 70.712,
+    "q3": 110.752,
+    "n": 51
    },
    "baseAngle": {
-    "median": 93.97,
-    "q1": 84.392,
-    "q3": 109.582,
-    "n": 24
+    "median": 108.105,
+    "q1": 87.303,
+    "q3": 121.026,
+    "n": 51
    }
   },
   "drawn": {
    "aspect": {
-    "median": 1.671,
-    "q1": 1.654,
-    "q3": 1.675,
+    "median": 1.937,
+    "q1": 1.828,
+    "q3": 1.986,
     "n": 5
    },
    "widest": {
-    "median": 0.475,
-    "q1": 0.458,
+    "median": 0.425,
+    "q1": 0.425,
+    "q3": 0.458,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 0.083,
+    "q1": 0.053,
+    "q3": 0.092,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.69,
+    "q1": 0.669,
+    "q3": 0.691,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 95.532,
+    "q1": 87.491,
+    "q3": 99.965,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 112.648,
+    "q1": 109.337,
+    "q3": 113.913,
+    "n": 5
+   }
+  }
+ },
+ {
+  "id": "raphanus-raphanistrum",
+  "sheets": 15,
+  "leaves": 50,
+  "candidates": 30,
+  "fetchErrors": [
+   "HTTPError: HTTP Error 403: Forbidden",
+   "HTTPError: HTTP Error 403: Forbidden",
+   "HTTPError: HTTP Error 504: Gateway Timeout",
+   "HTTPError: HTTP Error 403: Forbidden",
+   "HTTPError: HTTP Error 504: Gateway Timeout"
+  ],
+  "specimen": {
+   "aspect": {
+    "median": 2.692,
+    "q1": 1.767,
+    "q3": 4.194,
+    "n": 50
+   },
+   "widest": {
+    "median": 0.442,
+    "q1": 0.258,
+    "q3": 0.642,
+    "n": 50
+   },
+   "lobeDepth": {
+    "median": 0.818,
+    "q1": 0.663,
+    "q3": 0.993,
+    "n": 50
+   },
+   "circularity": {
+    "median": 0.27,
+    "q1": 0.207,
+    "q3": 0.379,
+    "n": 50
+   },
+   "apexAngle": {
+    "median": 76.115,
+    "q1": 41.352,
+    "q3": 104.743,
+    "n": 50
+   },
+   "baseAngle": {
+    "median": 81.536,
+    "q1": 53.931,
+    "q3": 111.297,
+    "n": 50
+   }
+  },
+  "drawn": {
+   "aspect": {
+    "median": 2.748,
+    "q1": 2.504,
+    "q3": 2.769,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.708,
+    "q1": 0.675,
+    "q3": 0.742,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 0.726,
+    "q1": 0.657,
+    "q3": 0.815,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.318,
+    "q1": 0.288,
+    "q3": 0.344,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 111.628,
+    "q1": 108.052,
+    "q3": 112.703,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 59.132,
+    "q1": 56.146,
+    "q3": 72.633,
+    "n": 5
+   }
+  }
+ },
+ {
+  "id": "eucalyptus-globulus",
+  "sheets": 15,
+  "leaves": 34,
+  "candidates": 30,
+  "fetchErrors": [
+   "HTTPError: HTTP Error 504: Gateway Timeout",
+   "HTTPError: HTTP Error 504: Gateway Timeout",
+   "HTTPError: HTTP Error 504: Gateway Timeout",
+   "HTTPError: HTTP Error 504: Gateway Timeout",
+   "HTTPError: HTTP Error 504: Gateway Timeout"
+  ],
+  "specimen": {
+   "aspect": {
+    "median": 2.116,
+    "q1": 1.674,
+    "q3": 3.488,
+    "n": 34
+   },
+   "widest": {
+    "median": 0.517,
+    "q1": 0.358,
+    "q3": 0.625,
+    "n": 34
+   },
+   "lobeDepth": {
+    "median": 0.601,
+    "q1": 0.498,
+    "q3": 0.926,
+    "n": 34
+   },
+   "circularity": {
+    "median": 0.348,
+    "q1": 0.3,
+    "q3": 0.402,
+    "n": 34
+   },
+   "apexAngle": {
+    "median": 78.864,
+    "q1": 55.228,
+    "q3": 107.079,
+    "n": 34
+   },
+   "baseAngle": {
+    "median": 86.906,
+    "q1": 60.973,
+    "q3": 103.679,
+    "n": 34
+   }
+  },
+  "drawn": {
+   "aspect": {
+    "median": 4.958,
+    "q1": 4.797,
+    "q3": 4.98,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.375,
+    "q1": 0.325,
+    "q3": 0.408,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 0.029,
+    "q1": 0.023,
+    "q3": 0.052,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.38,
+    "q1": 0.379,
+    "q3": 0.382,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 48.968,
+    "q1": 48.582,
+    "q3": 50.072,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 69.979,
+    "q1": 67.964,
+    "q3": 71.858,
+    "n": 5
+   }
+  }
+ },
+ {
+  "id": "cercis-canadensis",
+  "sheets": 15,
+  "leaves": 19,
+  "candidates": 30,
+  "fetchErrors": [
+   "HTTPError: HTTP Error 504: Gateway Timeout",
+   "HTTPError: HTTP Error 504: Gateway Timeout",
+   "HTTPError: HTTP Error 403: Forbidden",
+   "HTTPError: HTTP Error 504: Gateway Timeout",
+   "HTTPError: HTTP Error 403: Forbidden"
+  ],
+  "specimen": {
+   "aspect": {
+    "median": 1.864,
+    "q1": 1.291,
+    "q3": 4.093,
+    "n": 19
+   },
+   "widest": {
+    "median": 0.392,
+    "q1": 0.275,
+    "q3": 0.642,
+    "n": 19
+   },
+   "lobeDepth": {
+    "median": 0.445,
+    "q1": 0.349,
+    "q3": 0.885,
+    "n": 19
+   },
+   "circularity": {
+    "median": 0.379,
+    "q1": 0.265,
+    "q3": 0.481,
+    "n": 19
+   },
+   "apexAngle": {
+    "median": 60.482,
+    "q1": 50.247,
+    "q3": 118.192,
+    "n": 19
+   },
+   "baseAngle": {
+    "median": 97.84,
+    "q1": 63.177,
+    "q3": 132.261,
+    "n": 19
+   }
+  },
+  "drawn": {
+   "aspect": {
+    "median": 1.166,
+    "q1": 1.155,
+    "q3": 1.218,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.275,
+    "q1": 0.242,
+    "q3": 0.308,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 0.035,
+    "q1": 0.032,
+    "q3": 0.038,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.759,
+    "q1": 0.722,
+    "q3": 0.762,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 90.132,
+    "q1": 84.265,
+    "q3": 91.76,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 148.774,
+    "q1": 148.512,
+    "q3": 149.029,
+    "n": 5
+   }
+  }
+ },
+ {
+  "id": "nelumbo-nucifera",
+  "sheets": 15,
+  "leaves": 53,
+  "candidates": 30,
+  "fetchErrors": [
+   "HTTPError: HTTP Error 401: Unauthorized",
+   "URLError: <urlopen error timed out>",
+   "URLError: <urlopen error timed out>",
+   "URLError: <urlopen error timed out>",
+   "URLError: <urlopen error timed out>"
+  ],
+  "specimen": {
+   "aspect": {
+    "median": 2.099,
+    "q1": 1.344,
+    "q3": 4.917,
+    "n": 53
+   },
+   "widest": {
+    "median": 0.508,
+    "q1": 0.375,
+    "q3": 0.625,
+    "n": 53
+   },
+   "lobeDepth": {
+    "median": 0.281,
+    "q1": 0.137,
+    "q3": 0.711,
+    "n": 53
+   },
+   "circularity": {
+    "median": 0.47,
+    "q1": 0.348,
+    "q3": 0.598,
+    "n": 53
+   },
+   "apexAngle": {
+    "median": 88.386,
+    "q1": 52.008,
+    "q3": 107.163,
+    "n": 53
+   },
+   "baseAngle": {
+    "median": 88.353,
+    "q1": 54.32,
+    "q3": 121.283,
+    "n": 53
+   }
+  },
+  "drawn": {
+   "aspect": {
+    "median": 1.0,
+    "q1": 1.0,
+    "q3": 1.001,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.492,
+    "q1": 0.492,
     "q3": 0.492,
     "n": 5
    },
    "lobeDepth": {
-    "median": 0.004,
-    "q1": 0.004,
-    "q3": 0.005,
+    "median": 0.002,
+    "q1": 0.002,
+    "q3": 0.002,
     "n": 5
    },
    "circularity": {
-    "median": 0.79,
-    "q1": 0.785,
-    "q3": 0.793,
+    "median": 0.899,
+    "q1": 0.899,
+    "q3": 0.899,
     "n": 5
    },
    "apexAngle": {
-    "median": 95.86,
-    "q1": 95.44,
-    "q3": 96.287,
+    "median": 142.993,
+    "q1": 142.991,
+    "q3": 142.998,
     "n": 5
    },
    "baseAngle": {
-    "median": 117.99,
-    "q1": 114.372,
-    "q3": 118.866,
+    "median": 145.229,
+    "q1": 145.223,
+    "q3": 145.273,
+    "n": 5
+   }
+  }
+ },
+ {
+  "id": "sagittaria-latifolia",
+  "sheets": 15,
+  "leaves": 28,
+  "candidates": 30,
+  "fetchErrors": [
+   "URLError: <urlopen error timed out>",
+   "URLError: <urlopen error timed out>",
+   "URLError: <urlopen error timed out>",
+   "HTTPError: HTTP Error 415: Unsupported Media Type",
+   "HTTPError: HTTP Error 403: Forbidden"
+  ],
+  "specimen": {
+   "aspect": {
+    "median": 2.782,
+    "q1": 1.652,
+    "q3": 5.919,
+    "n": 28
+   },
+   "widest": {
+    "median": 0.608,
+    "q1": 0.308,
+    "q3": 0.858,
+    "n": 28
+   },
+   "lobeDepth": {
+    "median": 0.658,
+    "q1": 0.286,
+    "q3": 0.969,
+    "n": 28
+   },
+   "circularity": {
+    "median": 0.336,
+    "q1": 0.276,
+    "q3": 0.44,
+    "n": 28
+   },
+   "apexAngle": {
+    "median": 70.762,
+    "q1": 53.362,
+    "q3": 106.707,
+    "n": 28
+   },
+   "baseAngle": {
+    "median": 67.269,
+    "q1": 52.37,
+    "q3": 110.718,
+    "n": 28
+   }
+  },
+  "drawn": {
+   "aspect": {
+    "median": 1.565,
+    "q1": 1.488,
+    "q3": 1.636,
+    "n": 5
+   },
+   "widest": {
+    "median": 0.342,
+    "q1": 0.325,
+    "q3": 0.342,
+    "n": 5
+   },
+   "lobeDepth": {
+    "median": 0.998,
+    "q1": 0.998,
+    "q3": 1.0,
+    "n": 5
+   },
+   "circularity": {
+    "median": 0.567,
+    "q1": 0.523,
+    "q3": 0.576,
+    "n": 5
+   },
+   "apexAngle": {
+    "median": 78.965,
+    "q1": 74.378,
+    "q3": 82.381,
+    "n": 5
+   },
+   "baseAngle": {
+    "median": 137.806,
+    "q1": 137.152,
+    "q3": 138.454,
     "n": 5
    }
   }

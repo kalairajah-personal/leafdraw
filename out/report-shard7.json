@@ -1,15 +1,53 @@
 [
  {
   "id": "quercus-alba",
-  "sheets": 0,
-  "leaves": 0,
+  "sheets": 15,
+  "leaves": 56,
+  "candidates": 30,
+  "fetchErrors": [
+   "HTTPError: HTTP Error 403: Forbidden",
+   "HTTPError: HTTP Error 504: Gateway Timeout",
+   "HTTPError: HTTP Error 403: Forbidden",
+   "HTTPError: HTTP Error 403: Forbidden",
+   "HTTPError: HTTP Error 403: Forbidden"
+  ],
   "specimen": {
-   "aspect": null,
-   "widest": null,
-   "lobeDepth": null,
-   "circularity": null,
-   "apexAngle": null,
-   "baseAngle": null
+   "aspect": {
+    "median": 1.766,
+    "q1": 1.475,
+    "q3": 2.214,
+    "n": 56
+   },
+   "widest": {
+    "median": 0.583,
+    "q1": 0.508,
+    "q3": 0.692,
+    "n": 56
+   },
+   "lobeDepth": {
+    "median": 0.837,
+    "q1": 0.605,
+    "q3": 0.989,
+    "n": 56
+   },
+   "circularity": {
+    "median": 0.28,
+    "q1": 0.212,
+    "q3": 0.344,
+    "n": 56
+   },
+   "apexAngle": {
+    "median": 93.286,
+    "q1": 76.548,
+    "q3": 119.147,
+    "n": 56
+   },
+   "baseAngle": {
+    "median": 77.357,
+    "q1": 60.716,
+    "q3": 105.303,
+    "n": 56
+   }
   },
   "drawn": {
    "aspect": {
@@ -52,15 +90,53 @@
  },
  {
   "id": "salix-babylonica",
-  "sheets": 0,
-  "leaves": 0,
+  "sheets": 15,
+  "leaves": 52,
+  "candidates": 30,
+  "fetchErrors": [
+   "HTTPError: HTTP Error 403: Forbidden",
+   "HTTPError: HTTP Error 403: Forbidden",
+   "HTTPError: HTTP Error 403: Forbidden",
+   "HTTPError: HTTP Error 404: Not Found",
+   "HTTPError: HTTP Error 404: Not Found"
+  ],
   "specimen": {
-   "aspect": null,
-   "widest": null,
-   "lobeDepth": null,
-   "circularity": null,
-   "apexAngle": null,
-   "baseAngle": null
+   "aspect": {
+    "median": 4.921,
+    "q1": 3.44,
+    "q3": 5.873,
+    "n": 52
+   },
+   "widest": {
+    "median": 0.542,
+    "q1": 0.442,
+    "q3": 0.608,
+    "n": 52
+   },
+   "lobeDepth": {
+    "median": 0.381,
+    "q1": 0.186,
+    "q3": 0.696,
+    "n": 52
+   },
+   "circularity": {
+    "median": 0.322,
+    "q1": 0.297,
+    "q3": 0.365,
+    "n": 52
+   },
+   "apexAngle": {
+    "median": 50.276,
+    "q1": 39.156,
+    "q3": 70.051,
+    "n": 52
+   },
+   "baseAngle": {
+    "median": 50.301,
+    "q1": 41.65,
+    "q3": 62.149,
+    "n": 52
+   }
   },
   "drawn": {
    "aspect": {
@@ -103,15 +179,53 @@
  },
  {
   "id": "rumex-acetosella",
-  "sheets": 0,
-  "leaves": 0,
+  "sheets": 15,
+  "leaves": 21,
+  "candidates": 30,
+  "fetchErrors": [
+   "HTTPError: HTTP Error 403: Forbidden",
+   "HTTPError: HTTP Error 404: Not Found",
+   "HTTPError: HTTP Error 404: Not Found",
+   "HTTPError: HTTP Error 504: Gateway Timeout",
+   "HTTPError: HTTP Error 403: Forbidden"
+  ],
   "specimen": {
-   "aspect": null,
-   "widest": null,
-   "lobeDepth": null,
-   "circularity": null,
-   "apexAngle": null,
-   "baseAngle": null
+   "aspect": {
+    "median": 3.036,
+    "q1": 2.249,
+    "q3": 3.601,
+    "n": 21
+   },
+   "widest": {
+    "median": 0.308,
+    "q1": 0.225,
+    "q3": 0.525,
+    "n": 21
+   },
+   "lobeDepth": {
+    "median": 0.68,
+    "q1": 0.583,
+    "q3": 0.985,
+    "n": 21
+   },
+   "circularity": {
+    "median": 0.317,
+    "q1": 0.28,
+    "q3": 0.403,
+    "n": 21
+   },
+   "apexAngle": {
+    "median": 58.977,
+    "q1": 35.212,
+    "q3": 75.37,
+    "n": 21
+   },
+   "baseAngle": {
+    "median": 64.445,
+    "q1": 46.52,
+    "q3": 96.748,
+    "n": 21
+   }
   },
   "drawn": {
    "aspect": {
@@ -154,15 +268,53 @@
  },
  {
   "id": "platanus-occidentalis",
-  "sheets": 0,
-  "leaves": 0,
+  "sheets": 15,
+  "leaves": 34,
+  "candidates": 30,
+  "fetchErrors": [
+   "HTTPError: HTTP Error 504: Gateway Timeout",
+   "HTTPError: HTTP Error 504: Gateway Timeout",
+   "HTTPError: HTTP Error 403: Forbidden",
+   "HTTPError: HTTP Error 504: Gateway Timeout",
+   "URLError: <urlopen error timed out>"
+  ],
   "specimen": {
-   "aspect": null,
-   "widest": null,
-   "lobeDepth": null,
-   "circularity": null,
-   "apexAngle": null,
-   "baseAngle": null
+   "aspect": {
+    "median": 1.295,
+    "q1": 1.235,
+    "q3": 1.969,
+    "n": 34
+   },
+   "widest": {
+    "median": 0.492,
+    "q1": 0.425,
+    "q3": 0.625,
+    "n": 34
+   },
+   "lobeDepth": {
+    "median": 0.527,
+    "q1": 0.417,
+    "q3": 0.899,
+    "n": 34
+   },
+   "circularity": {
+    "median": 0.505,
+    "q1": 0.411,
+    "q3": 0.573,
+    "n": 34
+   },
+   "apexAngle": {
+    "median": 118.627,
+    "q1": 94.988,
+    "q3": 131.924,
+    "n": 34
+   },
+   "baseAngle": {
+    "median": 120.4,
+    "q1": 97.688,
+    "q3": 133.525,
+    "n": 34
+   }
   },
   "drawn": {
    "aspect": {
@@ -205,15 +357,53 @@
  },
  {
   "id": "clivia-miniata",
-  "sheets": 0,
-  "leaves": 0,
+  "sheets": 15,
+  "leaves": 32,
+  "candidates": 30,
+  "fetchErrors": [
+   "HTTPError: HTTP Error 504: Gateway Timeout",
+   "HTTPError: HTTP Error 504: Gateway Timeout",
+   "HTTPError: HTTP Error 403: Forbidden",
+   "HTTPError: HTTP Error 504: Gateway Timeout",
+   "URLError: <urlopen error timed out>"
+  ],
   "specimen": {
-   "aspect": null,
-   "widest": null,
-   "lobeDepth": null,
-   "circularity": null,
-   "apexAngle": null,
-   "baseAngle": null
+   "aspect": {
+    "median": 1.81,
+    "q1": 1.28,
+    "q3": 2.725,
+    "n": 32
+   },
+   "widest": {
+    "median": 0.5,
+    "q1": 0.208,
+    "q3": 0.725,
+    "n": 32
+   },
+   "lobeDepth": {
+    "median": 0.648,
+    "q1": 0.445,
+    "q3": 0.967,
+    "n": 32
+   },
+   "circularity": {
+    "median": 0.431,
+    "q1": 0.382,
+    "q3": 0.483,
+    "n": 32
+   },
+   "apexAngle": {
+    "median": 105.277,
+    "q1": 82.708,
+    "q3": 116.406,
+    "n": 32
+   },
+   "baseAngle": {
+    "median": 103.713,
+    "q1": 77.215,
+    "q3": 125.021,
+    "n": 32
+   }
   },
   "drawn": {
    "aspect": {
